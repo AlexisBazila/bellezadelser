@@ -1,12 +1,15 @@
 import { useState } from "react";
 import "./App.css";
+import HeroSection from "./layouts/heroSection/HeroSection";
+import NavBar from "./layouts/navBar/NavBar";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <h1>BELLEZA DEL SER</h1>
+      <NavBar />
+      <HeroSection />
     </>
   );
 }
