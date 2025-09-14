@@ -1,0 +1,59 @@
+.missionSection {
+  padding: 5% 10%;
+}
+
+.firstParagraph {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.firstParagraph h2 {
+  font-size: 42px;
+  padding-right: 5%;
+}
+.MyselfParagraph p {
+  font-size: 20px;
+  font-family: "inter";
+  margin-bottom: 30px;
+}
+
+.MyselfParagraph h4 {
+  font-size: 20px;
+  font-family: "inter";
+  margin-bottom: 10px;
+}
+
+.photoParagraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.pharagraphBox {
+  background-color: #f1f1f1;
+  height: 296px;
+  width: 427px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  margin-right: -60px;
+}
+
+.pharagraphBox p {
+  font-size: 20px;
+  padding: 15%;
+}
+
+.Photo {
+  background-color: #d9d9d9;
+  height: 510px;
+  width: 871px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}

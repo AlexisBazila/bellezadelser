@@ -1,8 +1,7 @@
 .heroSection {
   background-color: #f1f1f1;
   height: 80vh;
-  display: flex;
-  justify-content: center;
+  padding: 5% 10%;
 }
 
 .contentHero {
