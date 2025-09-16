@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inria+Serif&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@font-face {
+  font-family: 'Eyes for Serifs';
+  src: url('./assets/fonts/EyesforSerif/eyesforserifs-regular.otf') format('woff2');
+  font-weight: 100;
+}
 /* ------------------------------------------------RESET-------------------------------------- */
 * {
   margin: 0;
@@ -17,16 +22,21 @@ container {
 
 h1,
 h2 {
-  font-family: "Inria Serif", serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Eyes for Serifs", serif;
+font-weight: 400;
+color: #3C3C3C;
 }
 
 h3,
 p,
 a {
+  color: #3C3C3C;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+
+h4{
+  color: #3C3C3C;
 }

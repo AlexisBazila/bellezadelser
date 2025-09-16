@@ -1,0 +1,19 @@
+.experienceSection{
+    background-color: #B77B52;
+}
+
+.Photo {
+  background-color: #d9d9d9;
+  height: 434px;
+  width: 529px;
+  border-radius: 20px;
+}
+
+.experienceContent{
+        display: flex;
+    align-items: center;
+    padding: 100px;
+}
+.experiencePick{
+    margin-right: 50px;
+}

@@ -6,7 +6,7 @@
 
 .contentHero {
   height: 100%;
-  width: 85%;
+  width: 50vw;
   display: flex;
   align-items: center;
 }
@@ -14,9 +14,15 @@
 .contentHero h1 {
   font-size: 60px;
   margin-bottom: 20px;
+  color: #fff;
 }
 
+.contentHero h2 {
+width: 50vw;
+  color: #fff;
+}
 .titleAndSubtitleHero {
   /* width: 70%; */
   margin-bottom: 70px;
 }
+
