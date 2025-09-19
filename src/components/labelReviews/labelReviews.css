@@ -1,0 +1,19 @@
+.labelReview{
+    background-color: #fff;
+    height: 300px;
+    width: 380px;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.Title{
+    font-size: 28px;
+    text-align: center;
+    margin: 20px;
+}
+
+.Review{
+    font-size: 20px;
+    text-align: center;
+}

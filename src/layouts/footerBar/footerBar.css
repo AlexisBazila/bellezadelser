@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'Eyes for Serifs';
+  src: url('./assets/fonts/EyesforSerif/eyesforserifs-regular.otf') format('woff2');
+  font-weight: 100;
+
+}
+.footerBar{
+    background-color: #E3E3E3;
+}
+
+.contentFooter{
+    margin: 0% 5%;
+    padding: 2% 0;
+    border-bottom: 1px solid #8E8E8E;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.navFooterBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60vw;
+}
+
+.menuFooterDiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  
+}
+
+.menuFooterDiv a {
+  text-decoration: none;
+  margin: 15px 30px;
+  font-size: 20px;
+}
+
+.menuFooterDiv a:hover {
+  color: #000;
+}
+
+.navFooterBar h3 {
+  font-family: 'Eyes for Serifs';
+  font-weight: lighter;
+  font-size: 35px;
+}
+
+.newsletterFooter{
+    width: 40vw;
+}
+.textNwsletter h4{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.textNwsletter p{
+    font-size: 20px;
+}
+
+.formNewsletter{
+    margin: 20px 0 30px 0;
+}
+.formNewsletter input{
+    color: #000;
+  border: none;
+  font-size: 20px;
+  border-radius: 50px;
+  padding: 10px 20px;
+  margin-right: 20px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+.contact a{
+    font-size: 20px;
+    text-decoration: none;
+    display: flex;
+    margin: 0 15px 15px 0;
+}
+
+.registredFooter{
+    padding: 2% 5%;
+}
+.registredFooter p{
+font-size: 20px;
+font-weight: 600;
+}
+.contact i{
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+.socialMedia p{
+  font-size: 20px;
+font-weight: 600;
+}
+.iconSocial{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.iconSocial i{
+  font-size: 40px;
+  color: #3C3C3C;
+}
