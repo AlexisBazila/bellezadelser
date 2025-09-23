@@ -1,13 +1,14 @@
 @font-face {
-  font-family: 'Eyes for Serifs';
-  src: url('./assets/fonts/EyesforSerif/eyesforserifs-regular.otf') format('woff2');
+  font-family: "Eyes for Serifs";
+  src: url("./assets/fonts/EyesforSerif/eyesforserifs-regular.otf")
+    format("woff2");
   font-weight: 100;
 }
 
 .navBar {
-  background-color: #B77B52;
+  background-color: #b77b52;
   color: #fff;
-  height: 130px;
+  height: 15vh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,7 +18,6 @@
 .menuDiv {
   display: flex;
   align-items: center;
-  
 }
 
 .menuDiv a {
@@ -32,7 +32,7 @@
 }
 
 .navBar h3 {
-  font-family: 'Eyes for Serifs';
+  font-family: "Eyes for Serifs";
   font-weight: lighter;
   color: #fff;
   font-size: 35px;

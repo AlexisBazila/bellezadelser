@@ -3,6 +3,8 @@ import "./missionSection.css";
 
 import SmallButton from "../../components/smallButton/SmallButton";
 
+import myself from "../../assets/images/natyHome.png";
+
 function MissionSection() {
   return (
     <section className="missionSection">
@@ -28,7 +30,8 @@ function MissionSection() {
             resolver tus dudas en todo momento.
           </p>
         </div>
-        <div className="Photo">Photo</div>
+
+        <img src={myself} alt="" className="missionPhoto" />
       </div>
     </section>
   );

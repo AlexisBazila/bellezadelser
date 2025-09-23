@@ -1,6 +1,17 @@
 .heroSection {
-  background-color: #f1f1f1;
-  height: 80vh;
+  background-image: url("../../assets/images/heroHome.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.overlay {
+  background-image: url("../../assets/images/overlayHeroHome.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
   padding: 5% 10%;
 }
 
@@ -18,11 +29,10 @@
 }
 
 .contentHero h2 {
-width: 50vw;
+  width: 50vw;
   color: #fff;
 }
 .titleAndSubtitleHero {
   /* width: 70%; */
   margin-bottom: 70px;
 }
-

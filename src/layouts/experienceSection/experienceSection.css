@@ -1,19 +1,25 @@
-.experienceSection{
-    background-color: #B77B52;
+.experienceSection {
+  height: 85vh;
+  background-color: #b77b52;
+  display: flex;
+  justify-content: center;
 }
 
 .Photo {
-  background-color: #d9d9d9;
-  height: 434px;
-  width: 529px;
   border-radius: 20px;
 }
 
-.experienceContent{
-        display: flex;
-    align-items: center;
-    padding: 100px;
+.experienceContent {
+  display: flex;
+  align-items: center;
+  width: 80vw;
 }
-.experiencePick{
-    margin-right: 50px;
+.experiencePick {
+  margin-right: 5vw;
+}
+.experienceTexts {
+  margin-bottom: 50px;
+}
+.paragraphTexts {
+  margin-bottom: 5vh;
 }

@@ -13,7 +13,6 @@ function Home() {
       <ExperienceSection />
       <CoursesSection />
       <ReviewsSection />
-      <FooterBar />
     </div>
   );
 }

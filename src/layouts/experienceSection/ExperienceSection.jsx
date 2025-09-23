@@ -1,23 +1,26 @@
 import React from "react";
 import "./experienceSection.css";
 import LeftAlignedParagraph from "../../components/LeftAlignedParagraph/LeftAlignedParagraph";
+import FirstButton from "../../components/firstButton/FirstButton";
+import hand from "../../assets/images/handExperience.png";
 
 function ExperienceSection() {
   return (
     <section className="experienceSection">
       <div className="experienceContent">
         <div className="experiencePick">
-          <div className="Photo">Photo</div>
+          <img src={hand} alt="" className="photo" />
         </div>
         <div className="experienceTexts">
-          <LeftAlignedParagraph
-            subTtitle="Lo que vas a experimetar en este camino"
-            paragraphs={[
-              "• Aprendé a equilibrar tu energía y gestionar tus emociones.",
-              "• Conectá con herramientas espirituales prácticas para tu día a día.",
-              "• Descubrí un camino de autoconocimiento y transformación.",
-            ]}
-          />
+          <div className="paragraphTexts">
+            <LeftAlignedParagraph
+              subTtitle="Activaciones de bienestar"
+              paragraphs={[
+                "Mini sesiones prácticas que podés hacer en cualquier momento para recuperar equilibrio, liberar tensiones y conectar con tu propósito.",
+              ]}
+            />
+          </div>
+          <FirstButton caption={"Activar Mi Bienestar"} />
         </div>
       </div>
     </section>

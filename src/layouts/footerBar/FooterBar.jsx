@@ -38,7 +38,7 @@ function FooterBar() {
               </p>
             </div>
             <div className="formNewsletter">
-              <input type="text" />
+              <input type="text" placeholder="Email" />
               <SmallButton caption={"Suscribirme"} />
             </div>
           </div>
