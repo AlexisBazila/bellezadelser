@@ -1,6 +1,5 @@
 .reviewsSection {
   background-color: #c2cea166;
-  height: 70vh;
 }
 .titleSection {
   font-size: 42px;
@@ -13,4 +12,5 @@
 .reviews {
   display: flex;
   justify-content: center;
+  padding-bottom: 10vh;
 }
