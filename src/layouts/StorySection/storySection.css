@@ -1,0 +1,21 @@
+.storySection {
+  background-color: #c3cfa167;
+}
+
+.storyContent {
+  padding: 5% 10% 3% 10%;
+  display: flex;
+  align-items: center;
+}
+
+.storyPharagraph .LeftAlignedParagraph h2 {
+  color: #b77b52;
+}
+
+.storyPharagraph .LeftAlignedParagraph p {
+  color: #000;
+}
+
+.storyImage {
+  margin-left: 5%;
+}

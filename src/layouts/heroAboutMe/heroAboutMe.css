@@ -1,0 +1,39 @@
+.heroSectionAbout {
+  background-image: url("../../assets/images/heroAbout.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.overlay {
+  background-image: url("../../assets/images/overlayHeroHome.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  padding: 5% 10%;
+}
+
+.contentHero {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+
+.contentHero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contentHero h2 {
+  font-family: "inter";
+  width: 50vw;
+  color: #fff;
+}
+.titleAndSubtitleHero {
+  /* width: 70%; */
+  margin-bottom: 70px;
+}
