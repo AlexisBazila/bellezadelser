@@ -7,13 +7,10 @@ function HeroAboutMe() {
         <div className="contentHero">
           <div className="paragraphHero">
             <div className="titleAndSubtitleHero">
-              <h1 className="title">
-                Transformá tu energía, <br />{" "}
-                <strong>transformá tu vida.</strong>
-              </h1>
+              <h1 className="title">Conoce mi camino</h1>
               <h2>
-                Cursos online de Reiki, Registros Akáshicos y Coaching
-                Espiritual.
+                Coach holística especializada en sanación energética y
+                espiritual.
               </h2>
             </div>
           </div>

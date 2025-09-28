@@ -1,0 +1,56 @@
+.courseHeroSection {
+  background-color: #b77b52;
+  height: 90vh;
+}
+
+.courselightHero {
+  background-image: url("../assets/images/lightHero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  padding: 5% 10%;
+}
+
+.coursecontentHero {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.coursecontentHero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.coursecontentHero h2 {
+  font-family: "inter";
+  width: 50vw;
+  color: #fff;
+}
+.coursetitleAndSubtitleHero {
+  /* width: 70%; */
+  margin-bottom: 70px;
+}
+
+.courseparagraphHero {
+  display: flex;
+  justify-content: space-between;
+}
+
+.priceCourseHero h3 {
+  color: #fff;
+  font-size: 28px;
+  margin: 0 0 15% 10%;
+}
+.priceCourseHero {
+  margin-top: 20%;
+}
+.descriptionCourse p {
+  color: #fff;
+  font-size: 20px;
+}
+.descriptionCourse {
+  margin-top: 20%;
+}
