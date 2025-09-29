@@ -1,6 +1,9 @@
 import React from "react";
 import "./curso.css";
 import FirstButton from "../components/firstButton/FirstButton";
+import LeftAlignedParagraph from "../components/LeftAlignedParagraph/LeftAlignedParagraph";
+import resumeCourseImage from "../assets/images/courseImage.png";
+import goalCourseImage from "../assets/images/goalCourse.png";
 
 function Curso() {
   return (
@@ -44,6 +47,39 @@ function Curso() {
           </div>
           <div className="resumeCourseImage">
             <img src={resumeCourseImage} alt="" />
+          </div>
+        </div>
+      </section>
+      <section className="includeCourseSection">
+        <div className="includeContent">
+          <div className="includeTitle">
+            <h2>¿Que incluye?</h2>
+          </div>
+          <p>25 capítulos con material teórico y práctico.</p>
+          <p>
+            Ejercicios diarios guiados para aplicar la gratitud en tu día a día.
+          </p>
+          <p>Recursos descargables en PDF.</p>
+          <p>Videos explicativos y meditaciones guiadas.</p>
+          <p>Acompañamiento virtual durante el proceso.</p>
+        </div>
+      </section>
+      <section className="goalCourseSection">
+        <div className="goalCourseContent">
+          <div className="goalCourseImage">
+            <img src={goalCourseImage} alt="" />
+          </div>
+          <div className="goalCoursePharagraph">
+            <LeftAlignedParagraph
+              subTtitle="¿Qué vas a aprender y lograr?"
+              paragraphs={[
+                "• Reconocer y valorar lo que ya tenés en tu vida.",
+                "• Transformar la manera en que percibís las dificultades.",
+                "• Elevar tu energía y vibración diaria.",
+                "• Crear un hábito consciente de gratitud que te acompañe más allá del taller.",
+                "• Desarrollar una actitud más positiva, resiliente y abierta al cambio.",
+              ]}
+            />
           </div>
         </div>
       </section>
