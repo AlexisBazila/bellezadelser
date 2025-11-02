@@ -7,7 +7,13 @@
 .footerBar {
   background-color: #b77b52;
 }
-
+.logo {
+  display: flex;
+}
+.logo img {
+  margin-right: 10px;
+  height: 50%;
+}
 .contentFooter {
   margin: 0% 5%;
   padding: 2% 0;
@@ -37,7 +43,7 @@
 }
 
 .menuFooterDiv a:hover {
-  color: #000;
+  text-decoration: underline;
 }
 
 .navFooterBar h3 {
@@ -59,6 +65,7 @@
 .textNwsletter p {
   font-size: 20px;
   color: #fff;
+  font-weight: 200;
 }
 
 .formNewsletter {
@@ -97,10 +104,12 @@
   font-size: 20px;
   font-weight: 600;
   color: #fff;
+  font-weight: 200;
 }
 .contact i {
   font-size: 25px;
   margin-right: 5px;
+  color: #fff;
 }
 
 .socialMedia p {
@@ -111,9 +120,63 @@
 .iconSocial {
   margin-top: 20px;
   display: flex;
+  max-width: 30%;
   justify-content: space-between;
 }
 .iconSocial i {
   font-size: 40px;
-  color: #cccccc;
+  color: #fff;
+}
+
+@media (max-width: 1460px) {
+  .menuFooterDiv a {
+    margin: 5px 10px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .menuFooterDiv {
+    flex-direction: column;
+  }
+  .navFooterBar {
+    display: flex;
+    justify-content: stretch;
+    width: 60vw;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navFooterBar {
+    flex-direction: column;
+  }
+  .contentFooter {
+    flex-direction: column;
+    align-items: center;
+  }
+  .socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .contact a {
+    flex-direction: column;
+    align-items: center;
+  }
+  .registredFooter {
+    text-align: center;
+  }
+  .iconSocial {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 490px) {
+  .logo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo img {
+    max-width: 48px;
+  }
 }

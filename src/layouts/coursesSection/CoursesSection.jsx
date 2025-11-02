@@ -7,7 +7,7 @@ function CoursesSection() {
   return (
     <section className="coursesSection">
       <div className="titleCourses">
-        <h2 className="titleSection">Explora los cursos disponibles </h2>
+        <h2 className="titleSection">Agenda tu Sesión</h2>
       </div>
       <div className="cardCourses">
         <Card

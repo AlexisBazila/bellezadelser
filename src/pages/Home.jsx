@@ -8,11 +8,12 @@ import FooterBar from "../layouts/footerBar/FooterBar";
 function Home() {
   return (
     <div>
-      <HeroSection />
+      <div style={{ height: "40vh" }}>HOME</div>
+      {/* <HeroSection />
       <MissionSection />
       <ExperienceSection />
       <CoursesSection />
-      <ReviewsSection />
+      <ReviewsSection /> */}
     </div>
   );
 }

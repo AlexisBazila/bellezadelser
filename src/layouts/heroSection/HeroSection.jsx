@@ -14,11 +14,11 @@ function HeroSection() {
                 <strong>transformá tu vida.</strong>
               </h1>
               <h2>
-                Cursos online de Reiki, Registros Akáshicos y Coaching
-                Espiritual.
+                Formaciones y prácticas energéticas para tu bienestar interior y
+                exterior.
               </h2>
             </div>
-            <FirstButton caption="Quiero Aprender" />
+            <FirstButton caption="Quiero Conectar" />
           </div>
         </div>
       </div>

@@ -1,33 +1,246 @@
-.navBar {
-  background-color: #b77b52;
-  color: #fff;
-  height: 15vh;
+/*-----------------------------------------NAV---------------------------------------------------*/
+/* BASE */
+nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 2% 8%;
+  width: 100%;
 }
-
-.menuDiv {
+.desktopNav,
+.movilNav,
+.movilNavMenu {
+  background-color: #b57a55;
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem 3rem;
+}
+.movilNav {
+  display: none;
 }
 
-.menuDiv a {
+nav a {
   color: #fff;
   text-decoration: none;
   margin: 15px 30px;
   font-size: 20px;
+  white-space: nowrap;
+}
+nav a i {
+  font-size: 30px;
 }
 
-.menuDiv a:hover {
-  color: aliceblue;
-}
-
+/* LOGO BELLEZA DEL SER */
 .logoHome {
   font-family: "Eyes for Serifs light";
   font-weight: lighter;
   text-decoration: none;
   color: #fff;
   font-size: 35px;
+  display: flex;
+  gap: 10px;
+}
+
+.menuDiv {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.columnMenuDiv {
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.menuDiv a,
+.columnMenuDiv a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+}
+.linksNav {
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+}
+
+.menu-item {
+  position: relative;
+}
+
+.menu-item::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 15%;
+  background: white;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 240px;
+  margin-top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(5px);
+  transition: all 0.2s ease-in-out;
+  z-index: 20;
+}
+
+.submenu li {
+  padding: 0;
+}
+
+.submenu a {
+  color: #3c3c3c;
+  display: block;
+  padding: 0;
+}
+
+.menu-item:hover > .submenu {
+  display: block;
+}
+
+.menu-item:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menuDiv a:hover {
+  text-decoration: underline;
+}
+
+/* MENU HAMBURGUESA */
+.hamburgerNav {
+  font-size: 30px;
+  color: #fff;
+}
+.carrito {
+  margin: 0;
+}
+
+/* MENU MOVIL DESPLEGABLE */
+.movilNavMenu {
+  position: fixed;
+  top: 0px; /* ajustá según tu nav */
+  left: 0;
+  width: 100%;
+  height: calc(100vh);
+  background-color: #b57a55;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 2rem;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 15;
+}
+
+.movilNavMenu.active {
+  transform: translateY(100px);
+}
+
+.columnMenuDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.movilNavMenu a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+.submenuLink {
+  color: #3c3c3c !important;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+}
+/* Icono hamburguesa */
+.hamburgerNav {
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.hamburgerNav:hover {
+  transform: scale(1.1);
+}
+
+/* Submenús en modo móvil (si querés que aparezcan al tocar) */
+.columnMenuDiv .submenu {
+  display: none;
+}
+/* SUBMENUS EN MODO MOVIL */
+.columnMenuDiv .submenu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  padding-top: 0.5rem;
+}
+
+.columnMenuDiv .submenu.open {
+  display: flex;
+}
+.columnMenuDiv .submenu.close {
+  display: none;
+}
+.submenu-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+}
+.submenu-toggle .arrow {
+  transition: transform 0.3s ease;
+}
+
+.submenu-toggle .arrow.open {
+  transform: rotate(180deg);
+}
+@media (max-width: 1260px) {
+  .menuDiv {
+    gap: 0;
+  }
+  nav a {
+    margin: 15px 15px;
+  }
+  .linksNav {
+    gap: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .desktopNav {
+    display: none;
+  }
+  .movilNav {
+    display: flex;
+  }
+}
+@media (max-width: 490px) {
+  .logoHome {
+    font-size: 20px;
+  }
+  .logoHome img {
+    width: 30px;
+    height: auto;
+  }
 }

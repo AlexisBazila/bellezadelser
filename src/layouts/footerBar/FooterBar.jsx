@@ -1,5 +1,6 @@
 import React from "react";
 import SmallButton from "../../components/smallButton/SmallButton";
+import logo from "../../assets/images/withe-logo.png";
 import "./FooterBar.css";
 
 import { RxEnvelopeClosed } from "react-icons/rx";
@@ -18,52 +19,22 @@ function FooterBar() {
         <div className="navNewsletter">
           <div className="navFooter">
             <div className="navFooterBar">
-              <h3>
-                <strong>Belleza del Ser</strong>
-              </h3>
+              <div className="logo">
+                <img src={logo} alt="" />
+                <h3>
+                  <strong>Belleza del Ser</strong>
+                </h3>
+              </div>
+
               <div className="menuFooterDiv">
                 <a href="#">Home</a>
-                <a href="#">Cursos</a>
+                <a href="#">Sesiones</a>
+                <a href="#">Armonizaciones</a>
                 <a href="#">Sobre mi</a>
-                <a href="#">Contacto</a>
               </div>
             </div>
           </div>
-          <div className="newsletterFooter">
-            <div className="textNwsletter">
-              <h4>Newsletter</h4>
-              <p>
-                Un recordatorio de luz y sanación en tu bandeja de entrada.
-                Sumate a la comunidad.
-              </p>
-            </div>
-            <div className="formNewsletter">
-              <input type="text" placeholder="Email" />
-              <SmallButton caption={"Suscribirme"} />
-            </div>
-          </div>
-        </div>
-        <div className="contactFooter">
-          <div className="contact">
-            <a href="#">
-              <i>
-                <RxEnvelopeClosed />
-              </i>
-              contacto@ejemplo.com
-            </a>
-            <a href="#">
-              <i>
-                <FiPhone />
-              </i>
-              +34 000 000000
-            </a>
-            <a href="#">
-              <i>
-                <FiMapPin />
-              </i>
-              Ubicación, Ejemplo
-            </a>
-          </div>
+
           <div className="socialMedia">
             <p>Seguime en redes</p>
             <div className="iconSocial">
@@ -90,7 +61,25 @@ function FooterBar() {
             </div>
           </div>
         </div>
+
+        <div className="contactFooter">
+          <div className="contact">
+            <a href="#">
+              <i>
+                <RxEnvelopeClosed />
+              </i>
+              contacto@ejemplo.com
+            </a>
+            <a href="#">
+              <i>
+                <FiPhone />
+              </i>
+              +34 000 000000
+            </a>
+          </div>
+        </div>
       </div>
+
       <div className="registredFooter">
         <p>© 2025 Naty Belleza del Ser. All Rights Reserved.</p>
       </div>
