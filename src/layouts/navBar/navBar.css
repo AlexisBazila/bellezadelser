@@ -1,246 +1,169 @@
 /*-----------------------------------------NAV---------------------------------------------------*/
-/* BASE */
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-.desktopNav,
-.movilNav,
-.movilNavMenu {
+.navBar {
   background-color: #b57a55;
+  padding: 1rem 5rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
-}
-.movilNav {
-  display: none;
+  justify-content: space-between;
+  position: relative;
+  z-index: 999;
 }
 
-nav a {
+.logoHome {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: #fff;
   text-decoration: none;
-  margin: 15px 30px;
-  font-size: 20px;
-  white-space: nowrap;
-}
-nav a i {
-  font-size: 30px;
 }
 
-/* LOGO BELLEZA DEL SER */
-.logoHome {
+.logoHome h3 {
+  font-size: 40px;
   font-family: "Eyes for Serifs light";
   font-weight: lighter;
-  text-decoration: none;
-  color: #fff;
-  font-size: 35px;
-  display: flex;
-  gap: 10px;
+}
+
+.logoHome img {
+  width: 48px;
+  height: auto;
 }
 
 .menuDiv {
   list-style: none;
   display: flex;
-  margin: 0;
-  padding: 0;
-}
-.columnMenuDiv {
-  list-style: none;
-  gap: 2rem;
+  gap: 3.5rem;
   margin: 0;
   padding: 0;
 }
 
 .menuDiv a,
-.columnMenuDiv a {
+.menuDiv span,
+.cart-icon {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  position: relative;
-}
-.linksNav {
-  display: flex;
-  gap: 2rem;
-  margin: 0;
-}
-
-.menu-item {
-  position: relative;
-}
-
-.menu-item::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 15%;
-  background: white;
-  list-style: none;
-  padding: 0.5rem 0;
-  margin: 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  min-width: 240px;
-  margin-top: 0;
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(5px);
-  transition: all 0.2s ease-in-out;
-  z-index: 20;
-}
-
-.submenu li {
-  padding: 0;
-}
-
-.submenu a {
-  color: #3c3c3c;
-  display: block;
-  padding: 0;
-}
-
-.menu-item:hover > .submenu {
-  display: block;
-}
-
-.menu-item:hover > .submenu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+  font-size: 20px;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
 .menuDiv a:hover {
   text-decoration: underline;
 }
 
-/* MENU HAMBURGUESA */
+.cart-icon {
+  font-size: 22px;
+}
+
+/* ---------- HAMBURGUESA ---------- */
 .hamburgerNav {
-  font-size: 30px;
+  font-size: 28px;
   color: #fff;
-}
-.carrito {
-  margin: 0;
+  cursor: pointer;
+  display: none;
+  z-index: 1001;
 }
 
-/* MENU MOVIL DESPLEGABLE */
-.movilNavMenu {
-  position: fixed;
-  top: 0px; /* ajustá según tu nav */
+/* ---------- SUBMENÚ ---------- */
+.menu-item {
+  position: relative;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
   left: 0;
-  width: 100%;
-  height: calc(100vh);
-  background-color: #b57a55;
+  background: white;
+  list-style: none;
+  padding: 0.5rem 0;
+  margin: 0;
+  min-width: 180px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.3s ease;
+}
+
+.submenu li a {
+  color: #3c3c3c;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.submenu li a:hover {
+  background-color: #f3f3f3;
+}
+
+.submenu.open {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+.menuDesktop {
   display: flex;
-  justify-content: center;
-  align-items: start;
-  padding-top: 2rem;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
-  z-index: 15;
+  gap: 3.5rem;
 }
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 1160px) {
+  .hamburgerNav {
+    display: block;
+  }
 
-.movilNavMenu.active {
-  transform: translateY(100px);
-}
+  .menuDesktop {
+    display: flex;
+    flex-direction: column;
+  }
 
-.columnMenuDiv {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
-.movilNavMenu a {
-  color: white;
-  font-size: 22px;
-  text-decoration: none;
-}
-.submenuLink {
-  color: #3c3c3c !important;
-  font-size: 22px;
-  text-decoration: none;
-  text-align: center;
-}
-/* Icono hamburguesa */
-.hamburgerNav {
-  font-size: 32px;
-  color: white;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.hamburgerNav:hover {
-  transform: scale(1.1);
-}
-
-/* Submenús en modo móvil (si querés que aparezcan al tocar) */
-.columnMenuDiv .submenu {
-  display: none;
-}
-/* SUBMENUS EN MODO MOVIL */
-.columnMenuDiv .submenu {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  background: #fff;
-  padding-top: 0.5rem;
-}
-
-.columnMenuDiv .submenu.open {
-  display: flex;
-}
-.columnMenuDiv .submenu.close {
-  display: none;
-}
-.submenu-toggle {
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  cursor: pointer;
-  color: white;
-  font-size: 22px;
-}
-.submenu-toggle .arrow {
-  transition: transform 0.3s ease;
-}
-
-.submenu-toggle .arrow.open {
-  transform: rotate(180deg);
-}
-@media (max-width: 1260px) {
   .menuDiv {
-    gap: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80vw;
+    background-color: #b57a55;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+    z-index: 1000;
   }
-  nav a {
-    margin: 15px 15px;
+
+  .menuDiv.open {
+    transform: translateX(0);
   }
-  .linksNav {
-    gap: 0;
-  }
-}
-@media (max-width: 1000px) {
-  .desktopNav {
+
+  .submenu {
+    position: static;
+    background: #fff;
+    box-shadow: none;
     display: none;
   }
-  .movilNav {
-    display: flex;
+
+  .submenu.open {
+    display: block;
   }
-}
-@media (max-width: 490px) {
-  .logoHome {
+
+  .menu-item span {
+    color: #fff;
     font-size: 20px;
   }
+
+  .submenu li a {
+    color: #fff;
+  }
+}
+
+@media (max-width: 600px) {
+  .logoHome h3 {
+    font-size: 25px;
+  }
   .logoHome img {
-    width: 30px;
-    height: auto;
+    width: 25px;
+  }
+  .navBar {
+    padding: 1rem 3rem;
   }
 }
