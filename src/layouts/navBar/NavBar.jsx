@@ -1,12 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react"; // ⬅️ agrega useEffect
 import { Link } from "react-router-dom";
 import "./navBar.css";
 import logo from "../../assets/images/withe-logo.png";
-import { AiOutlineShoppingCart } from "react-icons/ai";
-import { FaAngleDown } from "react-icons/fa6";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { IoClose } from "react-icons/io5";
-import { FaShoppingCart } from "react-icons/fa";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBars,
+  faXmark,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,80 +20,90 @@ function NavBar() {
     setOpenSubmenu(openSubmenu === menuName ? null : menuName);
   };
 
+  // 👇 NUEVO: bloquea scroll del body cuando el menú está abierto
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    // Limpieza por seguridad
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [menuOpen]);
+
   return (
     <>
       <div className="navBar">
         {/* Menu Desktop */}
         <nav className="desktopNav">
           <Link to="/" className="logoHome">
-            <img src={logo} alt="" /> <strong>Belleza del Ser</strong>
+            <img src={logo} alt="" /> <h3>Belleza del Ser</h3>
           </Link>
 
-          <ul className="menuDiv">
-            <li>
-              <Link to="/">Home</Link>
-            </li>
+          <div className="menuDesktop">
+            <ul className="menuDiv">
+              <li>
+                <Link to="/">Home</Link>
+              </li>
 
-            <li className="menu-item has-submenu">
-              <Link>
-                Sesiones <FaAngleDown />
-              </Link>
-              <ul className="submenu">
-                <li>
-                  <Link to="/sesiones/reiki">Reiki</Link>
-                </li>
-                <li>
-                  <Link to="/sesiones/registros-akashicos">
-                    Registros Akáshicos
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/sesiones/coaching">Coaching</Link>
-                </li>
-              </ul>
-            </li>
+              <li className="menu-item has-submenu">
+                <Link>Sesiones ▾</Link>
+                <ul className="submenu">
+                  <li>
+                    <Link to="/sesiones/reiki">Reiki</Link>
+                  </li>
+                  <li>
+                    <Link to="/sesiones/registros-akashicos">
+                      Registros Akáshicos
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to="/sesiones/coaching">Coaching</Link>
+                  </li>
+                </ul>
+              </li>
 
-            <li className="menu-item has-submenu">
-              <Link>
-                Armonizaciones <FaAngleDown />
-              </Link>
-              <ul className="submenu">
-                <li>
-                  <Link to="/Armonizaciones/capsulas">Cápsulas</Link>
-                </li>
-                <li>
-                  <Link to="/Armonizaciones/ebooks">eBooks</Link>
-                </li>
-              </ul>
-            </li>
+              <li className="menu-item has-submenu">
+                <Link>Armonizaciones ▾</Link>
+                <ul className="submenu">
+                  <li>
+                    <Link to="/Armonizaciones/capsulas">Cápsulas</Link>
+                  </li>
+                  <li>
+                    <Link to="/Armonizaciones/ebooks">eBooks</Link>
+                  </li>
+                </ul>
+              </li>
 
-            <li>
-              <Link to="/sobre-mi">Sobre mí</Link>
-            </li>
-
-            <li>
-              <a href="https://institutovalencia.com.ar/tienda/carrito/">
-                <FaShoppingCart />
-              </a>
-            </li>
-          </ul>
+              <li>
+                <Link to="/sobre-mi">Sobre mí</Link>
+              </li>
+            </ul>
+            <a href="https://bellezadelser.com/tienda/cart">
+              <i className="fa-solid fa-cart-shopping"></i>
+            </a>
+          </div>
         </nav>
 
         {/* Menu movil */}
         <nav className="movilNav">
           <div className="hamburgerNav" onClick={toggleMenu}>
-            {menuOpen ? <IoClose /> : <RxHamburgerMenu />}
+            {menuOpen ? (
+              <i className="fa-solid fa-xmark hamburgerIcon"></i>
+            ) : (
+              <i className="fa-solid fa-bars hamburgerIcon"></i>
+            )}
           </div>
 
           <Link to="/" className="logoHome">
-            <img src={logo} alt="" /> <strong>Belleza del Ser</strong>
+            <img src={logo} alt="" /> <h3>Belleza del Ser</h3>
           </Link>
 
-          <a
-            className="carrito"
-            href="https://institutovalencia.com.ar/tienda/carrito/"
-          >
-            <AiOutlineShoppingCart />
+          <a className="carrito" href="https://bellezadelser.com/tienda/cart">
+            <i className="fa-solid fa-cart-shopping"></i>
           </a>
         </nav>
       </div>
@@ -112,12 +123,7 @@ function NavBar() {
               className="submenu-toggle"
               onClick={() => toggleSubmenu("sesiones")}
             >
-              Sesiones{" "}
-              <FaAngleDown
-                className={`arrow ${
-                  openSubmenu === "sesiones" ? "open" : "close"
-                }`}
-              />
+              <label htmlFor="submenu-sesiones"> Sesiones ▾ </label>
             </div>
 
             <ul
@@ -161,12 +167,7 @@ function NavBar() {
               className="submenu-toggle"
               onClick={() => toggleSubmenu("armonizaciones")}
             >
-              Armonizaciones{" "}
-              <FaAngleDown
-                className={`arrow ${
-                  openSubmenu === "armonizaciones" ? "open" : "close"
-                }`}
-              />
+              <label htmlFor="submenu-armonizaciones">Armonizaciones ▾</label>
             </div>
             <ul
               className={`submenu ${

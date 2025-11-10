@@ -13,7 +13,16 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 3rem;
+  padding: 1rem 5rem;
+}
+.menuDesktop {
+  display: flex;
+  gap: 3.5rem;
+  align-items: center;
+  max-height: 28.21px;
+}
+.menuDesktop a {
+  margin: 0;
 }
 .movilNav {
   display: none;
@@ -32,20 +41,28 @@ nav a i {
 
 /* LOGO BELLEZA DEL SER */
 .logoHome {
-  font-family: "Eyes for Serifs light";
-  font-weight: lighter;
-  text-decoration: none;
-  color: #fff;
-  font-size: 35px;
   display: flex;
+  align-items: center;
   gap: 10px;
+  color: #fff;
+  text-decoration: none;
+  margin: 0;
+  height: 72px;
+}
+.logoHome h3 {
+  font-size: 40px;
+  font-family: "Eyes for Serifs";
+  font-weight: lighter;
+  color: #fff;
 }
 
 .menuDiv {
   list-style: none;
   display: flex;
+  gap: 3.5rem;
   margin: 0;
   padding: 0;
+  max-width: 587.91px;
 }
 .columnMenuDiv {
   list-style: none;
@@ -58,9 +75,11 @@ nav a i {
 .columnMenuDiv a {
   color: #fff;
   text-decoration: none;
-  font-weight: 500;
-  position: relative;
+  font-size: 20px;
+  letter-spacing: 0.02rem;
+  white-space: nowrap;
 }
+
 .linksNav {
   display: flex;
   gap: 2rem;
@@ -124,44 +143,47 @@ nav a i {
 
 /* MENU HAMBURGUESA */
 .hamburgerNav {
-  font-size: 30px;
+  font-size: 20px;
   color: #fff;
 }
 .carrito {
   margin: 0;
+  color: #fff;
+  max-height: 28.2px;
+  line-height: 1.15;
 }
 
 /* MENU MOVIL DESPLEGABLE */
 .movilNavMenu {
   position: fixed;
-  top: 0px; /* ajustá según tu nav */
+  top: 0;
   left: 0;
-  width: 100%;
-  height: calc(100vh);
+  height: 50vh;
+  width: 100vw;
   background-color: #b57a55;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: start;
-  padding-top: 2rem;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
-  z-index: 15;
+  align-items: center;
+  gap: 2rem;
+  transform: translateX(-100%);
+  top: 72px;
+  transition: transform 0.4s ease;
+  z-index: 1000;
 }
 
 .movilNavMenu.active {
-  transform: translateY(100px);
+  transform: translateX(0);
 }
 
 .columnMenuDiv {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
 }
 
 .movilNavMenu a {
   color: white;
-  font-size: 22px;
+  font-size: 20px;
   text-decoration: none;
 }
 .submenuLink {
@@ -172,10 +194,14 @@ nav a i {
 }
 /* Icono hamburguesa */
 .hamburgerNav {
-  font-size: 32px;
+  font-size: 25.1px;
   color: white;
   cursor: pointer;
   transition: transform 0.3s ease;
+  line-height: 0;
+}
+.fa-bars {
+  font-size: 28px;
 }
 
 .hamburgerNav:hover {
@@ -206,8 +232,23 @@ nav a i {
   align-items: center;
   gap: 5px;
   cursor: pointer;
-  color: white;
   font-size: 22px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  display: block;
+  /* padding: 0.5rem 0; */
+}
+.svg-inline--fa {
+  box-sizing: content-box;
+  display: var(--fa-display, inline-block);
+
+  overflow: visible;
+  vertical-align: -0.125em;
+  width: 24.5px;
+}
+.fa-cart-shopping {
+  font-size: 20px;
 }
 .submenu-toggle .arrow {
   transition: transform 0.3s ease;
@@ -215,6 +256,15 @@ nav a i {
 
 .submenu-toggle .arrow.open {
   transform: rotate(180deg);
+}
+.menu-item label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  display: block;
+  padding: 0.5rem 0;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 0.03rem;
 }
 @media (max-width: 1260px) {
   .menuDiv {
@@ -227,7 +277,7 @@ nav a i {
     gap: 0;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1160px) {
   .desktopNav {
     display: none;
   }
@@ -235,12 +285,21 @@ nav a i {
     display: flex;
   }
 }
+@media (max-width: 600px) {
+  .movilNav {
+    padding: 1rem 3rem;
+    max-height: 77px;
+  }
+}
 @media (max-width: 490px) {
   .logoHome {
     font-size: 20px;
   }
   .logoHome img {
-    width: 30px;
+    width: 25px;
     height: auto;
+  }
+  .logoHome h3 {
+    font-size: 25px;
   }
 }
