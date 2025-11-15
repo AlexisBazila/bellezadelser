@@ -12,6 +12,13 @@ import {
   AiFillYoutube,
 } from "react-icons/ai";
 
+import tiktok from "../../assets/icons/tiktok.svg";
+import instagram from "../../assets/icons/instagram.svg";
+import facebook from "../../assets/icons/facebook.svg";
+import youtube from "../../assets/icons/youtube.svg";
+import mail from "../../assets/icons/mail.svg";
+import telefono from "../../assets/icons/telefono.svg";
+
 function FooterBar() {
   return (
     <div className="footerBar">
@@ -40,22 +47,22 @@ function FooterBar() {
             <div className="iconSocial">
               <a href="#">
                 <i>
-                  <AiFillTikTok />
+                  <img src={tiktok} alt="" />
                 </i>
               </a>
               <a href="#">
                 <i>
-                  <AiFillInstagram />
+                  <img src={instagram} alt="" />
                 </i>
               </a>
               <a href="#">
                 <i>
-                  <AiFillFacebook />
+                  <img src={facebook} alt="" />
                 </i>
               </a>
               <a href="#">
                 <i>
-                  <AiFillYoutube />
+                  <img src={youtube} alt="" />
                 </i>
               </a>
             </div>
@@ -66,15 +73,15 @@ function FooterBar() {
           <div className="contact">
             <a href="#">
               <i>
-                <RxEnvelopeClosed />
+                <img src={mail} alt="" />
               </i>
-              contacto@ejemplo.com
+              natybellezadelser@gmai.com
             </a>
             <a href="#">
               <i>
-                <FiPhone />
+                <img src={telefono} alt="" />
               </i>
-              +34 000 000000
+              +34 603 01 14 99
             </a>
           </div>
         </div>

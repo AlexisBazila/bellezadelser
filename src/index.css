@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 @font-face {
   font-family: "Eyes for Serifs";
   src: url("./assets/fonts/EyesforSerif/eyesforserifs-regular.otf");
 }
+
 @font-face {
   font-family: "Eyes for Serifs light";
   src: url("./assets/fonts/EyesforSerif/eyesforserifs-light.otf");
 }
+
 /* ------------------------------------------------RESET-------------------------------------- */
 * {
   margin: 0;
@@ -14,9 +17,11 @@
   line-height: 1.2;
   box-sizing: border-box;
 }
+
 body {
   background-color: #ffffff;
 }
+
 container {
   display: flex;
   justify-content: space-between;
