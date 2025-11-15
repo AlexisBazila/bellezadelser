@@ -135,11 +135,11 @@ nav a i {
   padding: 0;
 }
 
-.menu-item:hover>.submenu {
+.menu-item:hover > .submenu {
   display: block;
 }
 
-.menu-item:hover>.submenu {
+.menu-item:hover > .submenu {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -288,13 +288,12 @@ nav a i {
 
 .menu-item label:hover {
   text-decoration: underline;
-
 }
 
 @media (max-width: 1260px) {
-  .menuDiv {
+  /* .menuDiv {
     gap: 0;
-  }
+  } */
 
   nav a {
     margin: 15px 15px;
@@ -306,6 +305,12 @@ nav a i {
 }
 
 @media (max-width: 1160px) {
+  .desktopNav,
+  .movilNav,
+  .movilNavMenu {
+    padding: 1rem 3rem;
+  }
+
   .desktopNav {
     display: none;
   }
@@ -317,7 +322,7 @@ nav a i {
 
 @media (max-width: 600px) {
   .movilNav {
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
     max-height: 77px;
   }
 }

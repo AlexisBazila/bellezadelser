@@ -37,3 +37,46 @@
   /* width: 70%; */
   margin-bottom: 70px;
 }
+
+@media (max-width: 1160px) {
+  .overlay {
+    padding: 5% 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .heroSection {
+    background-image: url("../../assets/images/heroHome.png");
+    height: 70vh;
+  }
+
+  .overlay {
+    background-image: url("../../assets/images/overlayHeroHome.png");
+    height: 70vh;
+  }
+
+  .contentHero {
+    width: 100%;
+  }
+  .contentHero h1 {
+    font-size: 40px;
+  }
+  .contentHero h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSection {
+    background-image: url("../../assets/images/heroHomeMovil.png");
+    height: 60vh;
+  }
+
+  .overlay {
+    background-image: url("../../assets/images/overlayHeroMovil.png");
+    height: 60vh;
+  }
+  .overlay {
+    padding: 5% 2rem;
+  }
+}

@@ -1,0 +1,54 @@
+.sessionCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-start;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 35px 20px;
+  width: 330px;
+  height: 550px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.sessionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.sessionCard-image {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.sessionCard-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.sessionCard-title {
+  font-size: 28px;
+  margin: 10px 0;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+.sessionCard-description {
+  font-size: 20px;
+  color: #555;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+.sessionCardContent {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+.sessionCardButton {
+  margin-top: 20px;
+  flex-shrink: 0;
+}

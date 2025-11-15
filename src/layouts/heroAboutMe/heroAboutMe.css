@@ -6,7 +6,7 @@
   height: 90vh;
 }
 
-.overlay {
+.overlayAbout {
   background-image: url("../../assets/images/overlayHeroHome.png");
   background-size: cover;
   background-position: center;
@@ -15,25 +15,31 @@
   padding: 5% 10%;
 }
 
-.contentHero {
+.contentHeroAbout {
   height: 100%;
   width: 50vw;
   display: flex;
   align-items: center;
 }
 
-.contentHero h1 {
+.contentHeroAbout h1 {
   font-size: 60px;
   margin-bottom: 20px;
   color: #fff;
 }
 
-.contentHero h2 {
+.contentHeroAbout h2 {
   font-family: "inter";
   width: 50vw;
   color: #fff;
 }
-.titleAndSubtitleHero {
+.titleAndSubtitleHeroAbout {
   /* width: 70%; */
   margin-bottom: 70px;
+}
+
+@media (max-width: 900px) {
+  .heroSectionAbout div div {
+    width: 100%;
+  }
 }

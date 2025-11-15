@@ -10,6 +10,9 @@ function ExperienceSection() {
       <div className="experienceContent">
         <div className="experiencePick">
           <img src={hand} alt="" className="photo" />
+          <div className="experienceButtonMovil">
+            <FirstButton caption={"Activar Mi Bienestar"} />
+          </div>
         </div>
         <div className="experienceTexts">
           <div className="paragraphTexts">
@@ -20,7 +23,9 @@ function ExperienceSection() {
               ]}
             />
           </div>
-          <FirstButton caption={"Activar Mi Bienestar"} />
+          <div className="experienceButton">
+            <FirstButton caption={"Activar Mi Bienestar"} />
+          </div>
         </div>
       </div>
     </section>

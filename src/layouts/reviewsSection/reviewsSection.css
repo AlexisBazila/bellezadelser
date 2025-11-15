@@ -1,16 +1,79 @@
 .reviewsSection {
   background-color: #c2cea166;
+  padding-bottom: 8vh;
 }
+
 .titleSection {
   font-size: 42px;
   text-align: center;
   color: #b77b52;
-  margin: 50px 0 50px 0;
+  margin: 50px 0;
   padding-top: 50px;
 }
 
-.reviews {
+/* --- CARRUSEL CONTENEDOR --- */
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* --- SLIDER --- */
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* Cada tarjeta */
+.slide {
+  min-width: 100%; /* Muestra una tarjeta por pantalla */
   display: flex;
   justify-content: center;
-  padding-bottom: 10vh;
 }
+
+/* Flechas */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: #6a6a6a;
+  padding: 10px;
+}
+
+.arrow:hover {
+  color: #b77b52;
+}
+
+.arrow.left {
+  left: -5px;
+}
+
+.arrow.right {
+  right: -5px;
+}
+
+/* Indicadores */
+.dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #b5b5b5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #b7c28f;
+}object

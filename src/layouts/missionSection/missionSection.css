@@ -1,4 +1,8 @@
 .missionSection {
+  background-image: url("../../assets/images/fondo.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 5% 10%;
 }
 
@@ -6,18 +10,23 @@
   display: flex;
   margin-bottom: 50px;
 }
+.MyselfParagraphMovil {
+  display: none;
+}
 
 .firstParagraph h2 {
   font-size: 42px;
   padding-right: 5%;
 }
-.MyselfParagraph p {
+.MyselfParagraph p,
+.MyselfParagraphMovil p {
   font-size: 20px;
   font-family: "inter";
   margin-bottom: 30px;
 }
 
-.MyselfParagraph h4 {
+.MyselfParagraph h4,
+.MyselfParagraphMovil h4 {
   font-size: 20px;
   font-family: "inter";
   margin-bottom: 10px;
@@ -54,4 +63,52 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
+}
+
+@media (max-width: 1400px) {
+  .pharagraphBox {
+    margin-right: -200px;
+  }
+  .pharagraphBox p {
+    font-size: 18px;
+    padding: 5%;
+  }
+}
+
+@media (max-width: 1160px) {
+  .missionSection {
+    padding: 5% 2rem;
+  }
+  .pharagraphBox {
+    margin-right: -200px;
+  }
+
+  .photoParagraph {
+    flex-direction: column-reverse;
+  }
+  .pharagraphBox {
+    margin-right: 0;
+    width: 80%;
+  }
+  .missionPhoto {
+    margin-bottom: -30px;
+    width: 100%;
+  }
+  .firstParagraph h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 900px) {
+  .MyselfParagraph {
+    display: none;
+  }
+  .MyselfParagraphMovil {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 0 50px 0;
+  }
+  .boton {
+    width: 50%;
+  }
 }

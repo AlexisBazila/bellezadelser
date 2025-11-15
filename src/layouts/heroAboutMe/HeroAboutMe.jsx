@@ -3,10 +3,10 @@ import "./heroAboutMe.css";
 function HeroAboutMe() {
   return (
     <section className="heroSectionAbout">
-      <div className="overlay">
-        <div className="contentHero">
-          <div className="paragraphHero">
-            <div className="titleAndSubtitleHero">
+      <div className="overlayAbout">
+        <div className="contentHeroAbout">
+          <div className="paragraphHeroAbout">
+            <div className="titleAndSubtitleHeroAbout">
               <h1 className="title">Conoce mi camino</h1>
               <h2>
                 Coach holística especializada en sanación energética y

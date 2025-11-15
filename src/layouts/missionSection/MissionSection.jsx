@@ -33,6 +33,17 @@ function MissionSection() {
 
         <img src={myself} alt="" className="missionPhoto" />
       </div>
+      <div className="MyselfParagraphMovil">
+        <h4>Naty Batista</h4>
+        <p>
+          Terapeuta holística con años de experiencia en Reiki, Registros
+          Akáshicos y Coaching. Mi propósito es ayudarte a reconectar con tu
+          energía, tu esencia y tu poder interior.
+        </p>
+        <div className="boton">
+          <SmallButton caption="Saber Más" />
+        </div>
+      </div>
     </section>
   );
 }

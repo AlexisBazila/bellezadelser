@@ -5,9 +5,9 @@ function HeroArmonizaciones() {
   return (
     <section className="heroSectionArmonizaciones">
       <div className="lightHero">
-        <div className="contentHero">
-          <div className="paragraphHero">
-            <div className="titleAndSubtitleHero">
+        <div className="contentHeroArmonizaciones">
+          <div className="paragraphHeroArmonizaciones">
+            <div className="titleAndSubtitleHeroArmonizaciones">
               <h1 className="title">Armonizá tu energía</h1>
               <h2>
                 Sesiones que elevan tu vibración y restablecen tu equilibrio

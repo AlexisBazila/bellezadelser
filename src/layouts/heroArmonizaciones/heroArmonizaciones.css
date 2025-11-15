@@ -12,25 +12,25 @@
   padding: 5% 10%;
 }
 
-.contentHero {
+.contentHeroArmonizaciones {
   height: 100%;
   width: 50vw;
   display: flex;
   align-items: center;
 }
 
-.contentHero h1 {
+.contentHeroArmonizaciones h1 {
   font-size: 60px;
   margin-bottom: 20px;
   color: #fff;
 }
 
-.contentHero h2 {
+.contentHeroArmonizaciones h2 {
   font-family: "inter";
   width: 50vw;
   color: #fff;
 }
-.titleAndSubtitleHero {
+.titleAndSubtitleHeroArmonizaciones {
   /* width: 70%; */
   margin-bottom: 70px;
 }

@@ -204,4 +204,7 @@
   .logo img {
     max-width: 48px;
   }
+  .navFooterBar h3 {
+    font-size: 30px;
+  }
 }

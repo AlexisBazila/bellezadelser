@@ -6,3 +6,9 @@
   border-radius: 50px;
   padding: 15px 30px;
 }
+
+@media (max-width: 900px) {
+  .firstButton {
+    font-size: 18px;
+  }
+}

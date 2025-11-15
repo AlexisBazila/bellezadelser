@@ -5,15 +5,16 @@ import ExperienceSection from "../layouts/experienceSection/ExperienceSection";
 import CoursesSection from "../layouts/coursesSection/CoursesSection";
 import ReviewsSection from "../layouts/reviewsSection/ReviewsSection";
 import FooterBar from "../layouts/footerBar/FooterBar";
+import SessionSection from "../layouts/sessionSection/SessionSection";
 function Home() {
   return (
     <div>
-      <div style={{ height: "100vh" }}>HOME</div>
-      {/* <HeroSection />
+      <HeroSection />
       <MissionSection />
       <ExperienceSection />
-      <CoursesSection />
-      <ReviewsSection /> */}
+      {/* <CoursesSection /> */}
+      <SessionSection />
+      <ReviewsSection />
     </div>
   );
 }

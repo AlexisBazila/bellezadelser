@@ -3,6 +3,7 @@
   background-color: #b77b52;
   display: flex;
   justify-content: center;
+  padding: 0 3rem;
 }
 
 .Photo {
@@ -22,4 +23,30 @@
 }
 .paragraphTexts {
   margin-bottom: 5vh;
+}
+
+@media (max-width: 1160px) {
+  .experienceContent {
+    flex-direction: column-reverse;
+    margin: 40px 0 40px 0;
+  }
+  .experienceSection {
+    height: 100%;
+  }
+  .experiencePick {
+    margin-right: 0;
+    text-align: center;
+  }
+  .experiencePick img {
+    width: 90%;
+  }
+}
+
+@media (max-width: 600px) {
+}
+
+@media (max-width: 490px) {
+  .experienceSection {
+    padding: 0 2rem;
+  }
 }
