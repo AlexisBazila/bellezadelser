@@ -1,5 +1,5 @@
 import React from "react";
-import "./ProductsMarkedSection.css";
+import "./productsMarkedSection.css";
 import Card from "../../components/Card/Card";
 import photo from "../../assets/images/photoExample.png";
 import FirstButton from "../../components/firstButton/FirstButton";
