@@ -3,7 +3,7 @@ import ProductsMarkedSection from "../layouts/ProductsMarkedSection/ProductsMark
 import HeroProduct from "../layouts/HeroProduct/HeroProduct";
 import ProductDescriptionSection from "../layouts/ProductDescritpionSection/ProductDescriptionSection";
 import ArmonizacionesImage from "../assets/images/armonizaciones.png";
-import ArmonizacionesMovil from "../assets/images/ArmonizacionesMovil.png";
+import ArmonizacionesMovil from "../assets/images/armonizacionesMovil.png";
 function Activaciones() {
   return (
     <>
