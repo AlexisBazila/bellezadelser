@@ -1,5 +1,5 @@
 import React from "react";
-import "./focusSection.css";
+import "./FocusSection.css";
 import LeftAlignedParagraph from "../../components/LeftAlignedParagraph/LeftAlignedParagraph";
 import focusImage from "../../assets/images/natyFocus.png";
 function FocusSection() {
