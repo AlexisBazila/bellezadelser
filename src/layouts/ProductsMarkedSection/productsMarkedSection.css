@@ -1,0 +1,32 @@
+.smalProductsMarked {
+  background-color: #e7ecd9;
+}
+
+.contentProductsMarked {
+  padding: 5% 5rem;
+}
+
+.cardsProductsMarked {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.cardsProductsMarked .card {
+  flex: 1 1 280px;
+  max-width: 320px;
+}
+
+@media (max-width: 1160px) {
+  .contentProductsMarked {
+    padding: 5% 3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentProductsMarked {
+    padding: 5% 2rem;
+  }
+}

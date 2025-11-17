@@ -70,7 +70,9 @@ function NavBar() {
                 <Link>Armonizaciones ▾</Link>
                 <ul className="submenu">
                   <li>
-                    <Link to="/Armonizaciones/capsulas">Cápsulas</Link>
+                    <Link to="/Armonizaciones/activaciones">
+                      Activaciones Energéticas
+                    </Link>
                   </li>
                   <li>
                     <Link to="/Armonizaciones/ebooks">eBooks</Link>

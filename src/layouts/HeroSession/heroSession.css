@@ -1,0 +1,78 @@
+.heroSectionSession {
+  background-color: #b77b52;
+  height: 90vh;
+}
+
+.lightHeroSession {
+  background-image: url("../../assets/images/lightHero.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  padding: 5% 10%;
+}
+
+.contentHeroSession {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+
+.contentHeroSession h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contentHeroSession h2 {
+  font-family: "inter";
+  width: 50vw;
+  color: #fff;
+}
+.info p {
+  color: #fff;
+  font-size: 18px;
+}
+.titleAndSubtitleHeroSession {
+  /* width: 70%; */
+  margin-bottom: 70px;
+}
+@media (max-width: 1160px) {
+  .lightHeroSession {
+    padding: 5% 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .heroSectionSession {
+    height: 70vh;
+  }
+
+  .lightHeroSession {
+    height: 70vh;
+  }
+
+  .contentHeroSession {
+    width: 100%;
+  }
+  .contentHeroSession h1 {
+    font-size: 40px;
+  }
+  .contentHeroSession h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSectionSession {
+    height: 60vh;
+  }
+
+  .lightHeroSession {
+    height: 60vh;
+  }
+  .lightHeroSession {
+    padding: 5% 2rem;
+  }
+}

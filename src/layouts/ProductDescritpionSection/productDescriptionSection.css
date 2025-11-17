@@ -6,8 +6,7 @@
 }
 
 .ProductDescriptionContent {
-  /* padding: 5% 10% 3% 10%; */
-  padding: 10% 3rem;
+  padding: 5% 5rem;
   display: flex;
   align-items: center;
 }
@@ -22,4 +21,39 @@
 
 .ProductDescriptionImage {
   margin-left: 5%;
+}
+.ProductDescriptionImage picture,
+.ProductDescriptionImage img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.buttonStore {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1160px) {
+  .ProductDescriptionContent {
+    padding: 5% 3rem;
+    flex-direction: column;
+  }
+  .ProductDescriptionImage {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .ProductDescriptionImage img {
+    width: 100%;
+    max-width: 95%;
+    margin: 0 auto;
+    display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .ProductDescriptionContent {
+    padding: 5% 2rem;
+  }
 }

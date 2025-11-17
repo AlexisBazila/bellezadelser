@@ -1,0 +1,28 @@
+.sessionCalendar {
+  background-color: #e7ecd9;
+}
+
+.contentProductsMarked {
+  padding: 5% 5rem;
+}
+.buttonStore {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+@media (max-width: 1160px) {
+  .contentProductsMarked {
+    padding: 5% 3rem;
+  }
+  .buttonStore {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contentProductsMarked {
+    padding: 5% 2rem;
+  }
+}

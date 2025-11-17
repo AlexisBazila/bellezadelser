@@ -36,7 +36,7 @@ function FooterBar() {
               <div className="menuFooterDiv">
                 <a href="/">Home</a>
                 <a href="/sesiones/reiki">Sesiones</a>
-                <a href="/Armonizaciones/capsulas">Armonizaciones</a>
+                <a href="/Armonizaciones/activaciones">Armonizaciones</a>
                 <a href="/sobre-mi">Sobre mi</a>
               </div>
             </div>
