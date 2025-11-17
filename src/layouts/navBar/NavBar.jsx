@@ -181,11 +181,11 @@ function NavBar() {
             >
               <li>
                 <Link
-                  to="/Armonizaciones/capsulas"
+                  to="/Armonizaciones/activaciones"
                   onClick={closeMenu}
                   className="submenuLink"
                 >
-                  Cápsulas
+                  Activaciones Energéticas
                 </Link>
               </li>
               <li>
