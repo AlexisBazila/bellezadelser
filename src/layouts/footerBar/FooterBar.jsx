@@ -1,7 +1,7 @@
 import React from "react";
 import SmallButton from "../../components/smallButton/SmallButton";
 import logo from "../../assets/images/withe-logo.png";
-import "./FooterBar.css";
+import "./footerBar.css";
 
 import { RxEnvelopeClosed } from "react-icons/rx";
 import { FiPhone, FiMapPin } from "react-icons/fi";
