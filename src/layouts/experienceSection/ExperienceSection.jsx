@@ -1,9 +1,9 @@
 import React from "react";
 import "./experienceSection.css";
-import LeftAlignedParagraph from "../../components/LeftAlignedParagraph/LeftAlignedParagraph";
+import IconLeftAlignedParagraph from "../../components/IconLeftAlignedParagraph/IconLeftAlignedParagraph";
 import FirstButton from "../../components/firstButton/FirstButton";
 import hand from "../../assets/images/handExperience.png";
-
+import logo from "../../assets/images/withe-logo.png";
 function ExperienceSection() {
   return (
     <section className="experienceSection">
@@ -16,7 +16,8 @@ function ExperienceSection() {
         </div>
         <div className="experienceTexts">
           <div className="paragraphTexts">
-            <LeftAlignedParagraph
+            <IconLeftAlignedParagraph
+              logo={logo}
               subTtitle="Activaciones de bienestar"
               paragraphs={[
                 "Mini sesiones prácticas que podés hacer en cualquier momento para recuperar equilibrio, liberar tensiones y conectar con tu propósito.",

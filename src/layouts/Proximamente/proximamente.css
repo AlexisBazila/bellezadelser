@@ -1,0 +1,57 @@
+.construction-container {
+  background-color: #e7ecd9;
+  color: #b77b52;
+}
+.button {
+  margin-top: 80px;
+}
+.background-shape {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../../assets/images/fondo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Eyes for Serifs";
+  font-size: 80px;
+  margin-bottom: 15px;
+  color: #b77b52;
+}
+
+h2 {
+  font-family: "Eyes for Serifs";
+  font: 100px;
+}
+
+.socials {
+  font-family: "Inter";
+  margin-top: 70px;
+}
+
+.socials p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #b77b52;
+}
+
+a {
+  margin: 20px 15px;
+}
+
+a i {
+  font-size: 28px;
+  color: #b77b52;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icons a:hover i {
+  transform: scale(1.3);
+  color: #647b4d;
+}

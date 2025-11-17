@@ -3,77 +3,110 @@
   padding-bottom: 8vh;
 }
 
-.titleSection {
+.ReviewTitleSection {
   font-size: 42px;
   text-align: center;
   color: #b77b52;
-  margin: 50px 0;
+  margin: 50px 2rem;
   padding-top: 50px;
 }
 
-/* --- CARRUSEL CONTENEDOR --- */
+/* CONTENEDOR DEL CARRUSEL */
 .carouselContainer {
-  position: relative;
   width: 100%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CARRUSEL INTERNO */
+.carousel {
+  width: 100%;
   overflow: hidden;
 }
 
-/* --- SLIDER --- */
-.carousel {
+.slidesWrapper {
   display: flex;
-  transition: transform 0.5s ease;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
 }
 
-/* Cada tarjeta */
+/* TARJETAS */
 .slide {
-  min-width: 100%; /* Muestra una tarjeta por pantalla */
   display: flex;
   justify-content: center;
-}
-
-/* Flechas */
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: transparent;
-  border: none;
-  font-size: 32px;
-  cursor: pointer;
-  color: #6a6a6a;
+  box-sizing: border-box;
   padding: 10px;
 }
 
-.arrow:hover {
+.controls {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.arrowBottom {
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #6a6a6a;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.arrowBottom:hover {
   color: #b77b52;
+  background: rgba(183, 123, 82, 0.06);
 }
 
-.arrow.left {
-  left: -5px;
-}
-
-.arrow.right {
-  right: -5px;
-}
-
-/* Indicadores */
 .dots {
   display: flex;
-  justify-content: center;
-  margin-top: 20px;
+  gap: 8px;
+  align-items: center;
 }
 
 .dot {
   width: 10px;
   height: 10px;
-  margin: 0 5px;
   background: #b5b5b5;
   border-radius: 50%;
   cursor: pointer;
+  border: none;
+  padding: 0;
 }
 
 .dot.active {
   background: #b7c28f;
-}object
+}
+
+/* RESPONSIVE */
+/* @media (max-width: 767px) {
+  .controls {
+    max-width: 360px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .controls {
+    max-width: 440px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .controls {
+    max-width: 520px;
+  }
+} */
+
+@media (max-width: 900px) {
+  .ReviewTitleSection {
+    font-size: 30px;
+  }
+}

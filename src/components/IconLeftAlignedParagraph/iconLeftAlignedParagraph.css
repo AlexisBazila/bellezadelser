@@ -1,0 +1,83 @@
+.iconLeftAlignedParagraph h2 {
+  color: #fff;
+  font-size: 42px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+}
+
+.iconLeftAlignedParagraph p {
+  color: #fff;
+  font-size: 20px;
+  max-width: 60vw;
+  margin-top: 10px;
+}
+.logoTitle {
+  display: flex;
+  gap: 10px;
+}
+.experienceButtonMovil {
+  display: none;
+}
+/* Responsive */
+@media (max-height: 900px), (max-width: 1570px) {
+  .iconLeftAlignedParagraph p {
+    margin-top: 3px;
+  }
+  .iconLeftAlignedParagraph h2 {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 1260px) {
+  .iconLeftAlignedParagraph h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .iconLeftAlignedParagraph p {
+    max-width: 60vw;
+    margin-top: 5px;
+  }
+  .leftAlignedLogo img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .iconLeftAlignedParagraph h2 {
+    text-align: center;
+  }
+  .iconLeftAlignedParagraph p {
+    text-align: center;
+    padding: 10px 0px 5px 0;
+    max-width: 100vw;
+  }
+  .logoTitle {
+    justify-content: center;
+  }
+  .experienceButton {
+    display: none;
+  }
+  .experienceButtonMovil {
+    display: flex;
+    margin-top: 20px;
+    justify-content: center;
+  }
+  .experienceTexts {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 490px) {
+  .logoTitle {
+    flex-direction: column;
+    text-align: center;
+  }
+  .iconLeftAlignedParagraph h2 {
+    white-space: wrap;
+  }
+}
+@media (max-height: 768px), (max-width: 1024px) {
+  .iconLeftAlignedParagraph {
+    margin-bottom: 25px;
+  }
+}

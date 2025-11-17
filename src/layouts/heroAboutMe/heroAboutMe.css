@@ -43,3 +43,50 @@
     width: 100%;
   }
 }
+
+@media (max-width: 1160px) {
+  .overlayAbout {
+    padding: 5% 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .heroSectionAbout {
+    height: 70vh;
+  }
+
+  .overlayAbout {
+    height: 70vh;
+  }
+
+  .contentHeroAbout {
+    width: 100%;
+  }
+  .contentHeroAbout h1 {
+    font-size: 40px;
+  }
+  .contentHeroAbout h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroSectionAbout {
+    background-image: url("../../assets/images/heroAboutMovil.png");
+    height: 60vh;
+  }
+
+  .overlayAbout {
+    background-image: url("../../assets/images/overlayHeroMovil.png");
+    height: 60vh;
+  }
+  .overlayAbout {
+    padding: 5% 2rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .heroSectionAbout h2 {
+    width: 100%;
+  }
+}
