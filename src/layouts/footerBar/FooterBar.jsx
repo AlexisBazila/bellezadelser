@@ -34,10 +34,10 @@ function FooterBar() {
               </div>
 
               <div className="menuFooterDiv">
-                <a href="#">Home</a>
-                <a href="#">Sesiones</a>
-                <a href="#">Armonizaciones</a>
-                <a href="#">Sobre mi</a>
+                <a href="/">Home</a>
+                <a href="/sesiones/reiki">Sesiones</a>
+                <a href="/Armonizaciones/capsulas">Armonizaciones</a>
+                <a href="/sobre-mi">Sobre mi</a>
               </div>
             </div>
           </div>
@@ -45,22 +45,31 @@ function FooterBar() {
           <div className="socialMedia">
             <p>Seguime en redes</p>
             <div className="iconSocial">
-              <a href="#">
+              <a
+                href="https://www.tiktok.com/discover/naty-belleza-del-ser"
+                target="_blank"
+              >
                 <i>
                   <img src={tiktok} alt="" />
                 </i>
               </a>
-              <a href="#">
+              <a
+                href="https://www.instagram.com/naty.bellezadelser/"
+                target="_blank"
+              >
                 <i>
                   <img src={instagram} alt="" />
                 </i>
               </a>
-              <a href="#">
+              <a href="https://www.facebook.com/coachnatyb" target="_blank">
                 <i>
                   <img src={facebook} alt="" />
                 </i>
               </a>
-              <a href="#">
+              <a
+                href="https://www.youtube.com/@naty.bellezadelser"
+                target="_blank"
+              >
                 <i>
                   <img src={youtube} alt="" />
                 </i>
@@ -71,13 +80,13 @@ function FooterBar() {
 
         <div className="contactFooter">
           <div className="contact">
-            <a href="#">
+            <a href="mailto:natybellezadelser@gmai.com">
               <i>
                 <img src={mail} alt="" />
               </i>
               natybellezadelser@gmai.com
             </a>
-            <a href="#">
+            <a href="https://wa.me/+34603011499" target="_blank">
               <i>
                 <img src={telefono} alt="" />
               </i>

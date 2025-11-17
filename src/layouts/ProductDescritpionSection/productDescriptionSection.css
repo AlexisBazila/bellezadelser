@@ -1,0 +1,25 @@
+.ProductDescriptionSection {
+  background-image: url("../../assets/images/fondoProducts.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ProductDescriptionContent {
+  /* padding: 5% 10% 3% 10%; */
+  padding: 10% 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.ProductDescriptionPharagraph .LeftAlignedParagraph h2 {
+  color: #000;
+}
+
+.ProductDescriptionPharagraph .LeftAlignedParagraph p {
+  color: #000;
+}
+
+.ProductDescriptionImage {
+  margin-left: 5%;
+}

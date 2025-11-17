@@ -7,6 +7,7 @@ import Armonizaciones from "./pages/Armonizaciones";
 import Curso from "./pages/Curso";
 import { MdHeight } from "react-icons/md";
 import Proximamente from "./layouts/Proximamente/Proximamente";
+import NotFound from "./layouts/NotFound/NotFound";
 
 function App() {
   return (
@@ -23,8 +24,9 @@ function App() {
         <Route path="/sesiones/coaching" element={<Proximamente />} />
         <Route path="/Armonizaciones/capsulas" element={<Proximamente />} />
         <Route path="/Armonizaciones/ebooks" element={<Proximamente />} />
-        {/*<Route path="/Armonizaciones" element={<Armonizaciones />} />
-        <Route path="/Cursos" element={<Curso />} /> */}
+        <Route path="*" element={<NotFound />} />
+        <Route path="/Armonizaciones" element={<Armonizaciones />} />
+        {/*<Route path="/Cursos" element={<Curso />} /> */}
       </Routes>
       <FooterBar />
     </Router>

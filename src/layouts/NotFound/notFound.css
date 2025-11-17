@@ -1,0 +1,61 @@
+.notFoundContainer {
+  background-color: #e7ecd9;
+  color: #b77b52;
+}
+.button {
+  margin-top: 80px;
+}
+.notFoundShape {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../../assets/images/fondo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.notFoundContent {
+  padding: 10%;
+}
+.notFoundContent h1 {
+  font-family: "Eyes for Serifs";
+  font-size: 80px;
+  margin-bottom: 15px;
+  color: #b77b52;
+}
+
+.notFoundContent h2 {
+  font-family: "Eyes for Serifs";
+  font: 100px;
+}
+
+.notFoundSocials {
+  font-family: "Inter";
+  margin-top: 70px;
+}
+
+.notFoundSocials p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #b77b52;
+}
+
+.notFoundSocials a {
+  margin: 20px 25px;
+}
+
+@media (max-width: 900px) {
+  .notFoundContent h1 {
+    font-size: 40px;
+  }
+  .notFoundContent {
+    padding: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .notFoundSocials a {
+    margin: 20px 20px;
+  }
+}
