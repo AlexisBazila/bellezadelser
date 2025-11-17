@@ -5,7 +5,7 @@ import LeftAlignedParagraph from "../../components/LeftAlignedParagraph/LeftAlig
 import storyImage from "../../assets/images/natyStory.png";
 import focusImage from "../../assets/images/natyFocus.png";
 import purposeImage from "../../assets/images/natyPurpose.png";
-import movilstoryImage from "../../assets/images/natyStorymovil.png";
+import movilstoryImage from "../../assets/images/natyStoryMovil.png";
 import movilfocusImage from "../../assets/images/natyFocusmovil.png";
 import movilpurposeImage from "../../assets/images/natyPurposemovil.png";
 
