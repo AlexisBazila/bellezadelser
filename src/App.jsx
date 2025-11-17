@@ -16,6 +16,13 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sobre-mi" element={<SobreMi />} />
         <Route path="/sesiones/reiki" element={<Proximamente />} />
+        <Route
+          path="/sesiones/registros-akashicos"
+          element={<Proximamente />}
+        />
+        <Route path="/sesiones/coaching" element={<Proximamente />} />
+        <Route path="/Armonizaciones/capsulas" element={<Proximamente />} />
+        <Route path="/Armonizaciones/ebooks" element={<Proximamente />} />
         {/*<Route path="/Armonizaciones" element={<Armonizaciones />} />
         <Route path="/Cursos" element={<Curso />} /> */}
       </Routes>
