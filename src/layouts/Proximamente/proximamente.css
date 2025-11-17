@@ -6,8 +6,7 @@
   margin-top: 80px;
 }
 .background-shape {
-  height: 100vh;
-  width: 100vw;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,41 +16,46 @@
   background-position: center center;
   background-size: cover;
 }
-
-h1 {
+.contentProximamente {
+  padding: 10%;
+}
+.contentProximamente h1 {
   font-family: "Eyes for Serifs";
   font-size: 80px;
   margin-bottom: 15px;
   color: #b77b52;
 }
 
-h2 {
+.contentProximamente h2 {
   font-family: "Eyes for Serifs";
   font: 100px;
 }
 
-.socials {
+.socialsProximamente {
   font-family: "Inter";
   margin-top: 70px;
 }
 
-.socials p {
+.socialsProximamente p {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   color: #b77b52;
 }
 
-a {
-  margin: 20px 15px;
+.socialsProximamente a {
+  margin: 20px 25px;
 }
 
-a i {
-  font-size: 28px;
-  color: #b77b52;
-  transition: transform 0.3s ease, color 0.3s ease;
+@media (max-width: 900px) {
+  .contentProximamente h1 {
+    font-size: 40px;
+  }
+  .contentProximamente {
+    padding: 2rem;
+  }
 }
-
-.icons a:hover i {
-  transform: scale(1.3);
-  color: #647b4d;
+@media (max-width: 600px) {
+  .socialsProximamente a {
+    margin: 20px 20px;
+  }
 }

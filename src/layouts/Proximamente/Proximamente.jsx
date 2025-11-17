@@ -1,32 +1,47 @@
 import React from "react";
 import "./proximamente.css";
 import FirstButton from "../../components/firstButton/FirstButton";
+import tiktok from "../../assets/icons/tiktokOrange.svg";
+import instagram from "../../assets/icons/instagramOrange.svg";
+import facebook from "../../assets/icons/facebookOrange.svg";
+import youtube from "../../assets/icons/youtubeOrange.svg";
 function Proximamente() {
   return (
     <>
       <div class="construction-container">
         <div class="background-shape">
-          <div class="content">
+          <div class="contentProximamente">
             <h1>
               Estamos trabajando en esta sección. Gracias por tu paciencia.
             </h1>
             <div className="button">
-              <FirstButton caption={"Volver a la página principal"} />
+              <FirstButton
+                caption={"Volver a la página principal"}
+                link={"/"}
+              />
             </div>
-            <div class="socials">
+            <div class="socialsProximamente">
               <p>Seguime en redes</p>
               <div class="icons">
                 <a href="https://www.tiktok.com/discover/naty-belleza-del-ser">
-                  <i class="bi bi-tiktok"></i>
+                  <i>
+                    <img src={tiktok} alt="" />
+                  </i>
                 </a>
                 <a href="https://www.instagram.com/naty.bellezadelser/">
-                  <i class="bi bi-instagram"></i>
+                  <i>
+                    <img src={instagram} alt="" />
+                  </i>
                 </a>
                 <a href="https://www.facebook.com/coachnatyb">
-                  <i class="bi bi-facebook"></i>
+                  <i>
+                    <img src={facebook} alt="" />
+                  </i>
                 </a>
                 <a href="https://www.youtube.com/@naty.bellezadelser">
-                  <i class="bi bi-youtube"></i>
+                  <i>
+                    <img src={youtube} alt="" />
+                  </i>
                 </a>
               </div>
             </div>

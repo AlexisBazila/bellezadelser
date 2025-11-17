@@ -1,9 +1,9 @@
 import React from "react";
 import "./firstButton.css";
 
-function FirstButton({ caption }) {
+function FirstButton({ caption, link }) {
   return (
-    <a href="#" className="firstButton">
+    <a href={link} className="firstButton">
       {caption}
     </a>
   );
