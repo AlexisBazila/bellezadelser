@@ -105,8 +105,10 @@ nav a i {
   width: 100%;
 }
 
+/* ============================== */
+/* SUBMENU DESKTOP CON SLIDE */
+/* ============================== */
 .submenu {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
@@ -116,33 +118,32 @@ nav a i {
   margin: 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   min-width: 180px;
-  margin-top: 0;
   opacity: 0;
   visibility: hidden;
+
+  /* Slide suave */
+  max-height: 0;
+  overflow: hidden;
   transform: translateY(10px);
-  transition: all 0.2s ease-in-out;
+  transition: max-height 0.25s ease, opacity 0.25s ease, transform 0.25s ease,
+    visibility 0.25s;
   z-index: 20;
 }
 
+.menu-item:hover > .submenu {
+  opacity: 1;
+  visibility: visible;
+  max-height: 300px;
+  transform: translateY(0);
+}
+
 .submenu li {
-  padding: 0;
   padding: 0.5rem 1rem;
 }
 
 .submenu a {
   color: #3c3c3c;
   display: block;
-  padding: 0;
-}
-
-.menu-item:hover > .submenu {
-  display: block;
-}
-
-.menu-item:hover > .submenu {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
 }
 
 .menuDiv a:hover {
@@ -220,45 +221,42 @@ nav a i {
   transform: scale(1.1);
 }
 
-/* Submenús en modo móvil (si querés que aparezcan al tocar) */
+/* SUBMENUS MÓVIL CON SLIDE */
 .columnMenuDiv .submenu {
-  display: none;
-}
-
-/* SUBMENUS EN MODO MOVIL */
-.columnMenuDiv .submenu {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: start;
   background: #fff;
-  padding-top: 0.5rem;
+
+  /* Slide suavizado */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding-top: 0;
 }
 
 .columnMenuDiv .submenu.open {
-  display: flex;
+  max-height: 400px;
+  padding-top: 0.5rem;
 }
 
 .columnMenuDiv .submenu.close {
-  display: none;
+  max-height: 0;
 }
 
+/* toques visuales */
 .submenu-toggle {
   display: flex;
   align-items: center;
   gap: 5px;
   cursor: pointer;
-  font-size: 22px;
-  color: #fff;
-  cursor: pointer;
   font-size: 20px;
-  display: block;
-  /* padding: 0.5rem 0; */
+  color: #fff;
 }
 
 .svg-inline--fa {
   box-sizing: content-box;
   display: var(--fa-display, inline-block);
-
   overflow: visible;
   vertical-align: -0.125em;
   width: 24.5px;
@@ -281,7 +279,6 @@ nav a i {
   cursor: pointer;
   font-size: 20px;
   display: block;
-  /* padding: 0.5rem 0; */
   font-family: "Inter", sans-serif;
   letter-spacing: 0.03rem;
 }
@@ -290,11 +287,8 @@ nav a i {
   text-decoration: underline;
 }
 
+/* RESPONSIVE */
 @media (max-width: 1260px) {
-  /* .menuDiv {
-    gap: 0;
-  } */
-
   nav a {
     margin: 15px 15px;
   }

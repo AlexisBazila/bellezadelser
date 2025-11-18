@@ -27,9 +27,9 @@ function SesionReiki() {
         />
         <SessionCalendarSection
           title={"Agenda tu sesión"}
-          caption1={"Mercado Pago →"}
+          caption1={"Latinoamerica →"}
           link1={"https://mpago.la/2EYc429"}
-          caption2={"Paypal →"}
+          caption2={"Europa y Norteamerica →"}
           link2={"https://calendly.com/alexisabazila/30min?month=2025-11"}
         />
       </div>
