@@ -14,7 +14,7 @@ function Activaciones() {
             "Sesiones que elevan tu vibración y restablecen tu equilibrio interior."
           }
           caption={"Activar Mi Bienestar"}
-          link={"#"}
+          link={"https://bellezadelser.com/tienda/activaciones/"}
         />
         <ProductDescriptionSection
           subTtitle={"¿Qué son las Activaciones Energéticas?"}
@@ -27,7 +27,7 @@ function Activaciones() {
         <ProductsMarkedSection
           title={"Activaciones Energéticas"}
           caption={"Ir a la tienda →"}
-          link={"https://bellezadelser.com/tienda/test/"}
+          link={"https://bellezadelser.com/tienda/activaciones/"}
         />
       </div>
     </>

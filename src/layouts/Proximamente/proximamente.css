@@ -2,11 +2,12 @@
   background-color: #e7ecd9;
   color: #b77b52;
 }
+
 .button {
   margin-top: 80px;
 }
+
 .background-shape {
-  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,9 +17,11 @@
   background-position: center center;
   background-size: cover;
 }
+
 .contentProximamente {
   padding: 10%;
 }
+
 .contentProximamente h1 {
   font-family: "Eyes for Serifs";
   font-size: 80px;
@@ -50,10 +53,12 @@
   .contentProximamente h1 {
     font-size: 40px;
   }
+
   .contentProximamente {
     padding: 2rem;
   }
 }
+
 @media (max-width: 600px) {
   .socialsProximamente a {
     margin: 20px 20px;
