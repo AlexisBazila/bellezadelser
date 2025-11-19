@@ -12,8 +12,7 @@ function NotFound() {
         <div class="notFoundShape">
           <div class="notFoundContent">
             <h1>
-              404 <br />
-              😢
+              404
               <br />
               Pagina no encontrada
             </h1>
