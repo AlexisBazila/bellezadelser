@@ -7,7 +7,7 @@ import sesionRegistros from "../../assets/images/sesionRegistros.png";
 import sessionCoaching from "../../assets/images/sesionCoaching.png";
 function SessionSection() {
   return (
-    <section className="sessionSection">
+    <section className="sessionSection" id="sessionSection">
       <div className="titleSession">
         <h2 className="titleSection">Agenda tu Sesión</h2>
       </div>

@@ -25,7 +25,10 @@ function ExperienceSection() {
             />
           </div>
           <div className="experienceButton">
-            <FirstButton caption={"Activar Mi Bienestar"} />
+            <FirstButton
+              caption={"Activar Mi Bienestar"}
+              link={"/Armonizaciones/activaciones"}
+            />
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ function MissionSection() {
             Akáshicos y Coaching. Mi propósito es ayudarte a reconectar con tu
             energía, tu esencia y tu poder interior.
           </p>
-          <SmallButton caption="Saber Más" />
+          <SmallButton caption="Saber Más" link={"/sobre-mi"} />
         </div>
       </div>
       <div className="photoParagraph">
@@ -41,7 +41,7 @@ function MissionSection() {
           energía, tu esencia y tu poder interior.
         </p>
         <div className="boton">
-          <SmallButton caption="Saber Más" />
+          <SmallButton caption="Saber Más" link={"/sobre-mi"} />
         </div>
       </div>
     </section>

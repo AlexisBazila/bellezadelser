@@ -1,9 +1,9 @@
 import React from "react";
 import "./smallButton.css";
 
-function SmallButton({ caption }) {
+function SmallButton({ caption, link }) {
   return (
-    <a href="#" className="SmallButton">
+    <a href={link} className="SmallButton">
       {caption}
     </a>
   );

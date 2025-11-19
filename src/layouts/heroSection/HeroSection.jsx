@@ -18,7 +18,7 @@ function HeroSection() {
                 exterior.
               </h2>
             </div>
-            <FirstButton caption="Quiero Conectar" />
+            <FirstButton caption="Quiero Conectar" link={"#sessionSection"} />
           </div>
         </div>
       </div>
