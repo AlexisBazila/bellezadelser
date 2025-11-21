@@ -5,6 +5,10 @@ import SesionReikiIMovil from "../assets/images/sesionReikiMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
 
 function SesionReiki() {
+  const linkCalendlyLatam =
+    "https://calendly.com/alexisbazila-proton/reiki-latam";
+  const linkCalendlyEu = "https://calendly.com/alexisabazila/euna";
+
   return (
     <>
       <div>

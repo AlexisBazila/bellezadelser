@@ -5,8 +5,13 @@ import ProductDescriptionSection from "../layouts/ProductDescritpionSection/Prod
 import SesionRegistrosImage from "../assets/images/sesionRegistros.png";
 import SesionRegistrosIMovil from "../assets/images/sesionRegistrosMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
+import AgendaSection from "../layouts/AgendaSection/AgendaSection";
 
 function SesionRegistros() {
+  const linkCalendlyLatam =
+    "https://calendly.com/alexisbazila-proton/registros-akashicos";
+  const linkCalendlyEu = "https://calendly.com/alexisabazila/euna";
+  const linkMp = "https://mpago.la/2onr24c";
   return (
     <>
       <div>
@@ -31,9 +36,9 @@ function SesionRegistros() {
         <SessionCalendarSection
           title={"Agenda tu sesión"}
           caption1={"Latinoamerica →"}
-          link1={"https://mpago.la/2EYc429"}
+          link1={linkMp}
           caption2={"Europa y Norteamerica →"}
-          link2={"https://calendly.com/alexisabazila/30min?month=2025-11"}
+          link2={linkCalendlyEu}
         />
       </div>
     </>

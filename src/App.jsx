@@ -11,6 +11,7 @@ import SesionReiki from "./pages/SesionReiki";
 import Activaciones from "./pages/Activaciones";
 import SesionRegistros from "./pages/SesionRegistros";
 import SesionCoaching from "./pages/SesionCoaching";
+import CheckagAnda from "./layouts/CheckagAnda/CheckagAnda";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/Armonizaciones/activaciones" element={<Activaciones />} />
         <Route path="/Armonizaciones/ebooks" element={<Proximamente />} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/checkaganda" element={<CheckagAnda />} />
         {/*<Route path="/Cursos" element={<Curso />} /> */}
       </Routes>
       <FooterBar />

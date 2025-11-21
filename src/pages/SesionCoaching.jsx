@@ -5,6 +5,10 @@ import SesionCoachingIMovil from "../assets/images/sesionCoachingMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
 
 function SesionCoaching() {
+  const linkCalendlyLatam =
+    "https://calendly.com/alexisbazila-proton/coaching-latam";
+  const linkCalendlyEu = "https://calendly.com/alexisabazila/euna";
+
   return (
     <>
       <div>

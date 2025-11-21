@@ -1,0 +1,66 @@
+.CheckagAnda-container {
+  background-color: #e7ecd9;
+  color: #b77b52;
+}
+
+.button {
+  margin-top: 80px;
+}
+
+.background-shape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../../assets/images/fondo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.contentCheckagAnda {
+  padding: 10%;
+}
+
+.contentCheckagAnda h1 {
+  font-family: "Eyes for Serifs";
+  font-size: 80px;
+  margin-bottom: 15px;
+  color: #b77b52;
+}
+
+.contentCheckagAnda h2 {
+  font-family: "Eyes for Serifs";
+  font: 100px;
+}
+
+.socialsCheckagAnda {
+  font-family: "Inter";
+  margin-top: 70px;
+}
+
+.socialsCheckagAnda p {
+  font-size: 20px;
+  margin-bottom: 30px;
+  color: #b77b52;
+}
+
+.socialsCheckagAnda a {
+  margin: 20px 25px;
+}
+
+@media (max-width: 900px) {
+  .contentCheckagAnda h1 {
+    font-size: 40px;
+  }
+
+  .contentCheckagAnda {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .socialsCheckagAnda a {
+    margin: 20px 20px;
+  }
+}
