@@ -31,7 +31,7 @@ function SesionRegistros() {
         <SessionCalendarSection
           title={"Agenda tu sesión"}
           caption1={"Latinoamerica →"}
-          link1={"https://mpago.la/2EYc429"}
+          link1={"https://mpago.la/2onr24c"}
           caption2={"Europa y Norteamerica →"}
           link2={"https://calendly.com/alexisabazila/30min?month=2025-11"}
         />

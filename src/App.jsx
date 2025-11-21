@@ -11,6 +11,7 @@ import SesionReiki from "./pages/SesionReiki";
 import Activaciones from "./pages/Activaciones";
 import SesionRegistros from "./pages/SesionRegistros";
 import SesionCoaching from "./pages/SesionCoaching";
+import CheckAgenda from "./layouts/CheckAgenda/CheckAgenda";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/sesiones/coaching" element={<SesionCoaching />} />
         <Route path="/Armonizaciones/activaciones" element={<Activaciones />} />
         <Route path="/Armonizaciones/ebooks" element={<Proximamente />} />
+        <Route path="/checkagenda" element={<CheckAgenda />} />
         <Route path="*" element={<NotFound />} />
         {/*<Route path="/Cursos" element={<Curso />} /> */}
       </Routes>
