@@ -25,12 +25,29 @@ function SesionReiki() {
           imageDesktop={SesionReikiImage}
           imageMobile={SesionReikiIMovil}
         />
-        <SessionCalendarSection
+        {/* <SessionCalendarSection
           title={"Agenda tu sesión"}
           caption1={"Latinoamerica →"}
-          link1={"https://mpago.la/2EYc429"}
+          // link1={"https://mpago.la/2EYc429"}
+          // Reemplazar por link de MP redirigido a la agenda
+          link1={
+            "https://calendly.com/bellezadelseroficial/reiki?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1"
+          }
           caption2={"Europa y Norteamerica →"}
           link2={"https://calendly.com/alexisabazila/30min?month=2025-11"}
+        /> */}
+        <SessionCalendarSection
+          links={{
+            online: {
+              latam: "https://mpago.la/2EYc429",
+              world:
+                "https://calendly.com/bellezadelseroficial/reiki?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
+            },
+            distance: {
+              latam: "LINK_MP_DISTANCE",
+              world: "LINK_PAYPAL_DISTANCE",
+            },
+          }}
         />
       </div>
     </>

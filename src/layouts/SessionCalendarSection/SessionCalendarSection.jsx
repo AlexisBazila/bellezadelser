@@ -1,40 +1,92 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./sessionCalendarSection.css";
-import Card from "../../components/Card/Card";
-import photo from "../../assets/images/photoExample.png";
 import FirstButton from "../../components/firstButton/FirstButton";
-import { useEffect } from "react";
+import ButtonAgenda from "../../components/ButtonAgenda/ButtonAgenda";
 import { useLocation } from "react-router-dom";
 
-function SessionCalendarSection({ title, caption1, link1, caption2, link2 }) {
+function SessionCalendarSection({ links }) {
   const { hash } = useLocation();
+  const [step, setStep] = useState(1);
+  const [sessionType, setSessionType] = useState(null);
 
+  // 🔥 Detectar si hay solo 1 tipo de sesión disponible
+  useEffect(() => {
+    const availableTypes = Object.keys(links);
+    if (availableTypes.length === 1) {
+      setSessionType(availableTypes[0]);
+      setStep(2);
+    }
+  }, [links]);
+
+  // Scroll automático si hay hash
   useEffect(() => {
     if (hash) {
-      const elementId = hash.replace("#", "");
-      const target = document.getElementById(elementId);
-
-      if (target) {
-        setTimeout(() => {
-          target.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-          });
-        }, 100);
-      }
+      const id = hash.replace("#", "");
+      const target = document.getElementById(id);
+      if (target)
+        setTimeout(() => target.scrollIntoView({ behavior: "smooth" }), 100);
     }
   }, [hash]);
 
   return (
     <section className="sessionCalendar" id="sessionCalendar">
       <div className="contentProductsMarked">
-        <div>
-          <h2 className="titleSection">{title}</h2>
-        </div>
-        <div className="buttonStore">
-          <FirstButton caption={caption1} link={link1} />
-          <FirstButton caption={caption2} link={link2} />
-        </div>
+        <h2 className="titleSection">Agenda tu sesión</h2>
+
+        {/* STEP 1 → si hay más de una modalidad */}
+        {step === 1 && (
+          <div className="buttonStore centeredButtons">
+            {links.online && (
+              <ButtonAgenda
+                caption="Sesión Online"
+                onClick={() => {
+                  setSessionType("online");
+                  setStep(2);
+                }}
+              />
+            )}
+
+            {links.distance && (
+              <ButtonAgenda
+                caption="Sesión a Distancia"
+                onClick={() => {
+                  setSessionType("distance");
+                  setStep(2);
+                }}
+              />
+            )}
+          </div>
+        )}
+
+        {/* STEP 2 → mostrar regiones segun la modalidad seleccionada */}
+        {step === 2 && sessionType && (
+          <>
+            <h3 className="subtitle">Selecciona tu región</h3>
+
+            <div className="buttonStore centeredButtons">
+              {links[sessionType]?.latam && (
+                <FirstButton
+                  caption="Latinoamérica"
+                  link={links[sessionType].latam}
+                />
+              )}
+
+              {links[sessionType]?.world && (
+                <FirstButton
+                  caption="Europa/Norteamérica"
+                  link={links[sessionType].world}
+                />
+              )}
+            </div>
+
+            {/* volver solo si hay más de un tipo de sesión */}
+            {Object.keys(links).length > 1 && (
+              <div className="backButton">
+                <button onClick={() => setStep(1)}>← Volver</button>
+              </div>
+            )}
+          </>
+        )}
       </div>
     </section>
   );

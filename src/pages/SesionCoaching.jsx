@@ -28,11 +28,12 @@ function SesionCoaching() {
           imageMobile={SesionCoachingIMovil}
         />
         <SessionCalendarSection
-          title={"Agenda tu sesión"}
-          caption1={"Latinoamerica →"}
-          link1={"https://mpago.la/2EYc429"}
-          caption2={"Europa y Norteamerica →"}
-          link2={"https://calendly.com/alexisabazila/30min?month=2025-11"}
+          links={{
+            online: {
+              latam: "https://mpago.la/link-guia",
+              world: "https://paypal.com/holistica",
+            },
+          }}
         />
       </div>
     </>

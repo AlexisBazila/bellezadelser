@@ -29,11 +29,16 @@ function SesionRegistros() {
           imageMobile={SesionRegistrosIMovil}
         />
         <SessionCalendarSection
-          title={"Agenda tu sesión"}
-          caption1={"Latinoamerica →"}
-          link1={"https://mpago.la/2onr24c"}
-          caption2={"Europa y Norteamerica →"}
-          link2={"https://calendly.com/alexisabazila/30min?month=2025-11"}
+          links={{
+            online: {
+              latam: "https://mpago.la/reiki-latam",
+              world: "https://paypal.me/reiki-world",
+            },
+            distance: {
+              latam: "https://mpago.la/reiki-distancia-latam",
+              world: "https://paypal.me/reiki-distancia-world",
+            },
+          }}
         />
       </div>
     </>

@@ -10,6 +10,30 @@
   justify-content: center;
   gap: 200px;
 }
+.subtitle {
+  font-size: 1.2rem;
+  margin: 15px 0;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+.backButton {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.backButton button {
+  background: none;
+  border: none;
+  color: #6b6b6b;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.backButton button:hover {
+  color: #333;
+}
 
 @media (max-width: 1160px) {
   .contentProductsMarked {
