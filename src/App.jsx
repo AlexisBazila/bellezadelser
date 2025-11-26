@@ -3,15 +3,13 @@ import NavBar from "./layouts/navBar/NavBar";
 import FooterBar from "./layouts/footerBar/FooterBar";
 import Home from "./pages/Home";
 import SobreMi from "./pages/AboutMe";
-import Curso from "./pages/Curso";
-import { MdHeight } from "react-icons/md";
 import Proximamente from "./layouts/Proximamente/Proximamente";
 import NotFound from "./layouts/NotFound/NotFound";
 import SesionReiki from "./pages/SesionReiki";
 import Activaciones from "./pages/Activaciones";
 import SesionRegistros from "./pages/SesionRegistros";
-import SesionCoaching from "./pages/SesionCoaching";
 import CheckAgenda from "./layouts/CheckAgenda/CheckAgenda";
+import SesionAcompañamiento from "./pages/SesionAcompañamiento";
 
 function App() {
   return (
@@ -25,7 +23,10 @@ function App() {
           path="/sesiones/registros-akashicos"
           element={<SesionRegistros />}
         />
-        <Route path="/sesiones/coaching" element={<SesionCoaching />} />
+        <Route
+          path="/sesiones/acompañamiento"
+          element={<SesionAcompañamiento />}
+        />
         <Route path="/Armonizaciones/activaciones" element={<Activaciones />} />
         <Route path="/Armonizaciones/ebooks" element={<Proximamente />} />
         <Route path="/checkagenda" element={<CheckAgenda />} />

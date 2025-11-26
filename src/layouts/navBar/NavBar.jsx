@@ -61,7 +61,9 @@ function NavBar() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/sesiones/coaching">Coaching</Link>
+                    <Link to="/sesiones/acompañamiento">
+                      Acompañamiento Holistico
+                    </Link>
                   </li>
                 </ul>
               </li>

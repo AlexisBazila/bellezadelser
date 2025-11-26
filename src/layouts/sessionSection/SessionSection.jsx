@@ -1,10 +1,9 @@
 import React from "react";
 import "./sessionSection.css";
 import SessionCard from "../../components/SessionCard/SessionCard";
-import photo from "../../assets/images/photoExample.png";
 import sesionReiki from "../../assets/images/sesionReiki.png";
 import sesionRegistros from "../../assets/images/sesionRegistros.png";
-import sessionCoaching from "../../assets/images/sesionCoaching.png";
+import sessionAcompañamiento from "../../assets/images/sesionAcompañamiento.png";
 function SessionSection() {
   return (
     <section className="sessionSection" id="sessionSection">
@@ -25,10 +24,10 @@ function SessionSection() {
           link={"/sesiones/registros-akashicos#sessionCalendar"}
         />
         <SessionCard
-          image={sessionCoaching}
-          title="Coaching"
+          image={sessionAcompañamiento}
+          title="Acompañamiento Holistico"
           description="Descubre tu potencial, supera obstáculos y avanza con foco hacia la vida que querés crear."
-          link={"/sesiones/coaching#sessionCalendar"}
+          link={"/sesiones/acompañamiento#sessionCalendar"}
         />
       </div>
     </section>
