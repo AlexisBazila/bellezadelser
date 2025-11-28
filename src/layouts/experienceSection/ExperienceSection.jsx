@@ -2,7 +2,7 @@ import React from "react";
 import "./experienceSection.css";
 import IconLeftAlignedParagraph from "../../components/IconLeftAlignedParagraph/IconLeftAlignedParagraph";
 import FirstButton from "../../components/firstButton/FirstButton";
-import hand from "../../assets/images/handExperience.png";
+import hand from "../../assets/images/experience.png";
 import logo from "../../assets/images/withe-logo.png";
 function ExperienceSection() {
   return (
@@ -20,7 +20,7 @@ function ExperienceSection() {
               logo={logo}
               subTtitle="Activaciones de bienestar"
               paragraphs={[
-                "Mini sesiones prácticas que podés hacer en cualquier momento para recuperar equilibrio, liberar tensiones y conectar con tu propósito.",
+                "Mini sesiones de Reiki y sanación en menos de 10 minutos. Cada cápsula está diseñada para ayudarte a soltar tensiones, calmar la mente, activar  y equilibrar tu energía, donde y cuando lo necesites.",
               ]}
             />
           </div>

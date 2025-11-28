@@ -15,9 +15,10 @@ function MissionSection() {
         <div className="MyselfParagraph">
           <h4>Naty Batista</h4>
           <p>
-            Terapeuta holística con años de experiencia en Reiki, Registros
-            Akáshicos y Coaching. Mi propósito es ayudarte a reconectar con tu
-            energía, tu esencia y tu poder interior.
+            Terapeuta Energética & Maestra Espiritual, experta en Sanación
+            Energética, Emocional y Espiritual, con muchos años de experiencia.
+            Mi propósito es ayudarte a reconectar tu energía, tu esencia y
+            activar tu poder interior.
           </p>
           <SmallButton caption="Saber Más" link={"/sobre-mi"} />
         </div>
@@ -25,9 +26,10 @@ function MissionSection() {
       <div className="photoParagraph">
         <div className="pharagraphBox">
           <p>
-            En cada proceso te acompaño desde la confianza y la calidez. Vas a
-            recibir feedback constante, para que midas tus avances y puedas
-            resolver tus dudas en todo momento.
+            Aquí empieza el cambio que buscabas. En cada propuesta vas a
+            encontrar un camino claro para transformar tu vida, con contenidos
+            prácticos y fáciles de aplicar, para avanzar a tu ritmo y lograr
+            resultados reales.
           </p>
         </div>
 

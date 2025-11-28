@@ -30,7 +30,7 @@ function SesionAcompañamiento() {
         <SessionCalendarSection
           links={{
             online: {
-              latam: "https://mpago.la/126Rqtv",
+              latam: "https:/mpago.la/126Rqtv",
               world:
                 "https://calendly.com/bellezadelseroficial/acomoneu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },

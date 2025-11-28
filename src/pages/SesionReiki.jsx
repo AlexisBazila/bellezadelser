@@ -28,7 +28,7 @@ function SesionReiki() {
         <SessionCalendarSection
           links={{
             online: {
-              latam: "",
+              latam: "https://mpago.la/19RE6ZU",
               world:
                 "https://calendly.com/bellezadelseroficial/reikioneu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
