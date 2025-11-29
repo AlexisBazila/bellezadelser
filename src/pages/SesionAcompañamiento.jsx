@@ -1,7 +1,7 @@
 import HeroSession from "../layouts/HeroSession/HeroSession";
 import ProductDescriptionSection from "../layouts/ProductDescritpionSection/ProductDescriptionSection";
-import SesionAcompañamientoImage from "../assets/images/SesionAcompañamiento.png";
-import SesionAcompañamientoIMovil from "../assets/images/SesionAcompañamientoMovil.png";
+import SesionAcompañamientoImage from "../assets/images/sesionAcompañamiento.png";
+import SesionAcompañamientoIMovil from "../assets/images/sesionAcompañamientoMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
 
 function SesionAcompañamiento() {
