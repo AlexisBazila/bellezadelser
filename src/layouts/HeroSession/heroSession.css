@@ -76,8 +76,15 @@
     padding: 5% 2rem;
   }
 }
-@media (max-height: 740px) {
+@media (max-height: 640px) {
   .titleAndSubtitleHeroSession {
     margin-bottom: 20px;
+  }
+  .heroSectionSession {
+    height: auto;
+  }
+
+  .lightHeroSession {
+    height: auto;
   }
 }

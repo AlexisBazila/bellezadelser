@@ -72,3 +72,13 @@
     padding: 5% 2rem;
   }
 }
+
+@media (max-height: 640px) {
+  .heroSectionProduct {
+    height: auto;
+  }
+
+  .lightHero {
+    height: auto;
+  }
+}

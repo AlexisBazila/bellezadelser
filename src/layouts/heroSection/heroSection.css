@@ -85,4 +85,13 @@
   .titleAndSubtitleHero {
     margin-bottom: 20px;
   }
+  .heroSection {
+    background-image: url("../../assets/images/heroHomeMovil.png");
+    height: auto;
+  }
+
+  .overlay {
+    background-image: url("../../assets/images/overlayHeroMovil.png");
+    height: auto;
+  }
 }
