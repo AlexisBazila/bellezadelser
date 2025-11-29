@@ -34,6 +34,26 @@ function NavBar() {
     };
   }, [menuOpen]);
 
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      // Si el menú NO está abierto, nada que hacer
+      if (!menuOpen) return;
+
+      const menu = document.querySelector(".movilNavMenu");
+      const burger = document.querySelector(".hamburgerNav");
+
+      // Si se hace click fuera del menú → cerramos
+      if (menu && !menu.contains(e.target) && !burger.contains(e.target)) {
+        setMenuOpen(false);
+        setOpenSubmenu(null);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => document.removeEventListener("click", handleClickOutside);
+  }, [menuOpen]);
+
   return (
     <>
       <div className="navBar">
