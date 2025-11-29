@@ -168,7 +168,9 @@ function NavBar() {
               className="submenu-toggle"
               onClick={(e) => openOnlySubmenu("sesiones", e)}
             >
-              <label htmlFor="submenu-sesiones"> Sesiones ▾ </label>
+              <button type="button" className="submenu-btn">
+                Sesiones ▾
+              </button>
             </div>
 
             <ul

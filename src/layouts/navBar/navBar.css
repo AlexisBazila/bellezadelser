@@ -286,7 +286,17 @@ nav a i {
 .menu-item label:hover {
   text-decoration: underline;
 }
-
+.submenu-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  letter-spacing: 0.03rem;
+  cursor: pointer;
+}
+.submenu-btn:focus {
+  outline: none;
+}
 /* RESPONSIVE */
 @media (max-width: 1260px) {
   nav a {
