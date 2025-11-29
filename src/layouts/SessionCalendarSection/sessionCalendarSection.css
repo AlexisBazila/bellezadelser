@@ -8,7 +8,7 @@
 .buttonStore {
   display: flex;
   justify-content: center;
-  gap: 200px;
+  gap: 50px;
 }
 .subtitle {
   font-size: 1.2rem;
@@ -34,7 +34,9 @@
 .backButton button:hover {
   color: #333;
 }
-
+.secondAgendaButton {
+  min-width: 300px;
+}
 @media (max-width: 1160px) {
   .contentProductsMarked {
     padding: 5% 3rem;

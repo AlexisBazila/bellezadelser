@@ -61,9 +61,7 @@ function NavBar() {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/sesiones/acompañamiento">
-                      Acompañamiento Holistico
-                    </Link>
+                    <Link to="/sesiones/acompañamiento">Acompañamiento</Link>
                   </li>
                 </ul>
               </li>
@@ -158,11 +156,11 @@ function NavBar() {
               </li>
               <li>
                 <Link
-                  to="/sesiones/coaching"
+                  to="/sesiones/acompañamiento"
                   onClick={closeMenu}
                   className="submenuLink"
                 >
-                  Coaching
+                  Acompañamiento
                 </Link>
               </li>
             </ul>

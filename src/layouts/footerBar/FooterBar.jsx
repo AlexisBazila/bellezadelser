@@ -84,7 +84,7 @@ function FooterBar() {
               <i>
                 <img src={mail} alt="" />
               </i>
-              natybellezadelser@gmai.com
+              natybellezadelser@gmail.com
             </a>
             <a href="https://wa.me/+34603011499" target="_blank">
               <i>
