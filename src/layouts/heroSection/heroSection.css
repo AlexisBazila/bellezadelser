@@ -47,16 +47,17 @@
 @media (max-width: 900px) {
   .heroSection {
     background-image: url("../../assets/images/heroHome.png");
-    height: 70vh;
+    height: auto;
   }
 
   .overlay {
     background-image: url("../../assets/images/overlayHeroHome.png");
-    height: 70vh;
+    height: auto;
   }
 
   .contentHero {
     width: 100%;
+    padding: 100px 0 100px 0;
   }
   .contentHero h1 {
     font-size: 40px;
@@ -69,12 +70,10 @@
 @media (max-width: 600px) {
   .heroSection {
     background-image: url("../../assets/images/heroHomeMovil.png");
-    height: 60vh;
   }
 
   .overlay {
     background-image: url("../../assets/images/overlayHeroMovil.png");
-    height: 60vh;
   }
   .overlay {
     padding: 5% 2rem;
