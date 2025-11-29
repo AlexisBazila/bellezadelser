@@ -80,3 +80,9 @@
     padding: 5% 2rem;
   }
 }
+
+@media (max-height: 740px) {
+  .titleAndSubtitleHero {
+    margin-bottom: 20px;
+  }
+}

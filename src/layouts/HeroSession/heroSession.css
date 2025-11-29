@@ -76,3 +76,8 @@
     padding: 5% 2rem;
   }
 }
+@media (max-height: 740px) {
+  .titleAndSubtitleHeroSession {
+    margin-bottom: 20px;
+  }
+}
