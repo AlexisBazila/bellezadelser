@@ -1,57 +1,67 @@
-import React, { useState, useEffect } from "react"; // ⬅️ agrega useEffect
+import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "./navBar.css";
 import logo from "../../assets/images/withe-logo.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faXmark,
-  faCartShopping,
-} from "@fortawesome/free-solid-svg-icons";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
 
-  const toggleMenu = () => setMenuOpen(!menuOpen);
-  const closeMenu = () => setMenuOpen(false);
+  const menuRef = useRef(null);
+  const burgerRef = useRef(null);
 
-  const toggleSubmenu = (menuName) => {
-    setOpenSubmenu(openSubmenu === menuName ? null : menuName);
+  const toggleMenu = () => {
+    setMenuOpen((prev) => {
+      if (prev === false) {
+        return true;
+      }
+      // si está abierto, ciérralo y limpiar submenus
+      setOpenSubmenu(null);
+      return false;
+    });
+  };
+  const closeMenu = () => {
+    setMenuOpen(false);
+    setOpenSubmenu(null);
   };
 
-  // 👇 NUEVO: bloquea scroll del body cuando el menú está abierto
-  useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto";
-    }
+  // abrir submenu: si ya está abierto, no lo cerramos (evita doble tap)
+  const openOnlySubmenu = (menuName, e) => {
+    // evitar que el click burbujee al document
+    if (e && e.stopPropagation) e.stopPropagation();
+    if (openSubmenu === menuName) return; // ya abierto -> no hacer nada
+    setOpenSubmenu(menuName);
+  };
 
-    // Limpieza por seguridad
+  // bloquear scroll cuando menu abierto
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
     return () => {
       document.body.style.overflow = "auto";
     };
   }, [menuOpen]);
 
+  // cerrar al click/touch fuera (usa pointerdown para ser más fiable en móviles)
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      // Si el menú NO está abierto, nada que hacer
+    const handlePointerDownOutside = (e) => {
       if (!menuOpen) return;
 
-      const menu = document.querySelector(".movilNavMenu");
-      const burger = document.querySelector(".hamburgerNav");
+      const menuEl = menuRef.current;
+      const burgerEl = burgerRef.current;
 
-      // Si se hace click fuera del menú → cerramos
-      if (menu && !menu.contains(e.target) && !burger.contains(e.target)) {
-        setMenuOpen(false);
-        setOpenSubmenu(null);
+      if (
+        menuEl &&
+        !menuEl.contains(e.target) &&
+        burgerEl &&
+        !burgerEl.contains(e.target)
+      ) {
+        closeMenu();
       }
     };
 
-    document.addEventListener("click", handleClickOutside);
-
-    return () => document.removeEventListener("click", handleClickOutside);
+    document.addEventListener("pointerdown", handlePointerDownOutside);
+    return () =>
+      document.removeEventListener("pointerdown", handlePointerDownOutside);
   }, [menuOpen]);
 
   return (
@@ -112,7 +122,12 @@ function NavBar() {
 
         {/* Menu movil */}
         <nav className="movilNav">
-          <div className="hamburgerNav" onClick={toggleMenu}>
+          <div
+            className="hamburgerNav"
+            onClick={toggleMenu}
+            ref={burgerRef}
+            aria-expanded={menuOpen}
+          >
             {menuOpen ? (
               <i className="fa-solid fa-xmark hamburgerIcon"></i>
             ) : (
@@ -134,7 +149,12 @@ function NavBar() {
       </div>
 
       {/* Menu responsivo */}
-      <div className={`movilNavMenu ${menuOpen ? "active" : ""}`}>
+      <div
+        className={`movilNavMenu ${menuOpen ? "active" : ""}`}
+        ref={menuRef}
+        role="dialog"
+        aria-hidden={!menuOpen}
+      >
         <ul className="columnMenuDiv">
           <li>
             <Link to="/" onClick={closeMenu}>
@@ -146,7 +166,7 @@ function NavBar() {
           <li className="menu-item has-submenu">
             <div
               className="submenu-toggle"
-              onClick={() => toggleSubmenu("sesiones")}
+              onClick={(e) => openOnlySubmenu("sesiones", e)}
             >
               <label htmlFor="submenu-sesiones"> Sesiones ▾ </label>
             </div>
@@ -190,7 +210,7 @@ function NavBar() {
           <li className="menu-item has-submenu">
             <div
               className="submenu-toggle"
-              onClick={() => toggleSubmenu("armonizaciones")}
+              onClick={(e) => openOnlySubmenu("armonizaciones", e)}
             >
               <label htmlFor="submenu-armonizaciones">Armonizaciones ▾</label>
             </div>
