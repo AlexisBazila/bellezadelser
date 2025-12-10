@@ -1,5 +1,5 @@
 .heroSectionSession {
-  background-color: #b77b52;
+  background-color: hwb(75 34% 40% / 0.801);
   height: 90vh;
 }
 
@@ -30,14 +30,17 @@
   width: 50vw;
   color: #fff;
 }
+
 .info p {
   color: #fff;
   font-size: 18px;
 }
+
 .titleAndSubtitleHeroSession {
   /* width: 70%; */
   margin-bottom: 70px;
 }
+
 @media (max-width: 1160px) {
   .lightHeroSession {
     padding: 5% 3rem;
@@ -56,9 +59,11 @@
   .contentHeroSession {
     width: 100%;
   }
+
   .contentHeroSession h1 {
     font-size: 40px;
   }
+
   .contentHeroSession h2 {
     font-size: 18px;
   }
@@ -72,14 +77,17 @@
   .lightHeroSession {
     height: 60vh;
   }
+
   .lightHeroSession {
     padding: 5% 2rem;
   }
 }
-@media (max-height: 640px) {
+
+/* @media (max-height: 640px) {
   .titleAndSubtitleHeroSession {
     margin-bottom: 20px;
   }
+
   .heroSectionSession {
     height: auto;
   }
@@ -87,4 +95,4 @@
   .lightHeroSession {
     height: auto;
   }
-}
+} */

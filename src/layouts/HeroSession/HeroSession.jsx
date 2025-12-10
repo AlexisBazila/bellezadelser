@@ -10,14 +10,6 @@ function HeroProduct({ title, subtitle, duracion, modalidad }) {
               <h1 className="title">{title}</h1>
               <h2>{subtitle}</h2>
             </div>
-            <div className="info">
-              <p>
-                <strong>Duración</strong> {duracion}
-              </p>
-              <p>
-                <strong>Modalidad</strong> {modalidad}
-              </p>
-            </div>
           </div>
         </div>
       </div>

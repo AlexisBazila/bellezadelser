@@ -1,5 +1,5 @@
 .heroSectionProduct {
-  background-color: #b77b52;
+  background-color: hwb(75 34% 40% / 0.801);
   height: 90vh;
 }
 
@@ -30,10 +30,12 @@
   width: 50vw;
   color: #fff;
 }
+
 .titleAndSubtitleHeroProduct {
   /* width: 70%; */
   margin-bottom: 70px;
 }
+
 @media (max-width: 1160px) {
   .lightHero {
     padding: 5% 3rem;
@@ -52,9 +54,11 @@
   .contentHeroProduct {
     width: 100%;
   }
+
   .contentHeroProduct h1 {
     font-size: 40px;
   }
+
   .contentHeroProduct h2 {
     font-size: 18px;
   }
@@ -68,12 +72,13 @@
   .lightHero {
     height: 60vh;
   }
+
   .lightHero {
     padding: 5% 2rem;
   }
 }
 
-@media (max-height: 640px) {
+/* @media (max-height: 640px) {
   .heroSectionProduct {
     height: auto;
   }
@@ -81,4 +86,4 @@
   .lightHero {
     height: auto;
   }
-}
+} */

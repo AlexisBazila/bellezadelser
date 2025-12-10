@@ -1,15 +1,15 @@
-.sessionCalendar {
-  background-color: #e7ecd9;
-}
+.sessionCalendar {}
 
 .contentProductsMarked {
   padding: 5% 5rem;
 }
+
 .buttonStore {
   display: flex;
   justify-content: center;
   gap: 50px;
 }
+
 .subtitle {
   font-size: 1.2rem;
   margin: 15px 0;
@@ -34,13 +34,16 @@
 .backButton button:hover {
   color: #333;
 }
+
 .secondAgendaButton {
   min-width: 300px;
 }
+
 @media (max-width: 1160px) {
   .contentProductsMarked {
     padding: 5% 3rem;
   }
+
   .buttonStore {
     flex-direction: column;
     gap: 50px;

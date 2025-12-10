@@ -5,6 +5,7 @@ import ProductDescriptionSection from "../layouts/ProductDescritpionSection/Prod
 import SesionRegistrosImage from "../assets/images/sesionRegistros.png";
 import SesionRegistrosIMovil from "../assets/images/sesionRegistrosMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
+import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
 
 function SesionRegistros() {
   return (
@@ -28,6 +29,7 @@ function SesionRegistros() {
           imageDesktop={SesionRegistrosImage}
           imageMobile={SesionRegistrosIMovil}
         />
+        <TipoSesionSection />
         <SessionCalendarSection
           links={{
             online: {

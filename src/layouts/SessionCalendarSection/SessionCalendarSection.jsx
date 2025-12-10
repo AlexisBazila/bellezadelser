@@ -38,7 +38,7 @@ function SessionCalendarSection({ links }) {
           <div className="buttonStore centeredButtons">
             {links.online && (
               <ButtonAgenda
-                caption="Sesión Online"
+                caption="Sesión en Vivo"
                 onClick={() => {
                   setSessionType("online");
                   setStep(2);
@@ -61,21 +61,18 @@ function SessionCalendarSection({ links }) {
         {/* STEP 2 → mostrar regiones segun la modalidad seleccionada */}
         {step === 2 && sessionType && (
           <>
-            <h3 className="subtitle">Selecciona tu región</h3>
+            <h3 className="subtitle">Selecciona el medio de pago</h3>
 
             <div className="buttonStore centeredButtons">
               {links[sessionType]?.latam && (
                 <FirstButton
-                  caption="Latinoamérica"
+                  caption="Mercado Pago"
                   link={links[sessionType].latam}
                 />
               )}
 
               {links[sessionType]?.world && (
-                <FirstButton
-                  caption="Europa/Norteamérica"
-                  link={links[sessionType].world}
-                />
+                <FirstButton caption="Paypal" link={links[sessionType].world} />
               )}
             </div>
 

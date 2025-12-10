@@ -33,6 +33,7 @@
   width: 50vw;
   color: #fff;
 }
+
 .titleAndSubtitleHero {
   /* width: 70%; */
   margin-bottom: 70px;
@@ -58,9 +59,11 @@
   .contentHero {
     width: 100%;
   }
+
   .contentHero h1 {
     font-size: 40px;
   }
+
   .contentHero h2 {
     font-size: 18px;
   }
@@ -76,15 +79,17 @@
     background-image: url("../../assets/images/overlayHeroMovil.png");
     height: 60vh;
   }
+
   .overlay {
     padding: 5% 2rem;
   }
 }
 
-@media (max-height: 740px) {
+@media (max-height: 670px) and (max-width: 950px) {
   .titleAndSubtitleHero {
     margin-bottom: 20px;
   }
+
   .heroSection {
     background-image: url("../../assets/images/heroHomeMovil.png");
     height: auto;

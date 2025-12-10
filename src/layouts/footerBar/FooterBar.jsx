@@ -80,17 +80,11 @@ function FooterBar() {
 
         <div className="contactFooter">
           <div className="contact">
-            <a href="mailto:natybellezadelser@gmai.com">
+            <a href="mailto:oficialbellezadelser@gmai.com">
               <i>
                 <img src={mail} alt="" />
               </i>
-              natybellezadelser@gmail.com
-            </a>
-            <a href="https://wa.me/+34603011499" target="_blank">
-              <i>
-                <img src={telefono} alt="" />
-              </i>
-              +34 603 01 14 99
+              oficialbellezadelser@gmail.com
             </a>
           </div>
         </div>

@@ -3,6 +3,7 @@ import ProductDescriptionSection from "../layouts/ProductDescritpionSection/Prod
 import SesionAcompañamientoImage from "../assets/images/sesionAcompañamiento.png";
 import SesionAcompañamientoIMovil from "../assets/images/sesionAcompañamientoMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
+import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
 
 function SesionAcompañamiento() {
   return (
@@ -27,6 +28,7 @@ function SesionAcompañamiento() {
           imageDesktop={SesionAcompañamientoImage}
           imageMobile={SesionAcompañamientoIMovil}
         />
+        <TipoSesionSection tipos={["vivo"]} />
         <SessionCalendarSection
           links={{
             online: {

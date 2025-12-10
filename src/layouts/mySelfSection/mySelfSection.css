@@ -10,7 +10,8 @@
   background-size: cover;
   background-position: top;
 }
-.sectionWrapper > div {
+
+.sectionWrapper>div {
   background-color: #c3cfa167;
 }
 
@@ -35,7 +36,9 @@
 }
 
 .textContent .LeftAlignedParagraph p {
-  color: #000;
+  color: #3C3C3C;
+  margin-top: 20px;
+
 }
 
 .textAboutFooter {
@@ -54,18 +57,53 @@
   margin: 5% 30% 0 30%;
 }
 
+.processSection {
+  padding: 5% 10%;
+}
+
+.movilProcessImg {
+  display: none;
+}
+
+.processSection img {
+  max-width: 100%;
+}
+
+.processSection p {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
 @media (max-width: 1160px) {
-  .sectionBlock {
+
+  .sectionBlock,
+  .processSection {
     padding: 5% 3rem;
     flex-direction: column;
   }
+
   .sectionBlock.reverse {
     flex-direction: column;
+  }
+
+  .movilProcessImg {
+    display: flex;
+  }
+
+  .processImg {
+    display: none;
   }
 }
 
 @media (max-width: 600px) {
-  .sectionBlock {
+
+  .sectionBlock,
+  .processSection {
     padding: 5% 2rem;
+  }
+
+  .sectionBlock p,
+  .processSection p {
+    font-size: 18px;
   }
 }

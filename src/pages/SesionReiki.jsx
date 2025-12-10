@@ -3,6 +3,7 @@ import ProductDescriptionSection from "../layouts/ProductDescritpionSection/Prod
 import SesionReikiImage from "../assets/images/sesionReiki.png";
 import SesionReikiIMovil from "../assets/images/sesionReikiMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
+import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
 
 function SesionReiki() {
   return (
@@ -25,6 +26,7 @@ function SesionReiki() {
           imageDesktop={SesionReikiImage}
           imageMobile={SesionReikiIMovil}
         />
+        <TipoSesionSection />
         <SessionCalendarSection
           links={{
             online: {

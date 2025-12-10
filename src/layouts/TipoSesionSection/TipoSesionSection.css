@@ -1,0 +1,93 @@
+/* ---- Contenedor principal ---- */
+.tipo-sesion-section {
+    background-color: #E7ECD9;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* ---- Título ---- */
+.titulo-tipo-sesion {
+    font-size: 42px;
+    text-align: center;
+    color: #b77b52;
+    margin: 50px 0 50px 0;
+}
+
+/* ---- Contenedor de tarjetas ---- */
+.cards-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ---- Tarjetas ---- */
+.card-sesion {
+    background: white;
+    padding: 30px;
+    margin-bottom: 50px;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 590px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.card-sesion h3 {
+    font-family: "Eyes for Serifs", serif;
+    font-size: 28px;
+    margin: 10px 0;
+    flex-shrink: 0;
+}
+
+.card-sesion p {
+    font-size: 20px;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+/* ---- RESPONSIVE ---- */
+
+@media (max-width: 900px) {
+    .cards-container {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-sesion {
+        max-width: 500px;
+    }
+
+    .titulo-tipo-sesion {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tipo-sesion-section {
+        padding: 40px 15px;
+    }
+
+    .titulo-tipo-sesion {
+        font-size: 24px;
+    }
+
+    .card-sesion {
+        padding: 25px;
+    }
+
+    .card-sesion h3 {
+        font-size: 18px;
+    }
+
+    .card-sesion p {
+        font-size: 14px;
+    }
+}
