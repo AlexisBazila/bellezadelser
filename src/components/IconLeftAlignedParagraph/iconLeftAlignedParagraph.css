@@ -18,6 +18,7 @@
 .experienceButtonMovil {
   display: none;
 }
+
 /* Responsive */
 @media (max-height: 900px), (max-width: 1570px) {
   .iconLeftAlignedParagraph p {

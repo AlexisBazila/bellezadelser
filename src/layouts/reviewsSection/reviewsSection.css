@@ -86,25 +86,6 @@
   background: #b7c28f;
 }
 
-/* RESPONSIVE */
-/* @media (max-width: 767px) {
-  .controls {
-    max-width: 360px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1023px) {
-  .controls {
-    max-width: 440px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .controls {
-    max-width: 520px;
-  }
-} */
-
 @media (max-width: 900px) {
   .ReviewTitleSection {
     font-size: 30px;

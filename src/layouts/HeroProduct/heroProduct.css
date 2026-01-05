@@ -32,7 +32,6 @@
 }
 
 .titleAndSubtitleHeroProduct {
-  /* width: 70%; */
   margin-bottom: 70px;
 }
 
@@ -77,13 +76,3 @@
     padding: 5% 2rem;
   }
 }
-
-/* @media (max-height: 640px) {
-  .heroSectionProduct {
-    height: auto;
-  }
-
-  .lightHero {
-    height: auto;
-  }
-} */

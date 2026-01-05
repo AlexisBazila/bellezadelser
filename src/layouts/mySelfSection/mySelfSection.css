@@ -1,17 +1,10 @@
-/* .myselfSection {
-  background-image: url("../../assets/images/fondoTop.png"),
-    url("../../assets/images/fondoBottom.png");
-  background-position: top center, bottom center;
-  background-size: cover, cover;
-  background-repeat: no-repeat, no-repeat;
-} */
 .myselfSection {
   background-image: url("../../assets/images/fondo.png");
   background-size: cover;
   background-position: top;
 }
 
-.sectionWrapper>div {
+.sectionWrapper > div {
   background-color: #c3cfa167;
 }
 
@@ -36,9 +29,8 @@
 }
 
 .textContent .LeftAlignedParagraph p {
-  color: #3C3C3C;
+  color: #3c3c3c;
   margin-top: 20px;
-
 }
 
 .textAboutFooter {
@@ -75,7 +67,6 @@
 }
 
 @media (max-width: 1160px) {
-
   .sectionBlock,
   .processSection {
     padding: 5% 3rem;
@@ -96,7 +87,6 @@
 }
 
 @media (max-width: 600px) {
-
   .sectionBlock,
   .processSection {
     padding: 5% 2rem;
