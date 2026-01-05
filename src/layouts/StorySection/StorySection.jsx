@@ -1,7 +1,7 @@
 import React from "react";
 import "./storySection.css";
 import LeftAlignedParagraph from "../../components/LeftAlignedParagraph/LeftAlignedParagraph";
-import storyImage from "../../assets/images/natyStory.png";
+import storyImage from "../../assets/images/natyStory.jpg";
 function StorySection() {
   return (
     <section className="storySection">

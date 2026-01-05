@@ -2,12 +2,12 @@ import React from "react";
 import "./mySelfSection.css";
 import LeftAlignedParagraph from "../../components/LeftAlignedParagraph/LeftAlignedParagraph";
 
-import storyImage from "../../assets/images/natyStory.png";
-import focusImage from "../../assets/images/natyFocus.png";
-import purposeImage from "../../assets/images/natyPurpose.png";
-import movilstoryImage from "../../assets/images/natyStoryMovil.png";
-import movilfocusImage from "../../assets/images/natyFocusMovil.png";
-import movilpurposeImage from "../../assets/images/natyPurposeMovil.png";
+import storyImage from "../../assets/images/natyStory.jpg";
+import focusImage from "../../assets/images/natyFocus.jpg";
+import purposeImage from "../../assets/images/natyPurpose.jpg";
+import movilstoryImage from "../../assets/images/natyStoryMovil.jpg";
+import movilfocusImage from "../../assets/images/natyFocusMovil.jpg";
+import movilpurposeImage from "../../assets/images/natyPurposeMovil.jpg";
 
 function SectionBlock({
   title,

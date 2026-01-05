@@ -1,5 +1,5 @@
 .heroSection {
-  background-image: url("../../assets/images/heroHome.png");
+  background-image: url("../../assets/images/heroHome.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,7 +71,7 @@
 
 @media (max-width: 600px) {
   .heroSection {
-    background-image: url("../../assets/images/heroHomeMovil.png");
+    background-image: url("../../assets/images/heroHomeMovil.jpg");
     height: 60vh;
   }
 
@@ -91,7 +91,7 @@
   }
 
   .heroSection {
-    background-image: url("../../assets/images/heroHomeMovil.png");
+    background-image: url("../../assets/images/heroHomeMovil.jpg");
     height: auto;
   }
 

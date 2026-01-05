@@ -1,5 +1,5 @@
 .heroSectionAbout {
-  background-image: url("../../assets/images/heroAbout.png");
+  background-image: url("../../assets/images/heroAbout.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -72,7 +72,7 @@
 
 @media (max-width: 600px) {
   .heroSectionAbout {
-    background-image: url("../../assets/images/heroAboutMovil.png");
+    background-image: url("../../assets/images/heroAboutMovil.jpg");
     height: 60vh;
   }
 

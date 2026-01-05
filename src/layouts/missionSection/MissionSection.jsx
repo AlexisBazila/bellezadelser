@@ -3,7 +3,7 @@ import "./missionSection.css";
 
 import SmallButton from "../../components/smallButton/SmallButton";
 
-import myself from "../../assets/images/natyHome.png";
+import myself from "../../assets/images/natyHome.jpg";
 
 function MissionSection() {
   return (
