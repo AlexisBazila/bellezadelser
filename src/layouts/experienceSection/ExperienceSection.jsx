@@ -9,7 +9,7 @@ function ExperienceSection() {
     <section className="experienceSection">
       <div className="experienceContent">
         <div className="experiencePick">
-          <img src={hand} alt="" className="photo" />
+          <img src={hand} alt="manos en el pecho" className="photo" />
           <div className="experienceButtonMovil">
             <FirstButton caption={"Activar Mi Bienestar"} />
           </div>

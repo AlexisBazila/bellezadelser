@@ -11,7 +11,7 @@ function SessionsessionCard({ image, title, description, link }) {
       <div className="sessionCardContent">
         <div>
           <i>
-            <img src={blackLogo} alt="" />
+            <img src={blackLogo} alt="forma circular oscura" />
           </i>
         </div>
         <h3 className="sessionCard-title">{title}</h3>

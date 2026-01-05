@@ -95,7 +95,7 @@ function CheckAgenda() {
                   target="_blank"
                 >
                   <i>
-                    <img src={tiktok} alt="" />
+                    <img src={tiktok} alt="logotipo de tiktok" />
                   </i>
                 </a>
                 <a
@@ -103,12 +103,12 @@ function CheckAgenda() {
                   target="_blank"
                 >
                   <i>
-                    <img src={instagram} alt="" />
+                    <img src={instagram} alt="logotipo de instagram" />
                   </i>
                 </a>
                 <a href="https://www.facebook.com/coachnatyb" target="_blank">
                   <i>
-                    <img src={facebook} alt="" />
+                    <img src={facebook} alt="logotipo de facebook" />
                   </i>
                 </a>
                 <a
@@ -116,7 +116,7 @@ function CheckAgenda() {
                   target="_blank"
                 >
                   <i>
-                    <img src={youtube} alt="" />
+                    <img src={youtube} alt="logotipo de youtube" />
                   </i>
                 </a>
               </div>

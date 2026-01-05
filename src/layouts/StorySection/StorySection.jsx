@@ -15,7 +15,7 @@ function StorySection() {
           />
         </div>
         <div className="storyImage">
-          <img src={storyImage} alt="" />
+          <img src={storyImage} alt="Mujer con vestido blanco en el bosque" />
         </div>
       </div>
     </section>

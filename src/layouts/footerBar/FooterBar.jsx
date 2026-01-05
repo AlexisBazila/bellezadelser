@@ -27,7 +27,7 @@ function FooterBar() {
           <div className="navFooter">
             <div className="navFooterBar">
               <div className="logo">
-                <img src={logo} alt="" />
+                <img src={logo} alt="logotipo de formas circulares" />
                 <h3>
                   <strong>Belleza del Ser</strong>
                 </h3>

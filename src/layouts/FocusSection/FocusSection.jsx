@@ -7,7 +7,7 @@ function FocusSection() {
     <section className="focusSection">
       <div className="focusContent">
         <div className="focusImage">
-          <img src={focusImage} alt="" />
+          <img src={focusImage} alt="chica sentada sobre unas piedras" />
         </div>
         <div className="focusPharagraph">
           <LeftAlignedParagraph

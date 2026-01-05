@@ -6,7 +6,7 @@ const IconLeftAlignedParagraph = ({ logo, subTtitle, paragraphs = [] }) => {
     <div className="iconLeftAlignedParagraph">
       <div className="logoTitle">
         <i className="leftAlignedLogo">
-          <img src={logo} alt="" />
+          <img src={logo} alt="Forma circular" />
         </i>
         <h2>{subTtitle}</h2>
       </div>

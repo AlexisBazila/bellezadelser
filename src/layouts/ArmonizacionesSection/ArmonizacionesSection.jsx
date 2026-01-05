@@ -15,7 +15,7 @@ function ArmonizacionesSection() {
           />
         </div>
         <div className="ArmonizacionesImage">
-          <img src={ArmonizacionesImage} alt="" />
+          <img src={ArmonizacionesImage} alt="manos sosteniendo una tablets" />
         </div>
       </div>
     </section>

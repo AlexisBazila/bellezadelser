@@ -70,7 +70,8 @@ function NavBar() {
         {/* Menu Desktop */}
         <nav className="desktopNav">
           <Link to="/" className="logoHome">
-            <img src={logo} alt="" /> <h3>Belleza del Ser</h3>
+            <img src={logo} alt="logotipo de formas circulares" />{" "}
+            <h3>Belleza del Ser</h3>
           </Link>
 
           <div className="menuDesktop">
@@ -136,7 +137,8 @@ function NavBar() {
           </div>
 
           <Link to="/" className="logoHome">
-            <img src={logo} alt="" /> <h3>Belleza del Ser</h3>
+            <img src={logo} alt="logotipo de formas circulares" />{" "}
+            <h3>Belleza del Ser</h3>
           </Link>
 
           <a

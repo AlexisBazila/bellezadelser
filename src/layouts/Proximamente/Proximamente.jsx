@@ -28,7 +28,7 @@ function Proximamente() {
                   target="_blank"
                 >
                   <i>
-                    <img src={tiktok} alt="" />
+                    <img src={tiktok} alt="logo de tiktok" />
                   </i>
                 </a>
                 <a
@@ -36,12 +36,12 @@ function Proximamente() {
                   target="_blank"
                 >
                   <i>
-                    <img src={instagram} alt="" />
+                    <img src={instagram} alt="logo de instagram" />
                   </i>
                 </a>
                 <a href="https://www.facebook.com/coachnatyb" target="_blank">
                   <i>
-                    <img src={facebook} alt="" />
+                    <img src={facebook} alt="logo de facebook" />
                   </i>
                 </a>
                 <a
@@ -49,7 +49,7 @@ function Proximamente() {
                   target="_blank"
                 >
                   <i>
-                    <img src={youtube} alt="" />
+                    <img src={youtube} alt="logo de youtube" />
                   </i>
                 </a>
               </div>
