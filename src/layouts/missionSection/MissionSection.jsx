@@ -38,9 +38,10 @@ function MissionSection() {
       <div className="MyselfParagraphMovil">
         <h4>Naty Batista</h4>
         <p>
-          Terapeuta holística con años de experiencia en Reiki, Registros
-          Akáshicos y Coaching. Mi propósito es ayudarte a reconectar con tu
-          energía, tu esencia y tu poder interior.
+          Terapeuta Energética & Maestra Espiritual, experta en Sanación
+          Energética, Emocional y Espiritual, con muchos años de experiencia. Mi
+          propósito es ayudarte a reconectar tu energía, tu esencia y activar tu
+          poder interior.
         </p>
         <div className="boton">
           <SmallButton caption="Saber Más" link={"/sobre-mi"} />

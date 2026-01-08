@@ -72,7 +72,10 @@ function SessionCalendarSection({ links }) {
               )}
 
               {links[sessionType]?.world && (
-                <FirstButton caption="Paypal" link={links[sessionType].world} />
+                <FirstButton
+                  caption="Paypal / Tarjeta de credito"
+                  link={links[sessionType].world}
+                />
               )}
             </div>
 

@@ -33,12 +33,12 @@ function SesionRegistros() {
         <SessionCalendarSection
           links={{
             online: {
-              latam: "https://mpago.la/1AnXre4",
+              // latam: "https://mpago.la/1AnXre4",
               world:
                 "https://calendly.com/bellezadelseroficial/regoneu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
             distance: {
-              latam: "https://mpago.la/2JG8mzD",
+              // latam: "https://mpago.la/2JG8mzD",
               world:
                 "https://calendly.com/bellezadelseroficial/regdiseu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },

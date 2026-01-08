@@ -30,12 +30,12 @@ function SesionReiki() {
         <SessionCalendarSection
           links={{
             online: {
-              latam: "https://mpago.la/19RE6ZU",
+              // latam: "https://mpago.la/19RE6ZU",
               world:
                 "https://calendly.com/bellezadelseroficial/reikioneu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
             distance: {
-              latam: "https://mpago.la/2jXJn7i",
+              // latam: "https://mpago.la/2jXJn7i",
               world:
                 "https://calendly.com/bellezadelseroficial/reikidiseu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
