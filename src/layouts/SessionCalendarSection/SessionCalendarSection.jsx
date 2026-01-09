@@ -73,7 +73,7 @@ function SessionCalendarSection({ links }) {
 
               {links[sessionType]?.world && (
                 <FirstButton
-                  caption="Paypal / Tarjeta de credito"
+                  caption="Paypal / Tarjeta de crédito"
                   link={links[sessionType].world}
                 />
               )}
