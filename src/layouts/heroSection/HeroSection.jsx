@@ -10,8 +10,8 @@ function HeroSection() {
           <div className="paragraphHero">
             <div className="titleAndSubtitleHero">
               <h1 className="title">
-                Transformá tu energía, <br />{" "}
-                <strong>transformá tu vida.</strong>
+                Transforma tu energía, <br />{" "}
+                <strong> transforma tu vida.</strong>
               </h1>
               <h2>
                 Formaciones y prácticas energéticas para tu bienestar interior y

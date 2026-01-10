@@ -27,7 +27,8 @@ function App() {
           path="/sesiones/acompañamiento"
           element={<SesionAcompañamiento />}
         />
-        <Route path="/Armonizaciones/activaciones" element={<Activaciones />} />
+        <Route path="/Armonizaciones/activaciones" element={<Proximamente />} />
+        <Route path="/carrito" element={<Proximamente />} />
         <Route path="/Armonizaciones/ebooks" element={<Proximamente />} />
         <Route path="/checkagenda" element={<CheckAgenda />} />
         <Route path="*" element={<NotFound />} />

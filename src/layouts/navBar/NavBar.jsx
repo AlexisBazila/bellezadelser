@@ -115,9 +115,14 @@ function NavBar() {
                 <Link to="/sobre-mi">Sobre mí</Link>
               </li>
             </ul>
-            <a href="https://bellezadelser.com/tienda/carrito">
+
+            <Link
+              className="carrito"
+              // href="https://bellezadelser.com/tienda/carrito"
+              to="/carrito"
+            >
               <i className="fa-solid fa-cart-shopping"></i>
-            </a>
+            </Link>
           </div>
         </nav>
 
@@ -141,12 +146,13 @@ function NavBar() {
             <h3>Belleza del Ser</h3>
           </Link>
 
-          <a
+          <Link
             className="carrito"
-            href="https://bellezadelser.com/tienda/carrito"
+            // href="https://bellezadelser.com/tienda/carrito"
+            to="/carrito"
           >
             <i className="fa-solid fa-cart-shopping"></i>
-          </a>
+          </Link>
         </nav>
       </div>
 

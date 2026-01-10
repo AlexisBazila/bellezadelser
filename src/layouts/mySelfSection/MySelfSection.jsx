@@ -58,7 +58,7 @@ function MySelfSection() {
             "A través de Reiki, Registros Akáshicos y técnicas de desbloqueo energético profundo, trabajo en tu campo energético para liberar cargas, limpiar memorias emocionales, armonizar tus centros y abrir espacio para una nueva frecuencia.",
             "Para mi, lo fundamental es que puedas sentir la energía, comprender tus procesos y sostener cambios reales, no solo inspirarte por un momento. Acompaño desde la presencia, la escucha y el fortalecimiento de tu propio poder interno.",
 
-            "Mi propósito y forma de trabajar: Mi propósito es guiarte a recuperar tu energía vital, tu fuerza y tu conexión con vos mismo/a. Me inspira ver esa transformación que ocurre cuando alguien deja de vivir desde la carga, la escasez, el miedo o el agotamiento… y comienza a habitarse desde la coherencia, la claridad y la expansión.",
+            "Mi propósito es guiarte a recuperar tu energía vital, tu fuerza y tu conexión con vos mismo/a. Me inspira ver esa transformación que ocurre cuando alguien deja de vivir desde la carga, la escasez, el miedo o el agotamiento… y comienza a habitarse desde la coherencia, la claridad y la expansión.",
           ]}
           image={focusImage}
           mobileImage={movilfocusImage}
@@ -81,7 +81,7 @@ function MySelfSection() {
             </p>
             <p>
               Mi manera de trabajar combina técnica, intuición y una profunda
-              conexión espiritual.
+              conexión espiritual.{" "}
               <strong>
                 Sostengo tu energía, pero tu eres parte activa del proceso;
                 juntos creamos el espacio para que lo que estaba bloqueado

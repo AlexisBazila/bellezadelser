@@ -23,7 +23,7 @@ function SesionAcompañamiento() {
             "El Acompañamiento Holístico es un acompañamiento integral que une herramientas de crecimiento personal, gestión emocional y conciencia energética para ayudarte a transformar tu vida desde adentro hacia afuera.",
             "En cada sesión exploramos tus pensamientos, emociones, creencias y hábitos, comprendiendo cómo se relacionan entre sí y cómo influyen en tu bienestar.",
             "Este enfoque te permite ganar claridad, ordenar tu mente, fortalecer tu autoestima y tomar decisiones alineadas con lo que realmente necesitás.",
-            "El objetivo es que te sientas más equilibrada, consciente y conectada con vos misma, creando cambios reales y sostenibles en tu día a día.",
+            "El objetivo es acompañar a cada persona a sentirse más equilibrada, consciente y conectada consigo misma, generando cambios reales y sostenibles en su día a día.",
           ]}
           imageDesktop={SesionAcompañamientoImage}
           imageMobile={SesionAcompañamientoIMovil}
@@ -33,6 +33,8 @@ function SesionAcompañamiento() {
           links={{
             online: {
               // latam: "https://mpago.la/126Rqtv",
+              latam:
+                "https://calendly.com/bellezadelseroficial/acompanamiento?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/acomoneu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },

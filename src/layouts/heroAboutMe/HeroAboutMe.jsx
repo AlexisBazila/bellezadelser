@@ -9,8 +9,8 @@ function HeroAboutMe() {
             <div className="titleAndSubtitleHeroAbout">
               <h1 className="title">Conoce mi camino</h1>
               <h2>
-                Coach holística especializada en sanación energética y
-                espiritual.
+                Terapeuta Energética y Guía Espiritual especializada en sanación
+                energética y espiritual.
               </h2>
             </div>
           </div>

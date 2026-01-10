@@ -15,7 +15,7 @@ function MissionSection() {
         <div className="MyselfParagraph">
           <h4>Naty Batista</h4>
           <p>
-            Terapeuta Energética & Maestra Espiritual, experta en Sanación
+            Terapeuta Energética & Guía Espiritual, experta en Sanación
             Energética, Emocional y Espiritual, con muchos años de experiencia.
             Mi propósito es ayudarte a reconectar tu energía, tu esencia y
             activar tu poder interior.
@@ -38,7 +38,7 @@ function MissionSection() {
       <div className="MyselfParagraphMovil">
         <h4>Naty Batista</h4>
         <p>
-          Terapeuta Energética & Maestra Espiritual, experta en Sanación
+          Terapeuta Energética & Guía Espiritual, experta en Sanación
           Energética, Emocional y Espiritual, con muchos años de experiencia. Mi
           propósito es ayudarte a reconectar tu energía, tu esencia y activar tu
           poder interior.
