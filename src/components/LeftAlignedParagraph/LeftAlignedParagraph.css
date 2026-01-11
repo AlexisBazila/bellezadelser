@@ -27,6 +27,9 @@
   .LeftAlignedParagraph {
     margin-bottom: 20px;
   }
+  .experienceButtonMovil {
+    display: flex;
+  }
 }
 
 @media (max-width: 600px) {
