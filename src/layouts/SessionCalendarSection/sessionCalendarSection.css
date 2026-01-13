@@ -37,6 +37,10 @@
   min-width: 300px;
 }
 
+.captionPais {
+  font-size: 18px;
+}
+
 @media (max-width: 1160px) {
   .contentProductsMarked {
     padding: 5% 3rem;
@@ -48,8 +52,16 @@
   }
 }
 
+@media (max-width: 900px) {
+  .captionPais {
+    font-size: 15px;
+  }
+
+}
+
 @media (max-width: 600px) {
   .contentProductsMarked {
     padding: 5% 2rem;
   }
+
 }

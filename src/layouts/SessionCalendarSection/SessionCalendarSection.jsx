@@ -66,14 +66,26 @@ function SessionCalendarSection({ links }) {
             <div className="buttonStore centeredButtons">
               {links[sessionType]?.latam && (
                 <FirstButton
-                  caption="Mercado Pago"
+                  caption={
+                    <>
+                      <span className="captionPais"> Argentina</span>
+                      <br />
+                      <span>Mercado Pago</span>
+                    </>
+                  }
                   link={links[sessionType].latam}
                 />
               )}
 
               {links[sessionType]?.world && (
                 <FirstButton
-                  caption="Paypal / Tarjeta de crédito"
+                  caption={
+                    <>
+                      <span className="captionPais">Internacional</span>
+                      <br />
+                      <span>PayPal / Tarjeta</span>
+                    </>
+                  }
                   link={links[sessionType].world}
                 />
               )}
