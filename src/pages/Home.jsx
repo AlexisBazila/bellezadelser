@@ -4,6 +4,7 @@ import MissionSection from "../layouts/missionSection/MissionSection";
 import ExperienceSection from "../layouts/experienceSection/ExperienceSection";
 import ReviewsSection from "../layouts/reviewsSection/ReviewsSection";
 import SessionSection from "../layouts/sessionSection/SessionSection";
+import FQA from "../layouts/FQA/FQA";
 function Home() {
   return (
     <div>
@@ -12,6 +13,7 @@ function Home() {
       <ExperienceSection />
       <SessionSection />
       <ReviewsSection />
+      <FQA />
     </div>
   );
 }
