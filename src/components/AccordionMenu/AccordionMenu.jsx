@@ -6,11 +6,17 @@ function AccordionMenu({ pregunta, respuesta, isOpen, onClick }) {
     <div className="accordion-item">
       <div className="accordion-header" onClick={onClick}>
         {pregunta}
-        <span className={`accordion-icon ${isOpen ? "open" : ""}`}>▶</span>
+        <span className={`accordion-icon ${isOpen ? "open" : ""}`}>
+          <i className="fa-solid fa-chevron-right"></i>
+        </span>
       </div>
 
       <div className={`accordion-content ${isOpen ? "open" : ""}`}>
-        <p className="accordion-text">{respuesta}</p>
+        <p className="accordion-text">
+          {respuesta.map((linea, index) => (
+            <p key={index}>{linea}</p>
+          ))}
+        </p>
       </div>
     </div>
   );
