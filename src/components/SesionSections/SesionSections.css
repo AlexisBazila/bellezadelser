@@ -1,0 +1,79 @@
+.sesion-section {
+  padding: 80px 5%;
+}
+
+.sesion-container {
+  max-width: 90vw;
+}
+
+/* Variantes de fondo */
+.sesion-section.light {
+  background-color: #e7ecd9;
+}
+
+.sesion-section.soft {
+  background-color: #fff;
+}
+
+.sesion-section.strong {
+  background-color: #b77b52;
+}
+
+/* Título */
+.sesion-title {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+/* Colores según fondo */
+.sesion-section.light .sesion-title,
+.sesion-section.soft .sesion-title {
+  color: #b77b52;
+}
+
+.sesion-section.strong .sesion-title {
+  color: #fff;
+}
+
+/* Contenido */
+.sesion-content p {
+  color: #3c3c3c;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  font-size: 20px;
+}
+
+.sesion-content ul {
+  padding-left: 20px;
+}
+
+.sesion-content li {
+  margin-bottom: 8px;
+  color: #3c3c3c;
+}
+
+/* Texto claro en fondo oscuro */
+.sesion-section.strong p,
+.sesion-section.strong li {
+  color: #fff;
+}
+
+.sesion-content ul {
+  padding-left: 20px;
+}
+
+.sesion-content li {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+
+/* Sublista */
+.nested-list {
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.nested-list li {
+  font-size: 18px;
+  opacity: 0.9;
+}
