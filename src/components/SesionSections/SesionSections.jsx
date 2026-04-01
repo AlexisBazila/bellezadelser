@@ -1,17 +1,18 @@
 import React from "react";
 import "./SesionSections.css";
+import useInView from "../../hooks/useInView";
 
 function SesionSections({ title, content, variant = "light" }) {
+  const [ref, visible] = useInView();
+
   const renderList = (items) => {
     return (
       <ul>
         {items.map((item, i) => {
-          // Caso simple: string
           if (typeof item === "string") {
             return <li key={i}>{item}</li>;
           }
 
-          // Caso objeto: con posible sublista
           return (
             <li key={i}>
               {item.text}
@@ -31,8 +32,8 @@ function SesionSections({ title, content, variant = "light" }) {
   };
 
   return (
-    <section className={`sesion-section ${variant}`}>
-      <div className="sesion-container">
+    <section ref={ref} className={`sesion-section ${variant}`}>
+      <div className={`sesion-container ${visible ? "visible" : ""}`}>
         <h2 className="sesion-title">{title}</h2>
 
         <div className="sesion-content">

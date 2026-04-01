@@ -1,3 +1,4 @@
+/* ---- Sección ---- */
 .ProductDescriptionSection {
   background-image: url("../../assets/images/fondoProducts.png");
   background-size: cover;
@@ -5,12 +6,14 @@
   background-repeat: no-repeat;
 }
 
+/* ---- Contenido ---- */
 .ProductDescriptionContent {
   padding: 5% 5rem;
   display: flex;
   align-items: center;
 }
 
+/* ---- Texto ---- */
 .ProductDescriptionPharagraph .LeftAlignedParagraph h2 {
   color: #000;
 }
@@ -19,9 +22,11 @@
   color: #000;
 }
 
+/* ---- Imagen ---- */
 .ProductDescriptionImage {
   margin-left: 5%;
 }
+
 .ProductDescriptionImage picture,
 .ProductDescriptionImage img {
   width: 100%;
@@ -29,16 +34,47 @@
   height: auto;
   display: block;
 }
+
+/* ---- Botón (si se usa) ---- */
 .buttonStore {
   text-align: center;
   margin-bottom: 50px;
 }
+
+/* ========================= */
+/* ✨ ANIMACIONES */
+/* ========================= */
+
+/* Estado inicial */
+.fade-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.7s ease;
+}
+
+.fade-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.7s ease;
+}
+
+/* Estado visible */
+.show {
+  opacity: 1;
+  transform: translate(0, 0);
+  /* clave para que funcione en desktop y mobile */
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE */
+/* ========================= */
 
 @media (max-width: 1160px) {
   .ProductDescriptionContent {
     padding: 5% 3rem;
     flex-direction: column;
   }
+
   .ProductDescriptionImage {
     width: 100%;
     margin: 20px 0;
@@ -49,6 +85,15 @@
     max-width: 95%;
     margin: 0 auto;
     display: block;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* En mobile animamos desde abajo */
+  .fade-left,
+  .fade-right {
+    transform: translateY(30px);
   }
 }
 

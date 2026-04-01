@@ -75,9 +75,11 @@
 .content-container.visible .content-text p:nth-child(1) {
   transition-delay: 0.1s;
 }
+
 .content-container.visible .content-text p:nth-child(2) {
   transition-delay: 0.2s;
 }
+
 .content-container.visible .content-text p:nth-child(3) {
   transition-delay: 0.3s;
 }
