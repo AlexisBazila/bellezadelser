@@ -1,0 +1,124 @@
+.pack-card {
+    padding: 80px 10%;
+    background-color: #fff;
+    color: #3C3C3C;
+
+}
+
+.pack-container {
+    max-width: 800px;
+
+}
+
+/* Código */
+.pack-code {
+    background-color: #E7ECD9;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+/* Título */
+.pack-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #3C3C3C;
+}
+
+/* Modalidad */
+.pack-modalidad {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+/* Incluye */
+.pack-includes ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.pack-includes li {
+    margin-bottom: 5px;
+    color: #3C3C3C;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+
+/* Descripción */
+.pack-description {
+    margin-top: 20px;
+    line-height: 1.6;
+    color: #3C3C3C;
+}
+
+/* Botón */
+.pack-button {
+    margin-top: 30px;
+}
+
+.reserve-btn {
+    background-color: #C3CFA1;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    color: #647B4D;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.reserve-btn:hover {
+
+    color: #C3CFA1;
+    background-color: #647B4D;
+}
+
+/* Step container */
+.pack-step {
+    margin-top: 30px;
+    animation: fadeIn 0.3s ease;
+}
+
+/* Botones del pack (NO usar buttonStore) */
+.pack-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+
+/* Ajuste de botones dentro del pack */
+.pack-buttons a,
+.pack-buttons button {
+    flex: 1;
+    min-width: 220px;
+    text-align: center;
+}
+
+/* Back */
+.back-btn {
+    margin-top: 20px;
+    background: none;
+    border: none;
+    color: #6b6b6b;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

@@ -10,6 +10,7 @@ import Activaciones from "./pages/Activaciones";
 import SesionRegistros from "./pages/SesionRegistros";
 import CheckAgenda from "./layouts/CheckAgenda/CheckAgenda";
 import SesionAcompañamiento from "./pages/SesionAcompañamiento";
+import SesionsPack from "./pages/SesionsPack";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
         <Route path="/carrito" element={<Proximamente />} />
         <Route path="/Armonizaciones/ebooks" element={<Proximamente />} />
         <Route path="/checkagenda" element={<CheckAgenda />} />
+        <Route path="/packs" element={<SesionsPack />} />
         <Route path="*" element={<NotFound />} />
         {/*<Route path="/Cursos" element={<Curso />} /> */}
       </Routes>
