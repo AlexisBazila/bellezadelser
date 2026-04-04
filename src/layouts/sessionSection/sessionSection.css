@@ -2,16 +2,67 @@
   padding: 2% 10%;
   margin-bottom: 50px;
 }
+
 .titleSection {
   font-size: 42px;
   text-align: center;
   color: #b77b52;
   margin: 50px 0 50px 0;
 }
+
+/* CONTENEDOR DE CARDS */
 .cardSession {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
   margin-top: 30px;
+  padding-bottom: 50px;
+  max-height: 950px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.5s ease;
+}
+
+/* EXPANDIDO */
+.cardSession.expanded {
+  max-height: max-content;
+}
+
+/* 🔥 FADE INFERIOR (efecto "hay más contenido") */
+.cardSession::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  pointer-events: none;
+}
+
+.cardSession.expanded::after {
+  display: none;
+}
+
+/* BOTÓN */
+.showMoreContainer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.showMoreContainer button {
+  background-color: #c3cfa1;
+  color: #647b4d;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.showMoreContainer button:hover {
+  background-color: #647b4d;
+  color: #c3cfa1;
 }

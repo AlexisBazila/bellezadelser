@@ -1,34 +1,136 @@
-import React from "react";
+import React, { useState } from "react";
 import "./sessionSection.css";
 import SessionCard from "../../components/SessionCard/SessionCard";
+
 import sesionReiki from "../../assets/images/sesionReiki.png";
 import sesionRegistros from "../../assets/images/sesionRegistros.png";
-import sessionAcompañamiento from "../../assets/images/sesionAcompañamiento.png";
+import sesionAcompañamiento from "../../assets/images/sesionAcompañamiento.png";
+import sesionBloqueos from "../../assets/images/sesionBloqueos.png";
+import sesionChakras from "../../assets/images/sesionChakras.png";
+import sesionEstres from "../../assets/images/sesionEstres.png";
+import sesionLimpiezaEspacios from "../../assets/images/sesionLimpiezaEspacios.png";
+import sesionMascotas from "../../assets/images/sesionMascotas.png";
+import sesionOncologico from "../../assets/images/sesionOncologico.png";
+import sesionUtero from "../../assets/images/sesionUtero.png";
+import sesionAbundancia from "../../assets/images/sesionAbundancia.png";
+import sesionBelleza from "../../assets/images/sesionBelleza.png";
+
+// 🔹 Ejemplo
+import extra1 from "../../assets/images/sesionReiki.png";
+
 function SessionSection() {
+  const [showMore, setShowMore] = useState(false);
+
+  const sessions = [
+    {
+      image: sesionReiki,
+      title: "Reiki Usui",
+      description:
+        "Equilibra tu energía, libera bloqueos y recupera la armonía interior a través de la sanación con Reiki.",
+      link: "/sesiones/reiki#sessionCalendar",
+    },
+    {
+      image: sesionRegistros,
+      title: "Registros Akáshicos",
+      description:
+        "Conecta con la sabiduría de tu alma, recibe claridad y guía para tu camino personal y espiritual.",
+      link: "/sesiones/registros-akashicos#sessionCalendar",
+    },
+    {
+      image: sesionAcompañamiento,
+      title: "Acompañamiento Holistico",
+      description:
+        "Descubre tu potencial, supera obstáculos y avanza con foco hacia la vida que querés crear.",
+      link: "/sesiones/acompañamiento#sessionCalendar",
+    },
+    // Revisar antes de lanzar
+    {
+      image: sesionAbundancia,
+      title: "Abundancia y Apertura de Caminos",
+      description:
+        "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      link: "#",
+    },
+    {
+      image: sesionBloqueos,
+      title: "Sanación de Bloqueos en el Amor",
+      description:
+        "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      link: "#",
+    },
+    {
+      image: sesionUtero,
+      title: "Sanación de Útero",
+      description:
+        "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      link: "#",
+    },
+    {
+      image: sesionEstres,
+      title: "Sanación para el Estrés y la Ansiedad Consciente",
+      description:
+        "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      link: "#",
+    },
+    {
+      image: sesionChakras,
+      title: "Limpieza y Alineación de chakras",
+      description:
+        "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      link: "#",
+    },
+    {
+      image: sesionLimpiezaEspacios,
+      title: "Limpieza Energética de Espacios",
+      description:
+        "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      link: "#",
+    },
+    {
+      image: sesionMascotas,
+      title: "Reiki para Mascotas",
+      description:
+        "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      link: "#",
+    },
+    {
+      image: sesionOncologico,
+      title: "Reiki Oncológico",
+      description:
+        "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      link: "#",
+    },
+    {
+      image: sesionBelleza,
+      title: "Ritual de Belleza Holística",
+      description:
+        "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      link: "#",
+    },
+  ];
+
   return (
     <section className="sessionSection" id="sessionSection">
       <div className="titleSession">
         <h2 className="titleSection">Agenda tu Sesión</h2>
       </div>
-      <div className="cardSession">
-        <SessionCard
-          image={sesionReiki}
-          title="Reiki"
-          description="Equilibra tu energía, libera bloqueos y recupera la armonía interior a través de la sanación con Reiki."
-          link={"/sesiones/reiki#sessionCalendar"}
-        />
-        <SessionCard
-          image={sesionRegistros}
-          title="Registros Akáshicos"
-          description="Conecta con la sabiduría de tu alma, recibe claridad y guía para tu camino personal y espiritual."
-          link={"/sesiones/registros-akashicos#sessionCalendar"}
-        />
-        <SessionCard
-          image={sessionAcompañamiento}
-          title="Acompañamiento Holistico"
-          description="Descubre tu potencial, supera obstáculos y avanza con foco hacia la vida que querés crear."
-          link={"/sesiones/acompañamiento#sessionCalendar"}
-        />
+
+      <div className={`cardSession ${showMore ? "expanded" : ""}`}>
+        {sessions.map((session, index) => (
+          <SessionCard
+            key={index}
+            image={session.image}
+            title={session.title}
+            description={session.description}
+            link={session.link}
+          />
+        ))}
+      </div>
+
+      <div className="showMoreContainer">
+        <button onClick={() => setShowMore(!showMore)}>
+          {showMore ? "Ver menos" : "Ver más"}
+        </button>
       </div>
     </section>
   );
