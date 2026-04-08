@@ -71,7 +71,7 @@ function NavBar() {
 
               {/* MEGA MENU */}
               <li className="menu-item mega">
-                <span className="mega-trigger">Activar mi bienestar ▾</span>
+                <a className="mega-trigger">Activar mi bienestar ▾</a>
 
                 <div className="megaMenu">
                   <div className="megaColumn">
@@ -82,6 +82,11 @@ function NavBar() {
                     </Link>
                     <Link to="/sesiones/acompañamiento">Acompañamiento</Link>
                     <Link to="#">Belleza Holística</Link>
+                  </div>
+
+                  <div className="megaColumn">
+                    <h4>Belleza Holística</h4>
+                    <Link to="#">Rituales de Belleza</Link>
                   </div>
 
                   <div className="megaColumn">
@@ -104,7 +109,8 @@ function NavBar() {
 
                   <div className="megaColumn">
                     <h4>Armonizaciones</h4>
-                    <Link to="#">Rituales de Belleza</Link>
+                    <Link to="#">Activaciones Energéticas</Link>
+                    <Link to="#">eBooks</Link>
                   </div>
                 </div>
               </li>
