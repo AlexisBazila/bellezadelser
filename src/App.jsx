@@ -11,6 +11,7 @@ import SesionRegistros from "./pages/SesionRegistros";
 import CheckAgenda from "./layouts/CheckAgenda/CheckAgenda";
 import SesionAcompañamiento from "./pages/SesionAcompañamiento";
 import SesionsPack from "./pages/SesionsPack";
+import SesionAbundancia from "./pages/SesionAbundancia";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           path="/sesiones/acompañamiento"
           element={<SesionAcompañamiento />}
         />
+        <Route path="/sesiones/abundancia" element={<SesionAbundancia />} />
         <Route path="/Armonizaciones/activaciones" element={<Activaciones />} />
         <Route path="/carrito" element={<Proximamente />} />
         <Route path="/Armonizaciones/ebooks" element={<Proximamente />} />
