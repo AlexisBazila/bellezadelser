@@ -12,6 +12,9 @@ import CheckAgenda from "./layouts/CheckAgenda/CheckAgenda";
 import SesionAcompañamiento from "./pages/SesionAcompañamiento";
 import SesionsPack from "./pages/SesionsPack";
 import SesionAbundancia from "./pages/SesionAbundancia";
+import SesionBelleza from "./pages/SesionBelleza";
+import SesionBloqueos from "./pages/SesionBloqueos";
+import SesionUtero from "./pages/SesionUtero";
 
 function App() {
   return (
@@ -30,6 +33,9 @@ function App() {
           element={<SesionAcompañamiento />}
         />
         <Route path="/sesiones/abundancia" element={<SesionAbundancia />} />
+        <Route path="/sesiones/belleza" element={<SesionBelleza />} />
+        <Route path="/sesiones/bloqueos" element={<SesionBloqueos />} />
+        <Route path="/sesiones/sanacion-de-utero" element={<SesionUtero />} />
         <Route path="/Armonizaciones/activaciones" element={<Activaciones />} />
         <Route path="/carrito" element={<Proximamente />} />
         <Route path="/Armonizaciones/ebooks" element={<Proximamente />} />
