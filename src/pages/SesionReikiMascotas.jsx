@@ -1,0 +1,106 @@
+import HeroSession from "../layouts/HeroSession/HeroSession";
+import ProductDescriptionSection from "../layouts/ProductDescritpionSection/ProductDescriptionSection";
+import SesionMascotasImagen from "../assets/images/sesionMascotas.png";
+import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
+import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
+import SesionSections from "../components/SesionSections/SesionSections";
+
+function SesionReikiMascotas() {
+  return (
+    <>
+      <div>
+        <HeroSession title={"Reiki para Mascotas"} />
+        <ProductDescriptionSection
+          subTtitle={"¿Qué es el Reiki para Mascotas?"}
+          paragraphs={[
+            "El Reiki para Mascotas es un acompañamiento energético diseñado para animales que atraviesan procesos físicos, emocionales o energéticos, respetando siempre su sensibilidad y su ritmo natural.",
+
+            "El Reiki actúa de forma suave y profunda, ayudando a equilibrar su campo energético, fortalecer su energía vital y generar estados de calma, bienestar y armonía.",
+          ]}
+          imageDesktop={SesionMascotasImagen}
+          imageMobile={SesionMascotasImagen}
+        />
+        <SesionSections
+          title="Esta sesión es para ti si…"
+          variant="light"
+          content={[
+            {
+              type: "list",
+              items: [
+                "Vive estrés, ansiedad o miedo (viajes, mudanzas, fuegos artificiales, visitas al veterinario o cambios en el hogar)",
+                "Está atravesando procesos de enfermedad o recuperación",
+                "Presenta dolores físicos o malestar general",
+                "Ha tenido cambios de comportamiento",
+                "Se encuentra en etapas de envejecimiento",
+                "Necesita acompañamiento en momentos delicados o de final de vida",
+                "Es una mascota adoptada con historia de abandono o trauma",
+              ],
+            },
+            {
+              type: "paragraph",
+              text: "El Reiki no reemplaza la atención veterinaria, sino que actúa como un acompañamiento energético complementario.",
+            },
+          ]}
+        />
+        <TipoSesionSection tipos={["distancia"]} />
+        <SesionSections
+          title="Beneficios"
+          variant="light"
+          content={[
+            {
+              type: "list",
+              items: [
+                "Mayor calma y relajación.",
+                "Disminución del estrés.",
+                "Mejor adaptación a cambios.",
+                "Acompañamiento en procesos de sanación.",
+                "Bienestar integral.",
+                "Fortalecimiento del vínculo con su familia humana.",
+              ],
+            },
+          ]}
+        />
+        <SesionSections
+          title="Importante saber"
+          variant="strong"
+          content={[
+            {
+              type: "list",
+              items: [
+                "Cada mascota responde de manera distinta",
+                "El Reiki es un trabajo en equipo: la energía acompaña y el entorno sostiene el proceso",
+                "Este servicio no reemplaza tratamientos médicos ni veterinarios",
+              ],
+            },
+          ]}
+        />
+        <SesionSections
+          title="Incluye"
+          variant="light"
+          content={[
+            {
+              type: "list",
+              items: [
+                "Qué zonas trabajé",
+                "Qué se percibió a nivel energético",
+                "Qué significan esas sensaciones",
+                "Cómo acompañar a tu mascota los días siguientes",
+              ],
+            },
+          ]}
+        />
+        <SessionCalendarSection
+          links={{
+            distance: {
+              latam: true,
+              world: "https://calendly.com/bellezadelseroficial/",
+            },
+          }}
+          sessionName="Reiki para Mascotas"
+        />
+      </div>
+    </>
+  );
+}
+
+export default SesionReikiMascotas;

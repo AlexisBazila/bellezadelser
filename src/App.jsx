@@ -15,6 +15,11 @@ import SesionAbundancia from "./pages/SesionAbundancia";
 import SesionBelleza from "./pages/SesionBelleza";
 import SesionBloqueos from "./pages/SesionBloqueos";
 import SesionUtero from "./pages/SesionUtero";
+import SesionEstres from "./pages/SesionEstres";
+import SesionChakras from "./pages/SesionChakras";
+import SesionLimpiezaEspacios from "./pages/SesionLimpiezaEspacios";
+import SesionReikiMascotas from "./pages/SesionReikiMascotas";
+import SesionReikiOncologico from "./pages/SesionReikiOncologico";
 
 function App() {
   return (
@@ -36,6 +41,20 @@ function App() {
         <Route path="/sesiones/belleza" element={<SesionBelleza />} />
         <Route path="/sesiones/bloqueos" element={<SesionBloqueos />} />
         <Route path="/sesiones/sanacion-de-utero" element={<SesionUtero />} />
+        <Route path="/sesiones/sanacion-estres" element={<SesionEstres />} />
+        <Route path="/sesiones/chakras" element={<SesionChakras />} />
+        <Route
+          path="/sesiones/limpieza-de-espacios"
+          element={<SesionLimpiezaEspacios />}
+        />
+        <Route
+          path="/sesiones/reiki-para-mascotas"
+          element={<SesionReikiMascotas />}
+        />
+        <Route
+          path="/sesiones/reiki-oncologico"
+          element={<SesionReikiOncologico />}
+        />
         <Route path="/Armonizaciones/activaciones" element={<Activaciones />} />
         <Route path="/carrito" element={<Proximamente />} />
         <Route path="/Armonizaciones/ebooks" element={<Proximamente />} />

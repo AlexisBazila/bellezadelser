@@ -3,7 +3,6 @@ import ProductsMarkedSection from "../layouts/ProductsMarkedSection/ProductsMark
 import HeroSession from "../layouts/HeroSession/HeroSession";
 import ProductDescriptionSection from "../layouts/ProductDescritpionSection/ProductDescriptionSection";
 import SesionRegistrosImage from "../assets/images/sesionRegistros.png";
-import SesionRegistrosIMovil from "../assets/images/sesionRegistrosMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
 import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
 import SesionSections from "../components/SesionSections/SesionSections";
@@ -25,7 +24,7 @@ function SesionRegistros() {
             "Acceder a ellos no es adivinación ni predicción, sino un acto de escucha profunda y consciente que permite comprender por qué estás viviendo ciertas situaciones y qué aprendizaje hay detrás.",
           ]}
           imageDesktop={SesionRegistrosImage}
-          imageMobile={SesionRegistrosIMovil}
+          imageMobile={SesionRegistrosImage}
         />
         <SesionSections
           title="Esta sesión es para ti si…"

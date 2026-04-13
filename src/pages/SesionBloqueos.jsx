@@ -1,7 +1,6 @@
 import HeroSession from "../layouts/HeroSession/HeroSession";
 import ProductDescriptionSection from "../layouts/ProductDescritpionSection/ProductDescriptionSection";
 import SesionBloqueosImagen from "../assets/images/sesionBloqueos.png";
-import SesionReikiIMovil from "../assets/images/sesionReikiMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
 import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
 import SesionSections from "../components/SesionSections/SesionSections";
@@ -19,7 +18,7 @@ function SesionBloqueos() {
             "Esta sanación busca ordenar la energía del amor, restaurar la confianza y abrir el corazón desde un lugar seguro.",
           ]}
           imageDesktop={SesionBloqueosImagen}
-          imageMobile={SesionReikiIMovil}
+          imageMobile={SesionBloqueosImagen}
         />
         <SesionSections
           title="Esta sesión es para ti si…"

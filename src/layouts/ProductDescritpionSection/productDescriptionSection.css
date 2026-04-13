@@ -16,6 +16,7 @@
 /* ---- Texto ---- */
 .ProductDescriptionPharagraph .LeftAlignedParagraph h2 {
   color: #000;
+  white-space: wrap;
 }
 
 .ProductDescriptionPharagraph .LeftAlignedParagraph p {
@@ -89,7 +90,6 @@
 }
 
 @media (max-width: 768px) {
-
   /* En mobile animamos desde abajo */
   .fade-left,
   .fade-right {

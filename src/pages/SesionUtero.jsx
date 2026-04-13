@@ -1,7 +1,6 @@
 import HeroSession from "../layouts/HeroSession/HeroSession";
 import ProductDescriptionSection from "../layouts/ProductDescritpionSection/ProductDescriptionSection";
 import SesionUteroImagen from "../assets/images/sesionUtero.png";
-import SesionReikiIMovil from "../assets/images/sesionReikiMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
 import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
 import SesionSections from "../components/SesionSections/SesionSections";
@@ -19,7 +18,7 @@ function SesionUtero() {
             "Esta sanación trabaja a nivel energético, emocional y espiritual, ayudando a liberar cargas antiguas y a devolverle al vientre su lugar de conciencia y poder.",
           ]}
           imageDesktop={SesionUteroImagen}
-          imageMobile={SesionReikiIMovil}
+          imageMobile={SesionUteroImagen}
         />
         <SesionSections
           title="Esta sesión es para ti si…"

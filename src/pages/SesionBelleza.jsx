@@ -1,9 +1,6 @@
 import HeroSession from "../layouts/HeroSession/HeroSession";
 import ProductDescriptionSection from "../layouts/ProductDescritpionSection/ProductDescriptionSection";
 import SesionBellezaImagen from "../assets/images/sesionBelleza.png";
-import SesionReikiIMovil from "../assets/images/sesionReikiMovil.png";
-import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
-import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
 import SesionSections from "../components/SesionSections/SesionSections";
 
 function SesionBelleza() {
@@ -23,7 +20,7 @@ function SesionBelleza() {
             "Es un ritual profundo de reconexión con el cuerpo, donde el rostro se trabaja como un mapa emocional y energético, y la piel como reflejo del equilibrio interno.",
           ]}
           imageDesktop={SesionBellezaImagen}
-          imageMobile={SesionReikiIMovil}
+          imageMobile={SesionBellezaImagen}
         />
         <SesionSections
           title="Este ritual es para ti si…"

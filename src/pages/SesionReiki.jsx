@@ -1,7 +1,7 @@
 import HeroSession from "../layouts/HeroSession/HeroSession";
 import ProductDescriptionSection from "../layouts/ProductDescritpionSection/ProductDescriptionSection";
 import SesionReikiImage from "../assets/images/sesionReiki.png";
-import SesionReikiIMovil from "../assets/images/sesionReikiMovil.png";
+
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
 import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
 import SesionSections from "../components/SesionSections/SesionSections";
@@ -18,7 +18,7 @@ function SesionReiki() {
             "Es un método suave y no invasivo que ayuda a ordenar el campo energético para que la energía vuelva a fluir de manera natural, según lo que cada persona necesita en ese momento.",
           ]}
           imageDesktop={SesionReikiImage}
-          imageMobile={SesionReikiIMovil}
+          imageMobile={SesionReikiImage}
         />
         <SesionSections
           title="Esta sesión es para ti si…"

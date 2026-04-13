@@ -1,7 +1,6 @@
 import HeroSession from "../layouts/HeroSession/HeroSession";
 import ProductDescriptionSection from "../layouts/ProductDescritpionSection/ProductDescriptionSection";
 import SesionAcompañamientoImage from "../assets/images/sesionAcompañamiento.png";
-import SesionAcompañamientoIMovil from "../assets/images/sesionAcompañamientoMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
 import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
 import SesionSections from "../components/SesionSections/SesionSections";
@@ -22,7 +21,7 @@ function SesionAcompañamiento() {
             "Es un espacio de acompañamiento consciente que te ayuda a ordenar tu mundo interno y avanzar con mayor claridad y coherencia.",
           ]}
           imageDesktop={SesionAcompañamientoImage}
-          imageMobile={SesionAcompañamientoIMovil}
+          imageMobile={SesionAcompañamientoImage}
         />
         <SesionSections
           title="Esta sesión es para ti si…"

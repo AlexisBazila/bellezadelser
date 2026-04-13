@@ -1,7 +1,6 @@
 import HeroSession from "../layouts/HeroSession/HeroSession";
 import ProductDescriptionSection from "../layouts/ProductDescritpionSection/ProductDescriptionSection";
 import SesionAbundanciaImagen from "../assets/images/sesionAbundancia.png";
-import SesionReikiIMovil from "../assets/images/sesionReikiMovil.png";
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
 import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
 import SesionSections from "../components/SesionSections/SesionSections";
@@ -19,7 +18,7 @@ function SesionAbundancia() {
             "Este trabajo busca liberar esos bloqueos y activar el merecimiento y la capacidad de recibir.",
           ]}
           imageDesktop={SesionAbundanciaImagen}
-          imageMobile={SesionReikiIMovil}
+          imageMobile={SesionAbundanciaImagen}
         />
         <SesionSections
           title="Esta sesión es para ti si…"
