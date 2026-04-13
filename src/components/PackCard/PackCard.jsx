@@ -53,7 +53,13 @@ Disponibilidad horaria:`;
         </div>
 
         {/* Descripción */}
-        <p className="pack-description">{description}</p>
+        <div className="pack-description">
+          {Array.isArray(description) ? (
+            description.map((parrafo, i) => <p key={i}>{parrafo}</p>)
+          ) : (
+            <p>{description}</p>
+          )}
+        </div>
 
         {/* 🔥 STEP 1 */}
         {step === 1 && (
@@ -100,38 +106,32 @@ Disponibilidad horaria:`;
         {/* 🔥 STEP 3 → pago */}
         {step === 3 && sessionType && (
           <div className="pack-step">
-            <h3>Selecciona el medio de pago</h3>
+            {/* <h3>Selecciona el medio de pago</h3> */}
 
-            <div className="pack-buttons">
-              {/* WhatsApp */}
+            <div className="buttonStore centeredButtons">
               {links[sessionType]?.latam && (
-                <FirstButton
-                  caption={
-                    <>
-                      <span>Argentina</span>
-                      <br />
-                      <span>Reservar por WhatsApp</span>
-                    </>
-                  }
-                  link={generateWhatsAppLink(
-                    sessionType === "online" ? "en vivo" : "a distancia",
-                  )}
-                  newTab={true}
-                />
+                <div className="paymentOption">
+                  <span className="paymentLabel">Argentina</span>
+
+                  <FirstButton
+                    caption="Reservar por WhatsApp"
+                    link={generateWhatsAppLink(
+                      sessionType === "online" ? "en vivo" : "a distancia",
+                    )}
+                    newTab={true}
+                  />
+                </div>
               )}
 
-              {/* Internacional */}
               {links[sessionType]?.world && (
-                <FirstButton
-                  caption={
-                    <>
-                      <span>Internacional</span>
-                      <br />
-                      <span>PayPal / Tarjeta</span>
-                    </>
-                  }
-                  link={links[sessionType].world}
-                />
+                <div className="paymentOption">
+                  <span className="paymentLabel">Internacional</span>
+
+                  <FirstButton
+                    caption="PayPal / Tarjeta"
+                    link={links[sessionType].world}
+                  />
+                </div>
               )}
             </div>
 

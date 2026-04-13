@@ -2,6 +2,7 @@ import HeroSession from "../layouts/HeroSession/HeroSession";
 import ProductDescriptionSection from "../layouts/ProductDescritpionSection/ProductDescriptionSection";
 import SesionBellezaImagen from "../assets/images/sesionBelleza.png";
 import SesionSections from "../components/SesionSections/SesionSections";
+import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
 
 function SesionBelleza() {
   return (
@@ -180,6 +181,15 @@ function SesionBelleza() {
               text: "Necesita presencia, cuidado y energía en equilibrio.",
             },
           ]}
+        />
+        <SessionCalendarSection
+          links={{
+            distance: {
+              latam: true,
+              world: "https://calendly.com/bellezadelseroficial/",
+            },
+          }}
+          sessionName="Reiki Oncológico"
         />
       </div>
     </>

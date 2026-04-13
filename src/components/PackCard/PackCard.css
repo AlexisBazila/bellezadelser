@@ -1,124 +1,131 @@
 .pack-card {
-    padding: 80px 10%;
-    background-color: #fff;
-    color: #3C3C3C;
-
+  padding: 80px 10%;
+  background-color: #fff;
+  color: #3c3c3c;
 }
 
 .pack-container {
-    max-width: 800px;
-
+  max-width: 800px;
 }
 
 /* Código */
 .pack-code {
-    background-color: #E7ECD9;
-    padding: 5px 12px;
-    border-radius: 20px;
-    font-size: 12px;
-    display: inline-block;
-    margin-bottom: 15px;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
+  background-color: #e7ecd9;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 /* Título */
 .pack-title {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #3C3C3C;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #3c3c3c;
 }
 
 /* Modalidad */
 .pack-modalidad {
-    margin-bottom: 20px;
-    font-size: 16px;
+  margin-bottom: 20px;
+  font-size: 16px;
 }
 
 /* Incluye */
 .pack-includes ul {
-    margin-top: 10px;
-    padding-left: 20px;
+  margin-top: 10px;
+  padding-left: 20px;
 }
 
 .pack-includes li {
-    margin-bottom: 5px;
-    color: #3C3C3C;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
+  margin-bottom: 5px;
+  color: #3c3c3c;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
 }
 
 /* Descripción */
 .pack-description {
-    margin-top: 20px;
-    line-height: 1.6;
-    color: #3C3C3C;
+  margin-top: 20px;
+  line-height: 1.6;
+  color: #3c3c3c;
+}
+.pack-description p {
+  margin: 0 0 12px 0;
+  line-height: 1.6;
+}
+
+.pack-description p:last-child {
+  margin-bottom: 0;
 }
 
 /* Botón */
 .pack-button {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 .reserve-btn {
-    background-color: #C3CFA1;
-    border: none;
-    padding: 12px 25px;
-    border-radius: 25px;
-    cursor: pointer;
-    color: #647B4D;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #c3cfa1;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  color: #647b4d;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 .reserve-btn:hover {
-
-    color: #C3CFA1;
-    background-color: #647B4D;
+  color: #c3cfa1;
+  background-color: #647b4d;
 }
 
 /* Step container */
 .pack-step {
-    margin-top: 30px;
-    animation: fadeIn 0.3s ease;
+  margin-top: 30px;
+  animation: fadeIn 0.3s ease;
 }
 
 /* Botones del pack (NO usar buttonStore) */
 .pack-buttons {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 15px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 15px;
 }
 
 /* Ajuste de botones dentro del pack */
 .pack-buttons a,
 .pack-buttons button {
-    flex: 1;
-    min-width: 220px;
-    text-align: center;
+  flex: 1;
+  min-width: 220px;
+  text-align: center;
 }
 
 /* Back */
 .back-btn {
-    margin-top: 20px;
-    background: none;
-    border: none;
-    color: #6b6b6b;
-    cursor: pointer;
-    text-decoration: underline;
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: #6b6b6b;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 /* Animación */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
