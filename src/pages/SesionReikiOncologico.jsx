@@ -61,7 +61,7 @@ function SesionReikiOncologico() {
         />
         <SesionSections
           title="Beneficios"
-          variant="white"
+          variant="soft"
           content={[
             {
               type: "list",

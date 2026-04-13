@@ -61,13 +61,18 @@
 
 .sesion-content ul {
   padding-left: 20px;
+  margin-bottom: 30px;
 }
 
 .sesion-content li {
   margin-bottom: 8px;
   color: #3c3c3c;
   font-size: 20px;
-
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
   /* ✨ Animación individual */
   opacity: 0;
   transform: translateY(10px);

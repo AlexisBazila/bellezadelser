@@ -38,7 +38,7 @@ function SessionSection() {
     },
     {
       image: sesionAcompañamiento,
-      title: "Acompañamiento Holistico",
+      title: "Acompañamiento Holístico",
       description:
         "Descubre tu potencial, supera obstáculos y avanza con foco hacia la vida que querés crear.",
       link: "/sesiones/acompañamiento#sessionCalendar",

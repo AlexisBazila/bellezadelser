@@ -12,11 +12,28 @@ function AccordionMenu({ pregunta, respuesta, isOpen, onClick }) {
       </div>
 
       <div className={`accordion-content ${isOpen ? "open" : ""}`}>
-        <p className="accordion-text">
-          {respuesta.map((linea, index) => (
-            <p key={index}>{linea}</p>
-          ))}
-        </p>
+        <div className="accordion-text">
+          {respuesta.map((linea, index) => {
+            const emailRegex = /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/i;
+
+            if (emailRegex.test(linea)) {
+              const email = linea.match(emailRegex)[0];
+              const [before, after] = linea.split(email);
+
+              return (
+                <p key={index}>
+                  {before}
+                  <a href={`mailto:${email}`} className="emailLink">
+                    {email}
+                  </a>
+                  {after}
+                </p>
+              );
+            }
+
+            return <p key={index}>{linea}</p>;
+          })}
+        </div>
       </div>
     </div>
   );

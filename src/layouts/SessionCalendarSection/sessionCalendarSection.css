@@ -41,6 +41,22 @@
   font-size: 18px;
 }
 
+.paymentOption {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Texto arriba del botón */
+.paymentLabel {
+  font-size: 20px;
+  color: #A5A5A5;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
 @media (max-width: 1160px) {
   .contentProductsMarked {
     padding: 5% 3rem;

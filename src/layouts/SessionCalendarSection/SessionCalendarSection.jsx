@@ -77,38 +77,32 @@ Disponibilidad horaria:`;
         {/* STEP 2 */}
         {step === 2 && sessionType && (
           <>
-            <h3 className="subtitle">Selecciona el medio de pago</h3>
+            {/* <h3 className="subtitle">Selecciona el medio de pago</h3> */}
 
             <div className="buttonStore centeredButtons">
-              {/* 🔥 MERCADO PAGO → WHATSAPP */}
               {links[sessionType]?.latam && (
-                <FirstButton
-                  caption={
-                    <>
-                      <span className="captionPais">Argentina</span>
-                      <br />
-                      <span>Reservar por WhatsApp</span>
-                    </>
-                  }
-                  link={generateWhatsAppLink(
-                    sessionType === "online" ? "en vivo" : "a distancia",
-                  )}
-                  newTab={true}
-                />
+                <div className="paymentOption">
+                  <span className="paymentLabel">Argentina</span>
+
+                  <FirstButton
+                    caption="Reservar por WhatsApp"
+                    link={generateWhatsAppLink(
+                      sessionType === "online" ? "en vivo" : "a distancia",
+                    )}
+                    newTab={true}
+                  />
+                </div>
               )}
 
-              {/* 🌍 INTERNACIONAL → sigue normal */}
               {links[sessionType]?.world && (
-                <FirstButton
-                  caption={
-                    <>
-                      <span className="captionPais">Internacional</span>
-                      <br />
-                      <span>PayPal / Tarjeta</span>
-                    </>
-                  }
-                  link={links[sessionType].world}
-                />
+                <div className="paymentOption">
+                  <span className="paymentLabel">Internacional</span>
+
+                  <FirstButton
+                    caption="PayPal / Tarjeta"
+                    link={links[sessionType].world}
+                  />
+                </div>
               )}
             </div>
 
