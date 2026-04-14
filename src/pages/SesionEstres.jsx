@@ -90,7 +90,8 @@ function SesionEstres() {
                 {
                   text: "Informe escrito personalizado con:",
                   children: [
-                    "Qué se trabajó•Qué zonas estaban más cargadas",
+                    "Qué se trabajó",
+                    "Qué zonas estaban más cargadas",
                     "Qué puede estar generando el estrés a nivel energético",
                     "Recomendaciones para sostener la calma",
                   ],

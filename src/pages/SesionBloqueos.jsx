@@ -87,7 +87,8 @@ function SesionBloqueos() {
                 {
                   text: "Informe escrito personalizado con:",
                   children: [
-                    "Qué se trabajó•Qué bloqueos se detectaron",
+                    "Qué se trabajó",
+                    "Qué bloqueos se detectaron",
                     "Qué patrones aparecieron.",
                     "Recomendaciones prácticas para integrar el proceso.",
                   ],
