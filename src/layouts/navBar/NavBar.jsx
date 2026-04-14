@@ -12,48 +12,37 @@ function NavBar() {
 
   const toggleMenu = () => {
     setMenuOpen((prev) => {
-      if (prev === false) {
-        return true;
-      }
-      // si está abierto, ciérralo y limpiar submenus
+      if (!prev) return true;
       setOpenSubmenu(null);
       return false;
     });
   };
+
   const closeMenu = () => {
     setMenuOpen(false);
     setOpenSubmenu(null);
   };
 
-  // abrir submenu: si ya está abierto, no lo cerramos (evita doble tap)
   const openOnlySubmenu = (menuName, e) => {
-    // evitar que el click burbujee al document
     if (e && e.stopPropagation) e.stopPropagation();
-    if (openSubmenu === menuName) return; // ya abierto -> no hacer nada
+    if (openSubmenu === menuName) return;
     setOpenSubmenu(menuName);
   };
 
-  // bloquear scroll cuando menu abierto
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "auto";
-    return () => {
-      document.body.style.overflow = "auto";
-    };
+    return () => (document.body.style.overflow = "auto");
   }, [menuOpen]);
 
-  // cerrar al click/touch fuera (usa pointerdown para ser más fiable en móviles)
   useEffect(() => {
     const handlePointerDownOutside = (e) => {
       if (!menuOpen) return;
 
-      const menuEl = menuRef.current;
-      const burgerEl = burgerRef.current;
-
       if (
-        menuEl &&
-        !menuEl.contains(e.target) &&
-        burgerEl &&
-        !burgerEl.contains(e.target)
+        menuRef.current &&
+        !menuRef.current.contains(e.target) &&
+        burgerRef.current &&
+        !burgerRef.current.contains(e.target)
       ) {
         closeMenu();
       }
@@ -67,10 +56,10 @@ function NavBar() {
   return (
     <>
       <div className="navBar">
-        {/* Menu Desktop */}
+        {/* DESKTOP */}
         <nav className="desktopNav">
           <Link to="/" className="logoHome">
-            <img src={logo} alt="logotipo de formas circulares" />{" "}
+            <img src={logo} alt="logo" />
             <h3>Belleza del Ser</h3>
           </Link>
 
@@ -80,35 +69,50 @@ function NavBar() {
                 <Link to="/">Home</Link>
               </li>
 
-              <li className="menu-item has-submenu">
-                <Link>Sesiones ▾</Link>
-                <ul className="submenu">
-                  <li>
+              {/* MEGA MENU */}
+              <li className="menu-item mega">
+                <a className="mega-trigger">Activar mi bienestar ▾</a>
+
+                <div className="megaMenu">
+                  <div className="megaColumn">
+                    <h4>Sesiones</h4>
                     <Link to="/sesiones/reiki">Reiki</Link>
-                  </li>
-                  <li>
                     <Link to="/sesiones/registros-akashicos">
                       Registros Akáshicos
                     </Link>
-                  </li>
-                  <li>
                     <Link to="/sesiones/acompañamiento">Acompañamiento</Link>
-                  </li>
-                </ul>
-              </li>
+                    <Link to="#">Belleza Holística</Link>
+                  </div>
 
-              <li className="menu-item has-submenu">
-                <Link>Armonizaciones ▾</Link>
-                <ul className="submenu">
-                  <li>
-                    <Link to="/Armonizaciones/activaciones">
-                      Activaciones Energéticas
-                    </Link>
-                  </li>
-                  <li>
-                    <Link to="/Armonizaciones/ebooks">eBooks</Link>
-                  </li>
-                </ul>
+                  <div className="megaColumn">
+                    <h4>Belleza Holística</h4>
+                    <Link to="#">Rituales de Belleza</Link>
+                  </div>
+
+                  <div className="megaColumn">
+                    <h4>Otras sanaciones</h4>
+                    <Link to="#">Activación</Link>
+                    <Link to="#">Bloqueos en el Amor</Link>
+                    <Link to="#">Sanación de Útero</Link>
+                    <Link to="#">Estrés y Ansiedad</Link>
+                    <Link to="#">Chakras</Link>
+                    <Link to="#">Energía de Espacios</Link>
+                    <Link to="#">Reiki para Mascotas</Link>
+                    <Link to="#">Reiki Oncológico</Link>
+                  </div>
+
+                  <div className="megaColumn">
+                    <h4>Cursos</h4>
+                    <Link to="#">Reiki</Link>
+                    <Link to="#">Rituales de Belleza</Link>
+                  </div>
+
+                  <div className="megaColumn">
+                    <h4>Armonizaciones</h4>
+                    <Link to="#">Activaciones Energéticas</Link>
+                    <Link to="#">eBooks</Link>
+                  </div>
+                </div>
               </li>
 
               <li>
@@ -116,53 +120,35 @@ function NavBar() {
               </li>
             </ul>
 
-            <Link
-              className="carrito"
-              // href="https://bellezadelser.com/tienda/carrito"
-              to="/carrito"
-            >
+            <Link to="/carrito" className="carrito">
               <i className="fa-solid fa-cart-shopping"></i>
             </Link>
           </div>
         </nav>
 
-        {/* Menu movil */}
+        {/* MOBILE */}
         <nav className="movilNav">
-          <div
-            className="hamburgerNav"
-            onClick={toggleMenu}
-            ref={burgerRef}
-            aria-expanded={menuOpen}
-          >
+          <div className="hamburgerNav" onClick={toggleMenu} ref={burgerRef}>
             {menuOpen ? (
-              <i className="fa-solid fa-xmark hamburgerIcon"></i>
+              <i className="fa-solid fa-xmark"></i>
             ) : (
-              <i className="fa-solid fa-bars hamburgerIcon"></i>
+              <i className="fa-solid fa-bars"></i>
             )}
           </div>
 
           <Link to="/" className="logoHome">
-            <img src={logo} alt="logotipo de formas circulares" />{" "}
+            <img src={logo} alt="logo" />
             <h3>Belleza del Ser</h3>
           </Link>
 
-          <Link
-            className="carrito"
-            // href="https://bellezadelser.com/tienda/carrito"
-            to="/carrito"
-          >
+          <Link to="/carrito" className="carrito">
             <i className="fa-solid fa-cart-shopping"></i>
           </Link>
         </nav>
       </div>
 
-      {/* Menu responsivo */}
-      <div
-        className={`movilNavMenu ${menuOpen ? "active" : ""}`}
-        ref={menuRef}
-        role="dialog"
-        aria-hidden={!menuOpen}
-      >
+      {/* MOBILE MENU */}
+      <div className={`movilNavMenu ${menuOpen ? "active" : ""}`} ref={menuRef}>
         <ul className="columnMenuDiv">
           <li>
             <Link to="/" onClick={closeMenu}>
@@ -170,81 +156,45 @@ function NavBar() {
             </Link>
           </li>
 
-          {/* Sesiones */}
+          {/* BIENESTAR */}
           <li className="menu-item has-submenu">
             <div
               className="submenu-toggle"
-              onClick={(e) => openOnlySubmenu("sesiones", e)}
+              onClick={(e) => openOnlySubmenu("bienestar", e)}
             >
-              <button type="button" className="submenu-btn">
-                Sesiones ▾
-              </button>
+              <button className="submenu-btn">Activar mi bienestar ▾</button>
             </div>
 
             <ul
               className={`submenu ${
-                openSubmenu === "sesiones" ? "open" : "close"
+                openSubmenu === "bienestar" ? "open" : "close"
               }`}
             >
+              <li className="submenuTitle">Sesiones</li>
               <li>
-                <Link
-                  to="/sesiones/reiki"
-                  onClick={closeMenu}
-                  className="submenuLink"
-                >
+                <Link to="/sesiones/reiki" onClick={closeMenu}>
                   Reiki
                 </Link>
               </li>
-              <li>
-                <Link
-                  to="/sesiones/registros-akashicos"
-                  onClick={closeMenu}
-                  className="submenuLink"
-                >
-                  Registros Akáshicos
-                </Link>
-              </li>
-              <li>
-                <Link
-                  to="/sesiones/acompañamiento"
-                  onClick={closeMenu}
-                  className="submenuLink"
-                >
-                  Acompañamiento
-                </Link>
-              </li>
-            </ul>
-          </li>
 
-          {/* Armonizaciones */}
-          <li className="menu-item has-submenu">
-            <div
-              className="submenu-toggle"
-              onClick={(e) => openOnlySubmenu("armonizaciones", e)}
-            >
-              <label htmlFor="submenu-armonizaciones">Armonizaciones ▾</label>
-            </div>
-            <ul
-              className={`submenu ${
-                openSubmenu === "armonizaciones" ? "open" : "close"
-              }`}
-            >
+              <li className="submenuTitle">Otras sanaciones</li>
               <li>
-                <Link
-                  to="/Armonizaciones/activaciones"
-                  onClick={closeMenu}
-                  className="submenuLink"
-                >
-                  Activaciones Energéticas
+                <Link to="#" onClick={closeMenu}>
+                  Activación
                 </Link>
               </li>
+
+              <li className="submenuTitle">Cursos</li>
               <li>
-                <Link
-                  to="/Armonizaciones/ebooks"
-                  onClick={closeMenu}
-                  className="submenuLink"
-                >
-                  eBooks
+                <Link to="#" onClick={closeMenu}>
+                  Reiki
+                </Link>
+              </li>
+
+              <li className="submenuTitle">Armonizaciones</li>
+              <li>
+                <Link to="#" onClick={closeMenu}>
+                  Rituales
                 </Link>
               </li>
             </ul>
