@@ -90,7 +90,7 @@ nav a {
 .megaColumn h4 {
   color: #b57a55;
   margin-bottom: 10px;
-  background-color: #F5F4F1;
+  background-color: #f5f4f1;
   padding: 1rem 2rem;
   font-size: 20px;
 }
@@ -176,5 +176,11 @@ nav a {
 
   .megaMenu {
     display: none;
+  }
+}
+
+@media (max-width: 490px) {
+  .logoHome h3 {
+    font-size: 25px;
   }
 }
