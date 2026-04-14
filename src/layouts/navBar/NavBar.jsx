@@ -6,9 +6,12 @@ import logo from "../../assets/images/withe-logo.png";
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openSubmenu, setOpenSubmenu] = useState(null);
+  const [megaOpen, setMegaOpen] = useState(false);
 
   const menuRef = useRef(null);
   const burgerRef = useRef(null);
+  const megaRef = useRef(null);
+  const triggerRef = useRef(null);
 
   const toggleMenu = () => {
     setMenuOpen((prev) => {
@@ -23,17 +26,26 @@ function NavBar() {
     setOpenSubmenu(null);
   };
 
+  const closeMegaMenu = () => setMegaOpen(false);
+
   const openOnlySubmenu = (menuName, e) => {
     if (e && e.stopPropagation) e.stopPropagation();
     if (openSubmenu === menuName) return;
     setOpenSubmenu(menuName);
   };
 
+  // 🔥 Bloquear scroll (sin salto feo)
   useEffect(() => {
-    document.body.style.overflow = menuOpen ? "hidden" : "auto";
-    return () => (document.body.style.overflow = "auto");
-  }, [menuOpen]);
+    if (menuOpen || megaOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
 
+    return () => (document.body.style.overflow = "auto");
+  }, [menuOpen, megaOpen]);
+
+  // 🔥 Cerrar mobile al hacer click afuera
   useEffect(() => {
     const handlePointerDownOutside = (e) => {
       if (!menuOpen) return;
@@ -53,12 +65,32 @@ function NavBar() {
       document.removeEventListener("pointerdown", handlePointerDownOutside);
   }, [menuOpen]);
 
+  // 🔥 Cerrar mega menu al hacer click afuera
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (!megaOpen) return;
+
+      if (
+        megaRef.current &&
+        !megaRef.current.contains(e.target) &&
+        triggerRef.current &&
+        !triggerRef.current.contains(e.target)
+      ) {
+        setMegaOpen(false);
+      }
+    };
+
+    document.addEventListener("pointerdown", handleClickOutside);
+    return () =>
+      document.removeEventListener("pointerdown", handleClickOutside);
+  }, [megaOpen]);
+
   return (
     <>
       <div className="navBar">
         {/* DESKTOP */}
         <nav className="desktopNav">
-          <Link to="/" className="logoHome">
+          <Link to="/" className="logoHome" onClick={closeMegaMenu}>
             <img src={logo} alt="logo" />
             <h3>Belleza del Ser</h3>
           </Link>
@@ -66,66 +98,122 @@ function NavBar() {
           <div className="menuDesktop">
             <ul className="menuDiv">
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" onClick={closeMegaMenu}>
+                  Home
+                </Link>
               </li>
 
               {/* MEGA MENU */}
               <li className="menu-item mega">
-                <a className="mega-trigger">Activar mi bienestar ▾</a>
+                <button
+                  ref={triggerRef}
+                  className={`mega-trigger ${megaOpen ? "active" : ""}`}
+                  onClick={() => setMegaOpen((prev) => !prev)}
+                >
+                  Activar mi bienestar ▾
+                </button>
 
-                <div className="megaMenu">
+                <div
+                  ref={megaRef}
+                  className={`megaMenu ${megaOpen ? "open" : ""}`}
+                >
                   <div className="megaColumn">
                     <h4>Sesiones</h4>
-                    <Link to="/sesiones/reiki">Reiki</Link>
-                    <Link to="/sesiones/registros-akashicos">
+                    <Link to="/sesiones/reiki" onClick={closeMegaMenu}>
+                      Reiki
+                    </Link>
+                    <Link
+                      to="/sesiones/registros-akashicos"
+                      onClick={closeMegaMenu}
+                    >
                       Registros Akáshicos
                     </Link>
-                    <Link to="/sesiones/acompañamiento">Acompañamiento</Link>
+                    <Link to="/sesiones/acompañamiento" onClick={closeMegaMenu}>
+                      Acompañamiento
+                    </Link>
                   </div>
 
                   <div className="megaColumn">
                     <h4>Belleza Holística</h4>
-                    <Link to="/belleza-holistica/belleza">
+                    <Link
+                      to="/belleza-holistica/belleza"
+                      onClick={closeMegaMenu}
+                    >
                       Rituales de Belleza
                     </Link>
                   </div>
 
                   <div className="megaColumn">
                     <h4>Otras sanaciones</h4>
-                    <Link to="/otras-sanaciones/activacion">Activación</Link>
-                    <Link to="/otras-sanaciones/bloqueos">
+                    <Link
+                      to="/otras-sanaciones/activacion"
+                      onClick={closeMegaMenu}
+                    >
+                      Activación
+                    </Link>
+                    <Link
+                      to="/otras-sanaciones/bloqueos"
+                      onClick={closeMegaMenu}
+                    >
                       Bloqueos en el Amor
                     </Link>
-                    <Link to="/otras-sanaciones/sanacion-de-utero">
+                    <Link
+                      to="/otras-sanaciones/sanacion-de-utero"
+                      onClick={closeMegaMenu}
+                    >
                       Sanación de Útero
                     </Link>
-                    <Link to="/otras-sanaciones/sanacion-estres">
+                    <Link
+                      to="/otras-sanaciones/sanacion-estres"
+                      onClick={closeMegaMenu}
+                    >
                       Estrés y Ansiedad
                     </Link>
-                    <Link to="/otras-sanaciones/chakras">Chakras</Link>
-                    <Link to="/otras-sanaciones/limpieza-de-espacios">
+                    <Link
+                      to="/otras-sanaciones/chakras"
+                      onClick={closeMegaMenu}
+                    >
+                      Chakras
+                    </Link>
+                    <Link
+                      to="/otras-sanaciones/limpieza-de-espacios"
+                      onClick={closeMegaMenu}
+                    >
                       Energía de Espacios
                     </Link>
-                    <Link to="/otras-sanaciones/reiki-para-mascotas">
+                    <Link
+                      to="/otras-sanaciones/reiki-para-mascotas"
+                      onClick={closeMegaMenu}
+                    >
                       Reiki para Mascotas
                     </Link>
-                    <Link to="/otras-sanaciones/reiki-oncologico">
+                    <Link
+                      to="/otras-sanaciones/reiki-oncologico"
+                      onClick={closeMegaMenu}
+                    >
                       Reiki Oncológico
                     </Link>
                   </div>
 
                   <div className="megaColumn">
                     <h4>Armonizaciones</h4>
-                    <Link to="armonizaciones/activaciones">
+                    <Link
+                      to="/armonizaciones/activaciones"
+                      onClick={closeMegaMenu}
+                    >
                       Activaciones Energéticas
                     </Link>
-                    <Link to="armonizaciones/ebooks">eBooks</Link>
+                    <Link to="/armonizaciones/ebooks" onClick={closeMegaMenu}>
+                      eBooks
+                    </Link>
                   </div>
                 </div>
               </li>
 
               <li>
-                <Link to="/sobre-mi">Sobre mí</Link>
+                <Link to="/sobre-mi" onClick={closeMegaMenu}>
+                  Sobre mí
+                </Link>
               </li>
             </ul>
 
@@ -165,7 +253,6 @@ function NavBar() {
             </Link>
           </li>
 
-          {/* BIENESTAR */}
           <li className="menu-item has-submenu">
             <div
               className="submenu-toggle"
@@ -183,27 +270,6 @@ function NavBar() {
               <li>
                 <Link to="/sesiones/reiki" onClick={closeMenu}>
                   Reiki
-                </Link>
-              </li>
-
-              <li className="submenuTitle">Otras sanaciones</li>
-              <li>
-                <Link to="#" onClick={closeMenu}>
-                  Activación
-                </Link>
-              </li>
-
-              <li className="submenuTitle">Cursos</li>
-              <li>
-                <Link to="#" onClick={closeMenu}>
-                  Reiki
-                </Link>
-              </li>
-
-              <li className="submenuTitle">Armonizaciones</li>
-              <li>
-                <Link to="#" onClick={closeMenu}>
-                  Rituales
                 </Link>
               </li>
             </ul>
