@@ -165,7 +165,23 @@ nav a {
 }
 
 /* RESPONSIVE */
+@media (max-width: 1260px) {
+  nav a {
+    margin: 15px 15px;
+  }
+
+  .linksNav {
+    gap: 0;
+  }
+}
+
 @media (max-width: 1160px) {
+  .desktopNav,
+  .movilNav,
+  .movilNavMenu {
+    padding: 1rem 3rem;
+  }
+
   .desktopNav {
     display: none;
   }
@@ -173,13 +189,25 @@ nav a {
   .movilNav {
     display: flex;
   }
+}
 
-  .megaMenu {
-    display: none;
+@media (max-width: 600px) {
+  .movilNav {
+    padding: 1rem 2rem;
+    max-height: 77px;
   }
 }
 
 @media (max-width: 490px) {
+  .logoHome {
+    font-size: 20px;
+  }
+
+  .logoHome img {
+    width: 25px;
+    height: auto;
+  }
+
   .logoHome h3 {
     font-size: 25px;
   }
