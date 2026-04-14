@@ -37,25 +37,35 @@ function App() {
           path="/sesiones/acompañamiento"
           element={<SesionAcompañamiento />}
         />
-        <Route path="/sesiones/abundancia" element={<SesionAbundancia />} />
-        <Route path="/sesiones/belleza" element={<SesionBelleza />} />
-        <Route path="/sesiones/bloqueos" element={<SesionBloqueos />} />
-        <Route path="/sesiones/sanacion-de-utero" element={<SesionUtero />} />
-        <Route path="/sesiones/sanacion-estres" element={<SesionEstres />} />
-        <Route path="/sesiones/chakras" element={<SesionChakras />} />
+
+        <Route path="/belleza-holistica/belleza" element={<SesionBelleza />} />
         <Route
-          path="/sesiones/limpieza-de-espacios"
+          path="/otras-sanaciones/activacion"
+          element={<SesionAbundancia />}
+        />
+        <Route path="/otras-sanaciones/bloqueos" element={<SesionBloqueos />} />
+        <Route
+          path="/otras-sanaciones/sanacion-de-utero"
+          element={<SesionUtero />}
+        />
+        <Route
+          path="/otras-sanaciones/sanacion-estres"
+          element={<SesionEstres />}
+        />
+        <Route path="/otras-sanaciones/chakras" element={<SesionChakras />} />
+        <Route
+          path="/otras-sanaciones/limpieza-de-espacios"
           element={<SesionLimpiezaEspacios />}
         />
         <Route
-          path="/sesiones/reiki-para-mascotas"
+          path="/otras-sanaciones/reiki-para-mascotas"
           element={<SesionReikiMascotas />}
         />
         <Route
-          path="/sesiones/reiki-oncologico"
+          path="/otras-sanaciones/reiki-oncologico"
           element={<SesionReikiOncologico />}
         />
-        <Route path="/Armonizaciones/activaciones" element={<Activaciones />} />
+        <Route path="/Armonizaciones/activaciones" element={<Proximamente />} />
         <Route path="/carrito" element={<Proximamente />} />
         <Route path="/Armonizaciones/ebooks" element={<Proximamente />} />
         <Route path="/checkagenda" element={<CheckAgenda />} />

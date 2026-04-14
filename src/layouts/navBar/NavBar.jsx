@@ -81,36 +81,45 @@ function NavBar() {
                       Registros Akáshicos
                     </Link>
                     <Link to="/sesiones/acompañamiento">Acompañamiento</Link>
-                    <Link to="#">Belleza Holística</Link>
                   </div>
 
                   <div className="megaColumn">
                     <h4>Belleza Holística</h4>
-                    <Link to="#">Rituales de Belleza</Link>
+                    <Link to="/belleza-holistica/belleza">
+                      Rituales de Belleza
+                    </Link>
                   </div>
 
                   <div className="megaColumn">
                     <h4>Otras sanaciones</h4>
-                    <Link to="#">Activación</Link>
-                    <Link to="#">Bloqueos en el Amor</Link>
-                    <Link to="#">Sanación de Útero</Link>
-                    <Link to="#">Estrés y Ansiedad</Link>
-                    <Link to="#">Chakras</Link>
-                    <Link to="#">Energía de Espacios</Link>
-                    <Link to="#">Reiki para Mascotas</Link>
-                    <Link to="#">Reiki Oncológico</Link>
-                  </div>
-
-                  <div className="megaColumn">
-                    <h4>Cursos</h4>
-                    <Link to="#">Reiki</Link>
-                    <Link to="#">Rituales de Belleza</Link>
+                    <Link to="/otras-sanaciones/activacion">Activación</Link>
+                    <Link to="/otras-sanaciones/bloqueos">
+                      Bloqueos en el Amor
+                    </Link>
+                    <Link to="/otras-sanaciones/sanacion-de-utero">
+                      Sanación de Útero
+                    </Link>
+                    <Link to="/otras-sanaciones/sanacion-estres">
+                      Estrés y Ansiedad
+                    </Link>
+                    <Link to="/otras-sanaciones/chakras">Chakras</Link>
+                    <Link to="/otras-sanaciones/limpieza-de-espacios">
+                      Energía de Espacios
+                    </Link>
+                    <Link to="/otras-sanaciones/reiki-para-mascotas">
+                      Reiki para Mascotas
+                    </Link>
+                    <Link to="/otras-sanaciones/reiki-oncologico">
+                      Reiki Oncológico
+                    </Link>
                   </div>
 
                   <div className="megaColumn">
                     <h4>Armonizaciones</h4>
-                    <Link to="#">Activaciones Energéticas</Link>
-                    <Link to="#">eBooks</Link>
+                    <Link to="armonizaciones/activaciones">
+                      Activaciones Energéticas
+                    </Link>
+                    <Link to="armonizaciones/ebooks">eBooks</Link>
                   </div>
                 </div>
               </li>
