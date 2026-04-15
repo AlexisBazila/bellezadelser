@@ -1,11 +1,13 @@
 .pack-card {
-  padding: 80px 10%;
   background-color: #fff;
   color: #3c3c3c;
+  border-bottom: #3c3c3c27 solid 1px;
+  margin: 0 10%;
 }
 
 .pack-container {
-  max-width: 800px;
+  max-width: 1000px;
+  margin: 50px 0;
 }
 
 /* Código */
@@ -35,6 +37,9 @@
 }
 
 /* Incluye */
+.pack-includes {
+  font-family: "Inter", sans-serif;
+}
 .pack-includes ul {
   margin-top: 10px;
   padding-left: 20px;

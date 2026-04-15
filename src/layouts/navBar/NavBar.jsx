@@ -131,6 +131,9 @@ function NavBar() {
                     <Link to="/sesiones/acompañamiento" onClick={closeMegaMenu}>
                       Acompañamiento
                     </Link>
+                    <Link to="/packs" onClick={closeMegaMenu}>
+                      Packs
+                    </Link>
                   </div>
 
                   <div className="megaColumn">
