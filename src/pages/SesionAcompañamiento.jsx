@@ -11,8 +11,8 @@ function SesionAcompañamiento() {
       <div>
         <HeroSession
           title={"Sesión de Acompañamiento Holístico"}
-          duracion={"50 minutos"}
-          modalidad={"Online"}
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
         />
         <ProductDescriptionSection
           subTtitle={"¿Qué es el Acompañamiento Holístico?"}

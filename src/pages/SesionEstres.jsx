@@ -11,6 +11,8 @@ function SesionEstres() {
       <div>
         <HeroSession
           title={"Sanación para el Estrés y la Ansiedad Consciente"}
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
         />
         <ProductDescriptionSection
           subTtitle={

@@ -15,6 +15,8 @@ function SesionRegistros() {
           title={"Sesión de Registros Akáshicos"}
           duracion={"50 minutos"}
           modalidad={"Online y a Distancia"}
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
         />
         <ProductDescriptionSection
           subTtitle={"¿Qué son los Registros Akáshicos?"}

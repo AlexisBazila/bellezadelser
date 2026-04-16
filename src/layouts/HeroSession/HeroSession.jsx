@@ -1,6 +1,15 @@
 import React from "react";
 import "./heroSession.css";
-function HeroProduct({ title, subtitle, duracion, modalidad }) {
+import FirstButton from "../../components/firstButton/FirstButton";
+
+function HeroProduct({
+  title,
+  subtitle,
+  duracion,
+  modalidad,
+  buttonText,
+  buttonLink,
+}) {
   return (
     <section className="heroSectionSession">
       <div className="lightHeroSession">
@@ -8,8 +17,13 @@ function HeroProduct({ title, subtitle, duracion, modalidad }) {
           <div className="paragraphHeroSession">
             <div className="titleAndSubtitleHeroSession">
               <h1 className="title">{title}</h1>
-              <h2>{subtitle}</h2>
+              {subtitle && <h2>{subtitle}</h2>}
             </div>
+            {buttonLink && buttonText && (
+              <div className="heroButton">
+                <FirstButton caption={buttonText} link={buttonLink} />
+              </div>
+            )}
           </div>
         </div>
       </div>

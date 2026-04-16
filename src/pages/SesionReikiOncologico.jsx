@@ -9,7 +9,11 @@ function SesionReikiOncologico() {
   return (
     <>
       <div>
-        <HeroSession title={"Reiki Oncológico"} />
+        <HeroSession
+          title={"Reiki Oncológico"}
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
+        />
         <ProductDescriptionSection
           subTtitle={"¿Qué es el Reiki Oncológico?"}
           paragraphs={[

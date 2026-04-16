@@ -10,7 +10,11 @@ function SesionReiki() {
   return (
     <>
       <div>
-        <HeroSession title={"Reiki Usui – Sanación Energética Integral"} />
+        <HeroSession
+          title={"Reiki Usui – Sanación Energética Integral"}
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
+        />
         <ProductDescriptionSection
           subTtitle={"¿Qué es el Reiki Usui?"}
           paragraphs={[

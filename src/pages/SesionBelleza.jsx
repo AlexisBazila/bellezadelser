@@ -13,6 +13,8 @@ function SesionBelleza() {
           subtitle={
             "Cuidado consciente de la piel – Energía – Presencia – Bienestar"
           }
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
         />
         <ProductDescriptionSection
           paragraphs={[

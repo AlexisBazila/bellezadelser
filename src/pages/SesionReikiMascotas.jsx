@@ -9,7 +9,11 @@ function SesionReikiMascotas() {
   return (
     <>
       <div>
-        <HeroSession title={"Reiki para Mascotas"} />
+        <HeroSession
+          title={"Reiki para Mascotas"}
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
+        />
         <ProductDescriptionSection
           subTtitle={"¿Qué es el Reiki para Mascotas?"}
           paragraphs={[

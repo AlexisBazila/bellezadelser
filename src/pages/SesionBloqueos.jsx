@@ -9,7 +9,11 @@ function SesionBloqueos() {
   return (
     <>
       <div>
-        <HeroSession title={"Sanación de Bloqueos en el Amor"} />
+        <HeroSession
+          title={"Sanación de Bloqueos en el Amor"}
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
+        />
         <ProductDescriptionSection
           subTtitle={"¿Qué es Sanación de Bloqueos en el Amor?"}
           paragraphs={[

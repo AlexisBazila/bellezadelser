@@ -9,7 +9,11 @@ function SesionChakras() {
   return (
     <>
       <div>
-        <HeroSession title={"Limpieza y Alineación de chakras"} />
+        <HeroSession
+          title={"Limpieza y Alineación de chakras"}
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
+        />
         <ProductDescriptionSection
           subTtitle={"¿Qué es la Limpieza y Alineación de Chakras?"}
           paragraphs={[

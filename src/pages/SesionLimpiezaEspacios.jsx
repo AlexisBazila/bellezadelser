@@ -13,6 +13,8 @@ function SesionLimpiezaEspacios() {
           title={
             "Limpieza Energética de Espacios (Hogar, Locales Comerciales, Oficina)"
           }
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
         />
         <ProductDescriptionSection
           subTtitle={"¿Qué es la Limpieza Energética de Espacios?"}

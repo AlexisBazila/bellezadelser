@@ -9,7 +9,11 @@ function SesionAbundancia() {
   return (
     <>
       <div>
-        <HeroSession title={"Activación de Abundancia y Apertura de Caminos"} />
+        <HeroSession
+          title={"Activación de Abundancia y Apertura de Caminos"}
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
+        />
         <ProductDescriptionSection
           subTtitle={"¿Qué es Activación de Abundancia y Apertura de Caminos?"}
           paragraphs={[

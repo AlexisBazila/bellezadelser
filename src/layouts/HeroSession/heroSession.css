@@ -39,6 +39,9 @@
 .titleAndSubtitleHeroSession {
   margin-bottom: 70px;
 }
+.heroButton {
+  margin-top: 20px;
+}
 
 @media (max-width: 1160px) {
   .lightHeroSession {

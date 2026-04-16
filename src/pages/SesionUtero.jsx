@@ -9,7 +9,11 @@ function SesionUtero() {
   return (
     <>
       <div>
-        <HeroSession title={"Sanación de Útero"} />
+        <HeroSession
+          title="Sanación de Útero"
+          buttonText="Agendar Sesión"
+          buttonLink="#sessionCalendar"
+        />
         <ProductDescriptionSection
           subTtitle={"¿Qué es la Sanación de Útero?"}
           paragraphs={[
