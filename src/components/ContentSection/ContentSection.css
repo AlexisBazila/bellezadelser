@@ -103,3 +103,13 @@
   opacity: 1;
   transform: scale(1);
 }
+
+@media (max-width: 1160px) {
+  .content-container {
+    padding: 50px 20px;
+    margin: 0 5%;
+  }
+  .content-text p {
+    max-width: 100%;
+  }
+}
