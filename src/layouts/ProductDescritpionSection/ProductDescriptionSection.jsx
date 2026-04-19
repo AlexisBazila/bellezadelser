@@ -11,6 +11,16 @@ function ProductDescriptionSection({
 }) {
   const [ref, visible] = useInView();
 
+  // 🔥 Parser string → HTML
+  const parseText = (text) => {
+    if (!text) return "";
+
+    return text.replace(/bold\[(.*?)\]/g, "<strong>$1</strong>");
+  };
+
+  // 🔥 Procesamos todos los párrafos
+  const parsedParagraphs = paragraphs.map((p) => parseText(p));
+
   return (
     <section className="ProductDescriptionSection" ref={ref}>
       <div className="ProductDescriptionContent">
@@ -19,7 +29,10 @@ function ProductDescriptionSection({
             visible ? "show" : ""
           }`}
         >
-          <LeftAlignedParagraph subTtitle={subTtitle} paragraphs={paragraphs} />
+          <LeftAlignedParagraph
+            subTtitle={subTtitle}
+            paragraphs={parsedParagraphs}
+          />
         </div>
 
         <div

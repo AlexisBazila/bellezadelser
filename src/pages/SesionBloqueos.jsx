@@ -17,9 +17,9 @@ function SesionBloqueos() {
         <ProductDescriptionSection
           subTtitle={"¿Qué es Sanación de Bloqueos en el Amor?"}
           paragraphs={[
-            "La Sanación de Bloqueos en el Amor es un trabajo energético y emocional que acompaña la liberación de patrones inconscientes que dificultan vivir vínculos sanos y conscientes.",
-            "Muchas veces no es que “no llegue el amor”, sino que existen heridas, miedos o creencias que cierran el corazón o atraen relaciones dolorosas.",
-            "Esta sanación busca ordenar la energía del amor, restaurar la confianza y abrir el corazón desde un lugar seguro.",
+            "La Sanación de Bloqueos en el Amor es un trabajo energético y emocional que acompaña la bold[liberación de patrones inconscientes] que dificultan vivir vínculos sanos y conscientes.",
+            "Muchas veces no es que “no llegue el amor”, sino que existen bold[heridas, miedos o creencias] que cierran el corazón o atraen relaciones dolorosas.",
+            "Esta sanación busca bold[ordenar la energía del amor, restaurar la confianza y abrir el corazón desde un lugar seguro.]",
           ]}
           imageDesktop={SesionBloqueosImagen}
           imageMobile={SesionBloqueosImagen}

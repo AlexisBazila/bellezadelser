@@ -17,9 +17,9 @@ function SesionChakras() {
         <ProductDescriptionSection
           subTtitle={"¿Qué es la Limpieza y Alineación de Chakras?"}
           paragraphs={[
-            "La Limpieza y Alineación de Chakras es un trabajo energético que acompaña la liberación de bloqueos y la armonización del flujo vital, ayudando a equilibrar cuerpo, mente y emociones.",
+            "La Limpieza y Alineación de Chakras es un trabajo energético que acompaña la bold[liberación de bloqueos y la armonización del flujo vital], ayudando a equilibrar bold[cuerpo, mente y emociones.]",
 
-            "Cuando la energía se desordena por estrés o experiencias intensas, pueden aparecer cansancio, confusión o sensación de estancamiento. Esta sesión busca ordenar y realinear la energía para que vuelva a fluir de forma más equilibrada y consciente.",
+            "Cuando la energía se desordena por estrés o experiencias intensas, pueden aparecer bold[cansancio, confusión o sensación de estancamiento.] Esta sesión busca bold[ordenar y realinear la energía] para que vuelva a fluir de forma más equilibrada y consciente.",
           ]}
           imageDesktop={SesionChakrasImagen}
           imageMobile={SesionChakrasImagen}
@@ -31,18 +31,18 @@ function SesionChakras() {
             {
               type: "list",
               items: [
-                "Sientes estrés, ansiedad o sobrecarga mental",
-                "Experimentas cansancio físico o falta de energía",
-                "Percibes bloqueos emocionales repetitivos",
-                "Te cuesta expresarte con claridad o tomar decisiones",
-                "Atraviesas momentos de baja autoestima",
-                "Sientes estancamiento en distintas áreas de tu vida",
-                "Percibes desconexión espiritual o falta de alineación interna",
+                "Sientes bold[estrés, ansiedad o sobrecarga mental]",
+                "Experimentas bold[cansancio físico o falta de energía]",
+                "Percibes bold[bloqueos emocionales repetitivos]",
+                "Te cuesta bold[expresarte con claridad o tomar decisiones]",
+                "Atraviesas bold[momentos de baja autoestima]",
+                "Sientes bold[estancamiento en distintas áreas de tu vida]",
+                "Percibes bold[desconexión espiritual o falta de alineación interna]",
               ],
             },
             {
               type: "paragraph",
-              text: "Esta sesión acompaña un proceso de limpieza, armonización y alineación de los chakras, favoreciendo un equilibrio integral entre cuerpo, mente y energía.",
+              text: "Esta sesión acompaña un proceso de bold[limpieza, armonización y alineación de los chakras], favoreciendo un equilibrio integral entre cuerpo, mente y energía.",
             },
           ]}
         />

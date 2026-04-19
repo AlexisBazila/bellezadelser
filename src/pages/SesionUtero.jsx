@@ -17,9 +17,9 @@ function SesionUtero() {
         <ProductDescriptionSection
           subTtitle={"¿Qué es la Sanación de Útero?"}
           paragraphs={[
-            "La Sanación de Útero acompaña a mujeres en la reconexión con su energía femenina, su historia emocional y su poder creador.",
-            "El útero es un centro energético que guarda memorias propias y heredadas: vínculos, duelos, sexualidad, maternidad, pérdidas, silencios, pero también placer, creación y sabiduría.",
-            "Esta sanación trabaja a nivel energético, emocional y espiritual, ayudando a liberar cargas antiguas y a devolverle al vientre su lugar de conciencia y poder.",
+            "La Sanación de Útero acompaña a mujeres en la bold[reconexión con su energía femenina, su historia emocional y su poder creador.]",
+            "El útero es un centro energético que guarda bold[memorias propias y heredadas]: vínculos, duelos, sexualidad, maternidad, pérdidas, silencios, pero también placer, bold[creación y sabiduría.]",
+            "Esta sanación trabaja a nivel bold[energético, emocional y espiritual], ayudando a liberar cargas antiguas y a devolverle al vientre su lugar de conciencia y poder.",
           ]}
           imageDesktop={SesionUteroImagen}
           imageMobile={SesionUteroImagen}
@@ -31,19 +31,19 @@ function SesionUtero() {
             {
               type: "list",
               items: [
-                "Experimentas dolores menstruales intensos o recurrentes (a nivel energético)",
-                "Sientes desequilibrios hormonales energéticos",
-                "Percibes desconexión con tu feminidad o tu energía creadora",
-                "Cargas culpa, vergüenza o rechazo hacia tu cuerpo",
-                "Hay heridas con tu madre, hijas o linaje femenino",
-                "Atraviesas o arrastras pérdidas gestacionales o duelos no elaborados",
-                "Has vivido relaciones afectivas dolorosas que dejaron huella",
-                "Sientes bloqueos creativos o dificultad para disfrutar y habitar el placer",
+                "Experimentas bold[dolores menstruales intensos o recurrentes] (a nivel energético)",
+                "Sientes bold[desequilibrios hormonales energéticos]",
+                "Percibes bold[desconexión con tu feminidad o tu energía creadora]",
+                "Cargas bold[culpa, vergüenza o rechazo hacia tu cuerpo]",
+                "Hay bold[heridas con tu madre, hijas o linaje femenino]",
+                "Atraviesas o arrastras bold[pérdidas gestacionales o duelos no elaborados]",
+                "Has vivido bold[relaciones afectivas dolorosas que dejaron huella]",
+                "Sientes bold[bloqueos creativos o dificultad para disfrutar y habitar el placer]",
               ],
             },
             {
               type: "paragraph",
-              text: "La Sanación de Útero acompaña un proceso profundo de reconexión, liberación emocional y energética, ayudándote a habitar tu cuerpo desde el amor, la conciencia y el merecimiento.",
+              text: "La Sanación de Útero acompaña un proceso profundo de bold[reconexión, liberación emocional y energética], ayudándote a habitar tu cuerpo desde el amor, la conciencia y el merecimiento.",
             },
           ]}
         />

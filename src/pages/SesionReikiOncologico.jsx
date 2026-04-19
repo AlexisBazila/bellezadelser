@@ -17,9 +17,9 @@ function SesionReikiOncologico() {
         <ProductDescriptionSection
           subTtitle={"¿Qué es el Reiki Oncológico?"}
           paragraphs={[
-            "El Reiki Oncológico es un acompañamiento energético amoroso y respetuoso para personas que atraviesan un diagnóstico oncológico, durante tratamientos o procesos de recuperación.",
+            "El Reiki Oncológico es un acompañamiento energético bold[amoroso y respetuoso] para personas que atraviesan un diagnóstico oncológico, durante tratamientos o procesos de recuperación.",
 
-            "El Reiki ayuda a armonizar el campo energético, favorecer estados de calma profunda y aliviar tensiones emocionales, acompañando al cuerpo y al alma en un momento de gran sensibilidad.",
+            "El Reiki ayuda a bold[armonizar el campo energético, favorecer estados de calma profunda y aliviar tensiones emocionales], acompañando al cuerpo y al alma en un momento de gran sensibilidad.",
           ]}
           imageDesktop={SesionOncologicoImagen}
           imageMobile={SesionOncologicoImagen}
@@ -31,19 +31,19 @@ function SesionReikiOncologico() {
             {
               type: "list",
               items: [
-                "Estás atravesando estrés, miedo o ansiedad frente a un diagnóstico",
-                "Transitas o acompañas quimioterapia, radioterapia u otros tratamientos",
-                "Sientes fatiga física y emocional",
-                "Experimentas dolor o malestar general",
-                "Tienes insomnio o alteraciones en el descanso",
-                "Vives cambios emocionales profundos",
-                "Estás en un proceso de aceptación y transformación personal",
-                "Te encuentras en una etapa de recuperación y fortalecimiento energético",
+                "Estás atravesando bold[estrés, miedo o ansiedad frente a un diagnóstico]",
+                "Transitas o acompañas bold[quimioterapia, radioterapia u otros tratamientos]",
+                "Sientes bold[fatiga física y emocional]",
+                "Experimentas bold[dolor o malestar general]",
+                "Tienes bold[insomnio o alteraciones en el descanso]",
+                "Vives bold[cambios emocionales profundos]",
+                "Estás en un proceso de bold[aceptación y transformación personal]",
+                "Te encuentras en una etapa de bold[recuperación y fortalecimiento energético]",
               ],
             },
             {
               type: "paragraph",
-              text: "El Reiki Oncológico crea un espacio interno de calma, contención y acompañamiento, ayudando a reconectar con la propia fuerza vital y a transitar el proceso con mayor equilibrio y serenidad.",
+              text: "El Reiki Oncológico crea un bold[espacio interno de calma, contención y acompañamiento], ayudando a reconectar con la propia fuerza vital y a transitar el proceso con mayor equilibrio y serenidad.",
             },
           ]}
         />
@@ -55,10 +55,10 @@ function SesionReikiOncologico() {
             {
               type: "list",
               items: [
-                "Personas con diagnóstico oncológico en cualquier etapa",
-                "Quienes buscan sostén emocional y energético",
-                "Personas que desean atravesar su proceso con mayor calma y conciencia",
-                "Familias que desean acompañar desde el amor y la energía",
+                "Personas con bold[diagnóstico oncológico en cualquier etapa]",
+                "Quienes buscan bold[sostén emocional y energético]",
+                "Personas que desean atravesar su proceso con bold[mayor calma y conciencia]",
+                "Familias que desean bold[acompañar desde el amor y la energía]",
               ],
             },
           ]}

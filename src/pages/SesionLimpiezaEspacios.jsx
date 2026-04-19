@@ -19,9 +19,9 @@ function SesionLimpiezaEspacios() {
         <ProductDescriptionSection
           subTtitle={"¿Qué es la Limpieza Energética de Espacios?"}
           paragraphs={[
-            "La Limpieza Energética de Espacios es un trabajo que armoniza la energía de un lugar, liberando cargas densas y energías estancadas que pueden afectar el bienestar, el descanso y la armonía.",
+            "La Limpieza Energética de Espacios es un trabajo que bold[armoniza la energía de un lugar], liberando cargas densas y energías estancadas que pueden afectar el bienestar, el descanso y la armonía.",
 
-            "Los espacios guardan memorias emocionales y energéticas. Esta limpieza busca restablecer el equilibrio, la liviandad y la sensación de paz, para que el espacio vuelva a acompañar la vida que sucede en él.",
+            "Los espacios guardan bold[memorias emocionales y energéticas.] Esta limpieza busca restablecer el equilibrio, la liviandad y la sensación de paz, para que el espacio bold[vuelva a acompañar la vida que sucede en él.]",
           ]}
           imageDesktop={SesionLimpiezaEspaciosImagen}
           imageMobile={SesionLimpiezaEspaciosImagen}
@@ -33,19 +33,19 @@ function SesionLimpiezaEspacios() {
             {
               type: "list",
               items: [
-                "Sientes pesadez, incomodidad o energía densa en un espacio",
-                "Descansas mal o hay insomnio dentro del hogar",
-                "Se repiten conflictos o tensiones en una casa o lugar de trabajo",
-                "Percibes ambientes tristes, cargados o estancados",
-                "Estás atravesando una mudanza",
-                "El espacio quedó marcado por separaciones, pérdidas o enfermedades",
-                "Vas a abrir un nuevo local, consultorio o emprendimiento",
-                "Hay lugares donde cuesta vender, avanzar o prosperar",
+                "Sientes bold[pesadez, incomodidad o energía densa en un espacio]",
+                "Descansas bold[mal o hay insomnio dentro del hogar]",
+                "Se repiten bold[conflictos o tensiones en una casa o lugar de trabajo]",
+                "Percibes bold[ambientes tristes, cargados o estancados]",
+                "Estás atravesando una bold[mudanza]",
+                "El espacio quedó marcado por bold[separaciones, pérdidas o enfermedades]",
+                "Vas a abrir un bold[nuevo local, consultorio o emprendimiento]",
+                "Hay lugares donde bold[cuesta vender, avanzar o prosperar]",
               ],
             },
             {
               type: "paragraph",
-              text: "Esta sesión acompaña un proceso de limpieza, orden y armonización energética del espacio, ayudando a que la energía vuelva a fluir y sostenga bienestar, claridad y prosperidad",
+              text: "Esta sesión acompaña un proceso de bold[limpieza, orden y armonización energética del espacio], ayudando a que la energía vuelva a fluir y sostenga bienestar, claridad y prosperidad",
             },
           ]}
         />

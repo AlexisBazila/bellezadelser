@@ -19,9 +19,9 @@ function SesionEstres() {
             "¿Qué es la Sanación para el Estrés y la Ansiedad Consciente?"
           }
           paragraphs={[
-            "La Sanación para el Estrés y la Ansiedad Consciente es un acompañamiento energético y emocional para personas que viven con tensión constante, sobrecarga mental o dificultad para relajarse y habitar el presente.",
+            "La Sanación para el Estrés y la Ansiedad Consciente es un acompañamiento bold[energético y emocional] para personas que viven con tensión constante, sobrecarga mental o dificultad para relajarse y habitar el presente.",
 
-            "Este trabajo ayuda al sistema nervioso a regularse, al cuerpo a salir del estado de alerta permanente y crea un espacio seguro de contención, calma y reconexión interna.",
+            "Este trabajo ayuda al bold[sistema nervioso a regularse], al cuerpo a salir del estado de alerta permanente y crea un bold[espacio seguro de contención, calma y reconexión interna.]",
           ]}
           imageDesktop={SesionEstresImagen}
           imageMobile={SesionEstresImagen}
@@ -33,18 +33,18 @@ function SesionEstres() {
             {
               type: "list",
               items: [
-                "Sientes estrés crónico o acumulado",
-                "Vives con ansiedad, nerviosismo o inquietud constante",
-                "Tu mente está acelerada o con pensamientos repetitivos",
-                "Experimentas agotamiento emocional",
-                "Te cuesta descansar, relajarte o dormir profundamente",
-                "Percibes tensión corporal frecuente",
-                "Te mueves desde la exigencia, la autoexigencia o el control excesivo",
+                "Sientes bold[estrés crónico o acumulado]",
+                "Vives con bold[ansiedad, nerviosismo o inquietud constante]",
+                "Tu mente está bold[acelerada o con pensamientos repetitivos]",
+                "Experimentas bold[agotamiento emocional]",
+                "Te cuesta bold[descansar, relajarte o dormir profundamente]",
+                "Percibes bold[tensión corporal frecuente]",
+                "Te mueves desde la bold[exigencia, la autoexigencia o el control excesivo]",
               ],
             },
             {
               type: "paragraph",
-              text: "Esta sanación acompaña el proceso de calmar la mente, relajar el cuerpo y regular el sistema energético, ayudándote a volver a un estado de presencia, equilibrio y calma interior",
+              text: "Esta sanación acompaña el proceso de bold[calmar la mente, relajar el cuerpo y regular el sistema energético], ayudándote a volver a un estado de presencia, equilibrio y calma interior",
             },
           ]}
         />

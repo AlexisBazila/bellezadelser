@@ -17,9 +17,9 @@ function SesionReikiMascotas() {
         <ProductDescriptionSection
           subTtitle={"¿Qué es el Reiki para Mascotas?"}
           paragraphs={[
-            "El Reiki para Mascotas es un acompañamiento energético diseñado para animales que atraviesan procesos físicos, emocionales o energéticos, respetando siempre su sensibilidad y su ritmo natural.",
+            "El Reiki para Mascotas es un acompañamiento energético diseñado para bold[animales que atraviesan procesos físicos, emocionales o energéticos], respetando siempre su sensibilidad y su ritmo natural.",
 
-            "El Reiki actúa de forma suave y profunda, ayudando a equilibrar su campo energético, fortalecer su energía vital y generar estados de calma, bienestar y armonía.",
+            "El Reiki actúa de forma bold[suave y profunda], ayudando a equilibrar su campo energético, fortalecer su energía vital y bold[generar estados de calma, bienestar y armonía.]",
           ]}
           imageDesktop={SesionMascotasImagen}
           imageMobile={SesionMascotasImagen}
@@ -31,18 +31,18 @@ function SesionReikiMascotas() {
             {
               type: "list",
               items: [
-                "Vive estrés, ansiedad o miedo (viajes, mudanzas, fuegos artificiales, visitas al veterinario o cambios en el hogar)",
-                "Está atravesando procesos de enfermedad o recuperación",
-                "Presenta dolores físicos o malestar general",
-                "Ha tenido cambios de comportamiento",
-                "Se encuentra en etapas de envejecimiento",
-                "Necesita acompañamiento en momentos delicados o de final de vida",
-                "Es una mascota adoptada con historia de abandono o trauma",
+                "Vive bold[estrés, ansiedad o miedo] (viajes, mudanzas, fuegos artificiales, visitas al veterinario o cambios en el hogar)",
+                "Está atravesando procesos de bold[enfermedad o recuperación]",
+                "Presenta bold[dolores físicos o malestar general]",
+                "Ha tenido bold[cambios de comportamiento]",
+                "Se encuentra en etapas de bold[envejecimiento]",
+                "Necesita acompañamiento en bold[momentos delicados o de final de vida]",
+                "Es una mascota adoptada con bold[historia de abandono o trauma]",
               ],
             },
             {
               type: "paragraph",
-              text: "El Reiki no reemplaza la atención veterinaria, sino que actúa como un acompañamiento energético complementario.",
+              text: "El Reiki bold[no reemplaza la atención veterinaria], sino que actúa como un bold[acompañamiento energético complementario.]",
             },
           ]}
         />

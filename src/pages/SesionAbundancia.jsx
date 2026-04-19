@@ -17,9 +17,9 @@ function SesionAbundancia() {
         <ProductDescriptionSection
           subTtitle={"¿Qué es Activación de Abundancia y Apertura de Caminos?"}
           paragraphs={[
-            "La Activación de Abundancia y Apertura de Caminos es un trabajo energético profundo que acompaña procesos de desbloqueo, orden y expansión, ayudando a que la energía de la abundancia vuelva a fluir de forma natural.",
-            "Muchas veces la abundancia se ve limitada por creencias inconscientes, lealtades familiares, miedos, cargas energéticas o experiencias pasadas que cierran caminos.",
-            "Este trabajo busca liberar esos bloqueos y activar el merecimiento y la capacidad de recibir.",
+            "La Activación de Abundancia y Apertura de Caminos es un trabajo energético profundo que acompaña procesos de bold[desbloqueo, orden y expansión], ayudando a que la energía de la abundancia vuelva a fluir de forma natural.",
+            "Muchas veces la abundancia se ve limitada por bold[creencias inconscientes, lealtades familiares, miedos, cargas energéticas o experiencias pasadas] que cierran caminos.",
+            "Este trabajo busca bold[liberar esos bloqueos y activar el merecimiento y la capacidad de recibir.]",
           ]}
           imageDesktop={SesionAbundanciaImagen}
           imageMobile={SesionAbundanciaImagen}
@@ -31,19 +31,19 @@ function SesionAbundancia() {
             {
               type: "list",
               items: [
-                "Experimentas bloqueos económicos repetidos",
-                "Sientes que haces mucho esfuerzo, pero no avanzas",
-                "Atraviesas estancamiento laboral o profesional",
-                "Te cuesta atraer oportunidades o sostener la abundancia",
-                "Aparecen miedos a crecer, ganar o cobrar",
-                "Sientes confusión sobre tu propósito o dirección",
-                "Estás por iniciar un nuevo proyecto o emprendimiento",
-                "Estás cerrando o abriendo ciclos y necesitas ordenar tu energía",
+                "Experimentas bold[bloqueos económicos repetidos]",
+                "Sientes que bold[haces mucho esfuerzo, pero no avanzas]",
+                "Atraviesas bold[estancamiento laboral o profesional]",
+                "Te cuesta bold[atraer oportunidades o sostener la abundancia]",
+                "Aparecen bold[miedos a crecer, ganar o cobrar]",
+                "Sientes bold[confusión sobre tu propósito o dirección]",
+                "Estás por iniciar un bold[nuevo proyecto o emprendimiento]",
+                "Estás cerrando o abriendo ciclos y necesitas bold[ordenar tu energía]",
               ],
             },
             {
               type: "paragraph",
-              text: "Esta activación acompaña el proceso de liberar bloqueos y abrirte al merecimiento y la recepción, para que la abundancia pueda expresarse con mayor fluidez.",
+              text: "Esta activación acompaña el proceso de bold[liberar bloqueos y abrirte al merecimiento y la recepción], para que la abundancia pueda expresarse con mayor fluidez.",
             },
           ]}
         />

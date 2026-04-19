@@ -18,9 +18,9 @@ function SesionBelleza() {
         />
         <ProductDescriptionSection
           paragraphs={[
-            "El Ritual de Belleza Holística Personalizado es una experiencia integral de cuidado consciente del rostro y la piel, que combina energía, masaje facial, presencia y regulación del sistema nervioso.",
+            "El Ritual de Belleza Holística Personalizado es una bold[experiencia integral de cuidado consciente del rostro y la piel, que combina energía, masaje facial, presencia y regulación del sistema nervioso.]",
             "No es un tratamiento estético tradicional.No es una rutina mecánica.",
-            "Es un ritual profundo de reconexión con el cuerpo, donde el rostro se trabaja como un mapa emocional y energético, y la piel como reflejo del equilibrio interno.",
+            "Es un bold[ritual profundo de reconexión con el cuerpo], donde el rostro se trabaja como un bold[mapa emocional y energético], y la piel como reflejo del equilibrio interno.",
           ]}
           imageDesktop={SesionBellezaImagen}
           imageMobile={SesionBellezaImagen}
@@ -32,13 +32,13 @@ function SesionBelleza() {
             {
               type: "list",
               items: [
-                "Sientes tu piel apagada, cansada o tensionada",
-                "Acumulas estrés en rostro, mandíbula, cuello u hombros",
-                "Notas tensión mental reflejada en la piel",
-                "Buscas un cuidado profundo, consciente y respetuoso",
-                "Quieres mejorar la vitalidad de la piel sin agresión",
-                "Necesitas bajar revoluciones y volver al cuerpo",
-                "Deseas un espacio real de autocuidado y pausa",
+                "Sientes tu bold[piel apagada, cansada o tensionada]",
+                "Acumulas bold[estrés en rostro, mandíbula, cuello u hombros]",
+                "Notas bold[tensión mental reflejada en la piel]",
+                "Buscas un cuidado bold[profundo, consciente y respetuoso]",
+                "Quieres mejorar la vitalidad de la piel bold[sin agresión]",
+                "Necesitas bold[bajar revoluciones y volver al cuerpo]",
+                "Deseas un espacio real de bold[autocuidado y pausa]",
               ],
             },
           ]}
@@ -50,16 +50,17 @@ function SesionBelleza() {
             {
               type: "list",
               items: [
-                "Es 100% personalizado",
-                "Integra cuidado consciente de la piel + masaje facial + energía",
-                "Trabaja tensiones profundas del rostro",
-                "No sigue protocolos estandarizados• Respeta los ritmos naturales del cuerpo y la piel",
-                "La piel se cuida desde la presencia, no desde la exigencia",
+                "Es bold[100% personalizado]",
+                "Integra bold[cuidado consciente de la piel + masaje facial + energía]",
+                "Trabaja bold[tensiones profundas del rostro]",
+                "No sigue protocolos estandarizados",
+                "Respeta los bold[ritmos naturales del cuerpo y la piel]",
+                "La piel se cuida desde la bold[presencia], no desde la exigencia",
               ],
             },
             {
               type: "paragraph",
-              text: "Este ritual no fuerza resultados.",
+              text: "Este ritual bold[no fuerza resultados.]",
             },
             {
               type: "paragraph",
@@ -95,7 +96,7 @@ function SesionBelleza() {
             },
             {
               type: "paragraph",
-              text: "busca liberar lo que la piel está sosteniendo.",
+              text: "busca bold[liberar lo que la piel está sosteniendo.]",
             },
           ]}
         />
@@ -169,7 +170,7 @@ function SesionBelleza() {
             {
               type: "list",
               items: [
-                "Duración aproximada: 90 minutos",
+                "Duración aproximada: bold[90 minutos]",
                 "Ritmo lento y respetuoso",
                 "Puede repetirse de forma periódica según necesidad",
               ],
