@@ -128,3 +128,15 @@
   font-size: 18px;
   opacity: 0.9;
 }
+
+@media (max-width: 600px) {
+  .sesion-title {
+    font-size: 30px;
+  }
+  .sesion-content li {
+    font-size: 18px;
+  }
+  .sesion-content p {
+    font-size: 18px;
+  }
+}
