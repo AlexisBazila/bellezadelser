@@ -5,71 +5,33 @@ import logo from "../../assets/images/withe-logo.png";
 
 function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [openSubmenu, setOpenSubmenu] = useState(null);
   const [megaOpen, setMegaOpen] = useState(false);
 
-  const menuRef = useRef(null);
-  const burgerRef = useRef(null);
   const megaRef = useRef(null);
   const triggerRef = useRef(null);
+  const burgerRef = useRef(null);
 
   const toggleMenu = () => {
-    setMenuOpen((prev) => {
-      if (!prev) return true;
-      setOpenSubmenu(null);
-      return false;
-    });
+    setMenuOpen((prev) => !prev);
   };
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-    setOpenSubmenu(null);
-  };
-
+  const closeMenu = () => setMenuOpen(false);
   const closeMegaMenu = () => setMegaOpen(false);
 
-  const openOnlySubmenu = (menuName, e) => {
-    if (e && e.stopPropagation) e.stopPropagation();
-    if (openSubmenu === menuName) return;
-    setOpenSubmenu(menuName);
-  };
-
-  // 🔥 Bloquear scroll (sin salto feo)
+  // Bloquear scroll cuando algún menú está abierto
   useEffect(() => {
     if (menuOpen || megaOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "auto";
     }
-
     return () => (document.body.style.overflow = "auto");
   }, [menuOpen, megaOpen]);
 
-  // 🔥 Cerrar mobile al hacer click afuera
-  useEffect(() => {
-    const handlePointerDownOutside = (e) => {
-      if (!menuOpen) return;
-
-      if (
-        menuRef.current &&
-        !menuRef.current.contains(e.target) &&
-        burgerRef.current &&
-        !burgerRef.current.contains(e.target)
-      ) {
-        closeMenu();
-      }
-    };
-
-    document.addEventListener("pointerdown", handlePointerDownOutside);
-    return () =>
-      document.removeEventListener("pointerdown", handlePointerDownOutside);
-  }, [menuOpen]);
-
-  // 🔥 Cerrar mega menu al hacer click afuera
+  // Cerrar mega menu al hacer click afuera (solo desktop)
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (!megaOpen) return;
-
       if (
         megaRef.current &&
         !megaRef.current.contains(e.target) &&
@@ -79,11 +41,60 @@ function NavBar() {
         setMegaOpen(false);
       }
     };
-
     document.addEventListener("pointerdown", handleClickOutside);
     return () =>
       document.removeEventListener("pointerdown", handleClickOutside);
   }, [megaOpen]);
+
+  const menuSections = [
+    {
+      title: "Sesiones",
+      links: [
+        { label: "Reiki", to: "/sesiones/reiki" },
+        { label: "Registros Akáshicos", to: "/sesiones/registros-akashicos" },
+        { label: "Acompañamiento", to: "/sesiones/acompañamiento" },
+        { label: "Packs", to: "/packs" },
+      ],
+    },
+    {
+      title: "Belleza Holística",
+      links: [
+        { label: "Rituales de Belleza", to: "/belleza-holistica/belleza" },
+      ],
+    },
+    {
+      title: "Otras sanaciones",
+      links: [
+        { label: "Activación", to: "/otras-sanaciones/activacion" },
+        { label: "Bloqueos en el Amor", to: "/otras-sanaciones/bloqueos" },
+        {
+          label: "Sanación de Útero",
+          to: "/otras-sanaciones/sanacion-de-utero",
+        },
+        { label: "Estrés y Ansiedad", to: "/otras-sanaciones/sanacion-estres" },
+        { label: "Chakras", to: "/otras-sanaciones/chakras" },
+        {
+          label: "Energía de Espacios",
+          to: "/otras-sanaciones/limpieza-de-espacios",
+        },
+        {
+          label: "Reiki para Mascotas",
+          to: "/otras-sanaciones/reiki-para-mascotas",
+        },
+        { label: "Reiki Oncológico", to: "/otras-sanaciones/reiki-oncologico" },
+      ],
+    },
+    {
+      title: "Armonizaciones",
+      links: [
+        {
+          label: "Activaciones Energéticas",
+          to: "/armonizaciones/activaciones",
+        },
+        { label: "eBooks", to: "/armonizaciones/ebooks" },
+      ],
+    },
+  ];
 
   return (
     <>
@@ -117,99 +128,20 @@ function NavBar() {
                   ref={megaRef}
                   className={`megaMenu ${megaOpen ? "open" : ""}`}
                 >
-                  <div className="megaColumn">
-                    <h4>Sesiones</h4>
-                    <Link to="/sesiones/reiki" onClick={closeMegaMenu}>
-                      Reiki
-                    </Link>
-                    <Link
-                      to="/sesiones/registros-akashicos"
-                      onClick={closeMegaMenu}
-                    >
-                      Registros Akáshicos
-                    </Link>
-                    <Link to="/sesiones/acompañamiento" onClick={closeMegaMenu}>
-                      Acompañamiento
-                    </Link>
-                    <Link to="/packs" onClick={closeMegaMenu}>
-                      Packs
-                    </Link>
-                  </div>
-
-                  <div className="megaColumn">
-                    <h4>Belleza Holística</h4>
-                    <Link
-                      to="/belleza-holistica/belleza"
-                      onClick={closeMegaMenu}
-                    >
-                      Rituales de Belleza
-                    </Link>
-                  </div>
-
-                  <div className="megaColumn">
-                    <h4>Otras sanaciones</h4>
-                    <Link
-                      to="/otras-sanaciones/activacion"
-                      onClick={closeMegaMenu}
-                    >
-                      Activación
-                    </Link>
-                    <Link
-                      to="/otras-sanaciones/bloqueos"
-                      onClick={closeMegaMenu}
-                    >
-                      Bloqueos en el Amor
-                    </Link>
-                    <Link
-                      to="/otras-sanaciones/sanacion-de-utero"
-                      onClick={closeMegaMenu}
-                    >
-                      Sanación de Útero
-                    </Link>
-                    <Link
-                      to="/otras-sanaciones/sanacion-estres"
-                      onClick={closeMegaMenu}
-                    >
-                      Estrés y Ansiedad
-                    </Link>
-                    <Link
-                      to="/otras-sanaciones/chakras"
-                      onClick={closeMegaMenu}
-                    >
-                      Chakras
-                    </Link>
-                    <Link
-                      to="/otras-sanaciones/limpieza-de-espacios"
-                      onClick={closeMegaMenu}
-                    >
-                      Energía de Espacios
-                    </Link>
-                    <Link
-                      to="/otras-sanaciones/reiki-para-mascotas"
-                      onClick={closeMegaMenu}
-                    >
-                      Reiki para Mascotas
-                    </Link>
-                    <Link
-                      to="/otras-sanaciones/reiki-oncologico"
-                      onClick={closeMegaMenu}
-                    >
-                      Reiki Oncológico
-                    </Link>
-                  </div>
-
-                  <div className="megaColumn">
-                    <h4>Armonizaciones</h4>
-                    <Link
-                      to="/armonizaciones/activaciones"
-                      onClick={closeMegaMenu}
-                    >
-                      Activaciones Energéticas
-                    </Link>
-                    <Link to="/armonizaciones/ebooks" onClick={closeMegaMenu}>
-                      eBooks
-                    </Link>
-                  </div>
+                  {menuSections.map((section) => (
+                    <div className="megaColumn" key={section.title}>
+                      <h4>{section.title}</h4>
+                      {section.links.map((link) => (
+                        <Link
+                          key={link.to}
+                          to={link.to}
+                          onClick={closeMegaMenu}
+                        >
+                          {link.label}
+                        </Link>
+                      ))}
+                    </div>
+                  ))}
                 </div>
               </li>
 
@@ -236,54 +168,48 @@ function NavBar() {
             )}
           </div>
 
-          <Link to="/" className="logoHome">
+          <Link to="/" className="logoHome" onClick={closeMenu}>
             <img src={logo} alt="logo" />
             <h3>Belleza del Ser</h3>
           </Link>
 
-          <Link to="/carrito" className="carrito">
+          <Link to="/carrito" className="carrito" onClick={closeMenu}>
             <i className="fa-solid fa-cart-shopping"></i>
           </Link>
         </nav>
       </div>
 
-      {/* MOBILE MENU */}
-      <div className={`movilNavMenu ${menuOpen ? "active" : ""}`} ref={menuRef}>
-        <ul className="columnMenuDiv">
-          <li>
-            <Link to="/" onClick={closeMenu}>
-              Home
-            </Link>
-          </li>
+      {/* MOBILE MENU — fullscreen */}
+      <div className={`movilNavMenu ${menuOpen ? "active" : ""}`}>
+        <div className="movilNavScroll">
+          {/* Home destacado arriba */}
+          <Link to="/" className="mobileHomeLink" onClick={closeMenu}>
+            Home
+          </Link>
 
-          <li className="menu-item has-submenu">
-            <div
-              className="submenu-toggle"
-              onClick={(e) => openOnlySubmenu("bienestar", e)}
-            >
-              <button className="submenu-btn">Activar mi bienestar ▾</button>
-            </div>
+          {/* Secciones en cuadros */}
+          <div className="mobileSections">
+            {menuSections.map((section) => (
+              <div className="mobileSection" key={section.title}>
+                <h4 className="mobileSectionTitle">{section.title}</h4>
+                <ul className="mobileSectionLinks">
+                  {section.links.map((link) => (
+                    <li key={link.to}>
+                      <Link to={link.to} onClick={closeMenu}>
+                        {link.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
 
-            <ul
-              className={`submenu ${
-                openSubmenu === "bienestar" ? "open" : "close"
-              }`}
-            >
-              <li className="submenuTitle">Sesiones</li>
-              <li>
-                <Link to="/sesiones/reiki" onClick={closeMenu}>
-                  Reiki
-                </Link>
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <Link to="/sobre-mi" onClick={closeMenu}>
-              Sobre mí
-            </Link>
-          </li>
-        </ul>
+          {/* Sobre mí al final */}
+          <Link to="/sobre-mi" className="mobileSobreMi" onClick={closeMenu}>
+            Sobre mí
+          </Link>
+        </div>
       </div>
     </>
   );
