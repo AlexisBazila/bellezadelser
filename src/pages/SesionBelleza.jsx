@@ -189,10 +189,11 @@ function SesionBelleza() {
           links={{
             distance: {
               latam: true,
-              world: "https://calendly.com/bellezadelseroficial/",
+              world:
+                "https://calendly.com/bellezadelseroficial/ritueu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
           }}
-          sessionName="Reiki Oncológico"
+          sessionName="Ritual de Belleza Holística Personalizado"
         />
       </div>
     </>

@@ -120,7 +120,8 @@ function SesionReikiOncologico() {
           links={{
             distance: {
               latam: true,
-              world: "https://calendly.com/bellezadelseroficial/",
+              world:
+                "https://calendly.com/bellezadelseroficial/oncoeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
           }}
           sessionName="Reiki Oncológico"

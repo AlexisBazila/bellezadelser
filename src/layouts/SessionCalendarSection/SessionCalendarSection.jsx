@@ -33,7 +33,7 @@ function SessionCalendarSection({ links, sessionName }) {
 
   // 🔥 Generador de link WhatsApp
   const generateWhatsAppLink = (tipoSesion) => {
-    const phone = "5493755447658";
+    const phone = "34683517654";
 
     const message = `Hola!
 Quisiera agendar una sesión de ${sessionName} (${tipoSesion}).

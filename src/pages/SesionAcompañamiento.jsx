@@ -105,6 +105,7 @@ function SesionAcompañamiento() {
                 "https://calendly.com/bellezadelseroficial/acomoneu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
           }}
+          sessionName="Sesión de Acompañamiento Holístico"
         />
       </div>
     </>

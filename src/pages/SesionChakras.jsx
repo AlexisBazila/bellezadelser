@@ -97,11 +97,13 @@ function SesionChakras() {
           links={{
             online: {
               latam: true,
-              world: "https://calendly.com/bellezadelseroficial/",
+              world:
+                "https://calendly.com/bellezadelseroficial/limchavivoeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
             distance: {
               latam: true,
-              world: "https://calendly.com/bellezadelseroficial/",
+              world:
+                "https://calendly.com/bellezadelseroficial/limchadiseu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
           }}
           sessionName="Limpieza y Alineación de chakras"

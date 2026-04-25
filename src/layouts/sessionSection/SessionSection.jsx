@@ -49,63 +49,63 @@ function SessionSection() {
       title: "Abundancia y Apertura de Caminos",
       description:
         "Descripción corta para sesiones nuevas en sección de cards de sesiones",
-      link: "#",
+      link: "/otras-sanaciones/activacion#sessionCalendar",
     },
     {
       image: sesionBloqueos,
       title: "Sanación de Bloqueos en el Amor",
       description:
         "Descripción corta para sesiones nuevas en sección de cards de sesiones",
-      link: "#",
+      link: "/otras-sanaciones/bloqueos#sessionCalendar",
     },
     {
       image: sesionUtero,
       title: "Sanación de Útero",
       description:
         "Descripción corta para sesiones nuevas en sección de cards de sesiones",
-      link: "#",
+      link: "/otras-sanaciones/sanacion-de-utero#sessionCalendar",
     },
     {
       image: sesionEstres,
       title: "Sanación para el Estrés y la Ansiedad Consciente",
       description:
         "Descripción corta para sesiones nuevas en sección de cards de sesiones",
-      link: "#",
+      link: "/otras-sanaciones/sanacion-estres#sessionCalendar",
     },
     {
       image: sesionChakras,
       title: "Limpieza y Alineación de chakras",
       description:
         "Descripción corta para sesiones nuevas en sección de cards de sesiones",
-      link: "#",
+      link: "/otras-sanaciones/chakras#sessionCalendar",
     },
     {
       image: sesionLimpiezaEspacios,
       title: "Limpieza Energética de Espacios",
       description:
         "Descripción corta para sesiones nuevas en sección de cards de sesiones",
-      link: "#",
+      link: "/otras-sanaciones/limpieza-de-espacios#sessionCalendar",
     },
     {
       image: sesionMascotas,
       title: "Reiki para Mascotas",
       description:
         "Descripción corta para sesiones nuevas en sección de cards de sesiones",
-      link: "#",
+      link: "/otras-sanaciones/reiki-para-mascotas#sessionCalendar",
     },
     {
       image: sesionOncologico,
       title: "Reiki Oncológico",
       description:
         "Descripción corta para sesiones nuevas en sección de cards de sesiones",
-      link: "#",
+      link: "/otras-sanaciones/reiki-oncologico#sessionCalendar",
     },
     {
       image: sesionBelleza,
       title: "Ritual de Belleza Holística",
       description:
         "Descripción corta para sesiones nuevas en sección de cards de sesiones",
-      link: "#",
+      link: "/belleza-holistica/belleza#sessionCalendar",
     },
   ];
 

@@ -106,14 +106,16 @@ function SesionEstres() {
           links={{
             online: {
               latam: true,
-              world: "https://calendly.com/bellezadelseroficial/",
+              world:
+                "https://calendly.com/bellezadelseroficial/sanaestresvivoeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
             distance: {
               latam: true,
-              world: "https://calendly.com/bellezadelseroficial/",
+              world:
+                "https://calendly.com/bellezadelseroficial/sanaestresdiseu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
           }}
-          sessionName="Sanación de Útero"
+          sessionName="Sanación para el Estrés y la Ansiedad Consciente"
         />
       </div>
     </>
