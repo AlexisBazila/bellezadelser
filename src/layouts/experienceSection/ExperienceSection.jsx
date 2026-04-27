@@ -21,9 +21,9 @@ function ExperienceSection() {
           <div className="paragraphTexts">
             <IconLeftAlignedParagraph
               logo={logo}
-              subTtitle="Activaciones de bienestar"
+              subTtitle="Activaciones Energéticas"
               paragraphs={[
-                "Mini sesiones de Reiki y sanación en menos de 10 minutos. Cada cápsula está diseñada para ayudarte a soltar tensiones, calmar la mente, activar  y equilibrar tu energía, donde y cuando lo necesites.",
+                "Activaciones energéticas guiadas para liberar tensiones, calmar tu mente y reequilibrar tu energía en el momento en que lo necesites.",
               ]}
             />
           </div>

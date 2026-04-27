@@ -38,7 +38,7 @@ function AboutMe() {
           {
             type: "paragraph",
             content: [
-              "Mi misión no es darte respuestas ni soluciones mágicas. Mi misión es acompañarte a ",
+              "Mi misión no es darte respuestas ni soluciones mágicas. Mi misión es acompañarte a  ",
               {
                 bold: "reconocer tu propia energía, recuperar tu poder interior y abrir posibilidades donde antes solo veías límites.",
               },
@@ -52,7 +52,7 @@ function AboutMe() {
               {
                 bold: "Belleza del Ser",
               },
-              ", un espacio creado para acompañar a las personas a reconectar con su energía, su esencia y su verdadero poder interior.",
+              ",  un espacio creado para acompañar a las personas a reconectar con su energía, su esencia y su verdadero poder interior.",
             ],
           },
 
@@ -87,39 +87,12 @@ function AboutMe() {
 
           "Cuando existen bloqueos internos —emocionales, mentales o energéticos— muchas veces sentimos estancamiento, confusión o repetición de ciertos patrones.",
 
-          "Cuando comenzamos a comprender y ordenar esa energía, algo cambia: la vida empieza a moverse de una manera diferente.",
+          "Cuando existen bloqueos internos —emocionales, mentales o energéticos— muchas veces sentimos estancamiento, confusión o repetición de ciertos patrones.",
 
-          "En mis procesos acompaño a las personas a tomar conciencia del poder su energía, liberar cargas acumuladas y generar cambios reales en su forma de vivir.",
+          "Por eso, mi enfoque no se queda en lo que se ve.",
 
-          "Para ello utilizo distintas herramientas de trabajo energético y de conciencia, entre ellas:",
-          {
-            type: "list",
-            items: [
-              "Reiki",
-              "Registros Akáshicos",
-              "Ejercicios de conexión energética",
-              "Procesos de transformación interior",
-            ],
-          },
-
-          {
-            type: "paragraph",
-            content: [
-              "Pero más allá de la herramienta, lo más importante para mí es que puedas ",
-              {
-                bold: "comprender tu propio proceso y desarrollar tu capacidad de sostener esos cambios en tu vida",
-              },
-            ],
-          },
-          {
-            type: "paragraph",
-            content: [
-              "No se trata solo de inspirarte por un momento. Se trata de ",
-              {
-                bold: "generar una transformación que puedas integrar y sostener.",
-              },
-            ],
-          },
+          "Trabajamos en la raíz.",
+          "A través de herramientas de trabajo energético y de conciencia, como reiki, registros akáshicos y ejercicios de conexión, acompaño a las personas a tomar conciencia del poder de su energía, liberar cargas acumuladas y generar cambios reales en su forma de vivir.",
         ]}
       />
       <ContentSection
@@ -128,30 +101,14 @@ function AboutMe() {
         image={process}
         imagePosition="bottom"
         content={[
-          "Cada persona tiene su propia historia, su propio ritmo y su propia sensibilidad. Por eso cada proceso es único.",
-
-          "Mi forma de trabajar es personalizada y está basada en el acompañamiento consciente, la escucha profunda y el respeto por el proceso de cada persona.",
-
-          "En nuestras sesiones trabajamos juntos para abrir espacios internos donde lo que estaba bloqueado pueda comenzar a liberarse y transformarse.",
+          "Cada persona llega con su propia historia, su propio ritmo y su propiasensibilidad. Por eso, ",
           {
-            type: "paragraph",
-            content: [
-              "Yo acompaño, sostengo el proceso y aporto herramientas. Pero ",
-              {
-                bold: "cel verdadero cambio ocurre cuando tú comienzas a reconectar con tu propia energía y con tu capacidad de transformación.",
-              },
-            ],
+            bold: "cada proceso es único.",
           },
 
-          {
-            type: "paragraph",
-            content: [
-              "Porque el poder que transforma tu vida ",
-              {
-                bold: "no está fuera de ti. Siempre ha estado dentro.",
-              },
-            ],
-          },
+          "Mi forma de trabajar es personalizada y está basada en el acompañamiento consciente, la escucha profunda y el respeto por tu proceso.",
+
+          "En nuestras sesiones, trabajamos para abrir espacios internos donde lo que estaba bloqueado pueda comenzar a liberarse y transformarse.",
         ]}
       />
       <ContentSection

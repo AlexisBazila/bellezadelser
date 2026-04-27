@@ -10,15 +10,19 @@ function HeroSection() {
           <div className="paragraphHero">
             <div className="titleAndSubtitleHero">
               <h1 className="title">
-                Transforma tu energía, <br />{" "}
-                <strong> transforma tu vida.</strong>
+                Tu energía está creando tu vida,
+                <br />
+                <strong>aprende a transformarla. </strong>
               </h1>
               <h2>
-                Formaciones y prácticas energéticas para tu bienestar interior y
-                exterior.
+                Cuando liberas la raíz invisible de tus bloqueos, todo comienza
+                a moverse fuera. Te acompaño a dar ese paso.
               </h2>
             </div>
-            <FirstButton caption="Quiero Conectar" link={"#sessionSection"} />
+            <FirstButton
+              caption="Quiero Trabajar en Mi"
+              link={"#sessionSection"}
+            />
           </div>
         </div>
       </div>

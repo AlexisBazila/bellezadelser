@@ -23,7 +23,13 @@ function SesionsPack() {
         links={{
           distance: {
             latam: true,
-            world: "https://calendly.com/bellezadelseroficial/1",
+            world:
+              "https://calendly.com/bellezadelseroficial/packreiregdiseu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
+          },
+          online: {
+            latam: true,
+            world:
+              "https://calendly.com/bellezadelseroficial/packreiregeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
           },
         }}
       />
@@ -46,7 +52,8 @@ function SesionsPack() {
         links={{
           distance: {
             latam: true,
-            world: "https://calendly.com/bellezadelseroficial/1",
+            world:
+              "https://calendly.com/bellezadelseroficial/resetenereu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
           },
         }}
       />
@@ -68,7 +75,8 @@ function SesionsPack() {
         links={{
           distance: {
             latam: true,
-            world: "https://calendly.com/bellezadelseroficial/1",
+            world:
+              "https://calendly.com/bellezadelseroficial/sanfemeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
           },
         }}
       />
@@ -90,7 +98,8 @@ function SesionsPack() {
         links={{
           distance: {
             latam: true,
-            world: "https://calendly.com/bellezadelseroficial/1",
+            world:
+              "https://calendly.com/bellezadelseroficial/emoproeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
           },
         }}
       />
@@ -112,7 +121,8 @@ function SesionsPack() {
         links={{
           distance: {
             latam: true,
-            world: "https://calendly.com/bellezadelseroficial/1",
+            world:
+              "https://calendly.com/bellezadelseroficial/aperexpaeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
           },
         }}
       />
@@ -139,7 +149,8 @@ function SesionsPack() {
         links={{
           online: {
             latam: true,
-            world: "https://calendly.com/bellezadelseroficial/1",
+            world:
+              "https://calendly.com/bellezadelseroficial/acompackeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
           },
         }}
       />

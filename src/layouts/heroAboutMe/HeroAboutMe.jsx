@@ -9,8 +9,8 @@ function HeroAboutMe() {
             <div className="titleAndSubtitleHeroAbout">
               <h1 className="title">Conoce mi camino</h1>
               <h2>
-                Fundadora de Belleza del Ser <br /> Especialista en
-                transformación energética y manifestación consciente
+                Fundadora de Belleza del Ser <br /> Terapeuta Energética y Guía
+                en Procesos de Transformación Personal
               </h2>
             </div>
           </div>
