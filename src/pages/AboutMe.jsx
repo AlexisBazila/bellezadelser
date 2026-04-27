@@ -87,8 +87,6 @@ function AboutMe() {
 
           "Cuando existen bloqueos internos —emocionales, mentales o energéticos— muchas veces sentimos estancamiento, confusión o repetición de ciertos patrones.",
 
-          "Cuando existen bloqueos internos —emocionales, mentales o energéticos— muchas veces sentimos estancamiento, confusión o repetición de ciertos patrones.",
-
           "Por eso, mi enfoque no se queda en lo que se ve.",
 
           "Trabajamos en la raíz.",
@@ -109,6 +107,18 @@ function AboutMe() {
           "Mi forma de trabajar es personalizada y está basada en el acompañamiento consciente, la escucha profunda y el respeto por tu proceso.",
 
           "En nuestras sesiones, trabajamos para abrir espacios internos donde lo que estaba bloqueado pueda comenzar a liberarse y transformarse.",
+
+          {
+            type: "list",
+            items: [
+              "Vas a poder parar y escucharte.",
+              "Vas a poner claridad en lo que te pasa.",
+              "Vas a identificar qué estás sosteniendo.",
+              "Y vas a empezar a liberarlo.",
+            ],
+          },
+          "Yo te acompaño, pero el proceso es tuyo.",
+          "Porque el poder que transforma tu vida no está fuera de ti. Siempre ha estado dentro.",
         ]}
       />
       <ContentSection
@@ -128,10 +138,9 @@ function AboutMe() {
 
           "Creemos que cada persona tiene dentro de sí una energía única, un poder que muchas veces queda oculto bajo bloqueos, miedos, experiencias del pasado o creencias que nos limitan.",
 
-          "También creemos que cuando una persona vuelve a conectar con su energía, algo cambia: ",
-          "la vida comienza a ordenarse, los caminos se abren y la realidad empieza a reflejar esa nueva conciencia.",
+          "También creemos que cuando una persona vuelve a conectar con su energía, algo cambia: la vida comienza a ordenarse, los caminos se abren y la realidad empieza a reflejar esa nueva conciencia.",
 
-          "Para nosotros, la belleza no es solo algo que se ve.La verdadera belleza nace cuando una persona vuelve a habitarse con autenticidad, coherencia y conexión con su esencia.",
+          "Para nosotros, la belleza no es solo algo que se ve. La verdadera belleza nace cuando una persona vuelve a habitarse con autenticidad, coherencia y conexión con su esencia.",
           {
             type: "bold",
             text: "Belleza del Ser es un espacio para recordar quién eres, liberar lo que te bloquea y abrirte a una vida más consciente, plena y alineada con tu verdadero poder.",

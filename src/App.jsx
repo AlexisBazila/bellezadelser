@@ -20,10 +20,12 @@ import SesionChakras from "./pages/SesionChakras";
 import SesionLimpiezaEspacios from "./pages/SesionLimpiezaEspacios";
 import SesionReikiMascotas from "./pages/SesionReikiMascotas";
 import SesionReikiOncologico from "./pages/SesionReikiOncologico";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
