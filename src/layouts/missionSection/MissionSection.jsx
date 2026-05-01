@@ -3,6 +3,7 @@ import "./missionSection.css";
 
 import SmallButton from "../../components/smallButton/SmallButton";
 import myself from "../../assets/images/natyHome.png";
+import myselfMovil from "../../assets/images/natyHomeMovil.png";
 
 function MissionSection() {
   return (
@@ -42,6 +43,11 @@ function MissionSection() {
         <div className="photoWrapper">
           <div className="photoContainer">
             <img src={myself} alt="Naty Batista" className="missionPhoto" />
+            <img
+              src={myselfMovil}
+              alt="Naty Batista"
+              className="missionPhotoMovil"
+            />
 
             <div className="pharagraphBox">
               <p>
@@ -59,10 +65,21 @@ function MissionSection() {
       <div className="MyselfParagraphMovil">
         <h4>Naty Batista</h4>
         <p>
-          Terapeuta Energética & Guía Espiritual, experta en Sanación
-          Energética, Emocional y Espiritual, con muchos años de experiencia. Mi
-          propósito es ayudarte a reconectar tu energía, tu esencia y activar tu
-          poder interior.
+          Soy Natalia Batista, terapeuta energética y guía en procesos de
+          transformación personal.
+        </p>
+
+        <p>
+          Acompaño a personas que sienten que algo en su vida no termina de
+          encajar, que están estancadas o repiten situaciones sin entender por
+          qué, a comprender qué está pasando en su interior, a reconectar con su
+          poder y a liberar lo que las está bloqueando.
+        </p>
+
+        <p>
+          Mi trabajo no se queda en lo superficial. Vamos a la raíz de lo que
+          estás sosteniendo, para que el cambio no sea momentáneo, sino real y
+          sostenido en el tiempo.
         </p>
 
         <div className="boton">

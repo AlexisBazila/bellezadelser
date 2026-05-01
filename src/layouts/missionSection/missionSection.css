@@ -68,7 +68,9 @@
   /* max-width: 420px; */
   z-index: 1;
 }
-
+.missionPhotoMovil {
+  display: none;
+}
 /* Caja superpuesta */
 .pharagraphBox {
   position: absolute;
@@ -103,7 +105,19 @@
   }
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1340px) {
+  .missionPhoto {
+    max-width: 420px;
+  }
+
+  .pharagraphBox {
+    bottom: -100px;
+    left: 0;
+    margin: 30px;
+  }
+}
+
+@media (max-width: 1270px) {
   .missionSection {
     padding: 5% 2rem;
   }
@@ -111,27 +125,24 @@
   .MyselfDesktop {
     flex-direction: column;
     align-items: center;
-  }
-
-  .photoWrapper {
-    margin-top: 40px;
+    margin-bottom: 150px;
   }
 
   .pharagraphBox {
-    bottom: -50px;
+    bottom: -80px;
+    left: 50%;
+    transform: translateX(-50%);
     width: 80%;
-  }
-
-  .missionPhoto {
-    width: 100%;
+    max-width: 500px;
+    margin: 0;
   }
 
   .firstParagraph h2 {
     font-size: 30px;
   }
-}
-
-@media (max-width: 900px) {
+  .MyselfDesktop .firstParagraph {
+    margin-bottom: 0;
+  }
   .MyselfParagraph {
     display: none;
   }
@@ -145,16 +156,41 @@
   .boton {
     width: 50%;
   }
+  .missionPhoto {
+    display: none;
+  }
+  .missionPhotoMovil {
+    display: flex;
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
 }
 
 @media (max-width: 600px) {
   .pharagraphBox {
-    bottom: -40px;
-    width: 95%;
+    top: auto;
+    bottom: 0;
+
+    left: 50%;
+    transform: translate(-50%, 70%);
+
+    width: 90%;
     padding: 20px;
   }
 
   .pharagraphBox p {
     font-size: 16px;
+  }
+  .missionPhotoMovil {
+    display: none;
+  }
+  .missionPhoto {
+    display: flex;
+    width: 100%;
+  }
+  .MyselfDesktop {
+    margin-bottom: 200px;
   }
 }
