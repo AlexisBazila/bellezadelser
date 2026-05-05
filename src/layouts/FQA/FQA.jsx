@@ -13,11 +13,11 @@ function FQA() {
         "Puedes utilizar tarjeta de débito, crédito o Paypal wallet.",
         "Para saber cuánto es en tu moneda local, puedes ver la cotización del euro en el sitio web de tu banco.",
         "Crear tu cuenta de PayPal es gratuito.",
-        "Si eres de Argentina, tienes la opción de realizar el pago a través de Mercado Pago.",
+        "Si eres de Argentina, tienes la opción de realizar el pago a través de Mercado Pago y/o transferencia bancaria.",
       ],
     },
     {
-      pregunta: "¿Agendé una sesión y no puedo asistir ¿qué hago?",
+      pregunta: "Agendé una sesión y no puedo asistir ¿qué hago?",
       respuesta: [
         "Si algo surge, sólo avísame.",
         "Debes avisar con 48 horas de antelación para no perder tu sesión.",

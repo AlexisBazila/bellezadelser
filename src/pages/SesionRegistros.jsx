@@ -76,10 +76,11 @@ function SesionRegistros() {
             {
               type: "list",
               items: [
-                "El Reiki es un acompañamiento energético complementario",
-                "No reemplaza tratamientos ni terapias médicas",
-                "Cada proceso es único y personal",
-                "Es un trabajo en equipo: la energía acompaña y tú sostienes el proceso en tu vida diaria",
+                "No es adivinación ni futurología.",
+                "No reemplaza tratamientos médicos o terapéuticos.",
+                "No se trabaja sobre terceras personas sin permiso.",
+                "Cada mensaje llega según lo que el alma está lista para recibir.",
+                "Es un trabajo en equipo: la información llega, tú la integras.",
               ],
             },
           ]}
@@ -91,16 +92,17 @@ function SesionRegistros() {
             {
               type: "list",
               items: [
-                { text: "Sesión energética completa" },
-                { text: "Escaneo y armonización del campo energético" },
-                { text: "Trabajo sobre centros energéticos (chakras)" },
-                { text: "Limpieza energética y sellado de protección" },
+                {
+                  text: "Apertura y cierre consciente de los Registros Akáshicos.",
+                },
+                { text: "Respuestas a las preguntas realizadas." },
+                { text: "Canalización de mensajes y comprensiones del alma." },
                 {
                   text: "Informe escrito personalizado con:",
                   children: [
-                    "Qué se trabajó en la sesión",
-                    "Bloqueos energéticos detectados",
-                    "Lectura del cuerpo y la energía",
+                    "Qué información se recibió",
+                    "Qué bloqueos o patrones aparecieron",
+                    "Qué aprendizajes se están manifestando",
                     "Recomendaciones prácticas para integrar el proceso",
                   ],
                 },

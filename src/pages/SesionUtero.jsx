@@ -90,7 +90,8 @@ function SesionUtero() {
                 {
                   text: "La sesión Incluye informe energético con:",
                   children: [
-                    "Qué se trabajó•Qué memorias se percibieron",
+                    "Qué se trabajó",
+                    "Qué memorias se percibieron",
                     "Qué pueden significar",
                     "Cómo acompañarte a ti misma los días siguientes",
                   ],

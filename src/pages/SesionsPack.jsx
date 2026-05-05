@@ -45,7 +45,7 @@ function SesionsPack() {
           "Informe energético completo con todo lo trabajado",
         ]}
         description={[
-          "Cuando el cuero está en alerta y la mente no descansa, la energía pide orden.",
+          "Cuando el cuerpo está en alerta y la mente no descansa, la energía pide orden.",
           "Este pack es ideal para bajar el ruido interno, liberar tensión acumulada y volver a un estado de calma y equilibrio.",
           "Un primer paso profundo para resetear tu energía y recuperar claridad.",
         ]}
@@ -70,7 +70,8 @@ function SesionsPack() {
           "Informe energético completo con todo lo trabajado",
         ]}
         description={[
-          "Un espacio de contención y sanación para mujeres que sienten que su cuerpo guarda historias no resueltas.Este pack acompaña la liberación emocional, la reconexión con la energía femenina y el descanso profundo del sistema nervioso. Sanar desde adentro para volver a habitarte con suavidad.",
+          "Un espacio de contención y sanación para mujeres que sienten que su cuerpo guarda historias no resueltas.Este pack acompaña la liberación emocional, la reconexión con la energía femenina y el descanso profundo del sistema nervioso.",
+          "Sanar desde adentro para volver a habitarte con suavidad.",
         ]}
         links={{
           distance: {
@@ -132,12 +133,6 @@ function SesionsPack() {
         title="Acompañamiento Holístico"
         modalidad="online (Zoom o Videollamada)"
         sessionName="Acompañamiento Holístico"
-        includes={[
-          "Activación de abundancia y apertura de caminos",
-          "Limpieza energética de espacios",
-          "Limpieza y alineación de Chakras",
-          "Informe energético completo con todo lo trabajado",
-        ]}
         description={[
           "El acompañamiento holístico es un proceso de 4 sesiones diseñado para personas que necesitan continuidad, contención y guía consciente para atravesar un momento de cambio, bloqueo o transformación personal.",
 

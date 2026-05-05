@@ -65,7 +65,10 @@ function NavBar() {
     {
       title: "Otras sanaciones",
       links: [
-        { label: "Activación", to: "/otras-sanaciones/activacion" },
+        {
+          label: "Activación de Abundancia",
+          to: "/otras-sanaciones/activacion",
+        },
         { label: "Bloqueos en el Amor", to: "/otras-sanaciones/bloqueos" },
         {
           label: "Sanación de Útero",

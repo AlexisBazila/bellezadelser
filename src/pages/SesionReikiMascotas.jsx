@@ -25,7 +25,7 @@ function SesionReikiMascotas() {
           imageMobile={SesionMascotasImagen}
         />
         <SesionSections
-          title="Esta sesión es para ti si…"
+          title="El Reiki puede acompañar a tu mascota si..."
           variant="light"
           content={[
             {
@@ -85,14 +85,20 @@ function SesionReikiMascotas() {
             {
               type: "list",
               items: [
-                "Qué zonas trabajé",
-                "Qué se percibió a nivel energético",
-                "Qué significan esas sensaciones",
-                "Cómo acompañar a tu mascota los días siguientes",
+                {
+                  text: "un informe energético detallado, donde te cuento:",
+                  children: [
+                    "Qué zonas trabajé",
+                    "Qué se percibió a nivel energético",
+                    "Qué significan esas sensaciones",
+                    "Cómo acompañar a tu mascota los días siguientes",
+                  ],
+                },
               ],
             },
           ]}
         />
+
         <SessionCalendarSection
           links={{
             distance: {

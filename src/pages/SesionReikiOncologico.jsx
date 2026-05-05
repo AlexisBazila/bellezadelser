@@ -70,13 +70,17 @@ function SesionReikiOncologico() {
             {
               type: "list",
               items: [
-                "Ambientes livianos y armónicos.",
-                "Mejor descanso y bienestar.",
-                "Menos tensión emocional.",
-                "Mayor claridad y enfoque.",
-                "Espacios que acompañan procesos de crecimiento.",
-                "Mayor fluidez en trabajo y relaciones.",
+                "Sensación profunda de calma y contención.",
+                "Disminución del estrés y la ansiedad.",
+                "Mejor descanso.",
+                "Acompañamiento emocional.",
+                "Fortalecimiento energético.",
+                "Mayor conexión con la fuerza interior.",
               ],
+            },
+            {
+              type: "paragraph",
+              text: "Los efectos pueden sentirse de forma inmediata o de manera progresiva en los días siguientes.",
             },
           ]}
         />

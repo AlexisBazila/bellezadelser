@@ -19,7 +19,7 @@ function SesionBelleza() {
         <ProductDescriptionSection
           paragraphs={[
             "El Ritual de Belleza Holística Personalizado es una bold[experiencia integral de cuidado consciente del rostro y la piel, que combina energía, masaje facial, presencia y regulación del sistema nervioso.]",
-            "No es un tratamiento estético tradicional.No es una rutina mecánica.",
+            "No es un tratamiento estético tradicional. No es una rutina mecánica.",
             "Es un bold[ritual profundo de reconexión con el cuerpo], donde el rostro se trabaja como un bold[mapa emocional y energético], y la piel como reflejo del equilibrio interno.",
           ]}
           imageDesktop={SesionBellezaImagen}

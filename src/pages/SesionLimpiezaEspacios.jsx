@@ -94,7 +94,8 @@ function SesionLimpiezaEspacios() {
                 {
                   text: "Informe escrito personalizado con:",
                   children: [
-                    "Qué se trabajó•Qué se percibió",
+                    "Qué se trabajó",
+                    "Qué se percibió",
                     "Qué podía estar expresando el espacio",
                     "Recomendaciones para sostener la energía",
                   ],

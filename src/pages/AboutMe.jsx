@@ -99,9 +99,14 @@ function AboutMe() {
         image={process}
         imagePosition="bottom"
         content={[
-          "Cada persona llega con su propia historia, su propio ritmo y su propiasensibilidad. Por eso, ",
           {
-            bold: "cada proceso es único.",
+            type: "paragraph",
+            content: [
+              "Cada persona llega con su propia historia, su propio ritmo y su propia sensibilidad. Por eso, ",
+              {
+                bold: "cada proceso es único.",
+              },
+            ],
           },
 
           "Mi forma de trabajar es personalizada y está basada en el acompañamiento consciente, la escucha profunda y el respeto por tu proceso.",

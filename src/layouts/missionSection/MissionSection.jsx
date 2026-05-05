@@ -16,7 +16,7 @@ function MissionSection() {
           </h2>
 
           <div className="MyselfParagraph">
-            <h4>Naty Batista</h4>
+            {/* <h4>Naty Batista</h4> */}
             <p>
               Soy Natalia Batista, terapeuta energética y guía en procesos de
               transformación personal.
@@ -63,7 +63,7 @@ function MissionSection() {
 
       {/* MOBILE */}
       <div className="MyselfParagraphMovil">
-        <h4>Naty Batista</h4>
+        {/* <h4>Naty Batista</h4> */}
         <p>
           Soy Natalia Batista, terapeuta energética y guía en procesos de
           transformación personal.
