@@ -46,64 +46,65 @@ function SessionSection() {
     // Revisar antes de lanzar
     {
       image: sesionAbundancia,
-      title: "Activacion de Abundancia y Apertura de Caminos",
-      // description:
-      //   "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      title: "Abundancia y Apertura de Caminos",
+      description:
+        "Armoniza tu energía, libera bloqueos y favorece la apertura de caminos.",
       link: "/otras-sanaciones/activacion#sessionCalendar",
     },
     {
       image: sesionBloqueos,
       title: "Sanación de Bloqueos en el Amor",
-      // description:
-      //   "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      description:
+        "Libera bloqueos en el amor, sana tu energía y abre permite que todo fluya.",
       link: "/otras-sanaciones/bloqueos#sessionCalendar",
     },
     {
       image: sesionUtero,
       title: "Sanación de Útero",
-      description: "Reconecta con tu energía femenina",
+      description:
+        "Libera bloqueos en tu útero, sana tu energía y reconecta con tu poder femenino.",
       link: "/otras-sanaciones/sanacion-de-utero#sessionCalendar",
     },
     {
       image: sesionEstres,
-      title: "Sanación para el Estrés y la Ansiedad Consciente",
-      // description:
-      //   "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      title: "Sanación para el Estrés y la Ansiedad",
+      description:
+        "Relaja tu cuerpo, aquieta tu mente y restablece tu energía.",
       link: "/otras-sanaciones/sanacion-estres#sessionCalendar",
     },
     {
       image: sesionChakras,
       title: "Limpieza y Alineación de chakras",
-      // description:
-      //   "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      description:
+        "Limpia y alinea tus chakras, liberando bloqueos y elevando tu energía.",
       link: "/otras-sanaciones/chakras#sessionCalendar",
     },
     {
       image: sesionLimpiezaEspacios,
       title: "Limpieza Energética de Espacios",
-      // description:
-      //   "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      description:
+        "Limpia la energía de tus espacios, libera cargas y restablece la armonía.",
       link: "/otras-sanaciones/limpieza-de-espacios#sessionCalendar",
     },
     {
       image: sesionMascotas,
       title: "Reiki para Mascotas",
-      // description:
-      //   "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      description:
+        "Armoniza la energía de tu mascota, reduce el estrés y favorece su bienestar.",
       link: "/otras-sanaciones/reiki-para-mascotas#sessionCalendar",
     },
     {
       image: sesionOncologico,
       title: "Reiki Oncológico",
-      // description:
-      //   "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      description:
+        "Acompaña tu proceso, armoniza tu energía y brinda calma y bienestar.",
       link: "/otras-sanaciones/reiki-oncologico#sessionCalendar",
     },
     {
       image: sesionBelleza,
       title: "Ritual de Belleza Holística",
-      // description:
-      //   "Descripción corta para sesiones nuevas en sección de cards de sesiones",
+      description:
+        "Nutre tu piel, armoniza tu energía y realza tu belleza natural.",
       link: "/belleza-holistica/belleza#sessionCalendar",
     },
   ];

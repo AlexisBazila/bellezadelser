@@ -52,7 +52,10 @@ function NavBar() {
       links: [
         { label: "Reiki", to: "/sesiones/reiki" },
         { label: "Registros Akáshicos", to: "/sesiones/registros-akashicos" },
-        { label: "Acompañamiento", to: "/sesiones/acompañamiento" },
+        {
+          label: "Acompañamiento 1 a 1",
+          to: "/sesiones/acompañamiento",
+        },
         { label: "Packs", to: "/packs" },
       ],
     },
@@ -94,7 +97,7 @@ function NavBar() {
           label: "Activaciones Energéticas",
           to: "/armonizaciones/activaciones",
         },
-        { label: "eBooks", to: "/armonizaciones/ebooks" },
+        // { label: "eBooks", to: "/armonizaciones/ebooks" },
       ],
     },
   ];

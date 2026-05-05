@@ -43,14 +43,16 @@ Disponibilidad horaria:`;
         </p>
 
         {/* Incluye */}
-        <div className="pack-includes">
-          <strong>Incluye:</strong>
-          <ul>
-            {includes.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-        </div>
+        {Array.isArray(includes) && includes.length > 0 && (
+          <div className="pack-includes">
+            <strong>Incluye:</strong>
+            <ul>
+              {includes.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        )}
 
         {/* Descripción */}
         <div className="pack-description">

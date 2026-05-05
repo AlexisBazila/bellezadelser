@@ -10,16 +10,14 @@ function SesionEstres() {
     <>
       <div>
         <HeroSession
-          title={"Sanación para el Estrés y la Ansiedad Consciente"}
+          title={"Sanación para el Estrés y la Ansiedad"}
           buttonText="Agendar Sesión"
           buttonLink="#sessionCalendar"
         />
         <ProductDescriptionSection
-          subTtitle={
-            "¿Qué es la Sanación para el Estrés y la Ansiedad Consciente?"
-          }
+          subTtitle={"¿Qué es la Sanación para el Estrés y la Ansiedad?"}
           paragraphs={[
-            "La Sanación para el Estrés y la Ansiedad Consciente es un acompañamiento bold[energético y emocional] para personas que viven con tensión constante, sobrecarga mental o dificultad para relajarse y habitar el presente.",
+            "La Sanación para el Estrés y la Ansiedad es un acompañamiento bold[energético y emocional] para personas que viven con tensión constante, sobrecarga mental o dificultad para relajarse y habitar el presente.",
 
             "Este trabajo ayuda al bold[sistema nervioso a regularse], al cuerpo a salir del estado de alerta permanente y crea un bold[espacio seguro de contención, calma y reconexión interna.]",
           ]}

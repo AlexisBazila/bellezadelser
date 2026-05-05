@@ -51,7 +51,7 @@
 /* Texto arriba del botón */
 .paymentLabel {
   font-size: 20px;
-  color: #A5A5A5;
+  color: #4a4a4a;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
@@ -72,12 +72,10 @@
   .captionPais {
     font-size: 15px;
   }
-
 }
 
 @media (max-width: 600px) {
   .contentProductsMarked {
     padding: 5% 2rem;
   }
-
 }
