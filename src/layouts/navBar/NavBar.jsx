@@ -59,12 +59,7 @@ function NavBar() {
         { label: "Packs", to: "/packs" },
       ],
     },
-    {
-      title: "Belleza Holística",
-      links: [
-        { label: "Rituales de Belleza", to: "/belleza-holistica/belleza" },
-      ],
-    },
+
     {
       title: "Otras sanaciones",
       links: [
@@ -90,6 +85,14 @@ function NavBar() {
         { label: "Reiki Oncológico", to: "/otras-sanaciones/reiki-oncologico" },
       ],
     },
+
+    {
+      title: "Belleza Holística",
+      links: [
+        { label: "Rituales de Belleza", to: "/belleza-holistica/belleza" },
+      ],
+    },
+
     {
       title: "Armonizaciones",
       links: [

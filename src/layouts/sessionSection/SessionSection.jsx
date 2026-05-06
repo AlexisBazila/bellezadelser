@@ -40,7 +40,7 @@ function SessionSection() {
       image: sesionAcompañamiento,
       title: "Acompañamiento Holístico",
       description:
-        "Descubre tu potencial, supera obstáculos y avanza con foco hacia la vida que querés crear.",
+        "Descubre tu potencial, supera obstáculos y avanza con foco hacia la vida que quieres crear.",
       link: "/sesiones/acompañamiento#sessionCalendar",
     },
     // Revisar antes de lanzar
@@ -55,7 +55,7 @@ function SessionSection() {
       image: sesionBloqueos,
       title: "Sanación de Bloqueos en el Amor",
       description:
-        "Libera bloqueos en el amor, sana tu energía y abre permite que todo fluya.",
+        "Libera bloqueos en el amor, sana tu energía y permite que todo fluya.",
       link: "/otras-sanaciones/bloqueos#sessionCalendar",
     },
     {
