@@ -86,6 +86,12 @@ function FooterBar() {
               </i>
               oficialbellezadelser@gmail.com
             </a>
+            <a href="https://wa.me/34603011499">
+              <i>
+                <img src={telefono} alt="" />
+              </i>
+              +34 603 01 14 99
+            </a>
           </div>
         </div>
       </div>

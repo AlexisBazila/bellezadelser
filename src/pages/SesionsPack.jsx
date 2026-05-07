@@ -10,7 +10,7 @@ function SesionsPack() {
       <PackCard
         code="PACK 1"
         title="Reiki Usui + Registros Akáshicos"
-        modalidad="a distancia, sin conexión en vivo."
+        modalidad="A distancia y En vivo."
         sessionName="Reiki + Registros Akáshicos"
         includes={[
           "Sesión de Reiki Usui (armonización energética integral)",
@@ -61,7 +61,7 @@ function SesionsPack() {
       <PackCard
         code="PACK 3"
         title="Sanación Femenina Integral"
-        modalidad="a distancia, sin estar conectados."
+        modalidad="a distancia, sin conexión en vivo."
         sessionName="Sanación Femenina Integral"
         includes={[
           "Sanación de útero",
@@ -70,7 +70,8 @@ function SesionsPack() {
           "Informe energético completo con todo lo trabajado",
         ]}
         description={[
-          "Un espacio de contención y sanación para mujeres que sienten que su cuerpo guarda historias no resueltas.Este pack acompaña la liberación emocional, la reconexión con la energía femenina y el descanso profundo del sistema nervioso.",
+          "Un espacio de contención y sanación para mujeres que sienten que su cuerpo guarda historias no resueltas.",
+          "Este pack acompaña la liberación emocional, la reconexión con la energía femenina y el descanso profundo del sistema nervioso.",
           "Sanar desde adentro para volver a habitarte con suavidad.",
         ]}
         links={{
