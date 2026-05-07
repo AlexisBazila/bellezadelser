@@ -45,7 +45,7 @@ function SesionLimpiezaEspacios() {
             },
             {
               type: "paragraph",
-              text: "Esta sesión acompaña un proceso de bold[limpieza, orden y armonización energética del espacio], ayudando a que la energía vuelva a fluir y sostenga bienestar, claridad y prosperidad",
+              text: "Esta sesión acompaña un proceso de bold[limpieza, orden y armonización energética del espacio], ayudando a que la energía vuelva a fluir y sostenga bienestar, claridad y prosperidad.",
             },
           ]}
         />

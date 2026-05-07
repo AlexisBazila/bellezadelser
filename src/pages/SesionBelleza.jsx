@@ -92,11 +92,7 @@ function SesionBelleza() {
             },
             {
               type: "paragraph",
-              text: "El masaje no busca solo “tonificar”,",
-            },
-            {
-              type: "paragraph",
-              text: "busca bold[liberar lo que la piel está sosteniendo.]",
+              text: "El masaje no busca solo “tonificar”, busca bold[liberar lo que la piel está sosteniendo.]",
             },
           ]}
         />
