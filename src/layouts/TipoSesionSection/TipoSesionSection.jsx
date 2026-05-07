@@ -5,7 +5,7 @@ export default function TipoSesionSection({ tipos = ["vivo", "distancia"] }) {
   // Diccionario de sesiones disponibles
   const sesiones = {
     vivo: {
-      titulo: "Sesión Online",
+      titulo: "Sesión en Vivo",
       descripcion: "Por videollamada",
     },
     distancia: {
