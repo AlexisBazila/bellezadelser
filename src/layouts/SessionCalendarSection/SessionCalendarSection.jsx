@@ -32,11 +32,10 @@ function SessionCalendarSection({ links, sessionName }) {
   const generateWhatsAppLink = (tipoSesion) => {
     const phone = "34603011499";
 
-    const message = `Hola!
-Quisiera agendar una sesión de ${sessionName} (${tipoSesion}).
+    const message = `Hola Naty!
+Quiero información para agendar una sesión de ${sessionName} (${tipoSesion}).
 
-Mi nombre es:
-Disponibilidad horaria:`;
+Mi nombre es:`;
 
     return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   };
