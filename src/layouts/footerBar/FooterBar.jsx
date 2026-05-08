@@ -86,7 +86,11 @@ function FooterBar() {
               </i>
               oficialbellezadelser@gmail.com
             </a>
-            <a href="https://wa.me/34603011499">
+            <a
+              href="https://wa.me/34603011499"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <i>
                 <img src={telefono} alt="" />
               </i>

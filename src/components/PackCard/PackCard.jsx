@@ -32,9 +32,8 @@ function PackCard({
     });
   };
 
-  // 🔥 Generador WhatsApp
   const generateWhatsAppLink = (tipoSesion) => {
-    const phone = "34683517654";
+    const phone = "34603011499";
 
     const message = `Hola!
 Quisiera agendar el pack ${sessionName} (${tipoSesion}).
