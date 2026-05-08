@@ -55,12 +55,12 @@ function SesionAbundancia() {
             {
               type: "list",
               items: [
-                "Mayor claridad y enfoque.",
-                "Sensación de avance y movimiento.",
-                "Apertura a nuevas oportunidades.",
-                "Mayor confianza y merecimiento.",
-                "Fluidez económica y laboral.",
-                "Energía alineada con la expansión.",
+                "Mayor claridad y enfoque",
+                "Sensación de avance y movimiento",
+                "Apertura a nuevas oportunidades",
+                "Mayor confianza y merecimiento",
+                "Fluidez económica y laboral",
+                "Energía alineada con la expansión",
               ],
             },
           ]}
@@ -72,10 +72,10 @@ function SesionAbundancia() {
             {
               type: "list",
               items: [
-                "Es un trabajo energético, no mágico ni inmediato.",
-                "No reemplaza acciones concretas ni decisiones personales.",
-                "Cada persona vive su proceso a su ritmo.",
-                "Es un trabajo en equipo: la energía acompaña y tu accionas.",
+                "Es un trabajo energético, no mágico ni inmediato",
+                "No reemplaza acciones concretas ni decisiones personales",
+                "Cada persona vive su proceso a su ritmo",
+                "Es un trabajo en equipo: la energía acompaña y tu accionas",
               ],
             },
           ]}
@@ -87,7 +87,7 @@ function SesionAbundancia() {
             {
               type: "list",
               items: [
-                { text: " Sesión energética completa." },
+                { text: " Sesión energética completa" },
                 {
                   text: "Informe energético con:",
                   children: [

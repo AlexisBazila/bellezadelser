@@ -70,12 +70,12 @@ function SesionReikiOncologico() {
             {
               type: "list",
               items: [
-                "Sensación profunda de calma y contención.",
-                "Disminución del estrés y la ansiedad.",
-                "Mejor descanso.",
-                "Acompañamiento emocional.",
-                "Fortalecimiento energético.",
-                "Mayor conexión con la fuerza interior.",
+                "Sensación profunda de calma y contención",
+                "Disminución del estrés y la ansiedad",
+                "Mejor descanso",
+                "Acompañamiento emocional",
+                "Fortalecimiento energético",
+                "Mayor conexión con la fuerza interior",
               ],
             },
             {

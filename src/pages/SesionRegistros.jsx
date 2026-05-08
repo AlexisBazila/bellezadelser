@@ -21,9 +21,9 @@ function SesionRegistros() {
         <ProductDescriptionSection
           subTtitle={"¿Qué son los Registros Akáshicos?"}
           paragraphs={[
-            "Los Registros Akáshicos son un campo de conciencia donde se guarda la información del alma: experiencias, aprendizajes, patrones, bloqueos, dones y propósito.",
+            "Los Registros Akáshicos son un campo de conciencia donde se guarda la información del alma: bold[experiencias, aprendizajes, patrones, bloqueos, dones y propósito.]",
 
-            "Acceder a ellos no es adivinación ni predicción, sino un acto de escucha profunda y consciente que permite comprender por qué estás viviendo ciertas situaciones y qué aprendizaje hay detrás.",
+            "Acceder a ellos no es adivinación ni predicción, sino un bold[acto de escucha profunda y consciente] que permite comprender por qué estás viviendo ciertas situaciones y qué aprendizaje hay detrás.",
           ]}
           imageDesktop={SesionRegistrosImage}
           imageMobile={SesionRegistrosImage}
@@ -35,14 +35,14 @@ function SesionRegistros() {
             {
               type: "list",
               items: [
-                "Sientes que repites historias y no entiendes por qué",
-                "Percibes que algo en tu vida no avanza",
-                "Experimentas bloqueo, confusión o dolor emocional",
-                "Quieres comprender patrones que se repiten en vínculos o situaciones",
-                "Necesitas claridad para tomar decisiones importantes",
-                "Deseas entender procesos y relaciones desde el alma",
-                "Buscas conectar con tu propósito actual",
-                "Sientes el llamado a sanar desde la comprensión profunda, no solo desde la energía",
+                "Sientes que bold[repites historias y no entiendes por qué]",
+                "Percibes que bold[algo en tu vida no avanza]",
+                "Experimentas bold[bloqueo, confusión o dolor emocional]",
+                "Quieres comprender bold[patrones que se repiten en vínculos o situaciones]",
+                "Necesitas bold[claridad para tomar decisiones importantes]",
+                "Deseas bold[entender procesos y relaciones desde el alma]",
+                "Buscas bold[conectar con tu propósito actual]",
+                "Sientes el llamado a bold[sanar desde la comprensión profunda, no solo desde la energía]",
               ],
             },
             {

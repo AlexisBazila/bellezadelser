@@ -18,7 +18,7 @@ function SesionsPack() {
           "Informe energético completo con todo lo trabajado",
         ]}
         description={[
-          "Cuando la energía se ordena y la conciencia se expande, todo empieza a encajar. Este pack combina sanación energética y lectura de conciencia para acompañarte a equilibrar tu campo energético y comprender los aprendizajes que estás atravesando.",
+          "Cuando la energía se ordena y la conciencia se expande, bold[todo empieza a encajar.] Este pack combina sanación energética y lectura de conciencia para acompañarte a bold[equilibrar tu campo energético y comprender los aprendizajes que estás atravesando.] Ideal si buscas bienestar, claridad y una mirada más profunda sobre tu momento vital.",
         ]}
         links={{
           distance: {
@@ -45,8 +45,8 @@ function SesionsPack() {
           "Informe energético completo con todo lo trabajado",
         ]}
         description={[
-          "Cuando el cuerpo está en alerta y la mente no descansa, la energía pide orden.",
-          "Este pack es ideal para bajar el ruido interno, liberar tensión acumulada y volver a un estado de calma y equilibrio.",
+          "Cuando el cuerpo está en alerta y la mente no descansa, bold[la energía pide orden.]",
+          "Este pack es ideal para bajar bold[el ruido interno, liberar tensión acumulada y volver a un estado de calma y equilibrio.]",
           "Un primer paso profundo para resetear tu energía y recuperar claridad.",
         ]}
         links={{
@@ -70,8 +70,8 @@ function SesionsPack() {
           "Informe energético completo con todo lo trabajado",
         ]}
         description={[
-          "Un espacio de contención y sanación para mujeres que sienten que su cuerpo guarda historias no resueltas.",
-          "Este pack acompaña la liberación emocional, la reconexión con la energía femenina y el descanso profundo del sistema nervioso.",
+          "Un espacio de contención y sanación para mujeres que bold[sienten que su cuerpo guarda historias no resueltas.]",
+          "Este pack acompaña la bold[liberación emocional, la reconexión con la energía femenina y el descanso profundo del sistema nervioso.]",
           "Sanar desde adentro para volver a habitarte con suavidad.",
         ]}
         links={{
@@ -95,7 +95,7 @@ function SesionsPack() {
           "Informe energético completo con todo lo trabajado",
         ]}
         description={[
-          "Cuando el corazón duele, la energía se estanca y la vida no parece avanzar. Este pack está diseñado para liberar patrones emocionales, cerrar ciclos y volver a abrirte al amor, la confianza y las oportunidades. Un proceso de liberación y reordenamiento profundo.",
+          "Cuando el corazón duele, bold[la energía se estanca y la vida no parece avanzar.] Este pack está diseñado para bold[liberar patrones emocionales, cerrar ciclos y volver a abrirte al amor, la confianza y las oportunidades.] Un proceso de liberación y reordenamiento profundo.",
         ]}
         links={{
           distance: {
@@ -118,7 +118,7 @@ function SesionsPack() {
           "Informe energético completo con todo lo trabajado",
         ]}
         description={[
-          "Ideal para momentos de cambio, mudanzas, nuevos proyectos o estancamientos prolongados. Este pack limpia, ordena y activa la energía personal y del espacio para que la vida vuelva a fluir con claridad y expansión. Cuando la energía se ordena, los caminos se abren.",
+          "Ideal para momentos de bold[cambio, mudanzas, nuevos proyectos o estancamientos prolongados.] Este pack limpia, ordena y activa la energía personal y del espacio para que bold[la vida vuelva a fluir con claridad y expansión.] Cuando la energía se ordena, los caminos se abren.",
         ]}
         links={{
           distance: {
@@ -135,12 +135,12 @@ function SesionsPack() {
         modalidad="online (Zoom o Videollamada)"
         sessionName="Acompañamiento Holístico"
         description={[
-          "El acompañamiento holístico es un proceso de 4 sesiones diseñado para personas que necesitan continuidad, contención y guía consciente para atravesar un momento de cambio, bloqueo o transformación personal.",
+          "El acompañamiento holístico es un proceso de 4 sesiones diseñado para bold[personas que necesitan continuidad, contención y guía consciente para atravesar un momento de cambio, bloqueo o transformación personal.]",
 
           "No es una sesión aislada. ",
           "Es un espacio de acompañamiento integral, donde se trabaja la energía, las emociones, la mente y la conciencia, respetando el ritmo de cada persona.",
 
-          "Este proceso permite profundizar, sostener y dar seguimiento a lo que en una sola sesión quedaría incompleto.",
+          "Este proceso permite bold[profundizar, sostener y dar seguimiento] a lo que en una sola sesión quedaría incompleto.",
         ]}
         links={{
           online: {

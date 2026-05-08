@@ -42,7 +42,7 @@ function SesionEstres() {
             },
             {
               type: "paragraph",
-              text: "Esta sanación acompaña el proceso de bold[calmar la mente, relajar el cuerpo y regular el sistema energético], ayudándote a volver a un estado de presencia, equilibrio y calma interior",
+              text: "Esta sanación acompaña el proceso de bold[calmar la mente, relajar el cuerpo y regular el sistema energético], ayudándote a volver a un estado de presencia, equilibrio y calma interior.",
             },
           ]}
         />

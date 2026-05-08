@@ -116,10 +116,10 @@ function AboutMe() {
           {
             type: "list",
             items: [
-              "Vas a poder parar y escucharte.",
-              "Vas a poner claridad en lo que te pasa.",
-              "Vas a identificar qué estás sosteniendo.",
-              "Y vas a empezar a liberarlo.",
+              "Vas a poder parar y escucharte",
+              "Vas a poner claridad en lo que te pasa",
+              "Vas a identificar qué estás sosteniendo",
+              "Y vas a empezar a liberarlo",
             ],
           },
           "Yo te acompaño, pero el proceso es tuyo.",

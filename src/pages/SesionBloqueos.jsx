@@ -31,14 +31,14 @@ function SesionBloqueos() {
             {
               type: "list",
               items: [
-                "Te cuesta sostener relaciones estables y sanas",
-                "Repites vínculos dolorosos o tóxicos",
-                "Sientes miedo a amar o a ser amado/a",
-                "Experimentas apego, dependencia emocional o celos",
-                "Hay heridas de abandono o rechazo que siguen activas",
-                "Cargas duelos por rupturas no resueltas",
-                "Necesitas un cierre energético con exparejas",
-                "Sientes bloqueos para abrirte a una nueva relación",
+                "Te cuesta bold[sostener relaciones estables y sanas]",
+                "Repites bold[vínculos dolorosos o tóxicos]",
+                "Sientes bold[miedo a amar o a ser amado/a]",
+                "Experimentas bold[apego, dependencia emocional o celos]",
+                "Hay heridas de bold[abandono o rechazo que siguen activas]",
+                "Cargas bold[duelos por rupturas no resueltas]",
+                "Necesitas un bold[cierre energético con exparejas]",
+                "Sientes bloqueos para bold[abrirte a una nueva relación]",
               ],
             },
             {
@@ -72,10 +72,10 @@ function SesionBloqueos() {
             {
               type: "list",
               items: [
-                "Es un trabajo energético y emocional, no terapia psicológica.",
-                "No reemplaza procesos terapéuticos cuando son necesarios.",
-                "Cada persona vive su proceso a su ritmo.",
-                "Es un trabajo en equipo: la energía acompaña y tu accionas.",
+                "Es un trabajo energético y emocional, no terapia psicológica",
+                "No reemplaza procesos terapéuticos cuando son necesarios",
+                "Cada persona vive su proceso a su ritmo",
+                "Es un trabajo en equipo: la energía acompaña y tu accionas",
               ],
             },
           ]}
@@ -87,14 +87,14 @@ function SesionBloqueos() {
             {
               type: "list",
               items: [
-                { text: "Sesión energética completa." },
+                { text: "Sesión energética completa" },
                 {
                   text: "Informe escrito personalizado con:",
                   children: [
                     "Qué se trabajó",
                     "Qué bloqueos se detectaron",
-                    "Qué patrones aparecieron.",
-                    "Recomendaciones prácticas para integrar el proceso.",
+                    "Qué patrones aparecieron",
+                    "Recomendaciones prácticas para integrar el proceso",
                   ],
                 },
               ],

@@ -54,12 +54,12 @@ function SesionReikiMascotas() {
             {
               type: "list",
               items: [
-                "Mayor calma y relajación.",
-                "Disminución del estrés.",
-                "Mejor adaptación a cambios.",
-                "Acompañamiento en procesos de sanación.",
-                "Bienestar integral.",
-                "Fortalecimiento del vínculo con su familia humana.",
+                "Mayor calma y relajación",
+                "Disminución del estrés",
+                "Mejor adaptación a cambios",
+                "Acompañamiento en procesos de sanación",
+                "Bienestar integral",
+                "Fortalecimiento del vínculo con su familia humana",
               ],
             },
           ]}

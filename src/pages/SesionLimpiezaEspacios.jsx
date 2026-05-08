@@ -57,12 +57,12 @@ function SesionLimpiezaEspacios() {
             {
               type: "list",
               items: [
-                "Ambientes livianos y armónicos.",
-                "Mejor descanso y bienestar.",
-                "Menos tensión emocional.",
-                "Mayor claridad y enfoque.",
-                "Espacios que acompañan procesos de crecimiento.",
-                "Mayor fluidez en trabajo y relaciones.",
+                "Ambientes livianos y armónicos",
+                "Mejor descanso y bienestar",
+                "Menos tensión emocional",
+                "Mayor claridad y enfoque",
+                "Espacios que acompañan procesos de crecimiento",
+                "Mayor fluidez en trabajo y relaciones",
               ],
             },
           ]}
