@@ -18,8 +18,8 @@ function SesionReiki() {
         <ProductDescriptionSection
           subTtitle={"¿Qué es el Reiki Usui?"}
           paragraphs={[
-            "El Reiki Usui es una técnica de sanación energética de origen japonés que acompaña al Ser de forma integral: cuerpo, emoción, mente y energía.",
-            "Es un método suave y no invasivo que ayuda a ordenar el campo energético para que la energía vuelva a fluir de manera natural, según lo que cada persona necesita en ese momento.",
+            "El Reiki Usui es una técnica de bold[sanación energética] de origen japonés que acompaña al Ser de forma integral: bold[cuerpo, emoción, mente y energía.]",
+            "Es un método bold[suave y no invasivo] que ayuda a ordenar el campo energético para que la energía vuelva a fluir de manera natural, según lo que cada persona necesita en ese momento.",
           ]}
           imageDesktop={SesionReikiImage}
           imageMobile={SesionReikiImage}
@@ -31,11 +31,11 @@ function SesionReiki() {
             {
               type: "list",
               items: [
-                "Sientes estrés, cansancio, ansiedad o confusión sin un motivo claro",
-                "Percibes que algo no está bien, aunque no sepas explicarlo",
-                "Necesitas equilibrio y armonización energética general",
-                "Tu cuerpo y tu energía piden pausa, orden y descanso",
-                "Quieres iniciar un proceso de sanación sin forzar, desde un lugar amoroso",
+                "Sientes bold[estrés, cansancio, ansiedad o confusión sin un motivo claro]",
+                "Percibes que algo bold[no está bien, aunque no sepas explicarlo]",
+                "Necesitas bold[equilibrio y armonización energética general]",
+                "Tu cuerpo y tu energía piden bold[pausa, orden y descanso]",
+                "Quieres iniciar un proceso de bold[sanación sin forzar, desde un lugar amoroso]",
               ],
             },
             {

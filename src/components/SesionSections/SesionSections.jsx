@@ -5,7 +5,6 @@ import useInView from "../../hooks/useInView";
 function SesionSections({ title, content, variant = "light" }) {
   const [ref, visible] = useInView();
 
-  // 🔥 Parser para bold[]
   const parseText = (text) => {
     if (!text) return "";
 
@@ -20,17 +19,14 @@ function SesionSections({ title, content, variant = "light" }) {
     });
   };
 
-  // 🔥 Render de listas con soporte bold[]
   const renderList = (items) => {
     return (
       <ul>
         {items.map((item, i) => {
-          // 🔹 Item simple (string)
           if (typeof item === "string") {
             return <li key={i}>{parseText(item)}</li>;
           }
 
-          // 🔹 Item con estructura
           return (
             <li key={i}>
               {parseText(item.text)}
@@ -56,12 +52,10 @@ function SesionSections({ title, content, variant = "light" }) {
 
         <div className="sesion-content">
           {content.map((block, index) => {
-            // 🔹 Párrafos
             if (block.type === "paragraph") {
               return <p key={index}>{parseText(block.text)}</p>;
             }
 
-            // 🔹 Listas
             if (block.type === "list") {
               return <div key={index}>{renderList(block.items)}</div>;
             }

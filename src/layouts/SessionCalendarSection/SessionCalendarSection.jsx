@@ -9,7 +9,6 @@ function SessionCalendarSection({ links, sessionName }) {
   const [step, setStep] = useState(1);
   const [sessionType, setSessionType] = useState(null);
 
-  // 🔥 Detectar si hay solo 1 tipo de sesión disponible
   useEffect(() => {
     const availableTypes = Object.keys(links);
     if (availableTypes.length === 1) {
@@ -18,7 +17,6 @@ function SessionCalendarSection({ links, sessionName }) {
     }
   }, [links]);
 
-  // 🔥 Scroll automático si hay hash
   useEffect(() => {
     if (hash) {
       const id = hash.replace("#", "");
@@ -31,15 +29,13 @@ function SessionCalendarSection({ links, sessionName }) {
     }
   }, [hash]);
 
-  // 🔥 Generador de link WhatsApp
   const generateWhatsAppLink = (tipoSesion) => {
-    const phone = "34683517654";
+    const phone = "34603011499";
 
-    const message = `Hola!
-Quisiera agendar una sesión de ${sessionName} (${tipoSesion}).
+    const message = `Hola Naty!
+Quiero información para agendar una sesión de ${sessionName} (${tipoSesion}).
 
-Mi nombre es:
-Disponibilidad horaria:`;
+Mi nombre es:`;
 
     return `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
   };

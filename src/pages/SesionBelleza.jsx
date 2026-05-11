@@ -133,12 +133,12 @@ function SesionBelleza() {
             {
               type: "list",
               items: [
-                "Piel más relajada y vital.",
-                "Sensación de liviandad en el rostro.",
-                "Descanso profundo.",
-                "Calma mental.",
-                "Menos tensión en mandíbula, cuello y hombros.",
-                "Bienestar general sostenido.",
+                "Piel más relajada y vital",
+                "Sensación de liviandad en el rostro",
+                "Descanso profundo",
+                "Calma mental",
+                "Menos tensión en mandíbula, cuello y hombros",
+                "Bienestar general sostenido",
               ],
             },
           ]}
@@ -150,11 +150,11 @@ function SesionBelleza() {
             {
               type: "list",
               items: [
-                "No es un tratamiento médico ni dermatológico.",
-                "No reemplaza tratamientos clínicos.",
-                "No es invasivo ni agresivo.",
-                "Respeta los ritmos naturales de la piel.",
-                "El bienestar se construye de forma progresiva.",
+                "No es un tratamiento médico ni dermatológico",
+                "No reemplaza tratamientos clínicos",
+                "No es invasivo ni agresivo",
+                "Respeta los ritmos naturales de la piel",
+                "El bienestar se construye de forma progresiva",
               ],
             },
           ]}

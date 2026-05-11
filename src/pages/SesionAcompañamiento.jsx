@@ -17,8 +17,8 @@ function SesionAcompañamiento() {
         <ProductDescriptionSection
           subTtitle={"¿Qué es el Acompañamiento Holístico?"}
           paragraphs={[
-            "El Acompañamiento Holístico es un proceso integral de crecimiento personal que combina gestión emocional, conciencia energética y trabajo mental para generar cambios reales y sostenibles.",
-            "Es un espacio de acompañamiento consciente que te ayuda a ordenar tu mundo interno y avanzar con mayor claridad y coherencia.",
+            "El Acompañamiento Holístico es un bold[proceso integral de crecimiento personal] que combina gestión emocional, conciencia energética y trabajo mental para generar cambios reales y sostenibles.",
+            "Es un espacio de acompañamiento consciente que te ayuda a bold[ordenar tu mundo interno y avanzar con mayor claridad y coherencia.]",
           ]}
           imageDesktop={SesionAcompañamientoImage}
           imageMobile={SesionAcompañamientoImage}
@@ -30,19 +30,15 @@ function SesionAcompañamiento() {
             {
               type: "list",
               items: [
-                "Te sientes estancado/a, confundido/a o sin rumbo claro",
-                "Sabes que quieres cambiar, pero te cuesta sostenerlo en el tiempo",
-                "Te cuesta tomar decisiones o confiar en ti",
-                "Vives con autoexigencia, culpa o diálogo interno crítico",
-                "Repites patrones emocionales, mentales o vinculares",
-                "Necesitas claridad, foco y dirección",
-                "Buscas un acompañamiento que integre mente, emoción y energía",
-                "Quieres avanzar con conciencia, no desde la presión",
+                "Te sientes bold[estancado/a, confundido/a o sin rumbo claro]",
+                "Sabes que quieres cambiar, bold[pero te cuesta sostenerlo en el tiempo]",
+                "Te cuesta tomar bold[decisiones o confiar en ti]",
+                "Vives con bold[autoexigencia, culpa o diálogo interno crítico]",
+                "Repites bold[patrones emocionales, mentales o vinculares]",
+                "Necesitas bold[claridad, foco y dirección]",
+                "Buscas un bold[acompañamiento que integre mente, emoción y energía]",
+                "Quieres bold[avanzar con conciencia, no desde la presión]",
               ],
-            },
-            {
-              type: "paragraph",
-              text: "Cuando la mente se ordena y el alma comprende, la energía también encuentra su equilibrio.",
             },
           ]}
         />

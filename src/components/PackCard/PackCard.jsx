@@ -15,9 +15,25 @@ function PackCard({
   const [step, setStep] = useState(1);
   const [sessionType, setSessionType] = useState(null);
 
-  // 🔥 Generador WhatsApp
+  // 🔥 Parser para bold[]
+  const parseText = (text) => {
+    if (!text) return "";
+
+    const parts = text.split(/(bold\[.*?\])/g);
+
+    return parts.map((part, index) => {
+      if (part.startsWith("bold[")) {
+        const content = part.replace("bold[", "").replace("]", "");
+
+        return <strong key={index}>{content}</strong>;
+      }
+
+      return part;
+    });
+  };
+
   const generateWhatsAppLink = (tipoSesion) => {
-    const phone = "34683517654";
+    const phone = "34603011499";
 
     const message = `Hola!
 Quisiera agendar el pack ${sessionName} (${tipoSesion}).
@@ -46,9 +62,10 @@ Disponibilidad horaria:`;
         {Array.isArray(includes) && includes.length > 0 && (
           <div className="pack-includes">
             <strong>Incluye:</strong>
+
             <ul>
               {includes.map((item, i) => (
-                <li key={i}>{item}</li>
+                <li key={i}>{parseText(item)}</li>
               ))}
             </ul>
           </div>
@@ -57,9 +74,9 @@ Disponibilidad horaria:`;
         {/* Descripción */}
         <div className="pack-description">
           {Array.isArray(description) ? (
-            description.map((parrafo, i) => <p key={i}>{parrafo}</p>)
+            description.map((parrafo, i) => <p key={i}>{parseText(parrafo)}</p>)
           ) : (
-            <p>{description}</p>
+            <p>{parseText(description)}</p>
           )}
         </div>
 
@@ -108,8 +125,6 @@ Disponibilidad horaria:`;
         {/* 🔥 STEP 3 → pago */}
         {step === 3 && sessionType && (
           <div className="pack-step">
-            {/* <h3>Selecciona el medio de pago</h3> */}
-
             <div className="buttonStore centeredButtons">
               {links[sessionType]?.latam && (
                 <div className="paymentOption">
