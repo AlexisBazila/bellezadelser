@@ -114,7 +114,7 @@ function SesionRegistros() {
           links={{
             online: {
               latam:
-                "https://calendly.com/bellezadelseroficial/registrosvivo?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
+                "https://calendly.com/bellezadelseroficial/vanciacami?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/regoneu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
