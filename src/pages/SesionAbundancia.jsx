@@ -104,12 +104,14 @@ function SesionAbundancia() {
         <SessionCalendarSection
           links={{
             online: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/activavivoarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/activavivoeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
             distance: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/activadistaarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/activadistaeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },

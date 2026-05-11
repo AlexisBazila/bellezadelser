@@ -184,7 +184,8 @@ function SesionBelleza() {
         <SessionCalendarSection
           links={{
             distance: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/rituarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/ritueu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },

@@ -96,12 +96,14 @@ function SesionChakras() {
         <SessionCalendarSection
           links={{
             online: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/limchavivoarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/limchavivoeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
             distance: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/limchadisarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/limchadiseu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },

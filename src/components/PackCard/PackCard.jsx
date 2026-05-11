@@ -115,13 +115,22 @@ Disponibilidad horaria:`;
                 <div className="paymentOption">
                   <span className="paymentLabel">Argentina</span>
 
-                  <FirstButton
-                    caption="Reservar por WhatsApp"
-                    link={generateWhatsAppLink(
-                      sessionType === "online" ? "en vivo" : "a distancia",
-                    )}
-                    newTab={true}
-                  />
+                  {/* 🔥 TRUE → WhatsApp */}
+                  {links[sessionType].latam === true ? (
+                    <FirstButton
+                      caption="Reservar por WhatsApp"
+                      link={generateWhatsAppLink(
+                        sessionType === "online" ? "en vivo" : "a distancia",
+                      )}
+                      newTab={true}
+                    />
+                  ) : (
+                    /* 🔥 STRING → Link directo */
+                    <FirstButton
+                      caption="Pesos Argentinos"
+                      link={links[sessionType].latam}
+                    />
+                  )}
                 </div>
               )}
 

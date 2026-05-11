@@ -103,12 +103,14 @@ function SesionEstres() {
         <SessionCalendarSection
           links={{
             online: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/sanaestresvivoarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/sanaestresvivoeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
             distance: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/sanaestresdisarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/sanaestresdiseu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },

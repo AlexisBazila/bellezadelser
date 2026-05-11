@@ -123,7 +123,8 @@ function SesionReikiOncologico() {
         <SessionCalendarSection
           links={{
             distance: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/oncoarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/oncoeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },

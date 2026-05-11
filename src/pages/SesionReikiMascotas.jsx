@@ -102,7 +102,8 @@ function SesionReikiMascotas() {
         <SessionCalendarSection
           links={{
             distance: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/reimasarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/reimaseu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },

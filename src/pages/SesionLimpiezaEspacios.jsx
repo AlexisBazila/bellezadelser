@@ -107,7 +107,8 @@ function SesionLimpiezaEspacios() {
         <SessionCalendarSection
           links={{
             distance: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/limdisarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/limdiseu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },

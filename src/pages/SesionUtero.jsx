@@ -103,12 +103,14 @@ function SesionUtero() {
         <SessionCalendarSection
           links={{
             online: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/sanutevivoarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/sanutevivoeu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
             distance: {
-              latam: true,
+              latam:
+                "https://calendly.com/bellezadelseroficial/sanutedisarg?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
               world:
                 "https://calendly.com/bellezadelseroficial/sanutediseu?hide_gdpr_banner=1&text_color=3d3d3d&primary_color=c3cfa1",
             },
