@@ -48,6 +48,12 @@
   font-weight: 400;
   line-height: 150%;
   font-size: 1.15rem;
+
+  margin-bottom: 20px;
+}
+
+.SectionSeparatorParagraph p:last-child {
+  margin-bottom: 0;
 }
 
 .SectionSeparatorDivider {

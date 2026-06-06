@@ -3,7 +3,7 @@ import "./SectionSeparator.css";
 
 function SectionSeparator({
   title,
-  paragraph = "",
+  paragraphs = [],
   backgroundColor = "#E7ECD9",
   textColor = "#3C3C3C",
   className = "",
@@ -15,10 +15,12 @@ function SectionSeparator({
 
   return (
     <section className={`SectionSeparator ${className}`} style={style}>
-      {paragraph ? (
+      {paragraphs.length > 0 ? (
         <div className="SectionSeparatorSplit">
           <div className="SectionSeparatorParagraph">
-            <p>{paragraph}</p>
+            {paragraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
           </div>
 
           <div className="SectionSeparatorDivider"></div>
