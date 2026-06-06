@@ -1,0 +1,118 @@
+.heroTrasciende {
+  background-image: url("../../assets/images/heroTrasciende.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+
+.overlayTrasciende {
+  background-image: url("../../assets/images/overlayHeroHome.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  padding: 5% 10%;
+}
+
+.contentHero {
+  height: 100%;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+}
+
+.contentHero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.contentHero h2 {
+  font-family: "inter";
+  width: 50vw;
+  color: #fff;
+}
+
+.titleAndSubtitleTrasciende {
+  margin-bottom: 70px;
+}
+.titleAndSubtitleTrasciende h2 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 1160px) {
+  .overlayTrasciende {
+    padding: 5% 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .heroTrasciende {
+    height: 70vh;
+  }
+
+  .overlayTrasciende {
+    background-image: url("../../assets/images/overlayHeroHome.png");
+    height: 70vh;
+  }
+
+  .contentHero {
+    width: 100%;
+  }
+
+  .contentHero h1 {
+    font-size: 40px;
+  }
+
+  .contentHero h2 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .heroTrasciende {
+    background-image: url("../../assets/images/heroTrasciendeMovil.jpg");
+    height: 80vh;
+  }
+
+  .overlayTrasciende {
+    background-image: url("../../assets/images/overlayHeroMovil.png");
+    height: 80vh;
+  }
+
+  .overlayTrasciende {
+    padding: 5% 2rem;
+  }
+}
+
+@media (max-height: 670px) and (max-width: 950px) {
+  .titleAndSubtitleTrasciende {
+    margin-bottom: 20px;
+  }
+
+  .heroTrasciende {
+    background-image: url("../../assets/images/heroTrasciendeMovil.jpg");
+    height: auto;
+  }
+
+  .overlayTrasciende {
+    background-image: url("../../assets/images/overlayHeroMovil.png");
+    height: auto;
+  }
+}
+
+@media (max-width: 460px) {
+  .titleAndSubtitleTrasciende {
+    margin: 5px 0 30px 0;
+  }
+}
+
+@media (max-height: 670px) and (max-width: 450px) {
+  .heroTrasciende {
+    height: 90vh;
+  }
+  .overlayTrasciende {
+    height: 90vh;
+  }
+}

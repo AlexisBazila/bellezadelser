@@ -1,0 +1,103 @@
+/* ================================= */
+/* CONTENEDOR */
+/* ================================= */
+
+.SectionSeparator {
+  width: 100%;
+  padding: 80px 5rem;
+}
+
+/* ================================= */
+/* VARIANTE CENTRADA */
+/* ================================= */
+
+.SectionSeparatorCentered {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.SectionSeparatorCentered h2 {
+  font-family: "Eyes for Serifs", serif;
+  font-weight: 400;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.25;
+}
+
+/* ================================= */
+/* VARIANTE DIVIDIDA */
+/* ================================= */
+
+.SectionSeparatorSplit {
+  max-width: 1400px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 2rem;
+
+  align-items: center;
+}
+
+.SectionSeparatorParagraph {
+  padding-right: 2rem;
+}
+
+.SectionSeparatorParagraph p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  font-size: 1.15rem;
+}
+
+.SectionSeparatorDivider {
+  width: 1px;
+  height: 160px;
+
+  background-color: currentColor;
+  opacity: 0.3;
+}
+
+.SectionSeparatorTitleContainer {
+  padding-left: 2rem;
+}
+
+.SectionSeparatorTitleContainer h2 {
+  font-family: "Eyes for Serifs", serif;
+  font-weight: 400;
+
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.25;
+}
+
+/* ================================= */
+/* RESPONSIVE */
+/* ================================= */
+
+@media (max-width: 900px) {
+  .SectionSeparator {
+    padding: 60px 2rem;
+  }
+
+  .SectionSeparatorSplit {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .SectionSeparatorDivider {
+    display: none;
+  }
+
+  .SectionSeparatorParagraph {
+    padding-right: 0;
+  }
+
+  .SectionSeparatorTitleContainer {
+    padding-left: 0;
+  }
+
+  .SectionSeparatorTitleContainer,
+  .SectionSeparatorParagraph {
+    text-align: center;
+  }
+}

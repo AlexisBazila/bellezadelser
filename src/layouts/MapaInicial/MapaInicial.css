@@ -1,0 +1,50 @@
+/* ========================= */
+/* Lista */
+/* ========================= */
+
+.MapaInicialListContainer {
+  margin-top: 2.5rem;
+}
+
+.MapaInicialListTitle {
+  margin-bottom: 1.5rem;
+
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.MapaInicialList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 1rem 2rem;
+
+  list-style: disc;
+  padding-left: 1.5rem;
+}
+
+/* ========================= */
+/* Cita */
+/* ========================= */
+
+.MapaInicialQuote {
+  margin-top: 2.5rem;
+
+  padding-left: 1rem;
+
+  border-left: 4px solid #b8c28c;
+
+  font-style: italic;
+
+  max-width: 700px;
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .MapaInicialList {
+    grid-template-columns: 1fr;
+  }
+}

@@ -100,6 +100,10 @@ function NavBar() {
           label: "Activaciones Energéticas",
           to: "/armonizaciones/activaciones",
         },
+        {
+          label: "Experiencia Trasciende",
+          to: "/trasciende",
+        },
         // { label: "eBooks", to: "/armonizaciones/ebooks" },
       ],
     },

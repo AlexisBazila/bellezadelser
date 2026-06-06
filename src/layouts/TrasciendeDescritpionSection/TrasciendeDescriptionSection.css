@@ -1,0 +1,57 @@
+.TrasciendeDescriptionSection {
+  background-image: url("../../assets/images/fondoGreen.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5% 10%;
+}
+
+.TrasciendeDescriptionParagraph {
+  margin-bottom: 50px;
+  padding-right: 30vw;
+}
+
+.TrasciendeDescriptionParagraph h2 {
+  font-size: 42px;
+  padding-right: 5%;
+}
+
+.TrasciendeDescriptionParagraph p {
+  font-size: 20px;
+  font-family: "inter";
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.TrasciendeDescriptionParagraph h4 {
+  font-size: 20px;
+  font-family: "inter";
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1270px) {
+  .TrasciendeDescriptionSection {
+    padding: 5% 2rem;
+  }
+
+  .TrasciendeDescriptionParagraph h2 {
+    font-size: 30px;
+  }
+  .TrasciendeDescriptionParagraph {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .TrasciendeDescriptionParagraph {
+    padding-right: 0;
+    text-align: center;
+  }
+  .TrasciendeDescriptionSection {
+    text-align: center;
+  }
+}
