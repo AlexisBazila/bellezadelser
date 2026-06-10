@@ -7,6 +7,7 @@ function VariableContentSection({
   imageAlt = "",
   imagePosition = "right",
   backgroundImage,
+  quote,
   className = "",
   contentClassName = "",
   imageClassName = "",
@@ -24,16 +25,32 @@ function VariableContentSection({
     >
       <div
         className={`VariableContentSectionContent ${
-          imagePosition === "left" ? "VariableContentSectionReverse" : ""
+          imagePosition === "left"
+            ? "VariableContentSectionReverse"
+            : ""
         }`}
       >
-        <div className={`VariableContentSectionText ${contentClassName}`}>
+        <div
+          className={`VariableContentSectionText ${contentClassName}`}
+        >
           {children}
         </div>
 
         {image && (
-          <div className="VariableContentSectionImage">
-            <img src={image} alt={imageAlt} className={imageClassName} />
+          <div className="VariableContentSectionImageContainer">
+            <div className="VariableContentSectionImage">
+              <img
+                src={image}
+                alt={imageAlt}
+                className={imageClassName}
+              />
+            </div>
+
+            {quote && (
+              <blockquote className="VariableContentSectionQuote">
+                {quote}
+              </blockquote>
+            )}
           </div>
         )}
       </div>

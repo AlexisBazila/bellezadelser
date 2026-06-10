@@ -5,6 +5,7 @@ import fondo from "../../assets/images/fondo.png";
 import metodoTrasciende from "../../assets/images/metodoTrasciende.jpg";
 
 import "./TrasciendeMetodoSection.css";
+import SmallButton from "../../components/smallButton/SmallButton";
 
 function TrasciendeMetodoSection() {
     return (
@@ -32,6 +33,10 @@ function TrasciendeMetodoSection() {
                     <li>Manifestación consciente</li>
                     <li>Expansión personal</li>
                 </ul>
+                
+            </div>
+            <div className="Metodobutton">
+                <SmallButton caption="Estoy lista" link={"/sobre-mi"}/>
             </div>
         </VariableContentSection>
     );

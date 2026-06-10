@@ -66,6 +66,28 @@
   border-radius: 24px;
   object-fit: cover;
 }
+/* ========================= */
+/* Imagen + cita */
+/* ========================= */
+
+.VariableContentSectionImageContainer {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.VariableContentSectionQuote {
+  margin-top: 2.5rem;
+
+  padding-left: 1rem;
+
+  border-left: 4px solid #b8c28c;
+
+  font-style: italic;
+
+  max-width: 700px;
+}
 
 /* ========================= */
 /* Responsive */
