@@ -7,6 +7,8 @@ function VariableContentSection({
   imageAlt = "",
   imagePosition = "right",
   backgroundImage,
+  backgroundPosition = "center",
+  backgroundOverlay = "rgba(231,236,217,0.88)",
   quote,
   className = "",
   contentClassName = "",
@@ -14,7 +16,14 @@ function VariableContentSection({
 }) {
   const sectionStyle = backgroundImage
     ? {
-        backgroundImage: `url(${backgroundImage})`,
+        backgroundImage: `
+          linear-gradient(
+            ${backgroundOverlay},
+            ${backgroundOverlay}
+          ),
+          url(${backgroundImage})
+        `,
+        backgroundPosition,
       }
     : {};
 
@@ -25,32 +34,24 @@ function VariableContentSection({
     >
       <div
         className={`VariableContentSectionContent ${
-          imagePosition === "left"
-            ? "VariableContentSectionReverse"
-            : ""
+          imagePosition === "left" ? "VariableContentSectionReverse" : ""
         }`}
       >
-        <div
-          className={`VariableContentSectionText ${contentClassName}`}
-        >
+        <div className={`VariableContentSectionText ${contentClassName}`}>
           {children}
         </div>
 
         {image && (
           <div className="VariableContentSectionImageContainer">
             <div className="VariableContentSectionImage">
-              <img
-                src={image}
-                alt={imageAlt}
-                className={imageClassName}
-              />
-            </div>
+              <img src={image} alt={imageAlt} className={imageClassName} />
 
-            {quote && (
-              <blockquote className="VariableContentSectionQuote">
-                {quote}
-              </blockquote>
-            )}
+              {quote && (
+                <blockquote className="VariableContentSectionQuote">
+                  {quote}
+                </blockquote>
+              )}
+            </div>
           </div>
         )}
       </div>

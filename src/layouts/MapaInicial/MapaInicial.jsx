@@ -12,23 +12,27 @@ export default function MapaInicial() {
     <VariableContentSection
       image={mapaInicialImg}
       imagePosition="right"
-      backgroundImage={fondo}
       quote="Porque una verdadera transformación requiere profundidad, estrategia y personalización."
     >
-
       <div className="MapaTitle">
         <h2>Mapa Inicial del Ser</h2>
         <h4>El punto de partida de tu transformación</h4>
       </div>
       <div className="MapaParagraph">
-        <p>Antes de comenzar, realizaremos una evaluación profunda y
-          personalizada para identificar las áreas que hoy están impactando
-          tu energía, bienestar, identidad, imagen y dirección de vida.</p>
-        <p>Este diagnóstico inicial permite diseñar una experiencia
-          completamente adaptada a ti.</p>
+        <p>
+          Antes de comenzar, realizaremos una evaluación profunda y
+          personalizada para identificar las áreas que hoy están impactando tu
+          energía, bienestar, identidad, imagen y dirección de vida.
+        </p>
+        <p>
+          Este diagnóstico inicial permite diseñar una experiencia completamente
+          adaptada a ti.
+        </p>
       </div>
       <div className="MapaInicialListContainer">
-        <h3 className="MapaInicialListTitle"><strong>Exploraremos aspectos como:</strong></h3>
+        <h3 className="MapaInicialListTitle">
+          <strong>Exploraremos aspectos como:</strong>
+        </h3>
 
         <ul className="MapaInicialList">
           <li>Energía y bienestar emocional</li>
@@ -44,8 +48,6 @@ export default function MapaInicial() {
       <div className="Metodobutton">
         <SmallButton caption="Quiero Transformarme" link={"/sobre-mi"} />
       </div>
-
-
     </VariableContentSection>
   );
 }

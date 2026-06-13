@@ -1,0 +1,113 @@
+.labelPilares {
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  padding: 2rem;
+
+  width: 100%;
+  max-width: 320px;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 420px;
+}
+
+/* ========================= */
+/* Icono */
+/* ========================= */
+
+.labelPilaresIcon {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+
+  background-color: #f1f0e8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 1.5rem;
+}
+
+.labelPilaresIcon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+/* ========================= */
+/* Etiqueta */
+/* ========================= */
+
+.labelPilaresTag {
+  font-family: "Inter", sans-serif;
+
+  font-size: 0.85rem;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  color: #9c6d4b;
+
+  margin-bottom: 1rem;
+}
+
+/* ========================= */
+/* Título */
+/* ========================= */
+
+.labelPilaresTitle {
+  font-family: "Eyes for Serifs", serif;
+
+  font-size: 2rem;
+
+  line-height: 1.25;
+
+  margin-bottom: 1.5rem;
+
+  color: #3c3c3c;
+}
+
+/* ========================= */
+/* Subtítulo */
+/* ========================= */
+
+.labelPilaresSubtitle {
+  font-family: "Inter", sans-serif;
+
+  font-size: 1.15rem;
+
+  font-weight: 600;
+
+  line-height: 1.6;
+
+  margin-bottom: 1.5rem;
+
+  color: #3c3c3c;
+}
+
+/* ========================= */
+/* Descripción */
+/* ========================= */
+
+.labelPilaresDescription {
+  font-family: "Inter", sans-serif;
+
+  font-size: 1rem;
+
+  line-height: 1.9;
+
+  color: #3c3c3c;
+}
+
+@media (max-width: 600px) {
+  .labelPilares {
+    align-items: center;
+    text-align: center;
+  }
+}

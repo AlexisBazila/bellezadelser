@@ -1,36 +1,32 @@
+.EsParatiSiParagraphContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 30px;
+  max-width: 60%;
+}
+
+.EsParatiSiParagraphContainer h2 {
+  font-family: "Eyes for Serifs", serif;
+  font-weight: 400;
+  color: #3c3c3c;
+  font-size: 40px;
+}
+
+.EsParatiSiParagraphContainer p {
+  color: #3c3c3c;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 150%;
+}
+
 /* ========================= */
 /* Lista */
 /* ========================= */
 
-.MapaInicialListContainer {
-  margin-top: 2.5rem;
-}
-.MapaTitle {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-bottom: 20px;
-}
-.MapaTitle h2 {
-  font-family: "Eyes for Serifs", serif;
-  font-weight: 400;
-  color: #3c3c3c;
-  font-size: 42px;
-}
-.MapaTitle h4 {
-  font-family: "Eyes for Serifs", serif;
-  font-weight: 400;
-  color: #5b614a;
-  font-size: 20px;
-}
-
-.MapaParagraph {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-.MapaInicialListTitle {
+.EsParatiSiListContainer p {
   color: #3c3c3c;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -40,29 +36,37 @@
   margin-bottom: 20px;
 }
 
-.MapaInicialList {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.EsParatiSiListContainer {
+  margin-bottom: 30px;
+}
 
+.EsParatiSiListContainer ul {
+  display: flex;
+  flex-direction: column;
   gap: 1rem 2rem;
-
   list-style: disc;
   padding-left: 1.5rem;
 }
-.MapaInicialList li {
+
+.EsParatiSiListContainer li {
   color: #3c3c3c;
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
   line-height: 150%;
+  max-width: 60%;
 }
 
+.EsParatiSibutton {
+  margin-top: 10px;
+  height: max-content;
+}
 /* ========================= */
 /* Cita */
 /* ========================= */
 
-.MapaInicialQuote {
+.EsParatiSiQuote {
   margin-top: 2.5rem;
 
   padding-left: 1rem;
@@ -77,9 +81,13 @@
 /* ========================= */
 /* Responsive */
 /* ========================= */
-
-@media (max-width: 768px) {
-  .MapaInicialList {
-    grid-template-columns: 1fr;
+@media (max-width: 1160px) {
+  .EsParatiSiListContainer li {
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .EsParatiSiParagraphContainer {
+    max-width: 100%;
   }
 }

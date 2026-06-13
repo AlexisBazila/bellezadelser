@@ -1,0 +1,58 @@
+.PilaresTrasciendeSection {
+  background:
+    linear-gradient(rgba(245, 243, 243, 0.3), rgba(245, 243, 243, 0.3)),
+    url("../../assets/images/fondoGreen.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 5% 10%;
+}
+
+.PilaresTrasciendeTitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.PilaresTrasciendeTitle h2 {
+  font-size: 42px;
+}
+
+.PilaresTrasciendeParagraph p {
+  font-size: 20px;
+  font-family: "inter";
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.PilaresTrasciendeParagraph h4 {
+  font-size: 20px;
+  font-family: "inter";
+  margin-bottom: 10px;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+
+@media (max-width: 1270px) {
+  .PilaresTrasciendeSection {
+    padding: 5% 2rem;
+  }
+
+  .PilaresTrasciendeTitle h2 {
+    font-size: 30px;
+  }
+  .PilaresTrasciendeParagraph {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .PilaresTrasciendeTitle {
+    padding-right: 0;
+    text-align: center;
+  }
+  .PilaresTrasciendeSection {
+    text-align: center;
+  }
+}
