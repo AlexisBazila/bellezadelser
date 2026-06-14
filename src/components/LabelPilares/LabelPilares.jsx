@@ -1,5 +1,5 @@
 import React from "react";
-import "./labelPilares.css";
+import "./LabelPilares.css";
 
 function LabelPilares({ icon, tag, title, subtitle, description }) {
   return (
