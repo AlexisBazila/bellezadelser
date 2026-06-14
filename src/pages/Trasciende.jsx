@@ -10,6 +10,9 @@ import QueEsTrasciendeSection from "../layouts/QueEsTrasciendeSection/QueEsTrasc
 import EsParatiSiSection from "../layouts/EsParatiSiSection/EsParatiSiSection";
 import IncluyeTrasciendeSection from "../layouts/IncluyeTrasciendeSection/IncluyeTrasciendeSection";
 import ExperimetarTrasciendeSection from "../layouts/ExperimetarTrasciendeSection/ExperimetarTrasciendeSection";
+import ModalidadTrasciendeSection from "../layouts/ModalidadTrasciendeSection/ModalidadTrasciendeSection";
+import InversionTrasciendeSection from "../layouts/InversionTrasciendeSection/InversionTrasciendeSection";
+import AgendaTrasciendeSection from "../layouts/AgendaTrasciendeSection/AgendaTrasciendeSection";
 
 function Trasciende() {
   return (
@@ -33,6 +36,9 @@ function Trasciende() {
       <EsParatiSiSection />
       <IncluyeTrasciendeSection />
       <ExperimetarTrasciendeSection />
+      <ModalidadTrasciendeSection />
+      <InversionTrasciendeSection />
+      <AgendaTrasciendeSection />
     </>
   );
 }

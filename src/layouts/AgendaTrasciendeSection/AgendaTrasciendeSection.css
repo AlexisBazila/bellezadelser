@@ -1,0 +1,193 @@
+/* ========================= */
+/* Sección */
+/* ========================= */
+
+.AgendaTrasciendeSection {
+  background-color: #f5f3f3;
+  padding: 5rem 2rem;
+}
+
+.AgendaTrasciendeContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* ========================= */
+/* Header */
+/* ========================= */
+
+.AgendaTrasciendeHeader h2 {
+  font-family: "Eyes for Serifs", serif;
+  font-weight: 400;
+  font-size: 4rem;
+  color: #3c3c3c;
+  margin-bottom: 1rem;
+}
+
+.AgendaTrasciendeSubtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #b77b52;
+  margin-bottom: 4rem;
+}
+
+/* ========================= */
+/* Beneficios */
+/* ========================= */
+
+.AgendaTrasciendeBenefits {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+
+.AgendaBenefitItem {
+  max-width: 220px;
+}
+
+.AgendaBenefitItem img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 1rem;
+}
+
+.AgendaBenefitItem h3 {
+  font-family: "Eyes for Serifs", serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #3c3c3c;
+}
+
+/* ========================= */
+/* Texto central */
+/* ========================= */
+
+.AgendaTrasciendeText {
+  max-width: 650px;
+  margin: 0 auto 3rem auto;
+}
+
+.AgendaTrasciendeText p {
+  font-family: "Inter", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #3c3c3c;
+}
+
+/* ========================= */
+/* Línea */
+/* ========================= */
+
+.AgendaTrasciendeLine {
+  width: 180px;
+  height: 1px;
+  background-color: #b77b52;
+  margin: 0 auto 2.5rem auto;
+}
+
+/* ========================= */
+/* Autor */
+/* ========================= */
+
+.AgendaTrasciendeAuthor {
+  margin-bottom: 3rem;
+}
+
+.AgendaTrasciendeAuthor h3 {
+  font-family: "Eyes for Serifs", serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #3c3c3c;
+  margin-bottom: 0.3rem;
+}
+
+.AgendaTrasciendeAuthor span {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #b77b52;
+}
+
+/* ========================= */
+/* Botón */
+/* ========================= */
+
+.AgendaTrasciendeButton {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* ========================= */
+/* Footer */
+/* ========================= */
+
+.AgendaTrasciendeFooter p {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: #3c3c3c;
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+@media (max-width: 900px) {
+  .AgendaTrasciendeBenefits {
+    gap: 2rem;
+  }
+
+  .AgendaBenefitItem h3 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .AgendaTrasciendeSection {
+    padding: 4rem 1.5rem;
+  }
+
+  .AgendaTrasciendeHeader h2 {
+    font-size: 3rem;
+  }
+
+  .AgendaTrasciendeBenefits {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .AgendaBenefitItem {
+    max-width: 300px;
+  }
+
+  .AgendaTrasciendeText p {
+    font-size: 1rem;
+  }
+
+  .AgendaTrasciendeAuthor h3 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .AgendaTrasciendeHeader h2 {
+    font-size: 2.3rem;
+  }
+
+  .AgendaBenefitItem h3 {
+    font-size: 1.3rem;
+  }
+
+  .AgendaTrasciendeLine {
+    width: 120px;
+  }
+}
