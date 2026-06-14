@@ -88,7 +88,8 @@
 
   border-left: 4px solid #b8c28c;
 
-  font-style: italic;
+  color: #3c3c3c;
+  font-family: "Inter", sans-serif;
 
   max-width: 80%;
 }

@@ -9,6 +9,7 @@ import PilaresTrasciendeSection from "../layouts/PilaresTrasciendeSection/Pilare
 import QueEsTrasciendeSection from "../layouts/QueEsTrasciendeSection/QueEsTrasciendeSection";
 import EsParatiSiSection from "../layouts/EsParatiSiSection/EsParatiSiSection";
 import IncluyeTrasciendeSection from "../layouts/IncluyeTrasciendeSection/IncluyeTrasciendeSection";
+import ExperimetarTrasciendeSection from "../layouts/ExperimetarTrasciendeSection/ExperimetarTrasciendeSection";
 
 function Trasciende() {
   return (
@@ -31,6 +32,7 @@ function Trasciende() {
       <QueEsTrasciendeSection />
       <EsParatiSiSection />
       <IncluyeTrasciendeSection />
+      <ExperimetarTrasciendeSection />
     </>
   );
 }

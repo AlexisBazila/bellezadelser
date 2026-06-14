@@ -12,7 +12,7 @@ export default function MapaInicial() {
     <VariableContentSection
       image={mapaInicialImg}
       imagePosition="right"
-      quote="Porque una verdadera transformación requiere profundidad, estrategia y personalización."
+      quote='"Porque una verdadera transformación requiere profundidad, estrategia y personalización."'
     >
       <div className="MapaTitle">
         <h2>Mapa Inicial del Ser</h2>

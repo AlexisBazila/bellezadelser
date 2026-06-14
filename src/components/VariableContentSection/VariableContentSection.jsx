@@ -39,6 +39,13 @@ function VariableContentSection({
       >
         <div className={`VariableContentSectionText ${contentClassName}`}>
           {children}
+
+          {/* Quote al final del contenido cuando NO hay imagen */}
+          {!image && quote && (
+            <blockquote className="VariableContentSectionQuote">
+              {quote}
+            </blockquote>
+          )}
         </div>
 
         {image && (
@@ -46,6 +53,7 @@ function VariableContentSection({
             <div className="VariableContentSectionImage">
               <img src={image} alt={imageAlt} className={imageClassName} />
 
+              {/* Quote debajo de la imagen */}
               {quote && (
                 <blockquote className="VariableContentSectionQuote">
                   {quote}
