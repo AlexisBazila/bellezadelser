@@ -100,10 +100,10 @@ function NavBar() {
           label: "Activaciones Energéticas",
           to: "/armonizaciones/activaciones",
         },
-        {
-          label: "Experiencia Trasciende",
-          to: "/trasciende",
-        },
+        // {
+        //   label: "Experiencia Trasciende",
+        //   to: "/trasciende",
+        // },
         // { label: "eBooks", to: "/armonizaciones/ebooks" },
       ],
     },
@@ -126,7 +126,11 @@ function NavBar() {
                   Home
                 </Link>
               </li>
-
+              <li>
+                <Link to="/trasciende" onClick={closeMegaMenu}>
+                  Experiencia Trasciende
+                </Link>
+              </li>
               {/* MEGA MENU */}
               <li className="menu-item mega">
                 <button
