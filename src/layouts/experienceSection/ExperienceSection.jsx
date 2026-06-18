@@ -4,7 +4,7 @@ import IconLeftAlignedParagraph from "../../components/IconLeftAlignedParagraph/
 import FirstButton from "../../components/firstButton/FirstButton";
 import hand from "../../assets/images/experience.png";
 import logo from "../../assets/images/withe-logo.png";
-import video1 from "../../assets/videos/trasciende.mp4";
+import video1 from "../../assets/videos/trasciende2.mp4";
 function ExperienceSection() {
   return (
     <section className="experienceSection">
@@ -12,18 +12,12 @@ function ExperienceSection() {
         <div className="experiencePick">
           {/* <img src={hand} alt="manos en el pecho" className="photo" /> */}
           <video
+            className="video-card"
             controls
             preload="metadata"
             controlsList="nodownload"
-            onContextMenu={(e) => e.preventDefault()}
-            className="video-card"
-            autoPlay
-            muted
-            loop
-            playsInline
           >
-            {" "}
-            <source src={video1} type="video/mp4" />{" "}
+            <source src={video1} type="video/mp4" />
           </video>
           <div className="experienceButtonMovil">
             <FirstButton
