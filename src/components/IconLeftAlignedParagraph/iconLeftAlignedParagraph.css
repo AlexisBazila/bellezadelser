@@ -9,7 +9,7 @@
   color: #fff;
   font-size: 20px;
   max-width: 60vw;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 .logoTitle {
   display: flex;
@@ -22,7 +22,7 @@
 /* Responsive */
 @media (max-height: 900px), (max-width: 1570px) {
   .iconLeftAlignedParagraph p {
-    margin-top: 3px;
+    margin-top: 30px;
   }
   .iconLeftAlignedParagraph h2 {
     margin-bottom: 30px;
@@ -36,7 +36,7 @@
   }
   .iconLeftAlignedParagraph p {
     max-width: 60vw;
-    margin-top: 5px;
+    margin-top: 30px;
   }
   .leftAlignedLogo img {
     width: 40px;

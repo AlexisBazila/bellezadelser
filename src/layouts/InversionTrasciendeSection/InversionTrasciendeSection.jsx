@@ -24,9 +24,9 @@ function InversionTrasciendeSection() {
           <div className="InversionCurrentPriceContainer">
             <span className="InversionCurrentLabel">Precio</span>
 
-            <h3 className="InversionCurrentPrice">2.497€</h3>
+            <h3 className="InversionCurrentPrice">999€</h3>
 
-            <span className="InversionInstallments">( o 3 pagos de 897€ )</span>
+            <span className="InversionInstallments">(única cuota de 999€)</span>
           </div>
         </div>
 

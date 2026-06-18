@@ -4,12 +4,27 @@ import IconLeftAlignedParagraph from "../../components/IconLeftAlignedParagraph/
 import FirstButton from "../../components/firstButton/FirstButton";
 import hand from "../../assets/images/experience.png";
 import logo from "../../assets/images/withe-logo.png";
+import video1 from "../../assets/videos/trasciende.mp4";
 function ExperienceSection() {
   return (
     <section className="experienceSection">
       <div className="experienceContent">
         <div className="experiencePick">
-          <img src={hand} alt="manos en el pecho" className="photo" />
+          {/* <img src={hand} alt="manos en el pecho" className="photo" /> */}
+          <video
+            controls
+            preload="metadata"
+            controlsList="nodownload"
+            onContextMenu={(e) => e.preventDefault()}
+            className="video-card"
+            autoPlay
+            muted
+            loop
+            playsInline
+          >
+            {" "}
+            <source src={video1} type="video/mp4" />{" "}
+          </video>
           <div className="experienceButtonMovil">
             <FirstButton
               caption={"Activar Mi Bienestar"}
@@ -21,17 +36,16 @@ function ExperienceSection() {
           <div className="paragraphTexts">
             <IconLeftAlignedParagraph
               logo={logo}
-              subTtitle="Activaciones Energéticas"
+              subTtitle="Experiencia Trasciende"
               paragraphs={[
-                "Activaciones energéticas guiadas para liberar tensiones, calmar tu mente y reequilibrar tu energía en el momento en que lo necesites.",
+                "No naciste para conformarte. Naciste para expandirte.",
+                "Hay una versión de ti más libre, más abundante y más poderosa esperando que recuerdes quién eres realmente.",
+                "Descubre las claves para trascender tus límites, transformar tu identidad y convertirte en la persona capaz de crear una vida que realmente ames vivir.",
               ]}
             />
           </div>
           <div className="experienceButton">
-            <FirstButton
-              caption={"Activar Mi Bienestar"}
-              link={"/Armonizaciones/activaciones"}
-            />
+            <FirstButton caption={"Quiero Saber Más"} link={"/trasciende"} />
           </div>
         </div>
       </div>

@@ -28,7 +28,25 @@
   margin-bottom: 5vh;
 }
 
+.video-card {
+  padding: 8px;
+  border-radius: 32px;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(245, 238, 228, 0.8)
+  );
 
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+
+  overflow: hidden;
+}
+
+.video-card video {
+  width: 100%;
+  border-radius: 24px;
+}
 
 @media (max-width: 1160px) {
   .experienceContent {
@@ -50,7 +68,8 @@
   }
 }
 
-@media (max-width: 600px) {}
+@media (max-width: 600px) {
+}
 
 @media (max-width: 490px) {
   .experienceSection {
