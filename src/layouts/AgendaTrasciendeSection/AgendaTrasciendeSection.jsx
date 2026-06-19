@@ -60,7 +60,7 @@ function AgendaTrasciendeSection() {
         <div className="AgendaTrasciendeButton">
           <SmallButton
             caption="Comenzar Mi Transformación"
-            link={"/sobre-mi"}
+            link="https://calendly.com/bellezadelseroficial/expeciende"
           />
         </div>
 

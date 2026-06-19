@@ -46,7 +46,7 @@ export default function MapaInicial() {
       </div>
 
       <div className="Metodobutton">
-        <SmallButton caption="Quiero Transformarme" link={"/sobre-mi"} />
+        <SmallButton caption="Quiero Transformarme" link="https://calendly.com/bellezadelseroficial/expeciende" />
       </div>
     </VariableContentSection>
   );

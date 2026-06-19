@@ -31,7 +31,7 @@ function InversionTrasciendeSection() {
         </div>
 
         <div className="InversionButton">
-          <SmallButton caption="Solicitar Mi Plaza" link={"/sobre-mi"} />
+          <SmallButton caption="Solicitar Mi Plaza" link="https://calendly.com/bellezadelseroficial/expeciende" />
         </div>
 
         <p className="InversionFootnote">

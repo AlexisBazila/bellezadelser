@@ -70,7 +70,7 @@ function ExperimetarTrasciendeSection() {
         </div>
       </VariableContentSection>
       <div className="ExperimetnarTrasciendeButton">
-        <SmallButton caption="Lo Quiero Ya!" link={"/sobre-mi"} />
+        <SmallButton caption="Lo Quiero Ya!" link="https://calendly.com/bellezadelseroficial/expeciende" />
       </div>
     </div>
   );

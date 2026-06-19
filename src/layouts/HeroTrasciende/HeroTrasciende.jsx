@@ -20,7 +20,7 @@ function HeroTrasciende() {
               </h2>
               <h2>Basada en el Método La Arquitectura del Ser™</h2>
             </div>
-            <FirstButton caption="Reservar Mi Plaza" link={"#sessionSection"} />
+            <FirstButton caption="Reservar Mi Plaza" link="https://calendly.com/bellezadelseroficial/expeciende" />
           </div>
         </div>
       </div>

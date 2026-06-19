@@ -36,7 +36,7 @@ function TrasciendeMetodoSection() {
                 
             </div>
             <div className="Metodobutton">
-                <SmallButton caption="Estoy lista" link={"/sobre-mi"}/>
+                <SmallButton caption="Estoy lista" link="https://calendly.com/bellezadelseroficial/expeciende"/>
             </div>
         </VariableContentSection>
     );

@@ -39,7 +39,7 @@ function QueEsTrasciendeSection() {
           </p>
         </div>
         <div className="QueEsbutton">
-          <SmallButton caption="Quiero Trascender" link={"/sobre-mi"} />
+          <SmallButton caption="Quiero Trascender" link="https://calendly.com/bellezadelseroficial/expeciende" />
         </div>
       </VariableContentSection>
     </>

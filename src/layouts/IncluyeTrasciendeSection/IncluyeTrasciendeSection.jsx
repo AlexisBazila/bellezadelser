@@ -312,7 +312,7 @@ function IncluyeTrasciendeSection() {
           ))}
         </div>
         <div className="IncluyeTrasciendebutton">
-          <SmallButton caption="Quiero Trascender" link={"/sobre-mi"} />
+          <SmallButton caption="Quiero Trascender" link="https://calendly.com/bellezadelseroficial/expeciende" />
         </div>
       </VariableContentSection>
     </>

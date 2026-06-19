@@ -42,7 +42,7 @@ function TrasciendeDescriptionSection() {
             en alguien diferente.
           </p>
         </div>
-        <SmallButton caption="Reservar Mi Plaza" link={"/sobre-mi"} />
+        <SmallButton caption="Reservar Mi Plaza" link="https://calendly.com/bellezadelseroficial/expeciende" />
       </section>
     </>
   );

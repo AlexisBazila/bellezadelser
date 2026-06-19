@@ -82,7 +82,7 @@ function EsParatiSiSection() {
           </ul>
         </div>
         <div className="EsParatiSibutton">
-          <SmallButton caption="Es Para Mi" link={"/sobre-mi"} />
+          <SmallButton caption="Es Para Mi" link="https://calendly.com/bellezadelseroficial/expeciende" />
         </div>
       </VariableContentSection>
     </>
