@@ -20,10 +20,7 @@ function ExperienceSection() {
             <source src={video1} type="video/mp4" />
           </video>
           <div className="experienceButtonMovil">
-            <FirstButton
-              caption={"Activar Mi Bienestar"}
-              link={"/Armonizaciones/activaciones"}
-            />
+            <FirstButton caption={"Quiero Saber Más"} link={"/trasciende"} />
           </div>
         </div>
         <div className="experienceTexts">
