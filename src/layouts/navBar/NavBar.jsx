@@ -204,6 +204,10 @@ function NavBar() {
             Home
           </Link>
 
+          <Link to="/trasciende" className="mobileHomeLink" onClick={closeMenu}>
+            Experiencia Trasciende
+          </Link>
+
           {/* Secciones en cuadros */}
           <div className="mobileSections">
             {menuSections.map((section) => (
