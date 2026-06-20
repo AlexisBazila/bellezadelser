@@ -7,7 +7,10 @@ import "./ExperimentarTrasciendeSection.css";
 function ExperimetarTrasciendeSection() {
   return (
     <div className="ExperimentarTrasciendeSection">
-      <VariableContentSection quote="Importante: Cada proceso es único. Y los resultados también dependen del compromiso, apertura y trabajo personal de cada participante.">
+      <VariableContentSection
+        quote="bold[Importante:] Cada proceso es único. Y los resultados también dependen del compromiso, apertura y trabajo personal de cada participante."
+        quoteItalic={false}
+      >
         <div className="EsParatiSiParagraphContainer">
           <h2>Lo que podrías experimentar dentro de TRASCIENDE™</h2>
         </div>
@@ -70,7 +73,10 @@ function ExperimetarTrasciendeSection() {
         </div>
       </VariableContentSection>
       <div className="ExperimetnarTrasciendeButton">
-        <SmallButton caption="Lo Quiero Ya!" link="https://calendly.com/bellezadelseroficial/expeciende" />
+        <SmallButton
+          caption="Lo Quiero Ya!"
+          link="https://calendly.com/bellezadelseroficial/expeciende"
+        />
       </div>
     </div>
   );

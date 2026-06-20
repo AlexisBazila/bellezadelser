@@ -9,6 +9,7 @@ import "./IncluyeTrasciendeSection.css";
 function IncluyeTrasciendeSection() {
   const [activeIndex, setActiveIndex] = useState(null);
   const data = [
+    // Pregunta 1
     {
       pregunta: "1. Seis Encuentros Privados 1:1",
       respuesta: [
@@ -98,22 +99,10 @@ function IncluyeTrasciendeSection() {
             },
           ],
         },
-
-        {
-          type: "paragraph",
-          content: [
-            {
-              text: "Semana 1 — Identidad & Visión",
-              strong: true,
-            },
-            {
-              text: "Claridad personal, identidad actual y expansión",
-            },
-          ],
-        },
       ],
     },
 
+    // Pregunta 2
     {
       pregunta: "2. Asesoría de Imagen Integral Premium",
       respuesta: [
@@ -136,6 +125,7 @@ function IncluyeTrasciendeSection() {
       ],
     },
 
+    // Pregunta 3
     {
       pregunta: "3. Auditoría de Imagen & Presencia",
       respuesta: [
@@ -157,6 +147,7 @@ function IncluyeTrasciendeSection() {
       ],
     },
 
+    // Pregunta 4
     {
       pregunta: "4. Plan Nueva Versión",
       respuesta: [
@@ -183,6 +174,7 @@ function IncluyeTrasciendeSection() {
       ],
     },
 
+    // Pregunta 5
     {
       pregunta: "5. Acompañamiento Energético Integrativo",
       respuesta: [
@@ -196,12 +188,17 @@ function IncluyeTrasciendeSection() {
         },
         {
           type: "quote",
-          content:
-            "Importante: este acompañamiento no sustituye procesos médicos, psicológicos ni terapéuticos.",
+          content: [
+            { text: "Importante:", strong: true },
+            {
+              text: " este acompañamiento no sustituye procesos médicos, psicológicos ni terapéuticos.",
+            },
+          ],
         },
       ],
     },
 
+    // Pregunta 6
     {
       pregunta: "6. Soporte VIP Privado",
       respuesta: [
@@ -216,6 +213,7 @@ function IncluyeTrasciendeSection() {
       ],
     },
 
+    // Pregunta 7
     {
       pregunta: "7. Feedback de Imagen & Presencia",
       respuesta: [
@@ -240,6 +238,7 @@ function IncluyeTrasciendeSection() {
       ],
     },
 
+    // Pregunta 8
     {
       pregunta: "8. Recursos Exclusivos",
       respuesta: [
@@ -265,6 +264,7 @@ function IncluyeTrasciendeSection() {
       ],
     },
 
+    // Pregunta 9
     {
       pregunta: "9. Fase Integración TRASCIENDE™",
       respuesta: [
@@ -312,7 +312,10 @@ function IncluyeTrasciendeSection() {
           ))}
         </div>
         <div className="IncluyeTrasciendebutton">
-          <SmallButton caption="Quiero Trascender" link="https://calendly.com/bellezadelseroficial/expeciende" />
+          <SmallButton
+            caption="Quiero Trascender"
+            link="https://calendly.com/bellezadelseroficial/expeciende"
+          />
         </div>
       </VariableContentSection>
     </>

@@ -16,7 +16,7 @@ function AgendaTrasciendeSection() {
           <h2>TRASCIENDE™</h2>
 
           <p className="AgendaTrasciendeSubtitle">
-            BASADO EN EL MÉTODO LA ARQUITECTURA DEL SER™
+            BASADO EN EL MÉTODO ARQUITECTURA DEL SER™
           </p>
         </div>
 

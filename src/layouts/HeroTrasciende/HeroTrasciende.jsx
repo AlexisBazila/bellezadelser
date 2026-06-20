@@ -18,9 +18,12 @@ function HeroTrasciende() {
                 Una experiencia premium 1:1 para liberar bloqueos, recuperar tu
                 poder personal y transformar tu realidad.
               </h2>
-              <h2>Basada en el Método La Arquitectura del Ser™</h2>
+              <h2>Basada en el Método Arquitectura del Ser™</h2>
             </div>
-            <FirstButton caption="Reservar Mi Plaza" link="https://calendly.com/bellezadelseroficial/expeciende" />
+            <FirstButton
+              caption="Reservar Mi Plaza"
+              link="https://calendly.com/bellezadelseroficial/expeciende"
+            />
           </div>
         </div>
       </div>

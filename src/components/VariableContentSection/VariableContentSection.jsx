@@ -10,6 +10,7 @@ function VariableContentSection({
   backgroundPosition = "center",
   backgroundOverlay = "rgba(231,236,217,0.88)",
   quote,
+  quoteItalic = true,
   className = "",
   contentClassName = "",
   imageClassName = "",
@@ -27,6 +28,14 @@ function VariableContentSection({
       }
     : {};
 
+  const parseText = (text) => {
+    if (!text) return "";
+
+    return text.replace(/bold\[(.*?)\]/g, "<strong>$1</strong>");
+  };
+
+  const parsedQuote = parseText(quote);
+
   return (
     <section
       className={`VariableContentSection ${className}`}
@@ -40,11 +49,13 @@ function VariableContentSection({
         <div className={`VariableContentSectionText ${contentClassName}`}>
           {children}
 
-          {/* Quote al final del contenido cuando NO hay imagen */}
           {!image && quote && (
-            <blockquote className="VariableContentSectionQuote">
-              {quote}
-            </blockquote>
+            <blockquote
+              className={`VariableContentSectionQuote ${
+                quoteItalic ? "quoteItalic" : ""
+              }`}
+              dangerouslySetInnerHTML={{ __html: parsedQuote }}
+            />
           )}
         </div>
 
@@ -53,11 +64,13 @@ function VariableContentSection({
             <div className="VariableContentSectionImage">
               <img src={image} alt={imageAlt} className={imageClassName} />
 
-              {/* Quote debajo de la imagen */}
               {quote && (
-                <blockquote className="VariableContentSectionQuote">
-                  {quote}
-                </blockquote>
+                <blockquote
+                  className={`VariableContentSectionQuote ${
+                    quoteItalic ? "quoteItalic" : ""
+                  }`}
+                  dangerouslySetInnerHTML={{ __html: parsedQuote }}
+                />
               )}
             </div>
           </div>

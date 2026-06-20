@@ -38,7 +38,7 @@
 }
 
 .accordion-content.open {
-  max-height: 300px;
+  max-height: 700px;
   opacity: 1;
   padding: 0 20px 0 20px;
   margin-bottom: 20px;
@@ -86,8 +86,8 @@
 
   border-left: 4px solid #b8c28c;
 
-  font-style: italic;
-
+  /* font-style: italic; */
+  font-family: "Inter", sans-serif;
   max-width: 700px;
 }
 

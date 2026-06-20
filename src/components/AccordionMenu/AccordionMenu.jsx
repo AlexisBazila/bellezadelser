@@ -59,12 +59,27 @@ function AccordionMenu({ pregunta, respuesta = [], isOpen, onClick }) {
                   </ul>
                 );
 
-              case "quote":
+              case "quote": {
+                const quoteLines = Array.isArray(block.content)
+                  ? block.content
+                  : [{ text: block.content }];
+
                 return (
                   <blockquote key={index} className="accordion-block-quote">
-                    {block.content}
+                    {quoteLines.map((line, i) => {
+                      if (typeof line === "string") {
+                        return <React.Fragment key={i}>{line}</React.Fragment>;
+                      }
+
+                      return line.strong ? (
+                        <strong key={i}>{line.text}</strong>
+                      ) : (
+                        <React.Fragment key={i}>{line.text}</React.Fragment>
+                      );
+                    })}
                   </blockquote>
                 );
+              }
 
               default:
                 return null;
