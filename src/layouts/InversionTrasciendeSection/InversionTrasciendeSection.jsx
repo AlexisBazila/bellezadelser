@@ -17,7 +17,7 @@ function InversionTrasciendeSection() {
             <span className="InversionOriginalLabel">Valorado</span>
 
             <span className="InversionOriginalPrice">
-              <s>3.497€</s>
+              <s>5.500€</s>
             </span>
           </div>
 
@@ -31,7 +31,10 @@ function InversionTrasciendeSection() {
         </div>
 
         <div className="InversionButton">
-          <SmallButton caption="Solicitar Mi Plaza" link="https://calendly.com/bellezadelseroficial/expeciende" />
+          <SmallButton
+            caption="Solicitar Mi Plaza"
+            link="https://calendly.com/bellezadelseroficial/expeciende"
+          />
         </div>
 
         <p className="InversionFootnote">
