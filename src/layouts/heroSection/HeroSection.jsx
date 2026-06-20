@@ -10,8 +10,7 @@ function HeroSection() {
           <div className="paragraphHero">
             <div className="titleAndSubtitleHero">
               <h1 className="title">
-                Tu energía está creando tu vida,
-                <br />
+                Tu energía está creando tu vida,{" "}
                 <strong>aprende a transformarla. </strong>
               </h1>
               <h2>
