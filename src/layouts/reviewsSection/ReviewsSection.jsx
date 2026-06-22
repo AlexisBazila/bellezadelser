@@ -1,53 +1,53 @@
 import React, { useState, useEffect } from "react";
 import "./reviewsSection.css";
 import LabelReviews from "../../components/labelReviews/LabelReviews";
+import review1 from "../../assets/images/review1.svg";
+import review2 from "../../assets/images/review2.svg";
+import review3 from "../../assets/images/review3.svg";
+import review4 from "../../assets/images/review4.svg";
+import review5 from "../../assets/images/review5.svg";
+import review6 from "../../assets/images/review6.svg";
+import review7 from "../../assets/images/review7.svg";
+import review8 from "../../assets/images/review8.svg";
+import review9 from "../../assets/images/review9.svg";
 
 function ReviewsSection() {
   const reviews = [
     {
-      name: "Florencia C.",
-      review:
-        "Guaaau tal cual lo decís, dolor de espalda alta, y el estómago vivía quejándome. Me siento tranquila con mucho sueño y alivio en mi cuerpo. Gracias!",
+      alt: "Florencia C.",
+      image: review1,
     },
     {
-      name: "Alicia S.",
-      review:
-        "Hola Naty querida! La verdad, me veo en todo lo que dice. Voy a empezar con las afirmaciones y sugerencias que me mandaste. Muchas muchas gracias.",
+      alt: "Alicia S.",
+      image: review2,
     },
     {
-      name: "Paula G.",
-      review:
-        "Ufff y el dolor en el pecho infaltable cada día... Muchas gracias Naty... siempre que te leo o te escucho sale el llanto. Agradecida de haber llegado a vos 🙌🏻",
+      alt: "Paula G.",
+      image: review3,
     },
     {
-      name: "Daiana A.",
-      review:
-        "También me resonó mucho la limpieza y alineación de chakras liberaste tensión en el pecho y plexo solar. SI LO SENTÍ ",
+      alt: "Daiana A.",
+      image: review4,
     },
     {
-      name: "Liliana H.",
-      review:
-        "Resuena absolutamente todo, hace semanas vengo con malestar justo en la boca del estómago. Con todo lo que me decís, todo cobra sentido!",
+      alt: "Liliana H.",
+      image: review5,
     },
     {
-      name: "Alma R.",
-      review:
-        "Ayer vi un video tuyo por primera vez y fuiste mi salvación. Tenía un dolor de cabeza y al verlo me aliviaste 🙌🏻",
+      alt: "Alma R.",
+      image: review6,
     },
     {
-      name: "Brenda A.",
-      review:
-        "No tengo palabras para describir la sensación de paz y de luz que emana de mí. Siento que me he quitado un peso de encima. Agradecimiento contigo!",
+      alt: "Brenda A.",
+      image: review7,
     },
     {
-      name: "Marta G.",
-      review:
-        "Hola Naty, es increíble todo lo que me decís, realmente soy yo así tal cual me describiste. Me siento totalmente agradecida.",
+      alt: "Marta G.",
+      image: review8,
     },
     {
-      name: "Gabriel O.",
-      review:
-        "Ese nudo que tú dices, es un nudo de tristeza y decepción. Es increíble de verdad el efecto, estoy muy agradecido!",
+      alt: "Gabriel O.",
+      image: review9,
     },
   ];
 
@@ -104,7 +104,7 @@ function ReviewsSection() {
           <div className="slidesWrapper" style={slidesWrapperStyle}>
             {reviews.map((r, i) => (
               <div key={i} className="slide" style={slideStyle}>
-                <LabelReviews name={r.name} review={r.review} />
+                <LabelReviews image={r.image} alt={r.alt} />
               </div>
             ))}
           </div>

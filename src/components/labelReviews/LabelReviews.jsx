@@ -1,14 +1,10 @@
 import React from "react";
 import "./labelReviews.css";
-function LabelReviews({ name, review }) {
+
+function LabelReviews({ image, alt = "Review" }) {
   return (
     <div className="labelReview">
-      <div className="titleLabelReview">
-        <h4 className="Title">{name}</h4>
-      </div>
-      <div className="paragraphLabelReview">
-        <p className="Review">{review}</p>
-      </div>
+      <img src={image} alt={alt} className="reviewImage" />
     </div>
   );
 }
