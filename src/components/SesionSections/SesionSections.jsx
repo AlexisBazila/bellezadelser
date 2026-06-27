@@ -1,10 +1,7 @@
 import React from "react";
 import "./SesionSections.css";
-import useInView from "../../hooks/useInView";
 
 function SesionSections({ title, content, variant = "light" }) {
-  const [ref, visible] = useInView();
-
   const parseText = (text) => {
     if (!text) return "";
 
@@ -15,6 +12,7 @@ function SesionSections({ title, content, variant = "light" }) {
         const content = part.replace("bold[", "").replace("]", "");
         return <strong key={index}>{content}</strong>;
       }
+
       return part;
     });
   };
@@ -46,8 +44,8 @@ function SesionSections({ title, content, variant = "light" }) {
   };
 
   return (
-    <section ref={ref} className={`sesion-section ${variant}`}>
-      <div className={`sesion-container ${visible ? "visible" : ""}`}>
+    <section className={`sesion-section ${variant}`}>
+      <div className="sesion-container">
         <h2 className="sesion-title">{title}</h2>
 
         <div className="sesion-content">

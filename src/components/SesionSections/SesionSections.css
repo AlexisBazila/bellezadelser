@@ -4,17 +4,6 @@
 
 .sesion-container {
   max-width: 90vw;
-
-  /* ✨ ANIMACIÓN SOLO DEL CONTENIDO */
-  opacity: 0;
-  transform: translateY(60px);
-  transition: all 0.8s ease;
-  will-change: transform, opacity;
-}
-
-.sesion-container.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
 
 /* Variantes de fondo */
@@ -52,11 +41,6 @@
   margin-bottom: 15px;
   line-height: 1.6;
   font-size: 20px;
-
-  /* ✨ Animación individual */
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.5s ease;
 }
 
 .sesion-content ul {
@@ -73,49 +57,12 @@
   font-weight: 400;
   font-style: normal;
   line-height: 150%;
-  /* ✨ Animación individual */
-  opacity: 0;
-  transform: translateY(10px);
-  transition: all 0.5s ease;
 }
 
 /* Texto claro en fondo oscuro */
 .sesion-section.strong p,
 .sesion-section.strong li {
   color: #fff;
-}
-
-/* Activación animación */
-.sesion-container.visible .sesion-content p,
-.sesion-container.visible .sesion-content li {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Stagger (aparición progresiva) */
-.sesion-container.visible .sesion-content p:nth-child(1),
-.sesion-container.visible .sesion-content li:nth-child(1) {
-  transition-delay: 0.1s;
-}
-
-.sesion-container.visible .sesion-content p:nth-child(2),
-.sesion-container.visible .sesion-content li:nth-child(2) {
-  transition-delay: 0.2s;
-}
-
-.sesion-container.visible .sesion-content p:nth-child(3),
-.sesion-container.visible .sesion-content li:nth-child(3) {
-  transition-delay: 0.3s;
-}
-
-.sesion-container.visible .sesion-content p:nth-child(4),
-.sesion-container.visible .sesion-content li:nth-child(4) {
-  transition-delay: 0.4s;
-}
-
-.sesion-container.visible .sesion-content p:nth-child(5),
-.sesion-container.visible .sesion-content li:nth-child(5) {
-  transition-delay: 0.5s;
 }
 
 /* Sublista */
@@ -133,9 +80,11 @@
   .sesion-title {
     font-size: 30px;
   }
+
   .sesion-content li {
     font-size: 18px;
   }
+
   .sesion-content p {
     font-size: 18px;
   }
