@@ -1,6 +1,5 @@
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import "./ContentSection.css";
-import i from "../../assets/images/fondo.png";
 
 function ContentSection({
   title,
@@ -9,50 +8,17 @@ function ContentSection({
   image,
   imagePosition = "bottom",
 }) {
-  const contentRef = useRef(null);
-  const imageRef = useRef(null);
-
-  const [contentVisible, setContentVisible] = useState(false);
-  const [imageVisible, setImageVisible] = useState(false);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          if (entry.target === contentRef.current) {
-            setContentVisible(true);
-          }
-          if (entry.target === imageRef.current) {
-            setImageVisible(true);
-          }
-        }
-      },
-      { threshold: 0.2 },
-    );
-
-    if (contentRef.current) observer.observe(contentRef.current);
-    if (imageRef.current) observer.observe(imageRef.current);
-
-    return () => observer.disconnect();
-  }, []);
-
   return (
     <section className={`content-section ${background}`}>
       {/* Imagen arriba */}
       {image && imagePosition === "top" && (
-        <div
-          ref={imageRef}
-          className={`content-image ${imageVisible ? "visible" : ""}`}
-        >
+        <div className="content-image">
           <img src={image} alt={title} />
         </div>
       )}
 
       {/* Contenido */}
-      <div
-        ref={contentRef}
-        className={`content-container ${contentVisible ? "visible" : ""}`}
-      >
+      <div className="content-container">
         <h2 className="content-title">{title}</h2>
 
         <div className="content-text">
@@ -86,7 +52,7 @@ function ContentSection({
               );
             }
 
-            // lista (lo que ya hiciste)
+            // lista
             if (item.type === "list") {
               return (
                 <ul key={index} className="content-list">
@@ -104,10 +70,7 @@ function ContentSection({
 
       {/* Imagen abajo */}
       {image && imagePosition === "bottom" && (
-        <div
-          ref={imageRef}
-          className={`content-image ${imageVisible ? "visible" : ""}`}
-        >
+        <div className="content-image">
           <img src={image} alt={title} />
         </div>
       )}
