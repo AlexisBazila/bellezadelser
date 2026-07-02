@@ -93,20 +93,20 @@ function NavBar() {
       ],
     },
 
-    {
-      title: "Armonizaciones",
-      links: [
-        {
-          label: "Activaciones Energéticas",
-          to: "/armonizaciones/activaciones",
-        },
-        // {
-        //   label: "Experiencia Trasciende",
-        //   to: "/trasciende",
-        // },
-        // { label: "eBooks", to: "/armonizaciones/ebooks" },
-      ],
-    },
+    // {
+    //   title: "Armonizaciones",
+    //   links: [
+    //     {
+    //       label: "Activaciones Energéticas",
+    //       to: "/armonizaciones/activaciones",
+    //     },
+    //     // {
+    //     //   label: "Experiencia Trasciende",
+    //     //   to: "/trasciende",
+    //     // },
+    //     // { label: "eBooks", to: "/armonizaciones/ebooks" },
+    //   ],
+    // },
   ];
 
   return (
