@@ -131,6 +131,11 @@ function NavBar() {
                   Experiencia Trasciende
                 </Link>
               </li>
+              <li>
+                <Link to="/academia" onClick={closeMegaMenu}>
+                  Academia
+                </Link>
+              </li>
               {/* MEGA MENU */}
               <li className="menu-item mega">
                 <button

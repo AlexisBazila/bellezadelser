@@ -22,7 +22,8 @@ import SesionReikiMascotas from "./pages/SesionReikiMascotas";
 import SesionReikiOncologico from "./pages/SesionReikiOncologico";
 import ScrollToTop from "./components/ScrollToTop";
 import Trasciende from "./pages/Trasciende";
-// import TestHotmart from "./pages/TestHotmart";
+import TestHotmart from "./pages/TestHotmart";
+import Academia from "./pages/Academia";
 
 function App() {
   return (
@@ -75,7 +76,7 @@ function App() {
         <Route path="/checkagenda" element={<CheckAgenda />} />
         <Route path="/packs" element={<SesionsPack />} />
         <Route path="/trasciende" element={<Trasciende />} />
-        {/* <Route path="/hotmart" element={<TestHotmart />} /> */}
+        <Route path="/academia" element={<Academia />} />
         <Route path="*" element={<NotFound />} />
         {/*<Route path="/Cursos" element={<Curso />} /> */}
       </Routes>

@@ -1,0 +1,149 @@
+.TestHotmartSection {
+  background-color: #f5f3f3;
+
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 5% 2rem;
+}
+
+.TestHotmartCard {
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  padding: 3rem;
+
+  width: 100%;
+  max-width: 560px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* ========================= */
+/* Icono */
+/* ========================= */
+
+.TestHotmartIcon {
+  width: 56px;
+  height: 56px;
+
+  border-radius: 50%;
+
+  background-color: #f1f0e8;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+
+  margin-bottom: 1.5rem;
+}
+
+/* ========================= */
+/* Etiqueta */
+/* ========================= */
+
+.TestHotmartTag {
+  font-family: "Inter", sans-serif;
+
+  font-size: 0.85rem;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  color: #9c6d4b;
+
+  margin-bottom: 1rem;
+}
+
+/* ========================= */
+/* Título y subtítulo */
+/* ========================= */
+
+.TestHotmartTitle {
+  font-family: "Eyes for Serifs", serif;
+  font-weight: 400;
+
+  font-size: 2rem;
+  line-height: 1.25;
+
+  color: #3c3c3c;
+
+  margin-bottom: 1.25rem;
+}
+
+.TestHotmartSubtitle {
+  font-family: "Inter", sans-serif;
+
+  font-size: 1.05rem;
+  line-height: 1.8;
+
+  color: #3c3c3c;
+
+  margin-bottom: 2.5rem;
+}
+
+/* ========================= */
+/* Botón (estilo FirstButton) */
+/* ========================= */
+
+.TestHotmartButton {
+  background-color: #c3cfa1;
+  color: #647b4d;
+  text-decoration: none;
+  font-size: 25px;
+  border-radius: 50px;
+  padding: 15px 30px;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+  cursor: pointer;
+}
+
+.TestHotmartButton:hover {
+  background-color: #647b4d;
+  color: #c3cfa1;
+}
+
+@media (max-width: 900px) {
+  .TestHotmartButton {
+    font-size: 18px;
+  }
+}
+
+/* ========================= */
+/* Nota inferior */
+/* ========================= */
+
+.TestHotmartFootnote {
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+
+  font-size: 0.85rem;
+
+  color: #3c3c3c;
+  opacity: 0.6;
+
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 600px) {
+  .TestHotmartCard {
+    padding: 2.5rem 1.5rem;
+    border-radius: 20px;
+  }
+
+  .TestHotmartTitle {
+    font-size: 1.6rem;
+  }
+}

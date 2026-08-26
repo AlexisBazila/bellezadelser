@@ -1,56 +1,57 @@
 import { useEffect } from "react";
+import "./TestHotmart.css";
 
 function TestHotmart() {
   useEffect(() => {
-    // Script Hotmart
+    // Evita inyectar el script dos veces (React StrictMode monta los efectos 2 veces en desarrollo)
+    if (
+      document.querySelector(
+        'script[src="https://static.hotmart.com/checkout/widget.min.js"]',
+      )
+    ) {
+      return;
+    }
+
     const script = document.createElement("script");
     script.src = "https://static.hotmart.com/checkout/widget.min.js";
-    script.async = true;
-    document.body.appendChild(script);
+    document.head.appendChild(script);
 
-    // CSS Hotmart
     const link = document.createElement("link");
     link.rel = "stylesheet";
     link.href = "https://static.hotmart.com/css/hotmart-fb.min.css";
     document.head.appendChild(link);
-
-    return () => {
-      document.body.removeChild(script);
-      document.head.removeChild(link);
-    };
+    // sin cleanup: el widget queda cargado mientras la página viva, igual que en el snippet oficial
   }, []);
 
   return (
-    <div
-      style={{
-        height: "100vh",
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        background: "#fff5f7",
-        fontFamily: "Arial",
-      }}
-    >
-      <a
-        href="https://pay.hotmart.com/T105963979F?checkoutMode=2"
-        className="hotmart-fb hotmart__button-checkout"
-        onClick={(e) => e.preventDefault()}
-        style={{
-          background: "#ec4899",
-          color: "white",
-          padding: "16px 32px",
-          borderRadius: "16px",
-          textDecoration: "none",
-          fontSize: "20px",
-          fontWeight: "bold",
-          boxShadow: "0 10px 20px rgba(0,0,0,0.15)",
-          transition: "0.2s",
-          cursor: "pointer",
-        }}
-      >
-        ✨ Test Hotmart
-      </a>
-    </div>
+    <section className="TestHotmartSection">
+      <div className="TestHotmartCard">
+        <div className="TestHotmartIcon">✨</div>
+
+        <span className="TestHotmartTag">Prueba interna</span>
+
+        <h1 className="TestHotmartTitle">Academia Belleza del Ser</h1>
+
+        <p className="TestHotmartSubtitle">
+          Estamos probando la integración de pagos para la membresía de 9 meses.
+          Este botón abre el checkout de Hotmart en un pop-up, sin salir del
+          sitio.
+        </p>
+
+        <a
+          href="https://pay.hotmart.com/I106926912N?checkoutMode=2"
+          className=" TestHotmartButton"
+          onClick={(e) => e.preventDefault()}
+        >
+          Quiero mi lugar
+        </a>
+
+        <p className="TestHotmartFootnote">
+          El pago no se procesará realmente — solo estamos validando la
+          integración.
+        </p>
+      </div>
+    </section>
   );
 }
 
