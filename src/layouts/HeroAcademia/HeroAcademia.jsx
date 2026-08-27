@@ -6,10 +6,10 @@ function HeroAcademia() {
   return (
     <section className="heroAcademia">
       <div className="overlayAcademia">
-        <div className="contentHero">
+        <div className="contentAcademiaHero">
           <div className="paragraphHero">
             <div className="titleAndSubtitleAcademia">
-              <h1 className="title">Academia Belleza del Ser</h1>
+              <h1 className="Academiatitle">Academia Belleza del Ser</h1>
               <h2 className="h2Border">
                 EL ESPACIO DONDE SE FORMAN QUIENES ESTÁN LISTOS PARA
                 <strong>TRASCENDER</strong>

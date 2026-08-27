@@ -1,0 +1,124 @@
+.CaracteristicasAcademiaSection {
+  padding: 5% 10%;
+}
+
+/* ========================= */
+/* Título */
+/* ========================= */
+
+.CaracteristicasAcademiaTitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.CaracteristicasAcademiaTitle h2 {
+  font-family: "Eyes for Serifs", serif;
+  font-weight: 400;
+
+  color: #3c3c3c;
+
+  font-size: 42px;
+
+  margin-bottom: 15px;
+}
+
+.CaracteristicasAcademiaTitle p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+
+  color: #3c3c3c;
+
+  font-size: 18px;
+}
+
+/* ========================= */
+/* Grid de cards */
+/* ========================= */
+
+.CaracteristicasAcademiaGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.CaracteristicasAcademiaCard {
+  border: 1px solid #b77b52;
+  border-radius: 20px;
+
+  padding: 2rem 1.75rem;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.CaracteristicasAcademiaIcon {
+  width: 48px;
+  height: 48px;
+
+  object-fit: contain;
+
+  margin-bottom: 1.75rem;
+}
+
+.CaracteristicasAcademiaCard h3 {
+  font-family: "Eyes for Serifs", serif;
+  font-weight: 400;
+
+  color: #3c3c3c;
+
+  font-size: 26px;
+
+  margin-bottom: 0.75rem;
+}
+
+.CaracteristicasAcademiaCard p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+
+  color: #3c3c3c;
+
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.CaracteristicasAcademiaCard {
+  align-items: center;
+  text-align: center;
+}
+/* ========================= */
+/* RESPONSIVE */
+/* ========================= */
+
+@media (max-width: 1270px) {
+  .CaracteristicasAcademiaSection {
+    padding: 5% 2rem;
+  }
+
+  .CaracteristicasAcademiaTitle h2 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 900px) {
+  .CaracteristicasAcademiaGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .CaracteristicasAcademiaSection {
+    padding: 10% 1.5rem;
+  }
+
+  .CaracteristicasAcademiaTitle h2 {
+    font-size: 28px;
+  }
+
+  .CaracteristicasAcademiaTitle p {
+    font-size: 16px;
+  }
+
+  .CaracteristicasAcademiaGrid {
+    grid-template-columns: 1fr;
+  }
+}

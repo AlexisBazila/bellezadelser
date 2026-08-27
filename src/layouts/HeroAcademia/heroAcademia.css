@@ -14,20 +14,20 @@
   padding: 5% 10%;
 }
 
-.contentHero {
+.contentAcademiaHero {
   height: 100%;
   width: 50vw;
   display: flex;
   align-items: center;
 }
 
-.contentHero h1 {
+.Academiatitle {
   font-size: 60px;
   margin-bottom: 20px;
   color: #b77b52;
 }
 
-.contentHero h2 {
+.contentAcademiaHero h2 {
   font-family: "inter";
   width: 50vw;
   color: #3c3c3c;
@@ -80,15 +80,15 @@
     height: 70vh;
   }
 
-  .contentHero {
+  .contentAcademiaHero {
     width: 100%;
   }
 
-  .contentHero h1 {
+  .Academiatitle {
     font-size: 40px;
   }
 
-  .contentHero h2 {
+  .contentAcademiaHero h2 {
     font-size: 18px;
   }
 }
