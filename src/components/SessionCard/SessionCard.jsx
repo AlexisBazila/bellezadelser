@@ -2,7 +2,7 @@ import React from "react";
 import "./sessionCard.css";
 import blackLogo from "../../assets/images/black-logo.png";
 import SmallButton from "../smallButton/SmallButton";
-function SessionsessionCard({ image, title, description, link }) {
+function SessionsessionCard({ image, title, description, link, caption }) {
   return (
     <div className="sessionCard">
       <div className="sessionCard-image">
@@ -17,7 +17,7 @@ function SessionsessionCard({ image, title, description, link }) {
         <h3 className="sessionCard-title">{title}</h3>
         <p className="sessionCard-description">{description}</p>{" "}
         <div className="sessionCardButton">
-          <SmallButton caption={"Agenda Tu Sesión"} link={link} />
+          <SmallButton caption={caption} link={link} />
         </div>
       </div>
     </div>

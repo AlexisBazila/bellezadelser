@@ -28,6 +28,7 @@ function SessionSection() {
       description:
         "Equilibra tu energía, libera bloqueos y recupera la armonía interior a través de la sanación con Reiki.",
       link: "/sesiones/reiki#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
     {
       image: sesionRegistros,
@@ -35,6 +36,7 @@ function SessionSection() {
       description:
         "Conecta con la sabiduría de tu alma, recibe claridad y guía para tu camino personal y espiritual.",
       link: "/sesiones/registros-akashicos#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
     {
       image: sesionAcompañamiento,
@@ -42,6 +44,7 @@ function SessionSection() {
       description:
         "Descubre tu potencial, supera obstáculos y avanza con foco hacia la vida que quieres crear.",
       link: "/sesiones/acompañamiento#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
     // Revisar antes de lanzar
     {
@@ -50,6 +53,7 @@ function SessionSection() {
       description:
         "Armoniza tu energía, libera bloqueos y favorece la apertura de caminos.",
       link: "/otras-sanaciones/activacion#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
     {
       image: sesionBloqueos,
@@ -57,6 +61,7 @@ function SessionSection() {
       description:
         "Libera bloqueos en el amor, sana tu energía y permite que todo fluya.",
       link: "/otras-sanaciones/bloqueos#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
     {
       image: sesionUtero,
@@ -64,6 +69,7 @@ function SessionSection() {
       description:
         "Libera bloqueos en tu útero, sana tu energía y reconecta con tu poder femenino.",
       link: "/otras-sanaciones/sanacion-de-utero#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
     {
       image: sesionEstres,
@@ -71,6 +77,7 @@ function SessionSection() {
       description:
         "Relaja tu cuerpo, aquieta tu mente y restablece tu energía.",
       link: "/otras-sanaciones/sanacion-estres#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
     {
       image: sesionChakras,
@@ -78,6 +85,7 @@ function SessionSection() {
       description:
         "Limpia y alinea tus chakras, liberando bloqueos y elevando tu energía.",
       link: "/otras-sanaciones/chakras#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
     {
       image: sesionLimpiezaEspacios,
@@ -85,6 +93,7 @@ function SessionSection() {
       description:
         "Limpia la energía de tus espacios, libera cargas y restablece la armonía.",
       link: "/otras-sanaciones/limpieza-de-espacios#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
     {
       image: sesionMascotas,
@@ -92,6 +101,7 @@ function SessionSection() {
       description:
         "Armoniza la energía de tu mascota, reduce el estrés y favorece su bienestar.",
       link: "/otras-sanaciones/reiki-para-mascotas#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
     {
       image: sesionOncologico,
@@ -99,6 +109,7 @@ function SessionSection() {
       description:
         "Acompaña tu proceso, armoniza tu energía y brinda calma y bienestar.",
       link: "/otras-sanaciones/reiki-oncologico#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
     {
       image: sesionBelleza,
@@ -106,6 +117,7 @@ function SessionSection() {
       description:
         "Nutre tu piel, armoniza tu energía y realza tu belleza natural.",
       link: "/belleza-holistica/belleza#sessionCalendar",
+      caption: "Agenda Tu Sesión",
     },
   ];
 
@@ -123,6 +135,7 @@ function SessionSection() {
             title={session.title}
             description={session.description}
             link={session.link}
+            caption={session.caption}
           />
         ))}
       </div>

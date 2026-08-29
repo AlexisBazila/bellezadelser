@@ -1,0 +1,74 @@
+.CursosAcademiaSection {
+  padding: 2% 10%;
+  margin-bottom: 50px;
+  background-color: #c3cfa16c;
+  background-image: url("../../assets/images/fondoGreen.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.titleSection {
+  font-size: 42px;
+  text-align: center;
+  color: #b77b52;
+  margin: 50px 0 50px 0;
+}
+
+/* CONTENEDOR DE CARDS */
+/* La altura máxima cuando está colapsado la calcula JS (2 filas reales)
+   y se aplica como inline style solo cuando hay más de 2 filas. */
+.cardSessionAcademia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 30px;
+  padding-bottom: 50px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.5s ease;
+}
+
+/* EXPANDIDO */
+.cardSessionAcademia.expanded {
+  max-height: none !important;
+}
+
+/* 🔥 FADE INFERIOR (efecto "hay más contenido") — solo si hay overflow real */
+.cardSessionAcademia.hasOverflow::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
+  pointer-events: none;
+}
+
+.cardSessionAcademia.expanded::after {
+  display: none;
+}
+
+/* BOTÓN */
+.showMoreContainer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.showMoreContainer button {
+  background-color: #c3cfa1;
+  color: #647b4d;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.showMoreContainer button:hover {
+  background-color: #647b4d;
+  color: #c3cfa1;
+}
