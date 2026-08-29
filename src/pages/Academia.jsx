@@ -5,6 +5,7 @@ import CursosAcademiaSection from "../layouts/CursosAcademiaSection/CursosAcadem
 import MetodoAcademiaSection from "../layouts/MetodoAcademiaSection/MetodoAcademiaSection";
 import CredencialesAcademiaSection from "../layouts/CredencialesAcademiaSection/CredencialesAcademiaSection";
 import ReviewsAcademiaSection from "../layouts/ReviewsAcademiaSection/ReviewsAcademiaSection";
+import TransformacionAcademiaSection from "../layouts/TransformacionAcademiaSection/TransformacionAcademiaSection";
 
 function Academia() {
   return (
@@ -15,6 +16,7 @@ function Academia() {
       <MetodoAcademiaSection />
       <CredencialesAcademiaSection />
       <ReviewsAcademiaSection />
+      <TransformacionAcademiaSection />
     </>
   );
 }

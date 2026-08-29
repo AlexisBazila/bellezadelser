@@ -47,24 +47,31 @@ function VariableContentSection({
   backgroundImage,
   backgroundPosition = "center",
   backgroundOverlay = "rgba(231,236,217,0.88)",
+  backgroundColor,
   quote,
   quoteItalic = true,
   className = "",
   contentClassName = "",
   imageClassName = "",
 }) {
-  const sectionStyle = backgroundImage
-    ? {
-        backgroundImage: `
+  // backgroundOverlay es el tinte que va SOBRE una backgroundImage, solo tiene
+  // efecto si también pasás backgroundImage. Para un fondo de color plano
+  // (sin imagen) usá backgroundColor.
+  let sectionStyle = {};
+  if (backgroundImage) {
+    sectionStyle = {
+      backgroundImage: `
           linear-gradient(
             ${backgroundOverlay},
             ${backgroundOverlay}
           ),
           url(${backgroundImage})
         `,
-        backgroundPosition,
-      }
-    : {};
+      backgroundPosition,
+    };
+  } else if (backgroundColor) {
+    sectionStyle = { backgroundColor };
+  }
 
   const parseText = (text) => {
     if (!text) return "";

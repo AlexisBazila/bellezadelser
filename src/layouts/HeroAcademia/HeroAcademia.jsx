@@ -19,7 +19,7 @@ function HeroAcademia() {
                 ames.
               </h2>
             </div>
-            <a href="#" className="AcademiaButton">
+            <a href="#CursosAcademiaSection" className="AcademiaButton">
               Quiero Comenzar Mi Transformación
             </a>
           </div>

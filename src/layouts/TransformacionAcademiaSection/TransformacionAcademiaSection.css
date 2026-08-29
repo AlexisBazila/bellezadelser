@@ -1,0 +1,15 @@
+.TransformacionButton a {
+  background-color: #b77b52;
+  color: #fff;
+}
+
+.TransformacionButton a:hover {
+  background-color: #dfaa87;
+  color: #b77b52;
+}
+
+@media (max-width: 460px) {
+  .TransformacionButton a {
+    font-size: 12px;
+  }
+}
