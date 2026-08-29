@@ -1,6 +1,44 @@
 import React from "react";
 import "./VariableContentSection.css";
 
+// Parsea el mismo formato bold[...] que usa el resto del componente,
+// para que una quote manual y una automática se vean/escriban igual.
+const parseQuoteText = (text) => {
+  if (!text) return "";
+  return text.replace(/bold\[(.*?)\]/g, "<strong>$1</strong>");
+};
+
+// Quote que podés ubicar vos mismo en cualquier punto de "children"
+// (por ejemplo, entre un párrafo y un botón), en vez de depender
+// de la que se agrega automáticamente al final del texto o debajo de la imagen.
+//
+// Uso:
+//   <VariableContentSection.Quote>
+//     Un método creado para atravesar lo que te desconectó de ti...
+//   </VariableContentSection.Quote>
+//
+// También acepta el formato bold[...] vía la prop "text":
+//   <VariableContentSection.Quote text="bold[Importante]: seguí así." />
+function VariableContentQuote({
+  children,
+  text,
+  italic = true,
+  className = "",
+}) {
+  const content = text ? parseQuoteText(text) : null;
+
+  return (
+    <blockquote
+      className={`VariableContentSectionQuote ${
+        italic ? "quoteItalic" : ""
+      } ${className}`}
+      {...(content ? { dangerouslySetInnerHTML: { __html: content } } : {})}
+    >
+      {!content ? children : null}
+    </blockquote>
+  );
+}
+
 function VariableContentSection({
   children,
   image,
@@ -79,5 +117,7 @@ function VariableContentSection({
     </section>
   );
 }
+
+VariableContentSection.Quote = VariableContentQuote;
 
 export default VariableContentSection;

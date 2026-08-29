@@ -1,0 +1,92 @@
+.reviewsAcademiaSection {
+  padding-bottom: 8vh;
+}
+
+.ReviewAcademiaTitleSection {
+  font-size: 42px;
+  text-align: center;
+  color: #3c3c3c;
+  margin: 50px 2rem;
+  padding-top: 50px;
+}
+
+/* CONTENEDOR DEL CARRUSEL */
+.carouselContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* CARRUSEL INTERNO */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slidesWrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+/* TARJETAS */
+.slide {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 520px;
+}
+
+.arrowAcademiaBottom {
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: #6a6a6a;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.arrowAcademiaBottom:hover {
+  color: #b77b52;
+  background: rgba(183, 123, 82, 0.06);
+}
+
+.dotAcademiasAcademia {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.dotAcademia {
+  width: 10px;
+  height: 10px;
+  background: #b5b5b5;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.dotAcademia.active {
+  background: #b77b52;
+}
+
+@media (max-width: 900px) {
+  .ReviewAcademiaTitleSection {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,88 @@
+.CredencialesAcademiaSection {
+  background-color: #f7ece6;
+
+  padding: 2% 5%;
+}
+
+.CredencialesAcademiaContainer {
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  gap: 1.75rem;
+}
+
+/* ========================= */
+/* Item (ícono + texto) */
+/* ========================= */
+
+.CredencialesAcademiaItem {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.CredencialesAcademiaIcon {
+  width: 54px;
+  height: 54px;
+
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.CredencialesAcademiaLabel {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+
+  color: #3c3c3c;
+
+  font-size: 15px;
+  letter-spacing: 0.03em;
+  line-height: 1.45;
+  text-transform: uppercase;
+
+  max-width: 190px;
+}
+
+/* ========================= */
+/* Separador */
+/* ========================= */
+
+.CredencialesAcademiaDivider {
+  width: 1px;
+  height: 54px;
+
+  background-color: #b77b52;
+
+  flex-shrink: 0;
+}
+
+/* ========================= */
+/* Responsive */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .CredencialesAcademiaContainer {
+    gap: 1.5rem 2rem;
+  }
+
+  .CredencialesAcademiaDivider {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .CredencialesAcademiaContainer {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 1.5rem;
+  }
+
+  .CredencialesAcademiaLabel {
+    max-width: none;
+  }
+}

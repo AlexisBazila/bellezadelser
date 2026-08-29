@@ -7,13 +7,7 @@ import PorQueConfiarAcademia from "../../assets/images/PorQueConfiarAcademia.jpg
 
 function MetodoAcademiaSection() {
   return (
-    <VariableContentSection
-      image={PorQueConfiarAcademia}
-      imagePosition="right"
-      quote={
-        "Un método creado para atravesar lo que te desconectó de ti, recuperar tu poder y trascender hacia la vida que amas."
-      }
-    >
+    <VariableContentSection image={PorQueConfiarAcademia} imagePosition="right">
       <div className="MetodoParagraphContainer">
         <h2>¿Por qué confiar en mi método?</h2>
         <p>
@@ -43,11 +37,12 @@ function MetodoAcademiaSection() {
           <li>Integración y Expansión</li>
         </ul>
       </div>
+      <VariableContentSection.Quote>
+        Un método creado para atravesar lo que te desconectó de ti, recuperar tu
+        poder y trascender hacia la vida que amas.
+      </VariableContentSection.Quote>
       <div className="Metodobutton">
-        <SmallButton
-          caption="Comenzar Mi Transformación"
-          link="https://calendly.com/bellezadelseroficial/expeciende"
-        />
+        <SmallButton caption="Conoce Más Sobre Mi" link="/sobre-mi" />
       </div>
     </VariableContentSection>
   );
