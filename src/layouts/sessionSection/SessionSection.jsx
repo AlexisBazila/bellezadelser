@@ -27,7 +27,7 @@ function SessionSection() {
       title: "Reiki Usui",
       description:
         "Equilibra tu energía, libera bloqueos y recupera la armonía interior a través de la sanación con Reiki.",
-      link: "/sesiones/reiki#sessionCalendar",
+      link: "/sesiones/reiki",
       caption: "Agenda Tu Sesión",
     },
     {
@@ -35,15 +35,15 @@ function SessionSection() {
       title: "Registros Akáshicos",
       description:
         "Conecta con la sabiduría de tu alma, recibe claridad y guía para tu camino personal y espiritual.",
-      link: "/sesiones/registros-akashicos#sessionCalendar",
+      link: "/sesiones/registros-akashicos",
       caption: "Agenda Tu Sesión",
     },
     {
       image: sesionAcompañamiento,
-      title: "Acompañamiento Holístico",
+      title: "Sesión 1 a 1 con Naty",
       description:
         "Descubre tu potencial, supera obstáculos y avanza con foco hacia la vida que quieres crear.",
-      link: "/sesiones/acompañamiento#sessionCalendar",
+      link: "/sesiones/acompañamiento",
       caption: "Agenda Tu Sesión",
     },
     // Revisar antes de lanzar
@@ -52,7 +52,7 @@ function SessionSection() {
       title: "Abundancia y Apertura de Caminos",
       description:
         "Armoniza tu energía, libera bloqueos y favorece la apertura de caminos.",
-      link: "/otras-sanaciones/activacion#sessionCalendar",
+      link: "/otras-sanaciones/activacion",
       caption: "Agenda Tu Sesión",
     },
     {
@@ -60,7 +60,7 @@ function SessionSection() {
       title: "Sanación de Bloqueos en el Amor",
       description:
         "Libera bloqueos en el amor, sana tu energía y permite que todo fluya.",
-      link: "/otras-sanaciones/bloqueos#sessionCalendar",
+      link: "/otras-sanaciones/bloqueos",
       caption: "Agenda Tu Sesión",
     },
     {
@@ -68,7 +68,7 @@ function SessionSection() {
       title: "Sanación de Útero",
       description:
         "Libera bloqueos en tu útero, sana tu energía y reconecta con tu poder femenino.",
-      link: "/otras-sanaciones/sanacion-de-utero#sessionCalendar",
+      link: "/otras-sanaciones/sanacion-de-utero",
       caption: "Agenda Tu Sesión",
     },
     {
@@ -76,7 +76,7 @@ function SessionSection() {
       title: "Sanación para el Estrés y la Ansiedad",
       description:
         "Relaja tu cuerpo, aquieta tu mente y restablece tu energía.",
-      link: "/otras-sanaciones/sanacion-estres#sessionCalendar",
+      link: "/otras-sanaciones/sanacion-estres",
       caption: "Agenda Tu Sesión",
     },
     {
@@ -84,7 +84,7 @@ function SessionSection() {
       title: "Limpieza y Alineación de chakras",
       description:
         "Limpia y alinea tus chakras, liberando bloqueos y elevando tu energía.",
-      link: "/otras-sanaciones/chakras#sessionCalendar",
+      link: "/otras-sanaciones/chakras",
       caption: "Agenda Tu Sesión",
     },
     {
@@ -92,7 +92,7 @@ function SessionSection() {
       title: "Limpieza Energética de Espacios",
       description:
         "Limpia la energía de tus espacios, libera cargas y restablece la armonía.",
-      link: "/otras-sanaciones/limpieza-de-espacios#sessionCalendar",
+      link: "/otras-sanaciones/limpieza-de-espacios",
       caption: "Agenda Tu Sesión",
     },
     {
@@ -100,7 +100,7 @@ function SessionSection() {
       title: "Reiki para Mascotas",
       description:
         "Armoniza la energía de tu mascota, reduce el estrés y favorece su bienestar.",
-      link: "/otras-sanaciones/reiki-para-mascotas#sessionCalendar",
+      link: "/otras-sanaciones/reiki-para-mascotas",
       caption: "Agenda Tu Sesión",
     },
     {
@@ -108,7 +108,7 @@ function SessionSection() {
       title: "Reiki Oncológico",
       description:
         "Acompaña tu proceso, armoniza tu energía y brinda calma y bienestar.",
-      link: "/otras-sanaciones/reiki-oncologico#sessionCalendar",
+      link: "/otras-sanaciones/reiki-oncologico",
       caption: "Agenda Tu Sesión",
     },
     {
@@ -116,7 +116,7 @@ function SessionSection() {
       title: "Ritual de Belleza Holística",
       description:
         "Nutre tu piel, armoniza tu energía y realza tu belleza natural.",
-      link: "/belleza-holistica/belleza#sessionCalendar",
+      link: "/belleza-holistica/belleza",
       caption: "Agenda Tu Sesión",
     },
   ];

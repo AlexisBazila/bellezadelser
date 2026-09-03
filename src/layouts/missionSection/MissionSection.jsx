@@ -11,15 +11,14 @@ function MissionSection() {
       <div className="MyselfDesktop">
         <div className="firstParagraph">
           <h2>
-            Te acompaño a comprender tu energía, liberar bloqueos y reconectar
-            con tu verdadero poder.
+            Te acompaño a sanar tu energía, reconstruir tu vida y reconectar con
+            tu poder interior.
           </h2>
 
           <div className="MyselfParagraph">
             {/* <h4>Naty Batista</h4> */}
             <p>
-              Soy Natalia Batista, terapeuta energética y guía en procesos de
-              transformación personal.
+              Soy Natalia Batista, Mentora y Guía en Transformación Personal.
             </p>
 
             <p>
@@ -51,10 +50,8 @@ function MissionSection() {
 
             <div className="pharagraphBox">
               <p>
-                Aquí empieza el cambio que buscabas. En cada propuesta vas a
-                encontrar un camino claro para transformar tu vida, con
-                contenidos prácticos y fáciles de aplicar, para avanzar a tu
-                ritmo y lograr resultados reales.
+                Aquí comienza tu transformación. Sana, libera, reconstruye y
+                despierta tu poder interior.
               </p>
             </div>
           </div>
