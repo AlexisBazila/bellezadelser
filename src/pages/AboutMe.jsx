@@ -52,7 +52,7 @@ function AboutMe() {
               {
                 bold: "Belleza del Ser",
               },
-              ",  un espacio creado para acompañar a las personas a reconectar con su energía, su esencia y su verdadero poder interior.",
+              ",  un espacio creado para acompañar a las personas a sanar su energía, reconstruir sus vidas y volver a sí mismas.",
             ],
           },
 
@@ -89,7 +89,7 @@ function AboutMe() {
 
           "Por eso, mi enfoque no se queda en lo que se ve.",
 
-          "Trabajamos en la raíz.",
+          "Trabajamos desde la raíz con mi método Arquitectura del Ser.",
           "A través de herramientas de trabajo energético y de conciencia, como reiki, registros akáshicos y ejercicios de conexión, acompaño a las personas a tomar conciencia del poder de su energía, liberar cargas acumuladas y generar cambios reales en su forma de vivir.",
         ]}
       />

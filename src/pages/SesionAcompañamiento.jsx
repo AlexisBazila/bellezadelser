@@ -4,20 +4,21 @@ import SesionAcompañamientoImage from "../assets/images/sesionAcompañamiento.p
 import SessionCalendarSection from "../layouts/SessionCalendarSection/SessionCalendarSection";
 import TipoSesionSection from "../layouts/TipoSesionSection/TipoSesionSection";
 import SesionSections from "../components/SesionSections/SesionSections";
+import SmallButton from "../components/smallButton/SmallButton";
 
 function SesionAcompañamiento() {
   return (
     <>
       <div>
         <HeroSession
-          title={"Sesión de Acompañamiento Holístico"}
+          title={"Sesión 1 a 1 con Naty"}
           buttonText="Agendar Sesión"
           buttonLink="#sessionCalendar"
         />
         <ProductDescriptionSection
-          subTtitle={"¿Qué es el Acompañamiento Holístico?"}
+          subTtitle={"¿Qué es el acompañamiento 1 a 1?"}
           paragraphs={[
-            "El Acompañamiento Holístico es un bold[proceso integral de crecimiento personal] que combina gestión emocional, conciencia energética y trabajo mental para generar cambios reales y sostenibles.",
+            "Es un bold[proceso integral de crecimiento personal] que combina gestión emocional, conciencia energética y trabajo mental para generar cambios reales y sostenibles.",
             "Es un espacio de acompañamiento consciente que te ayuda a bold[ordenar tu mundo interno y avanzar con mayor claridad y coherencia.]",
           ]}
           imageDesktop={SesionAcompañamientoImage}
@@ -44,7 +45,7 @@ function SesionAcompañamiento() {
         />
         <TipoSesionSection tipos={["vivo"]} />
         <SesionSections
-          title="Beneficios del Acompañamiento Holístico"
+          title="Beneficios del Acompañamiento"
           variant="light"
           content={[
             {
@@ -83,7 +84,7 @@ function SesionAcompañamiento() {
             {
               type: "list",
               items: [
-                "Sesión de acompañamiento holístico personalizada",
+                "Sesión de acompañamiento online en vivo con Naty",
                 "Espacio de escucha, guía y reflexión consciente",
                 "Herramientas prácticas de gestión emocional y mental",
                 "Integración energética según lo que el proceso requiera",

@@ -7,10 +7,10 @@ function HeroAboutMe() {
         <div className="contentHeroAbout">
           <div className="paragraphHeroAbout">
             <div className="titleAndSubtitleHeroAbout">
-              <h1 className="title">Conoce mi camino</h1>
+              <h1 className="title">Natalia Batista</h1>
               <h2>
-                Fundadora de Belleza del Ser <br /> Terapeuta Energética y Guía
-                en Procesos de Transformación Personal
+                Fundadora de Belleza del Ser <br /> Mentora y Guía en
+                Transformación Personal.
               </h2>
             </div>
           </div>
