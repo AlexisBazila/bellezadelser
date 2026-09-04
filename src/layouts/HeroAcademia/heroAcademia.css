@@ -24,7 +24,8 @@
 .Academiatitle {
   font-size: 60px;
   margin-bottom: 20px;
-  color: #b77b52;
+  color: #553118;
+  font-size: 100px;
 }
 
 .contentAcademiaHero h2 {
@@ -33,9 +34,13 @@
   color: #3c3c3c;
 }
 
-.h2Border {
+.contentAcademiaHero .h2Border {
+  font-family: "Times New Roman", serif;
   margin-bottom: 0;
   padding-bottom: 30px;
+  color: #3c3c3c;
+  font-size: 40px;
+  font-weight: 200;
   border-bottom: #b77b52 solid 1px;
 }
 
@@ -105,6 +110,9 @@
 
   .overlayAcademia {
     padding: 5% 2rem;
+  }
+  .contentAcademiaHero .h2Border {
+    font-size: 30px;
   }
 }
 

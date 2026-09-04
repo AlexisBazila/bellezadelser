@@ -9,7 +9,7 @@ function HeroAcademia() {
         <div className="contentAcademiaHero">
           <div className="paragraphHero">
             <div className="titleAndSubtitleAcademia">
-              <h1 className="Academiatitle">Academia Belleza del Ser</h1>
+              <h1 className="Academiatitle">ACADEMIA BELLEZA DEL SER</h1>
               <h2 className="h2Border">
                 El espacio donde comienza la transformación que va a cambiar tu
                 vida
