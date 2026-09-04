@@ -1,6 +1,7 @@
 import React from "react";
 import "./heroAcademia.css";
 import FirstButton from "../../components/firstButton/FirstButton";
+import AcademyLine from "../../assets/images/AcademyLine.png";
 
 function HeroAcademia() {
   return (
@@ -14,6 +15,12 @@ function HeroAcademia() {
                 El espacio donde comienza la transformación que va a cambiar tu
                 vida
               </h2>
+              <img
+                src={AcademyLine}
+                alt=""
+                className="AcademiaDivider"
+                aria-hidden="true"
+              />
               <h2>
                 Sana tu Energía, Reconstruye tu Vida y Despierta tu Poder
                 Interior.

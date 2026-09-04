@@ -19,6 +19,10 @@
   width: 50vw;
   display: flex;
   align-items: center;
+
+  /* Ancho compartido entre el h2Border y la línea decorativa,
+     para que siempre midan lo mismo. */
+  --academiaTextWidth: 50vw;
 }
 
 .Academiatitle {
@@ -30,18 +34,24 @@
 
 .contentAcademiaHero h2 {
   font-family: "inter";
-  width: 50vw;
+  width: var(--academiaTextWidth);
   color: #3c3c3c;
 }
 
 .contentAcademiaHero .h2Border {
   font-family: "Times New Roman", serif;
   margin-bottom: 0;
-  padding-bottom: 30px;
   color: #3c3c3c;
   font-size: 40px;
   font-weight: 200;
-  border-bottom: #b77b52 solid 1px;
+}
+
+.AcademiaDivider {
+  display: block;
+  width: var(--academiaTextWidth);
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0 30px 0;
 }
 
 .titleAndSubtitleAcademia {
