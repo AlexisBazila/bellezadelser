@@ -27,6 +27,8 @@ function SesionReikiOncologico() {
         <SesionSections
           title="Esta sesión es para ti si…"
           variant="light"
+          buttonCaption="Necesito una sesión"
+          buttonLink="/otras-sanaciones/reiki-oncologico#sessionCalendar"
           content={[
             {
               type: "list",
@@ -51,6 +53,8 @@ function SesionReikiOncologico() {
         <SesionSections
           title="Este acompañamiento es ideal para:"
           variant="light"
+          buttonCaption="Quiero agendar"
+          buttonLink="/otras-sanaciones/reiki-oncologico#sessionCalendar"
           content={[
             {
               type: "list",

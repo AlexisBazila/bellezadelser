@@ -27,6 +27,8 @@ function SesionReikiMascotas() {
         <SesionSections
           title="El Reiki puede acompañar a tu mascota si..."
           variant="light"
+          buttonCaption="Quiero sanar a mi mascota"
+          buttonLink="/otras-sanaciones/reiki-para-mascotas#sessionCalendar"
           content={[
             {
               type: "list",
@@ -50,6 +52,8 @@ function SesionReikiMascotas() {
         <SesionSections
           title="Beneficios"
           variant="light"
+          buttonCaption="Quiero agendar"
+          buttonLink="/otras-sanaciones/reiki-para-mascotas#sessionCalendar"
           content={[
             {
               type: "list",

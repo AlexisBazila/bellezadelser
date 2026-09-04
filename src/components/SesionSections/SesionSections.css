@@ -65,6 +65,11 @@
   color: #fff;
 }
 
+/* Botón final */
+.sesion-button {
+  margin-top: 20px;
+}
+
 /* Sublista */
 .nested-list {
   margin-top: 8px;

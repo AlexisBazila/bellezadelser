@@ -27,6 +27,8 @@ function SesionEstres() {
         <SesionSections
           title="Esta sesión es para ti si…"
           variant="light"
+          buttonCaption="Quiero sanar"
+          buttonLink="/otras-sanaciones/sanacion-estres#sessionCalendar"
           content={[
             {
               type: "list",
@@ -50,6 +52,8 @@ function SesionEstres() {
         <SesionSections
           title="Beneficios"
           variant="light"
+          buttonCaption="Quiero agendar"
+          buttonLink="/otras-sanaciones/sanacion-estres#sessionCalendar"
           content={[
             {
               type: "list",

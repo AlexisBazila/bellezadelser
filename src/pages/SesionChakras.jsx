@@ -27,6 +27,8 @@ function SesionChakras() {
         <SesionSections
           title="Esta sesión es para ti si…"
           variant="light"
+          buttonCaption="Quiero una limpieza"
+          buttonLink="/otras-sanaciones/chakras#sessionCalendar"
           content={[
             {
               type: "list",
@@ -50,6 +52,8 @@ function SesionChakras() {
         <SesionSections
           title="Beneficios"
           variant="light"
+          buttonCaption="Quiero agendar una sesión"
+          buttonLink="/otras-sanaciones/chakras#sessionCalendar"
           content={[
             {
               type: "list",

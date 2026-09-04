@@ -28,6 +28,8 @@ function SesionBelleza() {
         <SesionSections
           title="Este ritual es para ti si…"
           variant="light"
+          buttonCaption="Quiero sentirme plena"
+          buttonLink="/belleza-holistica/belleza#sessionCalendar"
           content={[
             {
               type: "list",
@@ -75,6 +77,8 @@ function SesionBelleza() {
         <SesionSections
           title="Masaje facial holístico (eje central del ritual)"
           variant="light"
+          buttonCaption="Lo necesito ya"
+          buttonLink="/belleza-holistica/belleza#sessionCalendar"
           content={[
             {
               type: "paragraph",
@@ -129,6 +133,8 @@ function SesionBelleza() {
         <SesionSections
           title=" ¿Qué se suele sentir después?"
           variant="light"
+          buttonCaption="Me lo merezco"
+          buttonLink="/belleza-holistica/belleza#sessionCalendar"
           content={[
             {
               type: "list",

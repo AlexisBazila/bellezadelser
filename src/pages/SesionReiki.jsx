@@ -27,6 +27,8 @@ function SesionReiki() {
         <SesionSections
           title="Esta sesión es para ti si…"
           variant="light"
+          buttonCaption="Quiero una sesión"
+          buttonLink="/sesiones/reiki#sessionCalendar"
           content={[
             {
               type: "list",
@@ -48,6 +50,8 @@ function SesionReiki() {
         <SesionSections
           title="Beneficios del Reiki Usui"
           variant="light"
+          buttonCaption="Necesito una sesión"
+          buttonLink="/sesiones/reiki#sessionCalendar"
           content={[
             {
               type: "list",

@@ -29,6 +29,8 @@ function SesionLimpiezaEspacios() {
         <SesionSections
           title="Esta sesión es para ti si…"
           variant="light"
+          buttonCaption="Quiero limpiar mi espacio"
+          buttonLink="/otras-sanaciones/limpieza-de-espacios#sessionCalendar"
           content={[
             {
               type: "list",
@@ -53,6 +55,8 @@ function SesionLimpiezaEspacios() {
         <SesionSections
           title="Beneficios"
           variant="light"
+          buttonCaption="Quiero agendar"
+          buttonLink="/otras-sanaciones/limpieza-de-espacios#sessionCalendar"
           content={[
             {
               type: "list",

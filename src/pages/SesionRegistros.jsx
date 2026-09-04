@@ -31,6 +31,8 @@ function SesionRegistros() {
         <SesionSections
           title="Esta sesión es para ti si…"
           variant="light"
+          buttonCaption="Quiero una sesión"
+          buttonLink="/sesiones/registros-akashicos#sessionCalendar"
           content={[
             {
               type: "list",
@@ -55,6 +57,8 @@ function SesionRegistros() {
         <SesionSections
           title="Beneficios de los Registros Akáshicos"
           variant="light"
+          buttonCaption="Agendar una sesión"
+          buttonLink="/sesiones/registros-akashicos#sessionCalendar"
           content={[
             {
               type: "list",

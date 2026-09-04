@@ -27,6 +27,8 @@ function SesionAcompañamiento() {
         <SesionSections
           title="Esta sesión es para ti si…"
           variant="light"
+          buttonCaption="Quiero agendar"
+          buttonLink="/sesiones/acompañamiento#sessionCalendar"
           content={[
             {
               type: "list",
@@ -47,6 +49,8 @@ function SesionAcompañamiento() {
         <SesionSections
           title="Beneficios del Acompañamiento"
           variant="light"
+          buttonCaption="Agendar una sesión"
+          buttonLink="/sesiones/acompañamiento#sessionCalendar"
           content={[
             {
               type: "list",

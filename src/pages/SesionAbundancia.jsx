@@ -27,6 +27,8 @@ function SesionAbundancia() {
         <SesionSections
           title="Esta sesión es para ti si…"
           variant="light"
+          buttonCaption="Quiero Activar mi abundancia"
+          buttonLink="/otras-sanaciones/activacion#sessionCalendar"
           content={[
             {
               type: "list",
@@ -51,6 +53,8 @@ function SesionAbundancia() {
         <SesionSections
           title="Beneficios"
           variant="light"
+          buttonCaption="Quiero una sesión"
+          buttonLink="/otras-sanaciones/activacion#sessionCalendar"
           content={[
             {
               type: "list",

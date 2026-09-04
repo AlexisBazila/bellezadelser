@@ -27,6 +27,8 @@ function SesionUtero() {
         <SesionSections
           title="Esta sesión es para ti si…"
           variant="light"
+          buttonCaption="Quiero sanar mi útero"
+          buttonLink="/otras-sanaciones/sanacion-de-utero#sessionCalendar"
           content={[
             {
               type: "list",
@@ -51,6 +53,8 @@ function SesionUtero() {
         <SesionSections
           title="Beneficios"
           variant="light"
+          buttonCaption="Quiero agendar una sesión"
+          buttonLink="/otras-sanaciones/sanacion-de-utero#sessionCalendar"
           content={[
             {
               type: "list",

@@ -27,6 +27,8 @@ function SesionBloqueos() {
         <SesionSections
           title="Esta sesión es para ti si…"
           variant="light"
+          buttonCaption="Quiero desbloquear el Amor"
+          buttonLink="/otras-sanaciones/bloqueos#sessionCalendar"
           content={[
             {
               type: "list",
@@ -51,6 +53,8 @@ function SesionBloqueos() {
         <SesionSections
           title="Beneficios"
           variant="light"
+          buttonCaption="Quiero agendar una sesión"
+          buttonLink="/otras-sanaciones/bloqueos#sessionCalendar"
           content={[
             {
               type: "list",

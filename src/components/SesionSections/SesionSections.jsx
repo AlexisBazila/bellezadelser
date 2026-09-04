@@ -1,7 +1,14 @@
 import React from "react";
 import "./SesionSections.css";
+import SmallButton from "../smallButton/SmallButton";
 
-function SesionSections({ title, content, variant = "light" }) {
+function SesionSections({
+  title,
+  content,
+  variant = "light",
+  buttonCaption,
+  buttonLink,
+}) {
   const parseText = (text) => {
     if (!text) return "";
 
@@ -61,6 +68,12 @@ function SesionSections({ title, content, variant = "light" }) {
             return null;
           })}
         </div>
+
+        {buttonCaption && buttonLink && (
+          <div className="sesion-button">
+            <SmallButton caption={buttonCaption} link={buttonLink} />
+          </div>
+        )}
       </div>
     </section>
   );
