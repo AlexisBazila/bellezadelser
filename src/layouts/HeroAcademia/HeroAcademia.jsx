@@ -11,12 +11,12 @@ function HeroAcademia() {
             <div className="titleAndSubtitleAcademia">
               <h1 className="Academiatitle">Academia Belleza del Ser</h1>
               <h2 className="h2Border">
-                EL ESPACIO DONDE SE FORMAN QUIENES ESTÁN LISTOS PARA
-                <strong>TRASCENDER</strong>
+                El espacio donde comienza la transformación que va a cambiar tu
+                vida
               </h2>
               <h2>
-                Deja de sobrevivir. Comienza a construir una vida que realmente
-                ames.
+                Sana tu Energía, Reconstruye tu Vida y Despierta tu Poder
+                Interior.
               </h2>
             </div>
             <a href="#CursosAcademiaSection" className="AcademiaButton">
