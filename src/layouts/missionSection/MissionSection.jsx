@@ -49,10 +49,8 @@ function MissionSection() {
             />
 
             <div className="pharagraphBox">
-              <p>
-                Aquí comienza tu transformación. Sana, libera, reconstruye y
-                despierta tu poder interior.
-              </p>
+              <p>Aquí comienza tu transformación.</p>
+              <p>Sana, libera, reconstruye y despierta tu poder interior.</p>
             </div>
           </div>
         </div>

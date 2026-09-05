@@ -22,7 +22,7 @@ function MetodoAcademiaSection() {
         <p>
           Durante años recorrí mi propio proceso de reconstrucción, aprendizaje
           y evolución. De esa experiencia nació
-          <strong> Arquitectura del Ser </strong>, mi método de transformación
+          <strong> Arquitectura del Ser</strong>, mi método de transformación
           integral basado en cinco pilares:
         </p>
 

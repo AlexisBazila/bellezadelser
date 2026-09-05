@@ -75,8 +75,8 @@
 /* Caja superpuesta */
 .pharagraphBox {
   position: absolute;
-  bottom: -100px;
-  left: -51%;
+  bottom: -80px;
+  left: -30%;
   background-color: #fff;
   border: 2px solid #b77b52;
   border-radius: 20px;
@@ -84,6 +84,7 @@
   max-width: 550px;
   padding: 25px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 2;
@@ -112,7 +113,7 @@
   }
 
   .pharagraphBox {
-    bottom: -100px;
+    bottom: 0px;
     left: 0;
     margin: 30px;
   }
