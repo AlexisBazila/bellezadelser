@@ -297,10 +297,14 @@ nav a {
 /* ─────────────────────────────────────────
    RESPONSIVE BREAKPOINTS
 ───────────────────────────────────────── */
-@media (max-width: 1260px) {
-  /* nav a {
-    margin: 15px 15px;
-  } */
+@media (max-width: 1286px) {
+  .logoHome img {
+    width: 30px;
+    height: auto;
+  }
+  .logoHome h3 {
+    font-size: 30px;
+  }
 }
 
 @media (max-width: 1160px) {
