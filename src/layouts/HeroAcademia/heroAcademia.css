@@ -20,7 +20,7 @@
 
   /* Ancho compartido entre el h2Border y la línea decorativa,
      para que siempre midan lo mismo. */
-  --academiaTextWidth: 50vw;
+  /* --academiaTextWidth: 50vw; */
 }
 
 .Academiatitle {
