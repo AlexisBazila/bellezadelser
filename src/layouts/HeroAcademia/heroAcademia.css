@@ -3,20 +3,18 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
 }
 
 .overlayAcademia {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 90vh;
   padding: 5% 10%;
 }
 
 .contentAcademiaHero {
   height: 100%;
-  width: 50vw;
+  /* width: 50vw; */
   display: flex;
   align-items: center;
 
@@ -30,6 +28,7 @@
   margin-bottom: 20px;
   color: #553118;
   font-size: 80px;
+  width: 80%;
 }
 
 .contentAcademiaHero h2 {
@@ -85,14 +84,8 @@
 }
 
 @media (max-width: 900px) {
-  .heroAcademia {
-    height: 70vh;
-  }
   .AcademiaButton {
     font-size: 18px;
-  }
-  .overlayAcademia {
-    height: 70vh;
   }
 
   .contentAcademiaHero {
@@ -102,7 +95,9 @@
   .Academiatitle {
     font-size: 40px;
   }
-
+  .contentAcademiaHero .h2Border {
+    font-size: 30px;
+  }
   .contentAcademiaHero h2 {
     font-size: 18px;
   }
@@ -111,35 +106,31 @@
 @media (max-width: 600px) {
   .heroAcademia {
     background-image: url("../../assets/images/HeroAcademiaMovil.jpg");
-    height: 80vh;
   }
 
   .overlayAcademia {
-    height: 80vh;
   }
 
   .overlayAcademia {
-    padding: 5% 2rem;
+    padding: 9% 2rem;
   }
   .contentAcademiaHero .h2Border {
     font-size: 30px;
   }
 }
 
-@media (max-height: 670px) and (max-width: 950px) {
+/* @media (max-height: 670px) and (max-width: 950px) {
   .titleAndSubtitleAcademia {
     margin-bottom: 20px;
   }
 
   .heroAcademia {
     background-image: url("../../assets/images/HeroAcademiaMovil.jpg");
-    height: auto;
   }
 
   .overlayAcademia {
-    height: auto;
   }
-}
+} */
 
 @media (max-width: 460px) {
   .titleAndSubtitleAcademia {
@@ -150,11 +141,11 @@
   }
 }
 
-@media (max-height: 670px) and (max-width: 450px) {
+/* @media (max-height: 670px) and (max-width: 450px) {
   .heroAcademia {
     height: 90vh;
   }
   .overlayAcademia {
     height: 90vh;
   }
-}
+} */
