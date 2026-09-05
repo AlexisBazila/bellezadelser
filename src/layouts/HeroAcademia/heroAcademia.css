@@ -35,6 +35,7 @@
   font-family: "inter";
   width: var(--academiaTextWidth);
   color: #3c3c3c;
+  width: 78%;
 }
 
 .contentAcademiaHero .h2Border {
