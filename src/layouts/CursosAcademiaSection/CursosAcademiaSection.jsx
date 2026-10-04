@@ -20,7 +20,7 @@ function CursosAcademiaSection() {
       title: "El Regreso a Ti",
       description:
         "Un proceso de 9 meses para sanar bloqueos, recuperar tu seguridad y reconectar contigo para transformar y disfrutar plenamente de tu vida.",
-      link: "https://go.hotmart.com/I106926912N?dp=1",
+      link: "https://natybellezadelser.hotmart.host/el-regreso-a-ti",
       caption: "Accede al Curso",
     },
   ];
