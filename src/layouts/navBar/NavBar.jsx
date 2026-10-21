@@ -133,7 +133,7 @@ function NavBar() {
               </li>
               <li>
                 <Link to="/academia" onClick={closeMegaMenu}>
-                  Academia
+                  Academia BDS
                 </Link>
               </li>
               {/* MEGA MENU */}
