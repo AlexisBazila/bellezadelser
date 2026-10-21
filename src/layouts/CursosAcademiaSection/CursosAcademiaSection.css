@@ -36,19 +36,16 @@
 }
 
 /* 🔥 FADE INFERIOR (efecto "hay más contenido") — solo si hay overflow real */
-.cardSessionAcademia.hasOverflow::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 150px;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff);
-  pointer-events: none;
+/* Se usa máscara (no un overlay blanco) para que el fade funcione
+   sobre cualquier fondo, incluido el fondo verde con imagen. */
+.cardSessionAcademia.hasOverflow {
+  -webkit-mask-image: linear-gradient(to bottom, #000 calc(100% - 150px), transparent);
+  mask-image: linear-gradient(to bottom, #000 calc(100% - 150px), transparent);
 }
 
-.cardSessionAcademia.expanded::after {
-  display: none;
+.cardSessionAcademia.hasOverflow.expanded {
+  -webkit-mask-image: none;
+  mask-image: none;
 }
 
 /* BOTÓN */

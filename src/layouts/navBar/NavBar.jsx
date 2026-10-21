@@ -213,11 +213,9 @@ function NavBar() {
             Experiencia Trasciende
           </Link>
 
-    
-                <Link to="/academia" className="mobileHomeLink" onClick={closeMenu}>
-                  Academia
-                </Link>
-             
+          <Link to="/academia" className="mobileHomeLink" onClick={closeMenu}>
+            Academia BDS
+          </Link>
 
           {/* Secciones en cuadros */}
           <div className="mobileSections">
