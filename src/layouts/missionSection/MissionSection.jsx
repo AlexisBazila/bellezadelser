@@ -18,7 +18,7 @@ function MissionSection() {
           <div className="MyselfParagraph">
             {/* <h4>Naty Batista</h4> */}
             <p>
-              Soy Natalia Batista, Mentora y Guía en Transformación Personal.
+              Soy Natalia Batista, Mentora, Guía en Transformación Personal y Terapeuta Energética.
             </p>
 
             <p>
@@ -60,7 +60,7 @@ function MissionSection() {
       <div className="MyselfParagraphMovil">
         {/* <h4>Naty Batista</h4> */}
         <p>
-         Soy Natalia Batista, Mentora y Guía en Transformación Personal.
+         Soy Natalia Batista, Mentora, Guía en Transformación Personal y Terapeuta Energética.
         </p>
 
         <p>
