@@ -27,15 +27,15 @@ function CursosAcademiaSection() {
     },
     {
       image: curso,
-      title: "Repeograma Tu Energía",
+      title: "Reprograma Tu Energía",
       description:
-        "Leíste, entendiste y pensaste en positivo. Pero nada cambia... Te dejo una guía práctica para liberar bloqueos, despertar tu poder interno y elevar tu energía.",
+        "Probaste de todo y nada cambia... esta es la guía para liberar bloqueos y despertar tu poder de manifestación",
       link: "#",
       caption: "Accede al Curso",
     },
     {
       image: workbook,
-      title: "La mujer que Dejó de Tener Miedo",
+      title: "Sé imparable!",
       description:
         "¿Sabés exactamente la vida que querés, pero algo te frena justo antes de conseguirlo? Aquí tienes el mapa para LOGRARLO!",
       link: "#",
