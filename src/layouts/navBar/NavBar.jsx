@@ -133,7 +133,7 @@ function NavBar() {
               </li>
               <li>
                 <Link to="/academia" onClick={closeMegaMenu}>
-                  Academia
+                  Academia BDS
                 </Link>
               </li>
               {/* MEGA MENU */}
@@ -213,11 +213,9 @@ function NavBar() {
             Experiencia Trasciende
           </Link>
 
-    
-                <Link to="/academia" className="mobileHomeLink" onClick={closeMenu}>
-                  Academia
-                </Link>
-             
+          <Link to="/academia" className="mobileHomeLink" onClick={closeMenu}>
+            Academia BDS
+          </Link>
 
           {/* Secciones en cuadros */}
           <div className="mobileSections">

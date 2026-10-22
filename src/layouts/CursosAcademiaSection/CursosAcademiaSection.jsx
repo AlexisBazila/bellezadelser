@@ -3,7 +3,9 @@ import "./CursosAcademiaSection.css";
 
 import SessionCard from "../../components/SessionCard/SessionCard";
 
-import RecgresoATi from "../../assets/images/RegresoATi.jpg";
+import RecgresoATi from "../../assets/images/RegresoATi.png";
+import curso from "../../assets/images/curso.png";
+import workbook from "../../assets/images/workbook.png";
 
 // Cuánto "asoma" de la 3ra fila se deja visible antes de difuminar
 const PEEK = 40;
@@ -22,6 +24,22 @@ function CursosAcademiaSection() {
         "Un proceso de 9 meses para sanar bloqueos, recuperar tu seguridad y reconectar contigo para transformar y disfrutar plenamente de tu vida.",
       link: "https://natybellezadelser.hotmart.host/el-regreso-a-ti",
       caption: "Accede al Curso",
+    },
+    {
+      image: curso,
+      title: "Curso",
+      description:
+        "Leíste, entendiste y pensaste en positivo. Pero nada cambia... Te dejo una guía práctica para liberar bloqueos, despertar tu poder interno y elevar tu energía.",
+      link: "#",
+      caption: "Accede al Curso",
+    },
+    {
+      image: workbook,
+      title: "WorkBook",
+      description:
+        "¿Sabés exactamente la vida que querés, pero algo te frena justo antes de conseguirlo? Aquí tienes el mapa para LOGRARLO!",
+      link: "#",
+      caption: "Accede al WorkBook",
     },
   ];
 
