@@ -27,7 +27,7 @@ function CursosAcademiaSection() {
     },
     {
       image: curso,
-      title: "Curso",
+      title: "Repeograma Tu Energía",
       description:
         "Leíste, entendiste y pensaste en positivo. Pero nada cambia... Te dejo una guía práctica para liberar bloqueos, despertar tu poder interno y elevar tu energía.",
       link: "#",
@@ -35,7 +35,7 @@ function CursosAcademiaSection() {
     },
     {
       image: workbook,
-      title: "WorkBook",
+      title: "La mujer que Dejó de Tener Miedo",
       description:
         "¿Sabés exactamente la vida que querés, pero algo te frena justo antes de conseguirlo? Aquí tienes el mapa para LOGRARLO!",
       link: "#",
