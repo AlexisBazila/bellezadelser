@@ -6,6 +6,7 @@ import SessionCard from "../../components/SessionCard/SessionCard";
 import RecgresoATi from "../../assets/images/RegresoATi.png";
 import curso from "../../assets/images/curso.png";
 import workbook from "../../assets/images/workbook.png";
+import EbookLodeseo from "../../assets/images/EbookLodeseo.png"
 
 // Cuánto "asoma" de la 3ra fila se deja visible antes de difuminar
 const PEEK = 40;
@@ -40,6 +41,14 @@ function CursosAcademiaSection() {
         "¿Sabés exactamente la vida que querés, pero algo te frena justo antes de conseguirlo? Aquí tienes el mapa para LOGRARLO!",
       link: "#",
       caption: "Accede al WorkBook",
+    },
+        {
+      image: EbookLodeseo,
+      title: "Lo Deseo. Lo Tengo.",
+      description:
+        "Desbloquea tu potencial, transforma tus creencias y aprende a manifestar la vida que deseas.",
+      link: "#",
+      caption: "Accede al E-Book",
     },
   ];
 
